@@ -1,0 +1,5 @@
+Repair only the grid-rule color of the first reference image. Preserve all sixteen glyphs, their pixels, positions, scale, and identities exactly.
+
+The current grid rules are too dark for the required neutral-gray grid detector. Redraw exactly the five vertical and five horizontal grid rules as continuous, uniform, one-to-three-pixel neutral light-gray lines, approximately RGB 190–215 on the white background. Every rule must be lighter than every black glyph and darker than the white paper. Do not use black or near-black rules. Keep the rules straight, evenly spaced, fully continuous from outer edge to outer edge, including all four outer borders. Do not add, double, fade, break, or omit any rule.
+
+Return only the corrected 4×4 sheet.

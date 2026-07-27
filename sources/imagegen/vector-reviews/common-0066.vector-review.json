@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-vector-visual-review",
+  "review_state": "approved",
+  "batch_id": "common-0066",
+  "reviewer": {
+    "name": "Codex root visual QA agent",
+    "role": "independent vector visual QA"
+  },
+  "reviewed_at": "2026-07-26T01:40:45Z",
+  "vector_report": {
+    "path": "build/imagegen/imagegen-common-0066/report.json",
+    "sha256": "b3ce71871a9549d4be162e15e141e0ccea526e13d59e3e97e721cc3ae5d57f41"
+  },
+  "scope": {
+    "all_glyphs_reviewed": true,
+    "checks": [
+      "glyph-identity",
+      "taiwan-traditional-topology",
+      "contour-smoothness",
+      "no-spikes-or-thorns",
+      "counter-openness",
+      "small-size-legibility"
+    ],
+    "sizes_px": [
+      12,
+      16,
+      20,
+      32,
+      56
+    ],
+    "polarities": [
+      "black-on-white",
+      "white-on-black"
+    ]
+  },
+  "proofs": [
+    {
+      "kind": "black-on-white",
+      "path": "build/imagegen/imagegen-common-0066/proof/small-sizes-black-on-white.png",
+      "sha256": "5c2032903f95762275b4fbb24b9323b9cd7eacf9bd42dcf365a13247a0ab0f72",
+      "decision": "PASS"
+    },
+    {
+      "kind": "white-on-black",
+      "path": "build/imagegen/imagegen-common-0066/proof/small-sizes-white-on-black.png",
+      "sha256": "c73f1b6ddf5f4f83fb6f20a34491c5be591d0da9cb9cb9b5c7f8d5f3757a821c",
+      "decision": "PASS"
+    },
+    {
+      "kind": "segmented-source",
+      "path": "build/imagegen/imagegen-common-0066/proof/segmented-source-contact.png",
+      "sha256": "0850f59fa59ca81261732c0103c13933671d48bfd04e457c701bf9f17321aef2",
+      "decision": "PASS"
+    }
+  ],
+  "glyphs": [
+    {
+      "rank": 1041,
+      "character": "測",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1042,
+      "character": "克",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1043,
+      "character": "染",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1044,
+      "character": "按",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1045,
+      "character": "孟",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1046,
+      "character": "缺",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1047,
+      "character": "混",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1048,
+      "character": "怒",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1049,
+      "character": "副",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1050,
+      "character": "慢",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1051,
+      "character": "聯",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1052,
+      "character": "紫",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1053,
+      "character": "舌",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1054,
+      "character": "疑",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1055,
+      "character": "局",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    },
+    {
+      "rank": 1056,
+      "character": "旁",
+      "decision": "PASS",
+      "notes": "Reviewed against the segmented source and all required small-size proofs in both polarities; all required visual checks passed."
+    }
+  ],
+  "summary": {
+    "glyph_count": 16,
+    "pass_count": 16,
+    "reject_count": 0,
+    "rejected_characters": []
+  }
+}

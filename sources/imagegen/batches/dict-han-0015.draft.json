@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-han-delta-draft",
+  "vector_pipeline": "imagegen-raster-potrace-quadratic-v2",
+  "batch_id": "imagegen-dict-han-0015",
+  "state": "awaiting-generation",
+  "generator": "built-in-image_gen",
+  "generator_call": null,
+  "collection": {
+    "path": "../collections/clear-hand-tc-dictionary-salience-1216.json",
+    "sha256": "5623b1f977d1412b233a34c255627749ffed71f86182125ea91d7d1f1fb869c2",
+    "collection_id": "clear-hand-tc-dictionary-salience-extension-1216-v1",
+    "family_id": "clear-hand-tc"
+  },
+  "raster": "../raster/dict-han-0015.png",
+  "raster_sha256": null,
+  "prompt": {
+    "path": "../prompts/dict-han-0015.md",
+    "sha256": "e37edc4acde1b1ed6bed4e3531f10b0163c5db1e21d0906170843f6365c40a8c",
+    "template_path": "../prompts/han-delta-grid-with-copybook-v1.md",
+    "template_sha256": "38f8705ecdc33271d861db54ce7bb6b397ada40253052d74a916b0e1f89a3e0c"
+  },
+  "style_reference": {
+    "role": "style-only-no-outline-import",
+    "raster": "../raster/common-0001.png",
+    "raster_sha256": "2a4058fdb4e35ce2789f9ae73535542f78f4e94516ad4b9929986a93e36d3d81"
+  },
+  "identity_copybook": {
+    "role": "identity-reference-only-no-outline-import",
+    "raster": "../copybooks/dict-han-0015.png",
+    "raster_sha256": "bf503ff281668d6011c42ae42ebe3e68a8c1d4e6e8dd782dbfcccd99b6e488bf",
+    "provenance": {
+      "materializer": "scripts/materialize_han_delta_batches.py",
+      "contract": "neutral-han-identity-copybook-v1",
+      "source_name": "neutral local-font Han identity copybook",
+      "source_url": null,
+      "license": "identity-reference-only; source licenses are recorded per cell",
+      "external_font_binary_committed": false,
+      "references": [
+        {
+          "character": "褊",
+          "codepoint": "U+890A",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni890A",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "誹",
+          "codepoint": "U+8AB9",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni8AB9",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "孛",
+          "codepoint": "U+5B5B",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni5B5B",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "巉",
+          "codepoint": "U+5DC9",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni5DC9",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "搥",
+          "codepoint": "U+6425",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni6425",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "杼",
+          "codepoint": "U+677C",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni677C",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "翫",
+          "codepoint": "U+7FEB",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni7FEB",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "遒",
+          "codepoint": "U+9052",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni9052",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "鼂",
+          "codepoint": "U+9F02",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni9F02",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "僉",
+          "codepoint": "U+50C9",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni50C9",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "愷",
+          "codepoint": "U+6137",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni6137",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "慳",
+          "codepoint": "U+6173",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni6173",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "掂",
+          "codepoint": "U+6382",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni6382",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "栖",
+          "codepoint": "U+6816",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni6816",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "灞",
+          "codepoint": "U+705E",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni705E",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        },
+        {
+          "character": "璫",
+          "codepoint": "U+74AB",
+          "role": "identity-reference-only-no-outline-import",
+          "method": "exact-cmap-glyph",
+          "font": {
+            "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+            "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+            "face_index": 0,
+            "postscript_name": "NotoSansTC-Thin",
+            "glyph_name": "uni74AB",
+            "source_name": "Noto Sans TC",
+            "source_url": null,
+            "license": "OFL-1.1",
+            "external_font_binary_committed": false,
+            "validation": [
+              "exact-cmap-hit",
+              "non-notdef-glyph-name",
+              "non-empty-distinct-outline",
+              "non-empty-pillow-raster"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "repertoire": {
+    "path": "../repertoires/dictionary-salience-extension-1216.json",
+    "sha256": "8462d9669e6d7320f77c285a444e388da0f3e0d23ae408c7212c4302bdaed840",
+    "repertoire_id": "clear-hand-tc-dictionary-salience-extension-1216-v1",
+    "sequence_sha256": "3b28f33b80e7675ccdba24d0e678b30581f4eb55fd7418ab1447f10a889267d7",
+    "start_rank": 225,
+    "end_rank": 240
+  },
+  "grid": {
+    "rows": 4,
+    "columns": 4,
+    "characters": [
+      "褊",
+      "誹",
+      "孛",
+      "巉",
+      "搥",
+      "杼",
+      "翫",
+      "遒",
+      "鼂",
+      "僉",
+      "愷",
+      "慳",
+      "掂",
+      "栖",
+      "灞",
+      "璫"
+    ],
+    "empty_grid_cells": 0
+  },
+  "review": {
+    "identity": "pending",
+    "raster_quality": "pending",
+    "vector_quality": "pending"
+  }
+}

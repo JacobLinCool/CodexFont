@@ -1,0 +1,34 @@
+Use case: font-source raster sheet
+Asset type: high-resolution 4×4 raster master sheet for an original Traditional Chinese handwriting font in the clear-hand-tc family
+
+Input images:
+1. Image 1 is STYLE ONLY. Match its fine black gel-pen weight, rounded terminals, natural right slant, optical scale, pure-white background, and faint 4×4 grid. Do not copy its characters or outlines.
+2. Image 2 is IDENTITY REFERENCE ONLY. Use it to disambiguate the exact Unicode character assigned to each cell. Do not trace, reproduce, or import its printed outlines or gray grid geometry.
+
+Primary request: write exactly 16 new isolated Traditional Chinese glyphs in a strict four-by-four grid, in this exact row-major order:
+檉欹毳烝
+熠瑀睚禳
+窬笈縟縴
+舄荑螯觱
+
+Exact occupied cells:
+Cell 01: U+6A89 `檉`
+Cell 02: U+6B39 `欹`
+Cell 03: U+6BF3 `毳`
+Cell 04: U+70DD `烝`
+Cell 05: U+71A0 `熠`
+Cell 06: U+7440 `瑀`
+Cell 07: U+775A `睚`
+Cell 08: U+79B3 `禳`
+Cell 09: U+7AAC `窬`
+Cell 10: U+7B08 `笈`
+Cell 11: U+7E1F `縟`
+Cell 12: U+7E34 `縴`
+Cell 13: U+8204 `舄`
+Cell 14: U+8351 `荑`
+Cell 15: U+87AF `螯`
+Cell 16: U+89F1 `觱`
+
+Constraints: preserve every requested Unicode identity and Taiwan Traditional character topology; output each target exactly once and only in its assigned cell; use complete standard strokes; keep one centered black glyph per cell with open counters and generous padding; keep all ink away from separators. Draw entirely new natural handwriting rather than tracing either reference.
+
+Avoid: simplified variants, wrong or missing strokes, duplicate or omitted characters, extra text, printed type, brush blobs, texture, shadows, sharp miter spikes, thorn-like protrusions, accidental hooks, tangled cursive, clipping, connected cells, signature, logo, or watermark.

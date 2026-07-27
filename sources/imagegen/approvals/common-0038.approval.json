@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0038",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 593,
+    "end_rank": 608,
+    "characters": "素列皇銀藏步謂財寒低族消肉堂領更"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0038.source.json",
+    "descriptor_sha256": "9e0da7e62c7b1da002f0765b0a571da13e10f4c6bba15ca84d1c9c92471723ba",
+    "raster": "sources/imagegen/raster/common-0038.png",
+    "raster_sha256": "e983b00fd076790489fbae9175f44dedbad5873f3c98d3225cbcf110bdd1977b"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0035-0038-audit.json",
+    "report_sha256": "8574012ce03278cc9f94a1ea2a0a685845b626d0e0c26dffaa3404505563e743"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0038/report.json",
+    "report_sha256": "fc3b6944436ce597ae293bd8368cb81709cabdc7a6c68819afca74c5ba617efe",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0038.vector-review.json",
+    "record_sha256": "e9207b16c1dd7790ec5b6626107574e4ffc782134bf6785c296323a1f7503098"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:37:26Z"
+  }
+}

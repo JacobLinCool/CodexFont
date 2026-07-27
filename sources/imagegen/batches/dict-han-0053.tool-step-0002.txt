@@ -1,0 +1,14 @@
+Use case: precise-object-edit
+Asset type: one-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cell 08. Preserve all other 15 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 08 must be U+9A2D 騭. Replace the current unrelated left-right horse character with the correct stacked construction. Handwrite a compact but complete 陟 across the upper portion, including 阝 and 步, above a complete 馬 in the lower portion with its four hoof dots. Follow the identity copybook for component placement while keeping the new outlines original. Do not write 驥, 驟, 騁, or another horse character.
+
+Required full row-major result:
+邶郿酲鉏
+鑷闞雒騭
+魍魎鯢齏
+价倬傜唼
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

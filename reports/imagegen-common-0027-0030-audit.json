@@ -1,0 +1,320 @@
+{
+  "schema_version": 1,
+  "audit_id": "imagegen-common-0027-0030",
+  "audited_at": "2026-07-26",
+  "auditor": "Codex independent raster QA",
+  "scope": {
+    "batch_ids": [
+      "common-0027",
+      "common-0028",
+      "common-0029",
+      "common-0030"
+    ],
+    "rank_range": [
+      417,
+      480
+    ],
+    "glyph_count": 64,
+    "repertoire": {
+      "path": "sources/imagegen/repertoires/common-3000.json",
+      "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+      "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd"
+    }
+  },
+  "authority": {
+    "provider": "Ministry of Digital Affairs, Taiwan, CNS11643 Chinese Standard Interchange Code Full Character Database",
+    "official_dataset_url": "https://data.gov.tw/dataset/5961",
+    "mapping_archive": {
+      "path": "tmp/cns-opendata/MapingTables.zip",
+      "sha256": "f59dacc4dbdef334d7a887c3da671af02778e2c80adb2a7fd1053f64dbf9e659",
+      "member": "Unicode/CNS2UNICODE_Unicode BMP.txt",
+      "member_timestamp": "2026-05-05"
+    },
+    "properties_archive": {
+      "path": "tmp/cns-opendata/Properties.zip",
+      "sha256": "50cad66f3fe6f3a4b6f4a7bf0431e1bfb8dabc3d8c7be4d61e1617b15a0d7a7b",
+      "members": [
+        "CNS_stroke.txt",
+        "CNS_strokes_sequence.txt"
+      ],
+      "member_timestamp": "2026-05-05"
+    },
+    "visual_copybook": {
+      "path": "sources/upstream/TW-Kai-98_1.ttf",
+      "sha256": "c206333edcc3c8c86ee547da4c78ad1c8f7ec2670a2b550a768532258f75806a",
+      "usage": "rasterized visual topology comparison only; no outline, coordinate, or trace enters the image-generated glyph"
+    },
+    "stroke_sequence_digit_legend": {
+      "1": "horizontal",
+      "2": "vertical",
+      "3": "left-falling",
+      "4": "dot or right-falling",
+      "5": "turn or hook family"
+    }
+  },
+  "policy": {
+    "pass_definition": "The exact requested scalar is present, its visible Taiwan Traditional topology agrees with the current CNS mapping and stroke-sequence structure, it remains directly recognizable at native, 128, 64, and 32 px cell sizes, the ink is isolated from the grid, and no stray thorn or topology-changing defect is visible.",
+    "reject_definition": "Any uncertain identity, simplified substitution, missing or extra semantic component, topology-changing join, unreadability at a reviewed size, grid contact, stray ink, or thorn-like defect.",
+    "raster_limit": "A final raster can establish visible topology but cannot prove the temporal act of writing each stroke.",
+    "vectorization_limit": "PASS permits controlled tracing of the isolated dark ink only. Grid lines, near-white background variation, antialias halos, and CNS copybook outlines are forbidden geometry.",
+    "descriptor_mutation": "This audit does not change source descriptors or mark any source as approved."
+  },
+  "method": {
+    "views": [
+      "native cell crop",
+      "128 px per complete cell",
+      "64 px per complete cell",
+      "32 px per complete cell",
+      "generated cell beside an independently rasterized CNS TW-Kai copybook"
+    ],
+    "grid_detection": "Exactly five long light-gray line groups per axis were detected by projection; the reported grid clearance is the minimum distance from a pixel darker than L=100 to the nearest detected cell boundary.",
+    "dark_component_check": "Every cell was checked with 8-connected components at L<100; no isolated dark component smaller than 10 px was present.",
+    "artifact_review": [
+      "wrong scalar or order",
+      "Taiwan Traditional topology",
+      "open counters and component separation",
+      "grid contact",
+      "stray dark marks",
+      "sharp miter or thorn-like protrusion"
+    ],
+    "background_note": "The paper is visually clean but not numerically flat #FFFFFF. Pixels at L>=245 have standard deviation 1.20 to 1.29 across the four sheets, so background normalization is mandatory before tracing."
+  },
+  "summary": {
+    "total": 64,
+    "pass": 64,
+    "reject": 0,
+    "approved_for_controlled_vectorization": 64,
+    "rejected_for_vectorization": 0,
+    "wrong_or_out_of_order_cells": 0,
+    "simplified_substitutions": 0,
+    "grid_contacts": 0,
+    "stray_dark_component_findings": 0,
+    "thorn_or_spur_findings": 0,
+    "failed_cells": [],
+    "single_glyph_regeneration_prompts": []
+  },
+  "batches": [
+    {
+      "batch_id": "common-0027",
+      "start_rank": 417,
+      "end_rank": 432,
+      "characters": "香並功母號真觀治蘇轉滿雄府離住果",
+      "raster": "sources/imagegen/raster/common-0027.png",
+      "sha256": "a86334a3f04a90ed6dc5baac5c91dc2caf9dc17278598ad03cd519077caf80f6",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        625,
+        923,
+        1221
+      ],
+      "grid_line_centres_y": [
+        25,
+        325,
+        622,
+        918,
+        1217
+      ],
+      "minimum_dark_ink_grid_clearance_px": 38,
+      "background_light_pixel_standard_deviation": 1.225561,
+      "pass": 16,
+      "reject": 0
+    },
+    {
+      "batch_id": "common-0028",
+      "start_rank": 433,
+      "end_rank": 448,
+      "characters": "歌造建商倒市緣善置佛半客往房輕圓",
+      "raster": "sources/imagegen/raster/common-0028.png",
+      "sha256": "48bc77557fe29ae318f37d31fb1fb927e71ce3072ab51e16d5de83135108e451",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        625,
+        923,
+        1221
+      ],
+      "grid_line_centres_y": [
+        25,
+        325,
+        622,
+        918,
+        1217
+      ],
+      "minimum_dark_ink_grid_clearance_px": 43,
+      "background_light_pixel_standard_deviation": 1.289843,
+      "pass": 16,
+      "reject": 0
+    },
+    {
+      "batch_id": "common-0029",
+      "start_rank": 449,
+      "end_rank": 464,
+      "characters": "反杜雨般父陳依集們員統志里廣青共",
+      "raster": "sources/imagegen/raster/common-0029.png",
+      "sha256": "7d24654aa53abc6aff152c4a11a34dbd5bf6b7c8aaeae1d34e5210ff6de008bb",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        625,
+        923,
+        1221
+      ],
+      "grid_line_centres_y": [
+        25,
+        327,
+        627,
+        928,
+        1224
+      ],
+      "minimum_dark_ink_grid_clearance_px": 41,
+      "background_light_pixel_standard_deviation": 1.201090,
+      "pass": 16,
+      "reject": 0
+    },
+    {
+      "batch_id": "common-0030",
+      "start_rank": 465,
+      "end_rank": 480,
+      "characters": "根務句近華歸盡齊卻片賦職除甫程星",
+      "raster": "sources/imagegen/raster/common-0030.png",
+      "sha256": "06bc8e51a74ed9a3617a80e35a157ab537b580e2b3ea006a2d5b7ce4d6c9b800",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        625,
+        924,
+        1221
+      ],
+      "grid_line_centres_y": [
+        25,
+        325,
+        622,
+        918,
+        1217
+      ],
+      "minimum_dark_ink_grid_clearance_px": 39,
+      "background_light_pixel_standard_deviation": 1.204409,
+      "pass": 16,
+      "reject": 0
+    }
+  ],
+  "glyphs": [
+    {"batch_id":"common-0027","index":1,"rank":417,"row":1,"column":1,"character":"香","codepoint":"U+9999","cns_code":"1-537C","cns_strokes":9,"cns_stroke_sequence":"312342511","topology":"⿱禾日","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":46,"issues":[],"regeneration_prompt":null,"post_trace_checks":["禾交會","日的兩段內白"]},
+    {"batch_id":"common-0027","index":2,"rank":418,"row":1,"column":2,"character":"並","codepoint":"U+4E26","cns_code":"1-4B64","cns_strokes":8,"cns_stroke_sequence":"43122431","topology":"丷、雙豎、雙點與底橫完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":60,"issues":[],"regeneration_prompt":null,"post_trace_checks":["左右對應分支","底橫"]},
+    {"batch_id":"common-0027","index":3,"rank":419,"row":1,"column":3,"character":"功","codepoint":"U+529F","cns_code":"1-457C","cns_strokes":5,"cns_stroke_sequence":"12153","topology":"⿰工力","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":60,"issues":[],"regeneration_prompt":null,"post_trace_checks":["工的三筆","力鉤"]},
+    {"batch_id":"common-0027","index":4,"rank":420,"row":1,"column":4,"character":"母","codepoint":"U+6BCD","cns_code":"1-4660","cns_strokes":5,"cns_stroke_sequence":"55441","topology":"外折框、中央橫與兩內點完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":47,"issues":[],"regeneration_prompt":null,"post_trace_checks":["兩個內點","框內白與末鉤"]},
+    {"batch_id":"common-0027","index":5,"rank":421,"row":2,"column":1,"character":"號","codepoint":"U+865F","cns_code":"1-6640","cns_strokes":13,"cns_stroke_sequence":"2511521531535","topology":"号與虎下部完整；繁體號","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":43,"issues":[],"regeneration_prompt":null,"post_trace_checks":["左口與丂鉤","虎上橫與儿"]},
+    {"batch_id":"common-0027","index":6,"rank":422,"row":2,"column":2,"character":"真","codepoint":"U+771F","cns_code":"1-5678","cns_strokes":10,"cns_stroke_sequence":"1225111134","topology":"十、目形、下長橫與八完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":50,"issues":[],"regeneration_prompt":null,"post_trace_checks":["目內三段空間","下八分離"]},
+    {"batch_id":"common-0027","index":7,"rank":423,"row":2,"column":3,"character":"觀","codepoint":"U+89C0","cns_code":"1-7D28","cns_strokes":25,"cns_stroke_sequence":"2112251251324111212511135","topology":"⿰雚見；完整繁體觀","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":39,"issues":[],"regeneration_prompt":null,"post_trace_checks":["艹與雙口","隹四橫","見目與儿","32與16 px 優先複核"]},
+    {"batch_id":"common-0027","index":8,"rank":424,"row":2,"column":4,"character":"治","codepoint":"U+6CBB","cns_code":"1-4E59","cns_strokes":8,"cns_stroke_sequence":"44454251","topology":"⿰氵台","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":61,"issues":[],"regeneration_prompt":null,"post_trace_checks":["三點水分離","厶折點與口內白"]},
+    {"batch_id":"common-0027","index":9,"rank":425,"row":3,"column":1,"character":"蘇","codepoint":"U+8607","cns_code":"1-7A37","cns_strokes":20,"cns_stroke_sequence":"21123525121444431234","topology":"艹、魚與禾完整；繁體蘇","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":50,"issues":[],"regeneration_prompt":null,"post_trace_checks":["魚田內白與四個末點","禾交會","32與16 px 優先複核"]},
+    {"batch_id":"common-0027","index":10,"rank":426,"row":3,"column":2,"character":"轉","codepoint":"U+8F49","cns_code":"1-774B","cns_strokes":18,"cns_stroke_sequence":"125111212511214154","topology":"⿰車專；完整繁體轉","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":38,"issues":[],"regeneration_prompt":null,"post_trace_checks":["車框與中央豎","專多層橫與寸鉤點","32與16 px 優先複核"]},
+    {"batch_id":"common-0027","index":11,"rank":427,"row":3,"column":3,"character":"滿","codepoint":"U+6EFF","cns_code":"1-6948","cns_strokes":14,"cns_stroke_sequence":"44412212523434","topology":"⿰氵㒼；完整繁體滿","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":53,"issues":[],"regeneration_prompt":null,"post_trace_checks":["廿","冂與兩個入形內白"]},
+    {"batch_id":"common-0027","index":12,"rank":428,"row":3,"column":4,"character":"雄","codepoint":"U+96C4","cns_code":"1-6274","cns_strokes":12,"cns_stroke_sequence":"135432411121","topology":"⿰厷隹","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":41,"issues":[],"regeneration_prompt":null,"post_trace_checks":["厷下厶","隹四橫"]},
+    {"batch_id":"common-0027","index":13,"rank":429,"row":4,"column":1,"character":"府","codepoint":"U+5E9C","cns_code":"1-4D34","cns_strokes":8,"cns_stroke_sequence":"41332154","topology":"⿸广付","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":52,"issues":[],"regeneration_prompt":null,"post_trace_checks":["广內白","付寸鉤與點"]},
+    {"batch_id":"common-0027","index":14,"rank":430,"row":4,"column":2,"character":"離","codepoint":"U+96E2","cns_code":"1-7762","cns_strokes":19,"cns_stroke_sequence":"4134522521432411121","topology":"⿰离隹；完整繁體離","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":45,"issues":[],"regeneration_prompt":null,"post_trace_checks":["离內凶與禸","隹四橫","32與16 px 優先複核"]},
+    {"batch_id":"common-0027","index":15,"rank":431,"row":4,"column":3,"character":"住","codepoint":"U+4F4F","cns_code":"1-486E","cns_strokes":7,"cns_stroke_sequence":"3241121","topology":"⿰亻主","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":54,"issues":[],"regeneration_prompt":null,"post_trace_checks":["主上點","三橫保持分離"]},
+    {"batch_id":"common-0027","index":16,"rank":432,"row":4,"column":4,"character":"果","codepoint":"U+679C","cns_code":"1-4E2A","cns_strokes":8,"cns_stroke_sequence":"25111234","topology":"田形被木中豎貫穿，撇捺完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":55,"issues":[],"regeneration_prompt":null,"post_trace_checks":["田內白","中央交會不冒刺"]},
+
+    {"batch_id":"common-0028","index":1,"rank":433,"row":1,"column":1,"character":"歌","codepoint":"U+6B4C","cns_code":"1-693A","cns_strokes":14,"cns_stroke_sequence":"12512125153534","topology":"⿰哥欠","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":43,"issues":[],"regeneration_prompt":null,"post_trace_checks":["雙可口內白","欠下撇捺"]},
+    {"batch_id":"common-0028","index":2,"rank":434,"row":1,"column":2,"character":"造","codepoint":"U+9020","cns_code":"1-5D5F","cns_strokes":11,"cns_stroke_sequence":"31212514554","topology":"⿺辶告；臺灣辶筆勢完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":54,"issues":[],"regeneration_prompt":null,"post_trace_checks":["告口內白","辶點折與底捺"]},
+    {"batch_id":"common-0028","index":3,"rank":435,"row":1,"column":3,"character":"建","codepoint":"U+5EFA","cns_code":"1-507A","cns_strokes":9,"cns_stroke_sequence":"511112554","topology":"⿺廴聿","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":56,"issues":[],"regeneration_prompt":null,"post_trace_checks":["聿多層橫","廴折與底捺"]},
+    {"batch_id":"common-0028","index":4,"rank":436,"row":1,"column":4,"character":"商","codepoint":"U+5546","cns_code":"1-5938","cns_strokes":11,"cns_stroke_sequence":"41432535251","topology":"亠、丷、冂、八與內口完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":51,"issues":[],"regeneration_prompt":null,"post_trace_checks":["內外兩層框","八分支與口內白"]},
+    {"batch_id":"common-0028","index":5,"rank":437,"row":2,"column":1,"character":"倒","codepoint":"U+5012","cns_code":"1-542E","cns_strokes":10,"cns_stroke_sequence":"3215412125","topology":"⿰亻到","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":48,"issues":[],"regeneration_prompt":null,"post_trace_checks":["至下土勢","刂雙豎"]},
+    {"batch_id":"common-0028","index":6,"rank":438,"row":2,"column":2,"character":"市","codepoint":"U+5E02","cns_code":"1-464B","cns_strokes":5,"cns_stroke_sequence":"41252","topology":"⿱亠巾","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":47,"issues":[],"regeneration_prompt":null,"post_trace_checks":["巾內白","中央豎"]},
+    {"batch_id":"common-0028","index":7,"rank":439,"row":2,"column":3,"character":"緣","codepoint":"U+7DE3","cns_code":"1-6E3F","cns_strokes":15,"cns_stroke_sequence":"554444551353334","topology":"⿰糹彖；完整繁體緣","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":52,"issues":[],"regeneration_prompt":null,"post_trace_checks":["糹四個末點","彖下多分支","32與16 px 優先複核"]},
+    {"batch_id":"common-0028","index":8,"rank":440,"row":2,"column":4,"character":"善","codepoint":"U+5584","cns_code":"1-6143","cns_strokes":12,"cns_stroke_sequence":"431121431251","topology":"羊、䒑、底橫與口完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":49,"issues":[],"regeneration_prompt":null,"post_trace_checks":["上下點畫","三層橫與口內白"]},
+    {"batch_id":"common-0028","index":9,"rank":441,"row":3,"column":1,"character":"置","codepoint":"U+7F6E","cns_code":"1-6574","cns_strokes":13,"cns_stroke_sequence":"2522112251111","topology":"⿱罒直","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":55,"issues":[],"regeneration_prompt":null,"post_trace_checks":["罒三格","直目形三段空間"]},
+    {"batch_id":"common-0028","index":10,"rank":442,"row":3,"column":2,"character":"佛","codepoint":"U+4F5B","cns_code":"1-4873","cns_strokes":7,"cns_stroke_sequence":"3251532","topology":"⿰亻弗","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":48,"issues":[],"regeneration_prompt":null,"post_trace_checks":["弗雙弓內白","雙豎"]},
+    {"batch_id":"common-0028","index":11,"rank":443,"row":3,"column":3,"character":"半","codepoint":"U+534A","cns_code":"1-4624","cns_strokes":5,"cns_stroke_sequence":"43112","topology":"丷、兩橫與中央豎完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":48,"issues":[],"regeneration_prompt":null,"post_trace_checks":["上兩點","橫畫保持分離"]},
+    {"batch_id":"common-0028","index":12,"rank":444,"row":3,"column":4,"character":"客","codepoint":"U+5BA2","cns_code":"1-506A","cns_strokes":9,"cns_stroke_sequence":"445354251","topology":"⿱宀各","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":54,"issues":[],"regeneration_prompt":null,"post_trace_checks":["宀內白","各口內白"]},
+    {"batch_id":"common-0028","index":13,"rank":445,"row":4,"column":1,"character":"往","codepoint":"U+5F80","cns_code":"1-4D3B","cns_strokes":8,"cns_stroke_sequence":"33241121","topology":"⿰彳主","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":53,"issues":[],"regeneration_prompt":null,"post_trace_checks":["彳分支","主上點與三橫"]},
+    {"batch_id":"common-0028","index":14,"rank":446,"row":4,"column":2,"character":"房","codepoint":"U+623F","cns_code":"1-4D52","cns_strokes":8,"cns_stroke_sequence":"33514153","topology":"⿸戶方","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":56,"issues":[],"regeneration_prompt":null,"post_trace_checks":["戶內白","方折鉤"]},
+    {"batch_id":"common-0028","index":15,"rank":447,"row":4,"column":3,"character":"輕","codepoint":"U+8F15","cns_code":"1-6B3C","cns_strokes":14,"cns_stroke_sequence":"12511121555121","topology":"⿰車巠；完整繁體輕","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":51,"issues":[],"regeneration_prompt":null,"post_trace_checks":["車框","巠三曲線與下工","32與16 px 優先複核"]},
+    {"batch_id":"common-0028","index":16,"rank":448,"row":4,"column":4,"character":"圓","codepoint":"U+5713","cns_code":"1-6351","cns_strokes":13,"cns_stroke_sequence":"2525125111341","topology":"⿴囗員；完整繁體圓","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":60,"issues":[],"regeneration_prompt":null,"post_trace_checks":["外囗","內口與貝框內白","32與16 px 優先複核"]},
+
+    {"batch_id":"common-0029","index":1,"rank":449,"row":1,"column":1,"character":"反","codepoint":"U+53CD","cns_code":"1-4530","cns_strokes":4,"cns_stroke_sequence":"1354","topology":"厂勢與下又完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":52,"issues":[],"regeneration_prompt":null,"post_trace_checks":["又交叉","厂內白"]},
+    {"batch_id":"common-0029","index":2,"rank":450,"row":1,"column":2,"character":"杜","codepoint":"U+675C","cns_code":"1-4A5B","cns_strokes":7,"cns_stroke_sequence":"1234121","topology":"⿰木土","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":51,"issues":[],"regeneration_prompt":null,"post_trace_checks":["木交會","土上下橫"]},
+    {"batch_id":"common-0029","index":3,"rank":451,"row":1,"column":3,"character":"雨","codepoint":"U+96E8","cns_code":"1-4F64","cns_strokes":8,"cns_stroke_sequence":"12524434","topology":"頂橫、冂與四個內點完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":60,"issues":[],"regeneration_prompt":null,"post_trace_checks":["四個內點","框內白"]},
+    {"batch_id":"common-0029","index":4,"rank":452,"row":1,"column":4,"character":"般","codepoint":"U+822C","cns_code":"1-576F","cns_strokes":10,"cns_stroke_sequence":"3354413554","topology":"⿰舟殳","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":45,"issues":[],"regeneration_prompt":null,"post_trace_checks":["舟框與兩點","殳交叉"]},
+    {"batch_id":"common-0029","index":5,"rank":453,"row":2,"column":1,"character":"父","codepoint":"U+7236","cns_code":"1-4558","cns_strokes":4,"cns_stroke_sequence":"3434","topology":"上八與下方交叉撇捺完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":56,"issues":[],"regeneration_prompt":null,"post_trace_checks":["上下層次","交會不冒刺"]},
+    {"batch_id":"common-0029","index":6,"rank":454,"row":2,"column":2,"character":"陳","codepoint":"U+9673","cns_code":"1-5D73","cns_strokes":11,"cns_stroke_sequence":"55212511234","topology":"⿰阝東；完整繁體陳","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":42,"issues":[],"regeneration_prompt":null,"post_trace_checks":["阝折鉤","東日內白與木分支"]},
+    {"batch_id":"common-0029","index":7,"rank":455,"row":2,"column":3,"character":"依","codepoint":"U+4F9D","cns_code":"1-4B6D","cns_strokes":8,"cns_stroke_sequence":"32413534","topology":"⿰亻衣","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":45,"issues":[],"regeneration_prompt":null,"post_trace_checks":["衣下鉤","撇捺與點"]},
+    {"batch_id":"common-0029","index":8,"rank":456,"row":2,"column":4,"character":"集","codepoint":"U+96C6","cns_code":"1-6275","cns_strokes":12,"cns_stroke_sequence":"324111211234","topology":"⿱隹木","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":49,"issues":[],"regeneration_prompt":null,"post_trace_checks":["隹四橫","木交會"]},
+    {"batch_id":"common-0029","index":9,"rank":457,"row":3,"column":1,"character":"們","codepoint":"U+5011","cns_code":"1-542F","cns_strokes":10,"cns_stroke_sequence":"3225112511","topology":"⿰亻門；完整繁體們","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":43,"issues":[],"regeneration_prompt":null,"post_trace_checks":["門雙框","內橫與鉤"]},
+    {"batch_id":"common-0029","index":10,"rank":458,"row":3,"column":2,"character":"員","codepoint":"U+54E1","cns_code":"1-545E","cns_strokes":10,"cns_stroke_sequence":"2512511134","topology":"⿱口貝","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":54,"issues":[],"regeneration_prompt":null,"post_trace_checks":["口內白","貝三段內白與下八"]},
+    {"batch_id":"common-0029","index":11,"rank":459,"row":3,"column":3,"character":"統","codepoint":"U+7D71","cns_code":"1-5C53","cns_strokes":11,"cns_stroke_sequence":"55444415435","topology":"⿰糹充；完整繁體統","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":48,"issues":[],"regeneration_prompt":null,"post_trace_checks":["糹四個末點","充厶與儿"]},
+    {"batch_id":"common-0029","index":12,"rank":460,"row":3,"column":4,"character":"志","codepoint":"U+5FD7","cns_code":"1-4A35","cns_strokes":7,"cns_stroke_sequence":"1214544","topology":"⿱士心","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":64,"issues":[],"regeneration_prompt":null,"post_trace_checks":["心鉤與三點"]},
+    {"batch_id":"common-0029","index":13,"rank":461,"row":4,"column":1,"character":"里","codepoint":"U+91CC","cns_code":"1-4B5E","cns_strokes":7,"cns_stroke_sequence":"2511121","topology":"田形與下土勢完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":67,"issues":[],"regeneration_prompt":null,"post_trace_checks":["田內白","三層橫"]},
+    {"batch_id":"common-0029","index":14,"rank":462,"row":4,"column":2,"character":"廣","codepoint":"U+5EE3","cns_code":"1-6C5D","cns_strokes":15,"cns_stroke_sequence":"413122112512134","topology":"⿸广黃；完整繁體廣","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":46,"issues":[],"regeneration_prompt":null,"post_trace_checks":["廿","由內白與下八","32與16 px 優先複核"]},
+    {"batch_id":"common-0029","index":15,"rank":463,"row":4,"column":3,"character":"青","codepoint":"U+9752","cns_code":"1-4F65","cns_strokes":8,"cns_stroke_sequence":"11213511","topology":"上三橫與下月完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":41,"issues":[],"regeneration_prompt":null,"post_trace_checks":["三橫分離","月內兩橫"]},
+    {"batch_id":"common-0029","index":16,"rank":464,"row":4,"column":4,"character":"共","codepoint":"U+5171","cns_code":"1-4741","cns_strokes":6,"cns_stroke_sequence":"122134","topology":"廿形、下橫與八完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":54,"issues":[],"regeneration_prompt":null,"post_trace_checks":["上兩豎","下八分離"]},
+
+    {"batch_id":"common-0030","index":1,"rank":465,"row":1,"column":1,"character":"根","codepoint":"U+6839","cns_code":"1-557C","cns_strokes":10,"cns_stroke_sequence":"1234511534","topology":"⿰木艮","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":43,"issues":[],"regeneration_prompt":null,"post_trace_checks":["艮框內白","下鉤點"]},
+    {"batch_id":"common-0030","index":2,"rank":466,"row":1,"column":2,"character":"務","codepoint":"U+52D9","cns_code":"1-592D","cns_strokes":11,"cns_stroke_sequence":"54553313453","topology":"矛、攵與下力完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":46,"issues":[],"regeneration_prompt":null,"post_trace_checks":["矛鉤","攵交會與力鉤"]},
+    {"batch_id":"common-0030","index":3,"rank":467,"row":1,"column":3,"character":"句","codepoint":"U+53E5","cns_code":"1-463B","cns_strokes":5,"cns_stroke_sequence":"35251","topology":"⿹勹口","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":58,"issues":[],"regeneration_prompt":null,"post_trace_checks":["兩層內白","外鉤"]},
+    {"batch_id":"common-0030","index":4,"rank":468,"row":1,"column":4,"character":"近","codepoint":"U+8FD1","cns_code":"1-4F54","cns_strokes":8,"cns_stroke_sequence":"33124554","topology":"⿺辶斤；臺灣辶筆勢完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":46,"issues":[],"regeneration_prompt":null,"post_trace_checks":["斤兩撇","辶點折與底捺"]},
+    {"batch_id":"common-0030","index":5,"rank":469,"row":2,"column":1,"character":"華","codepoint":"U+83EF","cns_code":"1-615E","cns_strokes":12,"cns_stroke_sequence":"211212112112","topology":"艹、雙十形與中央豎完整；繁體華","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":39,"issues":[],"regeneration_prompt":null,"post_trace_checks":["多層橫畫","中央豎與側枝"]},
+    {"batch_id":"common-0030","index":6,"rank":470,"row":2,"column":2,"character":"歸","codepoint":"U+6B78","cns_code":"1-7657","cns_strokes":18,"cns_stroke_sequence":"325151212151145252","topology":"𠂤、止與帚完整；繁體歸","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":47,"issues":[],"regeneration_prompt":null,"post_trace_checks":["左雙框與止","帚多層框與巾","32與16 px 優先複核"]},
+    {"batch_id":"common-0030","index":7,"rank":471,"row":2,"column":3,"character":"盡","codepoint":"U+76E1","cns_code":"1-6970","cns_strokes":14,"cns_stroke_sequence":"51121444425221","topology":"聿勢、灬與皿三層完整；繁體盡","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":49,"issues":[],"regeneration_prompt":null,"post_trace_checks":["上多層橫","四點","皿三格","32與16 px 優先複核"]},
+    {"batch_id":"common-0030","index":8,"rank":472,"row":2,"column":4,"character":"齊","codepoint":"U+9F4A","cns_code":"1-6B7D","cns_strokes":14,"cns_stroke_sequence":"41432533543211","topology":"上部雙側分支與下方雙豎橫完整；繁體齊","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":43,"issues":[],"regeneration_prompt":null,"post_trace_checks":["上部交叉","兩側彎勢與下內橫","32與16 px 優先複核"]},
+    {"batch_id":"common-0030","index":9,"rank":473,"row":3,"column":1,"character":"卻","codepoint":"U+537B","cns_code":"1-5033","cns_strokes":9,"cns_stroke_sequence":"343425152","topology":"⿰谷卩","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":50,"issues":[],"regeneration_prompt":null,"post_trace_checks":["谷口內白","卩折鉤"]},
+    {"batch_id":"common-0030","index":10,"rank":474,"row":3,"column":2,"character":"片","codepoint":"U+7247","cns_code":"1-455A","cns_strokes":4,"cns_stroke_sequence":"3215","topology":"左撇、豎、橫與右折完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":53,"issues":[],"regeneration_prompt":null,"post_trace_checks":["右折內白"]},
+    {"batch_id":"common-0030","index":11,"rank":475,"row":3,"column":3,"character":"賦","codepoint":"U+8CE6","cns_code":"1-6F2C","cns_strokes":15,"cns_stroke_sequence":"251113411212154","topology":"⿰貝武；完整繁體賦","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":52,"issues":[],"regeneration_prompt":null,"post_trace_checks":["貝框與下八","武止與戈鉤點","32與16 px 優先複核"]},
+    {"batch_id":"common-0030","index":12,"rank":476,"row":3,"column":4,"character":"職","codepoint":"U+8077","cns_code":"1-772A","cns_strokes":18,"cns_stroke_sequence":"122111414312511543","topology":"⿰耳戠；完整繁體職","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":44,"issues":[],"regeneration_prompt":null,"post_trace_checks":["耳內橫","音日內白與戈鉤點","32與16 px 優先複核"]},
+    {"batch_id":"common-0030","index":13,"rank":477,"row":4,"column":1,"character":"除","codepoint":"U+9664","cns_code":"1-5866","cns_strokes":10,"cns_stroke_sequence":"5523411234","topology":"⿰阝余","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":54,"issues":[],"regeneration_prompt":null,"post_trace_checks":["阝折鉤","余上下層次"]},
+    {"batch_id":"common-0030","index":14,"rank":478,"row":4,"column":2,"character":"甫","codepoint":"U+752B","cns_code":"1-4B2D","cns_strokes":7,"cns_stroke_sequence":"1351124","topology":"框、兩內橫、中央豎與右上點完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":49,"issues":[],"regeneration_prompt":null,"post_trace_checks":["框內三段空間","右上點"]},
+    {"batch_id":"common-0030","index":15,"rank":479,"row":4,"column":3,"character":"程","codepoint":"U+7A0B","cns_code":"1-6123","cns_strokes":12,"cns_stroke_sequence":"312342513121","topology":"⿰禾呈","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":53,"issues":[],"regeneration_prompt":null,"post_trace_checks":["禾交會","呈口與王三橫"]},
+    {"batch_id":"common-0030","index":16,"rank":480,"row":4,"column":4,"character":"星","codepoint":"U+661F","cns_code":"1-5153","cns_strokes":9,"cns_stroke_sequence":"251131121","topology":"⿱日生","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":59,"issues":[],"regeneration_prompt":null,"post_trace_checks":["日內白","生三橫"]}
+  ],
+  "priority_post_trace_review": [
+    "U+6BCD",
+    "U+865F",
+    "U+771F",
+    "U+89C0",
+    "U+8607",
+    "U+8F49",
+    "U+6EFF",
+    "U+96C4",
+    "U+96E2",
+    "U+6B4C",
+    "U+9020",
+    "U+5EFA",
+    "U+5546",
+    "U+7DE3",
+    "U+5584",
+    "U+7F6E",
+    "U+8F15",
+    "U+5713",
+    "U+822C",
+    "U+9673",
+    "U+96C6",
+    "U+5011",
+    "U+54E1",
+    "U+7D71",
+    "U+5EE3",
+    "U+9752",
+    "U+52D9",
+    "U+83EF",
+    "U+6B78",
+    "U+76E1",
+    "U+9F4A",
+    "U+8CE6",
+    "U+8077",
+    "U+752B",
+    "U+7A0B"
+  ]
+}

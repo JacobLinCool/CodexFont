@@ -1,0 +1,19 @@
+Use case: precise-object-edit
+Asset type: single-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the edit target. Image 2 is the authoritative identity copybook only; do not trace its printed outline. Change ONLY Cell 03. Keep all other cells, including the now-correct Cell 16, plus the grid and canvas unchanged.
+
+Replace Cell 03 with U+8E05 踅. It must visually match this component layout:
+
+    折
+    足
+
+This is a compact TOP-OVER-BOTTOM character. The upper 折 contains 扌 at upper-left and 斤 at upper-right. A complete 足 sits directly below it. Do not draw a left-side 足 radical. Do not draw 跟, 踵, 蹉, or any other left-right character. Use the third cell of Image 2 only to verify identity and topology, then handwrite a new original 踅 with the same fine black gel-pen style as Image 1.
+
+Required full row-major result:
+翊衿踅輅
+幄撅椹槿
+猗稗篦腴
+芾茜蓍蓽
+
+Keep open counters and all ink clear of grid rules. No labels, extra text, printed type, substitutions, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

@@ -1,0 +1,1093 @@
+{
+  "schema_version": 1,
+  "pipeline": "imagegen-raster-potrace-quadratic-v2",
+  "approval_state": "unreviewed",
+  "batch_id": "imagegen-common-0026",
+  "source_descriptor_sha256": "4923844e9144f5562359388e6120717824f31646a3f1dd376a22d978174a4beb",
+  "source_state": "generated-unreviewed",
+  "source_review": {
+    "topology": "pending",
+    "raster_quality": "pending",
+    "vector_quality": "pending"
+  },
+  "source_raster_sha256": "42103bb1347a8f3e4133d60bd8fc3b428b3250db116a7d336cc4f43a6df01c9f",
+  "characters": [
+    "料",
+    "保",
+    "想",
+    "章",
+    "還",
+    "權",
+    "裝",
+    "示",
+    "亂",
+    "足",
+    "望",
+    "令",
+    "些",
+    "舉",
+    "戲",
+    "感"
+  ],
+  "grid": {
+    "rows": 4,
+    "columns": 4,
+    "empty_grid_cells": 0,
+    "cell_slots": [
+      "料",
+      "保",
+      "想",
+      "章",
+      "還",
+      "權",
+      "裝",
+      "示",
+      "亂",
+      "足",
+      "望",
+      "令",
+      "些",
+      "舉",
+      "戲",
+      "感"
+    ],
+    "x_rule_centers": [
+      29,
+      327,
+      625,
+      923,
+      1221
+    ],
+    "y_rule_centers": [
+      25,
+      325,
+      622,
+      918,
+      1217
+    ],
+    "x_rule_spans": [
+      [
+        29,
+        30
+      ],
+      [
+        327,
+        328
+      ],
+      [
+        625,
+        626
+      ],
+      [
+        923,
+        924
+      ],
+      [
+        1220,
+        1222
+      ]
+    ],
+    "y_rule_spans": [
+      [
+        25,
+        26
+      ],
+      [
+        325,
+        326
+      ],
+      [
+        622,
+        622
+      ],
+      [
+        917,
+        919
+      ],
+      [
+        1216,
+        1217
+      ]
+    ],
+    "x_center_coverages": [
+      0.951356,
+      0.951356,
+      0.951356,
+      0.951356,
+      0.951356
+    ],
+    "y_center_coverages": [
+      0.952153,
+      0.952153,
+      0.952153,
+      0.952153,
+      0.952153
+    ],
+    "synthesized_coordinates": false
+  },
+  "segmentation": {
+    "antialias_preserved": true,
+    "grid_rules_removed": true,
+    "cell_raster_size": 512,
+    "ink_core_ceiling": 210,
+    "minimum_component_area": 10
+  },
+  "vectorization": {
+    "tool": "potrace 1.16. Copyright (C) 2001-2019 Peter Selinger.",
+    "supersample": 1,
+    "gaussian_radius": 2.2,
+    "unit": 10,
+    "turnpolicy": "minority",
+    "turdsize": 24,
+    "alphamax": 1.1,
+    "opttolerance": 0.5,
+    "blacklevel": 0.82,
+    "cu2qu_max_error": 2.0,
+    "quantized_on_off_duplicate_policy": "retain-on-curve-reject-same-type",
+    "acute_micro_thorn_policy": "bounded-implied-midpoint-or-coincident-flank-collapse",
+    "micro_thorn_max_edge": 16.0,
+    "micro_thorn_max_angle": 12.0,
+    "micro_thorn_max_implied_displacement": 8.0,
+    "outline_format": "TrueType quadratic glyf",
+    "position_audit_bbox": "exact quadratic geometric bounds",
+    "format_clip_bbox": "TrueType integer control-point bounds",
+    "contour_direction": "clockwise outer, counter-clockwise counter"
+  },
+  "font": {
+    "units_per_em": 1024,
+    "advance": 1024,
+    "ttf": "font/ClearHandTC-ImagegenCommon0026-Unreviewed.ttf",
+    "otf": "font/ClearHandTC-ImagegenCommon0026-Unreviewed.otf",
+    "ttf_sha256": "0e668036d1c4dd07db3b9385d7c8d60a0d8dac7f1dfb5735d3b9194fc92d11cd",
+    "otf_sha256": "0e668036d1c4dd07db3b9385d7c8d60a0d8dac7f1dfb5735d3b9194fc92d11cd",
+    "cmap_count": 16
+  },
+  "proofs": {
+    "black_on_white": "proof/small-sizes-black-on-white.png",
+    "white_on_black": "proof/small-sizes-white-on-black.png",
+    "segmented_source": "proof/segmented-source-contact.png"
+  },
+  "small_size_coverage_pixels": {
+    "U+6599": {
+      "12": 32,
+      "16": 55,
+      "20": 79,
+      "32": 159,
+      "56": 367
+    },
+    "U+4FDD": {
+      "12": 34,
+      "16": 57,
+      "20": 80,
+      "32": 154,
+      "56": 348
+    },
+    "U+60F3": {
+      "12": 37,
+      "16": 58,
+      "20": 84,
+      "32": 162,
+      "56": 390
+    },
+    "U+7AE0": {
+      "12": 34,
+      "16": 50,
+      "20": 73,
+      "32": 145,
+      "56": 362
+    },
+    "U+9084": {
+      "12": 46,
+      "16": 65,
+      "20": 92,
+      "32": 206,
+      "56": 486
+    },
+    "U+6B0A": {
+      "12": 44,
+      "16": 70,
+      "20": 105,
+      "32": 211,
+      "56": 521
+    },
+    "U+88DD": {
+      "12": 38,
+      "16": 64,
+      "20": 83,
+      "32": 181,
+      "56": 423
+    },
+    "U+793A": {
+      "12": 30,
+      "16": 44,
+      "20": 53,
+      "32": 102,
+      "56": 223
+    },
+    "U+4E82": {
+      "12": 39,
+      "16": 58,
+      "20": 78,
+      "32": 167,
+      "56": 394
+    },
+    "U+8DB3": {
+      "12": 28,
+      "16": 42,
+      "20": 63,
+      "32": 115,
+      "56": 269
+    },
+    "U+671B": {
+      "12": 38,
+      "16": 57,
+      "20": 82,
+      "32": 158,
+      "56": 371
+    },
+    "U+4EE4": {
+      "12": 29,
+      "16": 43,
+      "20": 59,
+      "32": 110,
+      "56": 253
+    },
+    "U+4E9B": {
+      "12": 32,
+      "16": 46,
+      "20": 68,
+      "32": 129,
+      "56": 301
+    },
+    "U+8209": {
+      "12": 44,
+      "16": 65,
+      "20": 93,
+      "32": 192,
+      "56": 466
+    },
+    "U+6232": {
+      "12": 44,
+      "16": 69,
+      "20": 95,
+      "32": 198,
+      "56": 493
+    },
+    "U+611F": {
+      "12": 38,
+      "16": 65,
+      "20": 89,
+      "32": 179,
+      "56": 412
+    }
+  },
+  "glyphs": [
+    {
+      "character": "料",
+      "codepoint": "U+6599",
+      "glyph_name": "uni6599",
+      "row": 0,
+      "column": 0,
+      "source_box": [
+        29,
+        25,
+        327,
+        325
+      ],
+      "source_ink_bbox_normalized": [
+        0.189453,
+        0.173828,
+        0.8125,
+        0.791016
+      ],
+      "font_ink_bbox_normalized": [
+        0.18701,
+        0.173407,
+        0.814268,
+        0.793359
+      ],
+      "maximum_position_delta": 0.002443,
+      "source_core_component_count": 5,
+      "source_core_pixel_count": 5694,
+      "contour_count": 5,
+      "point_count": 192,
+      "outer_contour_count": 5,
+      "counter_count": 0,
+      "minimum_control_edge": 1.0,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u6599-source.png",
+      "svg": "svg/u6599.svg",
+      "proof_png": "png/u6599-proof.png",
+      "source_png_sha256": "92a66109aade9a4b2b00d675b0f39cd57a16ed022d5f828bc8932366059fd7ec",
+      "svg_sha256": "28186fb2a258c180fcb045bad004ac81eeac58fadb7c5519348308866daa9a6c",
+      "proof_png_sha256": "0073a5596553b8b5b899eb6725807fe0034231edef0e4e498a09a545fbca3517"
+    },
+    {
+      "character": "保",
+      "codepoint": "U+4FDD",
+      "glyph_name": "uni4FDD",
+      "row": 0,
+      "column": 1,
+      "source_box": [
+        327,
+        25,
+        625,
+        325
+      ],
+      "source_ink_bbox_normalized": [
+        0.199219,
+        0.212891,
+        0.802734,
+        0.744141
+      ],
+      "font_ink_bbox_normalized": [
+        0.196875,
+        0.209696,
+        0.80613,
+        0.746875
+      ],
+      "maximum_position_delta": 0.003395,
+      "source_core_component_count": 4,
+      "source_core_pixel_count": 5449,
+      "contour_count": 5,
+      "point_count": 179,
+      "outer_contour_count": 4,
+      "counter_count": 1,
+      "minimum_control_edge": 1.414214,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u4fdd-source.png",
+      "svg": "svg/u4fdd.svg",
+      "proof_png": "png/u4fdd-proof.png",
+      "source_png_sha256": "80f3e362384caa5dd4aee6d34fc83e18c97b2e00db3af80db77c434c374eca71",
+      "svg_sha256": "69785dadc338de1591dda1b7d3ef44e874e444e4ed49d6c258b21d5b74a65a9a",
+      "proof_png_sha256": "91f3bf2909446927fd661341563fccb0b083ed044db081ca42ee98a2e5e0c0b5"
+    },
+    {
+      "character": "想",
+      "codepoint": "U+60F3",
+      "glyph_name": "uni60F3",
+      "row": 0,
+      "column": 2,
+      "source_box": [
+        625,
+        25,
+        923,
+        325
+      ],
+      "source_ink_bbox_normalized": [
+        0.242188,
+        0.212891,
+        0.779297,
+        0.792969
+      ],
+      "font_ink_bbox_normalized": [
+        0.239977,
+        0.211285,
+        0.782292,
+        0.796105
+      ],
+      "maximum_position_delta": 0.003136,
+      "source_core_component_count": 6,
+      "source_core_pixel_count": 5962,
+      "contour_count": 7,
+      "point_count": 229,
+      "outer_contour_count": 6,
+      "counter_count": 1,
+      "minimum_control_edge": 1.0,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u60f3-source.png",
+      "svg": "svg/u60f3.svg",
+      "proof_png": "png/u60f3-proof.png",
+      "source_png_sha256": "7967a4343327503506ad5fa73f7f259e37f6ee16530fdf87a02638360f6c4d69",
+      "svg_sha256": "c5848a5b98dae2131df72afe36be2db4ce0a0313c7dbef64b8ba8654895d74d7",
+      "proof_png_sha256": "2eaac0c4e68c8571d5b58cac6f6c305b405bf8f1909cb348c883b79ec25c806c"
+    },
+    {
+      "character": "章",
+      "codepoint": "U+7AE0",
+      "glyph_name": "uni7AE0",
+      "row": 0,
+      "column": 3,
+      "source_box": [
+        923,
+        25,
+        1221,
+        325
+      ],
+      "source_ink_bbox_normalized": [
+        0.185547,
+        0.146484,
+        0.761719,
+        0.84375
+      ],
+      "font_ink_bbox_normalized": [
+        0.183902,
+        0.144792,
+        0.76411,
+        0.845335
+      ],
+      "maximum_position_delta": 0.002391,
+      "source_core_component_count": 5,
+      "source_core_pixel_count": 5629,
+      "contour_count": 4,
+      "point_count": 196,
+      "outer_contour_count": 4,
+      "counter_count": 0,
+      "minimum_control_edge": 1.414214,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u7ae0-source.png",
+      "svg": "svg/u7ae0.svg",
+      "proof_png": "png/u7ae0-proof.png",
+      "source_png_sha256": "bfefa02c03939382d5e441d6853d077ac4148baf1a23050a557f5ae9020b6a08",
+      "svg_sha256": "3ea988a9589882d8a213250a2c023d5d3b984302044df2499e5778fb1e29f287",
+      "proof_png_sha256": "a0425c453943c32d7c3edfa683de1a7972f6c42394d2af6b5747459577970427"
+    },
+    {
+      "character": "還",
+      "codepoint": "U+9084",
+      "glyph_name": "uni9084",
+      "row": 1,
+      "column": 0,
+      "source_box": [
+        29,
+        325,
+        327,
+        622
+      ],
+      "source_ink_bbox_normalized": [
+        0.185547,
+        0.201172,
+        0.826172,
+        0.822266
+      ],
+      "font_ink_bbox_normalized": [
+        0.18433,
+        0.199444,
+        0.826042,
+        0.82455
+      ],
+      "maximum_position_delta": 0.002284,
+      "source_core_component_count": 6,
+      "source_core_pixel_count": 7463,
+      "contour_count": 8,
+      "point_count": 273,
+      "outer_contour_count": 5,
+      "counter_count": 3,
+      "minimum_control_edge": 1.0,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u9084-source.png",
+      "svg": "svg/u9084.svg",
+      "proof_png": "png/u9084-proof.png",
+      "source_png_sha256": "d1a2edfd3fe2c6270f38176abfb753e6370ba2db20234aaa081a4cfe27e6edc4",
+      "svg_sha256": "896f613614d6daaafbc27f65e843d06fa781767047c30462e5032fa6f1365bec",
+      "proof_png_sha256": "7fd7bfe5baeec9001083057ffd0561a6c191667b87f19770ea011d01a6abe972"
+    },
+    {
+      "character": "權",
+      "codepoint": "U+6B0A",
+      "glyph_name": "uni6B0A",
+      "row": 1,
+      "column": 1,
+      "source_box": [
+        327,
+        325,
+        625,
+        622
+      ],
+      "source_ink_bbox_normalized": [
+        0.171875,
+        0.167969,
+        0.826172,
+        0.816406
+      ],
+      "font_ink_bbox_normalized": [
+        0.169097,
+        0.166578,
+        0.827462,
+        0.818815
+      ],
+      "maximum_position_delta": 0.002778,
+      "source_core_component_count": 7,
+      "source_core_pixel_count": 8045,
+      "contour_count": 9,
+      "point_count": 356,
+      "outer_contour_count": 7,
+      "counter_count": 2,
+      "minimum_control_edge": 1.0,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u6b0a-source.png",
+      "svg": "svg/u6b0a.svg",
+      "proof_png": "png/u6b0a-proof.png",
+      "source_png_sha256": "c374b44830a3ca3c56f7e6f9e75a95115822321a3b68b19b81b89f0dd14d0534",
+      "svg_sha256": "be729f7ed4c4ea126252296ec36d758d77f1d1a343b2fe1ae9f240bb3a200418",
+      "proof_png_sha256": "8cf0ba189140a8e3a1d48ec179fe9e34b4e1bba7b1511b005abcc32880806e96"
+    },
+    {
+      "character": "裝",
+      "codepoint": "U+88DD",
+      "glyph_name": "uni88DD",
+      "row": 1,
+      "column": 2,
+      "source_box": [
+        625,
+        325,
+        923,
+        622
+      ],
+      "source_ink_bbox_normalized": [
+        0.244141,
+        0.171875,
+        0.818359,
+        0.824219
+      ],
+      "font_ink_bbox_normalized": [
+        0.242708,
+        0.169833,
+        0.819083,
+        0.826167
+      ],
+      "maximum_position_delta": 0.002042,
+      "source_core_component_count": 4,
+      "source_core_pixel_count": 6473,
+      "contour_count": 4,
+      "point_count": 256,
+      "outer_contour_count": 4,
+      "counter_count": 0,
+      "minimum_control_edge": 1.0,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u88dd-source.png",
+      "svg": "svg/u88dd.svg",
+      "proof_png": "png/u88dd-proof.png",
+      "source_png_sha256": "c804d59bb65943aaff3a0c6ea77c81bfb75e1a0bf38fe0bd789066e63a866ccf",
+      "svg_sha256": "e4565d523ddb88475f104c7f1fa4e36a7e7a51836174cdc3e3561eae844bc3b0",
+      "proof_png_sha256": "fbdacb51fb27bcbb1f65001b154f3da0d4540c93d3f83381368667e2007fcb37"
+    },
+    {
+      "character": "示",
+      "codepoint": "U+793A",
+      "glyph_name": "uni793A",
+      "row": 1,
+      "column": 3,
+      "source_box": [
+        923,
+        325,
+        1221,
+        622
+      ],
+      "source_ink_bbox_normalized": [
+        0.199219,
+        0.234375,
+        0.746094,
+        0.730469
+      ],
+      "font_ink_bbox_normalized": [
+        0.197,
+        0.232292,
+        0.748264,
+        0.732428
+      ],
+      "maximum_position_delta": 0.002219,
+      "source_core_component_count": 4,
+      "source_core_pixel_count": 3525,
+      "contour_count": 4,
+      "point_count": 111,
+      "outer_contour_count": 4,
+      "counter_count": 0,
+      "minimum_control_edge": 2.236068,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 1,
+      "maximum_quantization_collapse": 0.6375,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u793a-source.png",
+      "svg": "svg/u793a.svg",
+      "proof_png": "png/u793a-proof.png",
+      "source_png_sha256": "2e1ba9214d6ccce77eab00bb9d175bd777bfe943e370f514af977f6cc66a8417",
+      "svg_sha256": "5e0afe83204f24dbaf3b9b4c462bf66f318e3a706b7881c85570443bd16a2a8b",
+      "proof_png_sha256": "c1137bbfe5721a332c2d90af27ea72f7a50968b76339301e9f054e761adea2b7"
+    },
+    {
+      "character": "亂",
+      "codepoint": "U+4E82",
+      "glyph_name": "uni4E82",
+      "row": 2,
+      "column": 0,
+      "source_box": [
+        29,
+        622,
+        327,
+        918
+      ],
+      "source_ink_bbox_normalized": [
+        0.21875,
+        0.207031,
+        0.810547,
+        0.794922
+      ],
+      "font_ink_bbox_normalized": [
+        0.217361,
+        0.204883,
+        0.813426,
+        0.797807
+      ],
+      "maximum_position_delta": 0.002885,
+      "source_core_component_count": 7,
+      "source_core_pixel_count": 6063,
+      "contour_count": 7,
+      "point_count": 250,
+      "outer_contour_count": 6,
+      "counter_count": 1,
+      "minimum_control_edge": 2.0,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u4e82-source.png",
+      "svg": "svg/u4e82.svg",
+      "proof_png": "png/u4e82-proof.png",
+      "source_png_sha256": "4d1d0a090cad53b360753729c5f33ef0f4041bdffe69fd0c53c358a351dea3d2",
+      "svg_sha256": "1eaeae54395b873dd9d2891ff5b7cee843732150adcfbc49353ea4949f306da0",
+      "proof_png_sha256": "84fee7097c7641e8ddc8d25fec23d042d74ea51a0c764a753a43367894dc3445"
+    },
+    {
+      "character": "足",
+      "codepoint": "U+8DB3",
+      "glyph_name": "uni8DB3",
+      "row": 2,
+      "column": 1,
+      "source_box": [
+        327,
+        622,
+        625,
+        918
+      ],
+      "source_ink_bbox_normalized": [
+        0.21875,
+        0.230469,
+        0.816406,
+        0.757812
+      ],
+      "font_ink_bbox_normalized": [
+        0.215753,
+        0.226708,
+        0.81803,
+        0.758922
+      ],
+      "maximum_position_delta": 0.00376,
+      "source_core_component_count": 1,
+      "source_core_pixel_count": 4209,
+      "contour_count": 2,
+      "point_count": 130,
+      "outer_contour_count": 1,
+      "counter_count": 1,
+      "minimum_control_edge": 1.414214,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u8db3-source.png",
+      "svg": "svg/u8db3.svg",
+      "proof_png": "png/u8db3-proof.png",
+      "source_png_sha256": "07e19be026c47821eef96d5b4b30035bcb84325b3b4e511eec86f26f333da444",
+      "svg_sha256": "b6d28274628ae4b4d3d3e6cb61c59bfedf464eddda31cf0993ea78a84212a022",
+      "proof_png_sha256": "db4d2eec720ade2a6af2c260472f04ca889cbffe0f62ece7463e6a9d75bb0f8a"
+    },
+    {
+      "character": "望",
+      "codepoint": "U+671B",
+      "glyph_name": "uni671B",
+      "row": 2,
+      "column": 2,
+      "source_box": [
+        625,
+        622,
+        923,
+        918
+      ],
+      "source_ink_bbox_normalized": [
+        0.205078,
+        0.201172,
+        0.769531,
+        0.800781
+      ],
+      "font_ink_bbox_normalized": [
+        0.203289,
+        0.199458,
+        0.773187,
+        0.803005
+      ],
+      "maximum_position_delta": 0.003655,
+      "source_core_component_count": 6,
+      "source_core_pixel_count": 5640,
+      "contour_count": 5,
+      "point_count": 217,
+      "outer_contour_count": 5,
+      "counter_count": 0,
+      "minimum_control_edge": 2.0,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u671b-source.png",
+      "svg": "svg/u671b.svg",
+      "proof_png": "png/u671b-proof.png",
+      "source_png_sha256": "53e1df62c856b1985f45aa2cd0c9d84814a172663ddbd905d94272b13937c86c",
+      "svg_sha256": "b52f0ea556d0abe56c308c1711862a17f79ed09bf940e12c960666818abdf7d0",
+      "proof_png_sha256": "9482dfcb9a1e8fc0e07446d60829f59876a236245d76401c5db33b226a9fdf29"
+    },
+    {
+      "character": "令",
+      "codepoint": "U+4EE4",
+      "glyph_name": "uni4EE4",
+      "row": 2,
+      "column": 3,
+      "source_box": [
+        923,
+        622,
+        1221,
+        918
+      ],
+      "source_ink_bbox_normalized": [
+        0.189453,
+        0.199219,
+        0.832031,
+        0.791016
+      ],
+      "font_ink_bbox_normalized": [
+        0.187988,
+        0.196848,
+        0.834375,
+        0.794271
+      ],
+      "maximum_position_delta": 0.003255,
+      "source_core_component_count": 3,
+      "source_core_pixel_count": 3650,
+      "contour_count": 3,
+      "point_count": 105,
+      "outer_contour_count": 3,
+      "counter_count": 0,
+      "minimum_control_edge": 1.414214,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u4ee4-source.png",
+      "svg": "svg/u4ee4.svg",
+      "proof_png": "png/u4ee4-proof.png",
+      "source_png_sha256": "ae207c9d1811d3ab19e9ec8e5d08fd4fe95ae3a0f2a3205a2888336f4dec27e6",
+      "svg_sha256": "0b6dc2b814449f8ab41e8bc69eac252aa410b37eb82e04b45a80a0e60d2808d0",
+      "proof_png_sha256": "ef2d575ea26b67beac63d3b1a958e2a6346f8b5eaae94f0b64c0edd0490b984c"
+    },
+    {
+      "character": "些",
+      "codepoint": "U+4E9B",
+      "glyph_name": "uni4E9B",
+      "row": 3,
+      "column": 0,
+      "source_box": [
+        29,
+        918,
+        327,
+        1217
+      ],
+      "source_ink_bbox_normalized": [
+        0.224609,
+        0.242188,
+        0.761719,
+        0.759766
+      ],
+      "font_ink_bbox_normalized": [
+        0.222708,
+        0.24058,
+        0.763281,
+        0.760764
+      ],
+      "maximum_position_delta": 0.001901,
+      "source_core_component_count": 4,
+      "source_core_pixel_count": 4706,
+      "contour_count": 4,
+      "point_count": 156,
+      "outer_contour_count": 4,
+      "counter_count": 0,
+      "minimum_control_edge": 1.414214,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u4e9b-source.png",
+      "svg": "svg/u4e9b.svg",
+      "proof_png": "png/u4e9b-proof.png",
+      "source_png_sha256": "0b694596e23b7f3d6d797f4400e2979d06f75354ae756e7e041dd3dd174c68b0",
+      "svg_sha256": "a29111319e027c0f8225efc85507237c7e8a0f564a55268e41eec6a87e956651",
+      "proof_png_sha256": "6844500cff4cc2bb4d3e2ebc4d2a55cb9252fbfed99328fd761823fb6c368cf0"
+    },
+    {
+      "character": "舉",
+      "codepoint": "U+8209",
+      "glyph_name": "uni8209",
+      "row": 3,
+      "column": 1,
+      "source_box": [
+        327,
+        918,
+        625,
+        1217
+      ],
+      "source_ink_bbox_normalized": [
+        0.216797,
+        0.152344,
+        0.828125,
+        0.845703
+      ],
+      "font_ink_bbox_normalized": [
+        0.21751,
+        0.1509,
+        0.828125,
+        0.847724
+      ],
+      "maximum_position_delta": 0.002021,
+      "source_core_component_count": 2,
+      "source_core_pixel_count": 7149,
+      "contour_count": 2,
+      "point_count": 292,
+      "outer_contour_count": 2,
+      "counter_count": 0,
+      "minimum_control_edge": 1.0,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 1,
+      "maximum_quantization_collapse": 1.06066,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u8209-source.png",
+      "svg": "svg/u8209.svg",
+      "proof_png": "png/u8209-proof.png",
+      "source_png_sha256": "41092a43a5316c31b29efd3ae756751587ea5779032678510ca6482d1811bfbb",
+      "svg_sha256": "56a860d03d91f51ea7b5f22845b7110d43b55d01f47ae6d41982682162cb4730",
+      "proof_png_sha256": "f073a9254e930caee8ac743633e53ea835ae161c9410080976a45a960a042464"
+    },
+    {
+      "character": "戲",
+      "codepoint": "U+6232",
+      "glyph_name": "uni6232",
+      "row": 3,
+      "column": 2,
+      "source_box": [
+        625,
+        918,
+        923,
+        1217
+      ],
+      "source_ink_bbox_normalized": [
+        0.179688,
+        0.193359,
+        0.806641,
+        0.804688
+      ],
+      "font_ink_bbox_normalized": [
+        0.180369,
+        0.191667,
+        0.808681,
+        0.805804
+      ],
+      "maximum_position_delta": 0.00204,
+      "source_core_component_count": 7,
+      "source_core_pixel_count": 7384,
+      "contour_count": 9,
+      "point_count": 324,
+      "outer_contour_count": 5,
+      "counter_count": 4,
+      "minimum_control_edge": 1.414214,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u6232-source.png",
+      "svg": "svg/u6232.svg",
+      "proof_png": "png/u6232-proof.png",
+      "source_png_sha256": "1e2d006aea318816bb36f8948b405fd3bebee865592865017eb5c02b46dd3464",
+      "svg_sha256": "7c3300ff8c0efa478a8e2ae79c08aaf05cf1b5212d6d8ef3d04659018b749dac",
+      "proof_png_sha256": "95a84ecab9b91604e61b6800cd935120e2da69fb63af22e25a58e6b0d257ce3b"
+    },
+    {
+      "character": "感",
+      "codepoint": "U+611F",
+      "glyph_name": "uni611F",
+      "row": 3,
+      "column": 3,
+      "source_box": [
+        923,
+        918,
+        1221,
+        1217
+      ],
+      "source_ink_bbox_normalized": [
+        0.220703,
+        0.226562,
+        0.771484,
+        0.820312
+      ],
+      "font_ink_bbox_normalized": [
+        0.220685,
+        0.224722,
+        0.773503,
+        0.82194
+      ],
+      "maximum_position_delta": 0.002018,
+      "source_core_component_count": 8,
+      "source_core_pixel_count": 6081,
+      "contour_count": 9,
+      "point_count": 236,
+      "outer_contour_count": 8,
+      "counter_count": 1,
+      "minimum_control_edge": 2.0,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "quantization_duplicate_points_removed": 0,
+      "maximum_quantization_collapse": 0.0,
+      "micro_thorn_points_removed": 0,
+      "maximum_micro_thorn_displacement": 0.0,
+      "coincident_flank_control_points_removed": 0,
+      "source_png": "png/u611f-source.png",
+      "svg": "svg/u611f.svg",
+      "proof_png": "png/u611f-proof.png",
+      "source_png_sha256": "758a229c0b817759f76feca38b52b66cd76b3b8b785b2fb5a47343ad880e9f08",
+      "svg_sha256": "13794e0f7ac39d8b4f7278f87feaf5baeb164e4fdc68fbb8ca6aa596979cd66e",
+      "proof_png_sha256": "a886b206f3b7cb44d060b5cf9cd1cfd2dba58df3e397102720ffd32a65860d16"
+    }
+  ],
+  "artifact_sha256": {
+    "font/ClearHandTC-ImagegenCommon0026-Unreviewed.otf": "0e668036d1c4dd07db3b9385d7c8d60a0d8dac7f1dfb5735d3b9194fc92d11cd",
+    "font/ClearHandTC-ImagegenCommon0026-Unreviewed.ttf": "0e668036d1c4dd07db3b9385d7c8d60a0d8dac7f1dfb5735d3b9194fc92d11cd",
+    "glyph-report/u4e82.json": "0d7b375a7c417fb8012cf61dcc9048d92e57d4f14c5d3188bebf0b4e6b506731",
+    "glyph-report/u4e9b.json": "e2abb47ff6a6303c1fbf1f9f9f9d3a2c76c5c9887b8f49822ea8d22523753080",
+    "glyph-report/u4ee4.json": "dc6f14b707afa89772d5f82e89139402d3ed2258a360c068e24273078a8c03cd",
+    "glyph-report/u4fdd.json": "244c6b513ebaf9239678fb5fad0b1f9a3a6e224009cf7d29a0cf6dfe61cd000a",
+    "glyph-report/u60f3.json": "76fe84d5ce9fdb583ffeb98ac3e22e80de795c3f0178037f4fb566633cc813a3",
+    "glyph-report/u611f.json": "7bfc59ce459223aa0e0b30f6e7aa4d4309c5863c31cc347a15137ada1e4feee9",
+    "glyph-report/u6232.json": "0c079f53e6e6793c279804d2327c05aea468e25e8aaddfe493041694355759d5",
+    "glyph-report/u6599.json": "4ae71503feb9d7a2ed0f13b886273408430989c0c82eebc2ceca57b202a5b31f",
+    "glyph-report/u671b.json": "50c8389763e54e45006fbb387b83caded8e434cc20a358e7a91cc6c3414f64f4",
+    "glyph-report/u6b0a.json": "5b73c2b24f078452fde6dd632ab9d5a596db8496170e6889dc8886ef26b06327",
+    "glyph-report/u793a.json": "a59d5aaa68e5747e8f016ae8e6f8844bb4c65fffa4165960006914bea56cae29",
+    "glyph-report/u7ae0.json": "62a130c17e130c3f3e2c074b7020f3c5d7b63f96d53c261296a7ae2757a3730d",
+    "glyph-report/u8209.json": "d0ed953ea0423c5dc920bc82fbe6c4ca2a523853fc8cecc709bb75cf3d3c44cd",
+    "glyph-report/u88dd.json": "7f5afe8ada78907c264a497e012ce5116fe0df06d5bb4cbc1544bc4d2573a76a",
+    "glyph-report/u8db3.json": "244df4d1db6471f8e65aad0944dd0fee041a8948cf18e32e841b3042b6759de0",
+    "glyph-report/u9084.json": "e48fe60f790f7e2a2f10b24adb1ae42b3f11bfdd13bd0bea7fcaf1c99cd72518",
+    "png/u4e82-proof.png": "84fee7097c7641e8ddc8d25fec23d042d74ea51a0c764a753a43367894dc3445",
+    "png/u4e82-source.png": "4d1d0a090cad53b360753729c5f33ef0f4041bdffe69fd0c53c358a351dea3d2",
+    "png/u4e9b-proof.png": "6844500cff4cc2bb4d3e2ebc4d2a55cb9252fbfed99328fd761823fb6c368cf0",
+    "png/u4e9b-source.png": "0b694596e23b7f3d6d797f4400e2979d06f75354ae756e7e041dd3dd174c68b0",
+    "png/u4ee4-proof.png": "ef2d575ea26b67beac63d3b1a958e2a6346f8b5eaae94f0b64c0edd0490b984c",
+    "png/u4ee4-source.png": "ae207c9d1811d3ab19e9ec8e5d08fd4fe95ae3a0f2a3205a2888336f4dec27e6",
+    "png/u4fdd-proof.png": "91f3bf2909446927fd661341563fccb0b083ed044db081ca42ee98a2e5e0c0b5",
+    "png/u4fdd-source.png": "80f3e362384caa5dd4aee6d34fc83e18c97b2e00db3af80db77c434c374eca71",
+    "png/u60f3-proof.png": "2eaac0c4e68c8571d5b58cac6f6c305b405bf8f1909cb348c883b79ec25c806c",
+    "png/u60f3-source.png": "7967a4343327503506ad5fa73f7f259e37f6ee16530fdf87a02638360f6c4d69",
+    "png/u611f-proof.png": "a886b206f3b7cb44d060b5cf9cd1cfd2dba58df3e397102720ffd32a65860d16",
+    "png/u611f-source.png": "758a229c0b817759f76feca38b52b66cd76b3b8b785b2fb5a47343ad880e9f08",
+    "png/u6232-proof.png": "95a84ecab9b91604e61b6800cd935120e2da69fb63af22e25a58e6b0d257ce3b",
+    "png/u6232-source.png": "1e2d006aea318816bb36f8948b405fd3bebee865592865017eb5c02b46dd3464",
+    "png/u6599-proof.png": "0073a5596553b8b5b899eb6725807fe0034231edef0e4e498a09a545fbca3517",
+    "png/u6599-source.png": "92a66109aade9a4b2b00d675b0f39cd57a16ed022d5f828bc8932366059fd7ec",
+    "png/u671b-proof.png": "9482dfcb9a1e8fc0e07446d60829f59876a236245d76401c5db33b226a9fdf29",
+    "png/u671b-source.png": "53e1df62c856b1985f45aa2cd0c9d84814a172663ddbd905d94272b13937c86c",
+    "png/u6b0a-proof.png": "8cf0ba189140a8e3a1d48ec179fe9e34b4e1bba7b1511b005abcc32880806e96",
+    "png/u6b0a-source.png": "c374b44830a3ca3c56f7e6f9e75a95115822321a3b68b19b81b89f0dd14d0534",
+    "png/u793a-proof.png": "c1137bbfe5721a332c2d90af27ea72f7a50968b76339301e9f054e761adea2b7",
+    "png/u793a-source.png": "2e1ba9214d6ccce77eab00bb9d175bd777bfe943e370f514af977f6cc66a8417",
+    "png/u7ae0-proof.png": "a0425c453943c32d7c3edfa683de1a7972f6c42394d2af6b5747459577970427",
+    "png/u7ae0-source.png": "bfefa02c03939382d5e441d6853d077ac4148baf1a23050a557f5ae9020b6a08",
+    "png/u8209-proof.png": "f073a9254e930caee8ac743633e53ea835ae161c9410080976a45a960a042464",
+    "png/u8209-source.png": "41092a43a5316c31b29efd3ae756751587ea5779032678510ca6482d1811bfbb",
+    "png/u88dd-proof.png": "fbdacb51fb27bcbb1f65001b154f3da0d4540c93d3f83381368667e2007fcb37",
+    "png/u88dd-source.png": "c804d59bb65943aaff3a0c6ea77c81bfb75e1a0bf38fe0bd789066e63a866ccf",
+    "png/u8db3-proof.png": "db4d2eec720ade2a6af2c260472f04ca889cbffe0f62ece7463e6a9d75bb0f8a",
+    "png/u8db3-source.png": "07e19be026c47821eef96d5b4b30035bcb84325b3b4e511eec86f26f333da444",
+    "png/u9084-proof.png": "7fd7bfe5baeec9001083057ffd0561a6c191667b87f19770ea011d01a6abe972",
+    "png/u9084-source.png": "d1a2edfd3fe2c6270f38176abfb753e6370ba2db20234aaa081a4cfe27e6edc4",
+    "proof/segmented-source-contact.png": "f2cb6fcc11ebed40eaff450df8eb6c6403508abc66539ac5ad5f658edd50d23c",
+    "proof/small-sizes-black-on-white.png": "34ebb7d5a25cae100645233d0a5c061294e7a59f3e58bb169a047d2a641f0928",
+    "proof/small-sizes-white-on-black.png": "009192fefd09352871011aa584e3f1c01bc672eccd6f9bf77b1702c486909b6f",
+    "svg/u4e82.svg": "1eaeae54395b873dd9d2891ff5b7cee843732150adcfbc49353ea4949f306da0",
+    "svg/u4e9b.svg": "a29111319e027c0f8225efc85507237c7e8a0f564a55268e41eec6a87e956651",
+    "svg/u4ee4.svg": "0b6dc2b814449f8ab41e8bc69eac252aa410b37eb82e04b45a80a0e60d2808d0",
+    "svg/u4fdd.svg": "69785dadc338de1591dda1b7d3ef44e874e444e4ed49d6c258b21d5b74a65a9a",
+    "svg/u60f3.svg": "c5848a5b98dae2131df72afe36be2db4ce0a0313c7dbef64b8ba8654895d74d7",
+    "svg/u611f.svg": "13794e0f7ac39d8b4f7278f87feaf5baeb164e4fdc68fbb8ca6aa596979cd66e",
+    "svg/u6232.svg": "7c3300ff8c0efa478a8e2ae79c08aaf05cf1b5212d6d8ef3d04659018b749dac",
+    "svg/u6599.svg": "28186fb2a258c180fcb045bad004ac81eeac58fadb7c5519348308866daa9a6c",
+    "svg/u671b.svg": "b52f0ea556d0abe56c308c1711862a17f79ed09bf940e12c960666818abdf7d0",
+    "svg/u6b0a.svg": "be729f7ed4c4ea126252296ec36d758d77f1d1a343b2fe1ae9f240bb3a200418",
+    "svg/u793a.svg": "5e0afe83204f24dbaf3b9b4c462bf66f318e3a706b7881c85570443bd16a2a8b",
+    "svg/u7ae0.svg": "3ea988a9589882d8a213250a2c023d5d3b984302044df2499e5778fb1e29f287",
+    "svg/u8209.svg": "56a860d03d91f51ea7b5f22845b7110d43b55d01f47ae6d41982682162cb4730",
+    "svg/u88dd.svg": "e4565d523ddb88475f104c7f1fa4e36a7e7a51836174cdc3e3561eae844bc3b0",
+    "svg/u8db3.svg": "b6d28274628ae4b4d3d3e6cb61c59bfedf464eddda31cf0993ea78a84212a022",
+    "svg/u9084.svg": "896f613614d6daaafbc27f65e843d06fa781767047c30462e5032fa6f1365bec"
+  }
+}

@@ -1,0 +1,31 @@
+Use case: logo-brand
+Asset type: original typeface source glyph sheet
+Primary request: create one new Mew Note TC sheet for han-6060/han-0253.
+Input images: Image 1 is the approved Mew Note TC v2 style pilot (style rhythm only); Image 2 is an identity-only copybook (code point identity only).
+Scene/backdrop: pure white square background with exactly five horizontal and five vertical thin neutral-gray rules forming a 4 by 4 grid, including all four outer border rules. No other background marks.
+Style/medium: original upright rounded gel-pen handwriting, black ink, low contrast, soft human terminals, consistent with Image 1 without copying any raster or outline.
+Composition/framing: one centered glyph per cell, row-major, generous padding, no contact with grid rules.
+Exact row-major rows (verbatim):
+砭硃硝碘
+碉硼磋磅
+磊碾磐磬
+磷磺磴磯
+Exact cells (verbatim):
+Cell 01: U+782D 砭 — soft-terminal
+Cell 02: U+7843 硃 — tail-terminal
+Cell 03: U+785D 硝 — soft-terminal
+Cell 04: U+7898 碘 — soft-terminal
+Cell 05: U+7889 碉 — soft-terminal
+Cell 06: U+787C 硼 — tail-terminal
+Cell 07: U+78CB 磋 — soft-terminal
+Cell 08: U+78C5 磅 — soft-terminal
+Cell 09: U+78CA 磊 — soft-terminal
+Cell 10: U+78BE 碾 — tail-terminal
+Cell 11: U+78D0 磐 — soft-terminal
+Cell 12: U+78EC 磬 — soft-terminal
+Cell 13: U+78F7 磷 — soft-terminal
+Cell 14: U+78FA 磺 — tail-terminal
+Cell 15: U+78F4 磴 — soft-terminal
+Cell 16: U+78EF 磯 — soft-terminal
+Tail-terminal cells only: 2, 6, 10, 14. In each listed cell, use at most one restrained curl continuing an existing final stroke in the same connected contour. All other cells must have no cat tail.
+Constraints: preserve every Traditional Chinese character exactly; do not simplify, substitute, translate, normalize, label, number, caption, shade, or decorate. No detached ears, hats, faces, whiskers, paws, silhouettes, floating marks, spikes, sharp thorns, self-intersections, shadows, paper texture, signatures, or watermarks. The identity copybook must never be traced, transformed, pasted, or reused as an outline. Render only the 16 requested glyphs and the neutral-gray grid.

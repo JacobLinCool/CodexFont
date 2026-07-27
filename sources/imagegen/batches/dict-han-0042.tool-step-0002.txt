@@ -1,0 +1,17 @@
+Use case: precise-object-edit
+Asset type: corrected 4×4 raster master sheet for clear-hand-tc
+
+Input images:
+1. Image 1 is the previous generated sheet. Preserve it exactly except for Cells 05, 07, 08, 11, and 14.
+2. Image 2 is the identity copybook. Use only the corresponding cells to verify topology; do not trace its printed outlines.
+
+Primary request: replace only these five cells with newly handwritten glyphs:
+- Cell 05 (row 2, column 1): U+95BC `閼`, exactly `門` surrounding `於`. The interior is `方` beside `仒`, not `各`, `合`, or `音`.
+- Cell 07 (row 2, column 3): U+98A9 `颩`, exactly `風` on the left plus three separate slanting strokes `彡` on the right. Do not write `見`, `具`, or `台`; do not produce `颱`.
+- Cell 08 (row 2, column 4): U+98EB `飫`, exactly `食` on the left plus `夭` on the right. Do not write `欠`; do not produce `飲`.
+- Cell 11 (row 3, column 3): U+9DDF `鷟`, exactly `族` above `鳥` in a compact vertical composition. The top is `族` (`方` plus `𠂉矢`), not `就`, `京`, or `敦`; the bottom is the complete Traditional `鳥`.
+- Cell 14 (row 4, column 2): U+5613 `嘓`, exactly `口` on the left plus `國` on the right. The right component must visibly retain the outer `囗` enclosure around `或`; do not write bare `或`.
+
+Constraints: keep all other eleven cells unchanged in content, position, style, and grid; preserve the white background and faint grid; match the existing fine black gel-pen weight and rounded handwritten terminals; center each replacement with clear counters and no grid contact; draw new original glyphs without tracing.
+
+Avoid: changing any other cell, simplified forms, missing strokes, extra marks, printed type, spikes, thorns, clipping, signature, logo, or watermark.

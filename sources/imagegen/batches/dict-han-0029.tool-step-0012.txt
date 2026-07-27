@@ -1,0 +1,21 @@
+Deterministic accepted-cell assembly for dict-han-0029.
+
+Inputs:
+- Parent 4×4 sheet: imagegen output exec-3234733b-81de-4755-817b-3c81ccef781e.
+- Cell 15 original glyph: imagegen output exec-a031bee3-d4cd-44a5-a1c4-e24ff1400238.
+
+Transform the cell glyph with ImageMagick only:
+1. Trim the pure-white margin with 8% fuzz.
+2. Reset the virtual canvas.
+3. Resize proportionally into a 250×190 pixel box.
+
+Assemble onto the parent sheet:
+1. Clear only rectangle x=630..919, y=928..1218 to pure white, keeping every grid rule and all other cells unchanged.
+2. Composite the transformed glyph at x=649, y=978.
+3. Preserve the parent canvas size and PNG color mode.
+
+Expected manifest remains exactly:
+嬖廕怛扃
+挹揎搠暝
+槅炷猊猢
+猻甑緲縵

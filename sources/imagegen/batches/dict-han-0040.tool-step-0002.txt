@@ -1,0 +1,18 @@
+Use case: precise-object-edit
+Asset type: three-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cells 02, 09, and 11. Preserve all other 13 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 02 must be U+8604 蘄. Preserve 艹 across the top and 斤 on the right. Replace the current 車-like lower-left component with a complete 單: two separate 口 boxes side by side at the top, a four-chamber 田-like block below them, then its central vertical and low horizontal. Do not write 蔪, 蘅, or another grass character.
+
+Cell 09 must be U+99F8 駸. Preserve 馬 on the left. The current 夋 on the right makes 駿 and is wrong. Replace it with the complete right-hand 𠬶 construction shown in the ninth copybook cell: a horizontal 彐-like form at top, a separate 冖-like cover in the middle, and a clear 又 at bottom. Do not retain 厶, 八, or 夂 from 夋.
+
+Cell 11 must be U+56B2 嚲. The current glyph is 嘩-like and is wrong. Rebuild the complete left-right construction shown in the eleventh copybook cell: 享 on the left, with 亠 above 口 above 子; and a complete 單 on the right, with two 口 boxes above its 田-like body, central vertical, and low horizontal. Do not write 嘩, 譁, 啍, or another mouth character.
+
+Required full row-major result:
+耄蘄訾諤
+轢醪鉉雎
+駸嗒嚲囷
+圻寔峒无
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

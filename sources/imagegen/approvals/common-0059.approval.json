@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0059",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 929,
+    "end_rank": 944,
+    "characters": "煙超退珠雞究頂孤效塵益述響補歡班"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0059.source.json",
+    "descriptor_sha256": "1a093fbf2167914555347c6bb84857b2ff38a9774c98e6f2aabd496b2222b02b",
+    "raster": "sources/imagegen/raster/common-0059.png",
+    "raster_sha256": "d4f4dc0a90117757e376e9d61f270fe78ee2e48f0809d81624fcdf4b64c88f3b"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0059-0062-audit.json",
+    "report_sha256": "9126dd11264faeed05981d63e7a0d4a8a375042195785ab6d2519f409b916eff"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0059/report.json",
+    "report_sha256": "e1875e28d7d7a702986a93715687a2fbd4c8681bec0f87c90df40af84fba5b2d",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0059.vector-review.json",
+    "record_sha256": "de4d4ced71031bd56a705171ae3003378736776c00bce632602eef43ce88d454"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:39:53Z"
+  }
+}

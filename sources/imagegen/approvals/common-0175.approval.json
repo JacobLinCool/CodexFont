@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0175",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2785,
+    "end_rank": 2800,
+    "characters": "弧淑犧瘋禱脅裸贓邵砌蚊蟠誨赦酵冕"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0175.source.json",
+    "descriptor_sha256": "445babe141324032b6e619993128310779fd58fa42c99821568126ce93ab6df8",
+    "raster": "sources/imagegen/raster/common-0175.png",
+    "raster_sha256": "77e731fb1b9e459cd72052101d2eac9fd304a44f3820907e4b48429bacf2be80"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0175-0178-audit.json",
+    "report_sha256": "3ea164cce288760431d85b56ab234f57d9b42792d50e5bc1a2522313784dd714"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0175/report.json",
+    "report_sha256": "d18bbbe159bc9f08d754951548aaf3eacd674e6ba1ff74ff3bf5c5d87b28b0f5",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0175.vector-review.json",
+    "record_sha256": "c1c00a9d3a40c507890db9fac91f96ac1de91312c82c40856d5488218f968530"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T07:12:16Z"
+  }
+}

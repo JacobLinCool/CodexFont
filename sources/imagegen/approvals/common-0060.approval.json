@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0060",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 945,
+    "end_rank": 960,
+    "characters": "桃壞孝恨秀禍吉浮喪誰策篇貧巧徒移"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0060.source.json",
+    "descriptor_sha256": "6b20156c786e3cfad13521a4e003d0985ddaba7cf598655aead46f44b3b8630a",
+    "raster": "sources/imagegen/raster/common-0060.png",
+    "raster_sha256": "615d7930c4b54a247b1943e801efd66e7e3dc24501687860ee5012f68577d2bc"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0059-0062-audit.json",
+    "report_sha256": "9126dd11264faeed05981d63e7a0d4a8a375042195785ab6d2519f409b916eff"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0060/report.json",
+    "report_sha256": "8c3d2aacb3210628c8814ec34e2c3df18b347f94cff6e5931fbe6cf603bebeeb",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0060.vector-review.json",
+    "record_sha256": "33346705197a7d0d4d689f2e181e5be7298ad31e6ed73562e2e65bce883d0a94"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:39:53Z"
+  }
+}

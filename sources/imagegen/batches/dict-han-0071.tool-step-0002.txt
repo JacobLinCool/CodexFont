@@ -1,0 +1,19 @@
+Use case: precise-object-edit
+Asset type: corrected 4×4 raster master sheet for clear-hand-tc
+
+Input images:
+1. Image 1 is the previous handwritten sheet. Preserve it except for the named cells.
+2. Image 2 is the identity copybook. Use the named cells only to verify topology; do not trace its printed outlines.
+
+Replace only these cells with newly handwritten glyphs:
+- Cell 01 U+6422 `搢`: `扌` on the left plus `晉` on the right, including the complete upper structure and `日` below.
+- Cell 02 U+6532 `攲`: `奇` on the left plus `支` on the right. Do not write a walk radical.
+- Cell 03 U+66E8 `曨`: `日` on the left plus the complete Traditional `龍` on the right.
+- Cell 06 U+695D `楝`: `木` plus `柬`, whose framed center contains the two diagonal strokes. Do not write `東`.
+- Cell 08 U+6CD0 `泐`: `氵` plus `阝` plus `力`; retain all three components.
+- Cell 09 U+6D65 `浥`: `氵` plus `邑`, with `口` above `巴`.
+- Cell 14 U+6FE9 `濩`: `氵` plus `蒦`, with `艹` above `隹` above `又`.
+- Cell 15 U+72B4 `犴`: `犭` plus `干`, with exactly two horizontal strokes in `干`. Do not write `狂`.
+- Cell 16 U+72C9 `狉`: `犭` plus `丕`, with `不` above a final horizontal `一`.
+
+Keep all other seven cells unchanged. Match the same fine black gel-pen hand, rounded joins, white background, and faint grid. Avoid missing strokes, substituted components, spikes, thorns, clipping, extra marks, signatures, logos, or watermarks.

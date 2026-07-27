@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0079",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1249,
+    "end_rank": 1264,
+    "characters": "幹曆裁乎占睹捕鹽村釋淚輩靠魂患喬"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0079.source.json",
+    "descriptor_sha256": "4b62143d4f0a4967cb7b7b5cdcc6c34bbfc021c2ca507f9a0220c279013434c5",
+    "raster": "sources/imagegen/raster/common-0079.png",
+    "raster_sha256": "f6ebc0ad1328982bae95330c1eb903f3ac6203d7f166bbb1c5806b65836803cb"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0079-0082-audit.json",
+    "report_sha256": "737d09947f511280848921c4f031ebb6ce064d610a1e1d17e4d7ccb66c6eb95d"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0079/report.json",
+    "report_sha256": "ec76d0109fddf3586be977f30a8959f6796ed0e82eeb5607d20d0188e6e9837e",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0079.vector-review.json",
+    "record_sha256": "e0154789eb937a2c580abe2207224b1d2566b6099bd1bc126819ba798f1073ba"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:42:35Z"
+  }
+}

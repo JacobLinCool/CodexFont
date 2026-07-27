@@ -1,0 +1,14 @@
+Use case: precise-object-edit
+Asset type: single-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cell 02. Preserve all other 15 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 02 must be U+6225 戥. The current left component resembles 習/羽 and is wrong. Replace it with a complete 星 on the left: 日 above 生, with the closed 日 and every stroke of 生 legible. Preserve a complete 戈 on the right, including its slanting hook and dot. Use the second copybook cell for topology only. Do not write 戳, 戮, 戢, or another 戈 character.
+
+Required full row-major result:
+懋戥擷旃
+柘楙毘沔
+溲溴珞瑗
+碇笥箜篌
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

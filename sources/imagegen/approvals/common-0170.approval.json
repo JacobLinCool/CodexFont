@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0170",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2705,
+    "end_rank": 2720,
+    "characters": "熬霄梗犀瑤蕊蘿唾拓揀晁暈樁熔邏卸"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0170.source.json",
+    "descriptor_sha256": "e8060353883673af5e45a97c46298c67de70b8b26bdbab84d384800f0bd63b26",
+    "raster": "sources/imagegen/raster/common-0170.png",
+    "raster_sha256": "f4d1ce76430d2a9660b8edca2602f43ed31c76b63c2625144647bb5cc3ab7039"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0167-0170-audit.json",
+    "report_sha256": "e57cd0658739389bb9e5e240c71b7c022fc260cb4cdb3a0150ddc572dec03efd"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0170/report.json",
+    "report_sha256": "c733ca65cfe4152f097b9c91ab2ed85ebd007ce08c080ba8623729de746989f5",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0170.vector-review.json",
+    "record_sha256": "fe8399001e2b8ea1e44a11aee2363fa3de7c05b372c970ae50207df6fa23ed5e"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:57:54Z"
+  }
+}

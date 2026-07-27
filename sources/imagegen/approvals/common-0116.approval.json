@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0116",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1841,
+    "end_rank": 1856,
+    "characters": "郵棉潘儲忌惱滴盈佩嶺雀剪租臂煤訟"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0116.source.json",
+    "descriptor_sha256": "0784966f9a3065edc5df8cb34f68eadeb9d246ed72b9c061a1cd01a122a0e372",
+    "raster": "sources/imagegen/raster/common-0116.png",
+    "raster_sha256": "c9178890bad88b6afb02777b4974f328e091038ed681d0a3fc5d7ef1e0994dcc"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0115-0118-audit.json",
+    "report_sha256": "ee0c75f47f3d0e613642c59a2bc163ae8dad5af4fe3416520eb3feff2f3ef01b"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0116/report.json",
+    "report_sha256": "9a707190291f579ee03653e93d9bced6cfb21ff3a7503c05fc4553d69fe96127",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0116.vector-review.json",
+    "record_sha256": "e95c998b5056e451b3180a85f4aeb921cc92d9ea7436c23abf393cf6d371e19e"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:48:26Z"
+  }
+}

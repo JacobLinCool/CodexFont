@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0023",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 353,
+    "end_rank": 368,
+    "characters": "少特武布眾畫植精活場被萬未邊問深"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0023.source.json",
+    "descriptor_sha256": "e8126ff8b57948a0e81fdfb98a11f892f94c17c3598071b836b78e0478276697",
+    "raster": "sources/imagegen/raster/common-0023.png",
+    "raster_sha256": "bb0f99a4bced7ff916a0fc7a2b93c04515843793ed815b0c7a6b4df256acfc9e"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0023-0026-audit.json",
+    "report_sha256": "e706bf5003c6605e787a2f88dc407de4b13c66b7bce24c4e38048179e0ca8ca3"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0023/report.json",
+    "report_sha256": "1b1a15f915bb6e34697c2da3851855522a9f49efa6ef14d75570572434e4cc9e",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0023.vector-review.json",
+    "record_sha256": "89be2e6387ae769608a5995957bfeae8718651ff4d3c2be41ee959f0251b0d65"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:35:54Z"
+  }
+}

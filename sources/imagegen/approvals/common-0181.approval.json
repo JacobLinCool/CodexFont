@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0181",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2881,
+    "end_rank": 2896,
+    "characters": "畝竄闢韌鵲囉撩濾璉吝膩鈞僚屁滌牟"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0181.source.json",
+    "descriptor_sha256": "4d9efd28386880a52ad777cd73af35d40b7a3b8df54ebf89f5629f25e7cd94db",
+    "raster": "sources/imagegen/raster/common-0181.png",
+    "raster_sha256": "dfedbb2669de1e6dfd5b9cd351a71015eeba4ff4beae4221ffc2476cc1f43ff2"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0179-0182-audit.json",
+    "report_sha256": "96123ee18a6487ead60d130ed402f48d4f4139ccfb17942716f88f73fdbf6dc0"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0181/report.json",
+    "report_sha256": "e30a9823965265a0a42bd7952bb11bd82350c16e601965743b3594273ecec835",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0181.vector-review.json",
+    "record_sha256": "ef7c05d7f494bf617480e7b7eae2ee73fa123f7ddda88e22270278b3f2ddd1ee"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T07:12:16Z"
+  }
+}

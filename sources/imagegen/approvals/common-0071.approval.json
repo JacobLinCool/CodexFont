@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0071",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1121,
+    "end_rank": 1136,
+    "characters": "碑宣幼講珍賞仲款廟洞羊迷獻丹獲探"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0071.source.json",
+    "descriptor_sha256": "5d180c9850afa93243b97de5d16768a994bf4efa93f173e5d2d2aa434b18670a",
+    "raster": "sources/imagegen/raster/common-0071.png",
+    "raster_sha256": "c31737e9ae86e516dc7ca0ab73aa8c2a780837cafbce2740901459a28a1e6a0b"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0071-0074-audit.json",
+    "report_sha256": "0b9b2e1924114569f0b2f964ca1ab532deb29a3a578f2a414985cf9d54e6aff9"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0071/report.json",
+    "report_sha256": "e7eae32797af58f7dad4bc6485cad01a4b42868832cccd7ae5f365abb2a253ef",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0071.vector-review.json",
+    "record_sha256": "7690132fcc382e84db71c72ab0ef218f4e033b7924f9006c66176e8ddffcf686"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:41:27Z"
+  }
+}

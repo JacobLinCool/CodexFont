@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0028",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 433,
+    "end_rank": 448,
+    "characters": "歌造建商倒市緣善置佛半客往房輕圓"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0028.source.json",
+    "descriptor_sha256": "57b7e80c6f4bbd09323b47e4f77e2741994092e134fc9bd486077e1bf6e11b43",
+    "raster": "sources/imagegen/raster/common-0028.png",
+    "raster_sha256": "48bc77557fe29ae318f37d31fb1fb927e71ce3072ab51e16d5de83135108e451"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0027-0030-audit.json",
+    "report_sha256": "d3d62f4ea77b44c58546aa1c86408b97336e33012d81e351ce101e5406ff6d91"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0028/report.json",
+    "report_sha256": "34a8566dd5b15d808a85dc7de479d4b34ce74e111c197decb7008c7b3923e773",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0028.vector-review.json",
+    "record_sha256": "9a6d6e8004f7a3b7f8c7a8f1f9dc86e2c2c1b52e03e6d88bd56bb679ea4684d5"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:36:32Z"
+  }
+}

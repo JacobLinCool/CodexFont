@@ -1,0 +1,788 @@
+{
+  "schema_version": 1,
+  "record_type": "mew-note-tc-pilot-technical-review",
+  "family_id": "mew-note-tc",
+  "review_state": "REJECT",
+  "reviewer": {
+    "name": "Codex independent pilot reviewer",
+    "role": "independent-pilot-technical-review",
+    "independent_from_generator": true
+  },
+  "reviewed_on": "2026-07-29",
+  "scope": {
+    "style_gate_only": true,
+    "encoded_coverage_credit": 0,
+    "bulk_authoring_decision": true
+  },
+  "inputs": {
+    "provenance": {
+      "path": "families/mew-note-tc/pilots/provenance.json",
+      "sha256": "b1ca4dc585f784a73932d0cf84140e4ba6e0f9ba50650438b495908b0dd5374e"
+    },
+    "motif_contract": {
+      "path": "families/mew-note-tc/motif-contract.json",
+      "sha256": "c19a5d00844c7460168a4a77481c370f625ce22a35bf6d624aaafaf87f0bab7e"
+    },
+    "review_script": {
+      "path": "scripts/review_mew_note_pilots.py",
+      "sha256": "72e350ae56557481397cf872dd8fc2b27d5de6a9ee27e93491bd9353cf3aaf7b"
+    }
+  },
+  "evidence": {
+    "report": {
+      "path": "build/pilots/mew-note-review/report.json",
+      "sha256": "c660eeb8487bc905b995dbc1cd1e1f8805772ca25790175bf2705931c7320b2a"
+    },
+    "proofs": [
+      {
+        "path": "build/pilots/mew-note-review/proof/mew-note-han-style-pilot/segmented-source-vs-copybook.png",
+        "sha256": "2d0608d45368c6aaf3e6e591bc2bb8f9c0307327c7d81c5cab883f96f3e549b3"
+      },
+      {
+        "path": "build/pilots/mew-note-review/proof/mew-note-han-style-pilot/readability-16px.png",
+        "sha256": "9c3754ed897b8cbfefb56ec917cf8afbb019fecf9dcd99d51cfb12d923dc3213"
+      },
+      {
+        "path": "build/pilots/mew-note-review/proof/mew-note-han-style-pilot/readability-20px.png",
+        "sha256": "088a9c5d14ecf7e90a717caa00595a721ef9a4d525a384035cbaa62ae78be99c"
+      },
+      {
+        "path": "build/pilots/mew-note-review/proof/mew-note-han-style-pilot/readability-32px.png",
+        "sha256": "16b87ef44794da7904951f7507a44bbd352d04f5b668cbfdccafc4241a8fc3d5"
+      },
+      {
+        "path": "build/pilots/mew-note-review/proof/mew-note-han-style-pilot/readability-72px.png",
+        "sha256": "a85a8b071fc603dcec5f7ba5176741da500e8ed36e09dd6ae746fc9618c5dd5d"
+      },
+      {
+        "path": "build/pilots/mew-note-review/proof/mew-note-nonhan-style-pilot/segmented-source-vs-copybook.png",
+        "sha256": "e97165f4a334a4a7cdd8d4e17fe7b050a11c9faa557f4431214ff017629a1ce3"
+      },
+      {
+        "path": "build/pilots/mew-note-review/proof/mew-note-nonhan-style-pilot/readability-16px.png",
+        "sha256": "31fc0d9de1cbb1576312be1b0d532c3b056582216acc5726502232ebc37541c5"
+      },
+      {
+        "path": "build/pilots/mew-note-review/proof/mew-note-nonhan-style-pilot/readability-20px.png",
+        "sha256": "9f3805538e2647d4c31d8f4edf408fe4d871c1142c89354bc12498c84dd39566"
+      },
+      {
+        "path": "build/pilots/mew-note-review/proof/mew-note-nonhan-style-pilot/readability-32px.png",
+        "sha256": "6dece12c8ddd771986b4c69ca71168caef5fa96c17d3be93430907fad1b1c1fa"
+      },
+      {
+        "path": "build/pilots/mew-note-review/proof/mew-note-nonhan-style-pilot/readability-72px.png",
+        "sha256": "fa6549ba3b672a9b5c199f93cfa7c44e072eb9c70adc0a83b7d0340880a148de"
+      }
+    ]
+  },
+  "pilots": [
+    {
+      "pilot_id": "mew-note-han-style-pilot",
+      "decision": "REJECT",
+      "cells": [
+        {
+          "rank": 1,
+          "character": "永",
+          "motif_class": "tail-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "PASS",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "Identity and attached terminal remain clear at every proof size."
+        },
+        {
+          "rank": 2,
+          "character": "貓",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "Copybook structure is preserved without clipping or stray ink."
+        },
+        {
+          "rank": 3,
+          "character": "手",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The natural hook is clean and readable at every proof size."
+        },
+        {
+          "rank": 4,
+          "character": "寫",
+          "motif_class": "tail-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "PASS",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The curl extends the final stroke and does not obscure identity."
+        },
+        {
+          "rank": 5,
+          "character": "龍",
+          "motif_class": "tail-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "PASS",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The dense form and attached terminal remain distinguishable."
+        },
+        {
+          "rank": 6,
+          "character": "鬱",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "REJECT",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "REJECT",
+          "notes": "At 16 px the internal structure collapses into an ambiguous dark mass."
+        },
+        {
+          "rank": 7,
+          "character": "國",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The enclosure and interior remain intact at every proof size."
+        },
+        {
+          "rank": 8,
+          "character": "愛",
+          "motif_class": "tail-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "PASS",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The lower terminal is attached and the character remains readable."
+        },
+        {
+          "rank": 9,
+          "character": "A",
+          "motif_class": "tail-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "PASS",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The attached terminal does not disturb the crossbar or silhouette."
+        },
+        {
+          "rank": 10,
+          "character": "a",
+          "motif_class": "tail-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "PASS",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The bowl, stem, and attached terminal stay distinct."
+        },
+        {
+          "rank": 11,
+          "character": "G",
+          "motif_class": "tail-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "PASS",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The aperture remains clear and the terminal is attached."
+        },
+        {
+          "rank": 12,
+          "character": "g",
+          "motif_class": "tail-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "PASS",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The single-storey form and attached descender remain recognizable."
+        },
+        {
+          "rank": 13,
+          "character": "0",
+          "motif_class": "tail-terminal",
+          "checks": {
+            "identity": "REJECT",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "PASS",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "REJECT",
+          "notes": "This Q-like terminal conflicts with the slashed zero frozen in the non-Han pilot."
+        },
+        {
+          "rank": 14,
+          "character": "8",
+          "motif_class": "tail-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "PASS",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "Both counters survive and the terminal remains attached."
+        },
+        {
+          "rank": 15,
+          "character": "あ",
+          "motif_class": "tail-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "PASS",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The kana structure remains clear and the final curl is attached."
+        },
+        {
+          "rank": 16,
+          "character": "ア",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The two primary strokes remain clean and readable."
+        }
+      ]
+    },
+    {
+      "pilot_id": "mew-note-nonhan-style-pilot",
+      "decision": "ACCEPT",
+      "cells": [
+        {
+          "rank": 1,
+          "character": "I",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "Serifs keep uppercase I distinct at every proof size."
+        },
+        {
+          "rank": 2,
+          "character": "l",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The hooked baseline distinguishes lowercase l from I, 1, and bar."
+        },
+        {
+          "rank": 3,
+          "character": "1",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The angled head and base distinguish one at every proof size."
+        },
+        {
+          "rank": 4,
+          "character": "|",
+          "motif_class": "neutral-safety",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The bar stays neutral, straight, and distinct."
+        },
+        {
+          "rank": 5,
+          "character": "O",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The uppercase proportion remains distinct from lowercase o."
+        },
+        {
+          "rank": 6,
+          "character": "o",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The lowercase scale remains clear at every proof size."
+        },
+        {
+          "rank": 7,
+          "character": "0",
+          "motif_class": "neutral-safety",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The diagonal slash reliably separates zero from O and o."
+        },
+        {
+          "rank": 8,
+          "character": "Q",
+          "motif_class": "neutral-safety",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The semantic Q tail remains distinct from the slashed zero."
+        },
+        {
+          "rank": 9,
+          "character": "c",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The aperture stays open at every proof size."
+        },
+        {
+          "rank": 10,
+          "character": "e",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The counter and cross stroke remain readable."
+        },
+        {
+          "rank": 11,
+          "character": "r",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "Stem and shoulder remain distinct without a stray terminal."
+        },
+        {
+          "rank": 12,
+          "character": "v",
+          "motif_class": "soft-terminal",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The join remains clean and recognizable at every size."
+        },
+        {
+          "rank": 13,
+          "character": "ㄅ",
+          "motif_class": "neutral-safety",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The Bopomofo turn and opening remain clear."
+        },
+        {
+          "rank": 14,
+          "character": "ㄆ",
+          "motif_class": "neutral-safety",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The diagonal structure stays distinct from ㄅ."
+        },
+        {
+          "rank": 15,
+          "character": "°",
+          "motif_class": "neutral-safety",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The small ring remains closed in both polarities."
+        },
+        {
+          "rank": 16,
+          "character": "?",
+          "motif_class": "neutral-safety",
+          "checks": {
+            "identity": "PASS",
+            "grid_clearance": "PASS",
+            "cropping": "PASS",
+            "spikes": "PASS",
+            "isolated_ink": "PASS",
+            "tail_attachment": "NOT_APPLICABLE",
+            "legibility_16px": "PASS",
+            "legibility_20px": "PASS",
+            "legibility_32px": "PASS",
+            "legibility_72px": "PASS"
+          },
+          "decision": "ACCEPT",
+          "notes": "The hook and dot remain separated and readable."
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "pilot_count": 2,
+    "cell_count": 32,
+    "accepted_cell_count": 30,
+    "rejected_cell_count": 2,
+    "rejected_cells": [
+      {
+        "pilot_id": "mew-note-han-style-pilot",
+        "rank": 6,
+        "character": "鬱"
+      },
+      {
+        "pilot_id": "mew-note-han-style-pilot",
+        "rank": 13,
+        "character": "0"
+      }
+    ]
+  },
+  "authorization": {
+    "bulk_authoring_allowed": false,
+    "reason": "At least one pilot cell failed the independent technical review"
+  },
+  "supplementary_scalability_evidence": {
+    "evidence_id": "mew-note-technical-han-0001",
+    "role": "supplementary-build-only-scalability-evidence",
+    "artifact_retention": "build-only-not-committed",
+    "canonical_source": false,
+    "encoded_coverage_credit": 0,
+    "source_raster": {
+      "path": "build/pilots/mew-note-technical-han-0001-fresh.png",
+      "sha256": "6ff33f3c63b920aec42a117333ca452f5a459db934ea4315c66ac2acf3b6ef7a"
+    },
+    "vector_report": {
+      "path": "build/pilots/mew-vector/mew-note-technical-han-0001/report.json",
+      "sha256": "5eb8c9a64c83070e1b0c8b82616497999dc3bd7ee6294efceec177f00bbb10c3"
+    },
+    "proofs": [
+      {
+        "path": "build/pilots/mew-vector/mew-note-technical-han-0001/proof/segmented-source-contact.png",
+        "sha256": "f10f778f16a0f5c8d700c8b148f622097409bd8711c1dbf21c8d488595e3dde2"
+      },
+      {
+        "path": "build/pilots/mew-vector/mew-note-technical-han-0001/proof/small-sizes-black-on-white.png",
+        "sha256": "864f753992275e0c87de7ee1c97bb124e24bf26adbeff760afa2014c797eeed2"
+      },
+      {
+        "path": "build/pilots/mew-vector/mew-note-technical-han-0001/proof/small-sizes-white-on-black.png",
+        "sha256": "69d1cb17d8d3b0c0384120983ed7fd4fdaea03db0c0030cb0fd939de565a1127"
+      }
+    ],
+    "characters": [
+      "的",
+      "一",
+      "人",
+      "不",
+      "為",
+      "第",
+      "回",
+      "之",
+      "子",
+      "有",
+      "也",
+      "三",
+      "名",
+      "作",
+      "以",
+      "二"
+    ],
+    "tail_terminal_ranks": [
+      4,
+      6,
+      11,
+      14,
+      16
+    ],
+    "checks": {
+      "identity": "PASS",
+      "exact_tail_assignment": "PASS",
+      "grid_clearance": "PASS",
+      "cropping": "PASS",
+      "spikes": "PASS",
+      "isolated_ink": "PASS",
+      "small_size_legibility": "PASS"
+    },
+    "decision": "ACCEPT_AS_SUPPLEMENTARY_ONLY",
+    "notes": "All 16 glyphs are readable; exactly the assigned five use attached tails; vector reports show zero micro edges and zero acute micro turns. This does not replace either canonical pilot."
+  }
+}

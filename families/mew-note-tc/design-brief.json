@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "project_id": "mew-note-tc",
+  "family": {
+    "name": "Mew Note TC",
+    "style": "Regular",
+    "version": "1.000"
+  },
+  "intent": {
+    "use_cases": [
+      "Cards, headings, social images, short passages, and playful interface copy at 20–72 px"
+    ],
+    "audiences": [
+      "Readers of Taiwan Traditional Chinese, Latin text, Bopomofo, and Japanese kana"
+    ],
+    "personality": [
+      "playful, warm, observant, and clearly handwritten"
+    ],
+    "non_goals": [
+      "Mascot dingbats, literal cats inside every glyph, detached cat hats, brush calligraphy, random spikes, or a tail terminal that changes character identity"
+    ],
+    "example_text": [
+      "貓耳手札：今天也要把字寫清楚。",
+      "Mew Note 0123456789 — “hello!”",
+      "注音ㄅㄆㄇ，かなあいう，カナアイウ，αβΩ。"
+    ]
+  },
+  "design_contract": {
+    "authoring_mode": "original-raster-first",
+    "stroke_model": "Upright rounded gel-pen handwriting with 62–88 unit median strokes, low contrast, one restrained cat-tail terminal attached to an existing final stroke where identity permits, and neutral safety forms where decoration would alter topology",
+    "spacing_model": "proportional",
+    "units_per_em": 1024,
+    "directions": [
+      "horizontal",
+      "vertical-rl"
+    ],
+    "required_features": [
+      "kern",
+      "mark",
+      "mkmk",
+      "vert",
+      "vrt2"
+    ]
+  },
+  "repertoire": {
+    "unicode_version": "17.0.0",
+    "normalization": "none",
+    "sources": [
+      {
+        "id": "mew-note-tc-preview-9120",
+        "authority": "Hash-pinned collection contract: 6,060 Han plus the existing 3,060-codepoint project non-Han repertoire",
+        "ordered_codepoints_path": "families/mew-note-tc/collections.json"
+      }
+    ],
+    "semantic_empty_policy": "Only the 17 contourless spacing and control scalars declared by the pinned nonhan-3060 repertoire may be encoded without visible outlines",
+    "unencoded_alternates": [
+      "Exactly 93 hash-pinned vertical alternates admitted only through vert and vrt2"
+    ]
+  },
+  "references": [
+    {
+      "description": "Taiwan Ministry of Education standard character forms and repository identity copybooks",
+      "role": "identity-reference-only-no-outline-import",
+      "license": "Public identity reference and project-authored copybook metadata; no outline rights are exercised",
+      "outline_import_allowed": false
+    },
+    {
+      "description": "The frozen Mew Note TC cat-tail pilot rasters after their style direction was accepted",
+      "role": "style-reference-only-no-outline-import",
+      "license": "OFL-1.1",
+      "outline_import_allowed": false
+    }
+  ],
+  "licensing": {
+    "source_license": "OFL-1.1",
+    "release_license": "OFL-1.1"
+  },
+  "acceptance": {
+    "proof_sizes_px": [
+      16,
+      20,
+      24,
+      32,
+      56,
+      72
+    ],
+    "proof_polarities": [
+      "black-on-white",
+      "white-on-black"
+    ],
+    "geometry": {
+      "max_micro_edge_count": 0,
+      "max_acute_micro_turn_count": 0
+    },
+    "independent_review_required": true,
+    "hash_pinned_approval_required": true,
+    "reproducible_build_count": 2,
+    "release_formats": [
+      "ttf",
+      "otf",
+      "woff",
+      "woff2"
+    ],
+    "browser_qa_required": true
+  }
+}

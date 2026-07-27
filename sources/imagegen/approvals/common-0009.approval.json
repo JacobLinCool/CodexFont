@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0009",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 129,
+    "end_rank": 144,
+    "characters": "同意情官到金將常女這字要東過者通"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0009.source.json",
+    "descriptor_sha256": "7cb67d2bdfc9234323ad02751b81bd6c6ebf6a05dd545e508455df6cfb11c58f",
+    "raster": "sources/imagegen/raster/common-0009.png",
+    "raster_sha256": "411ccf882c49eb0863a91214dca6998d7e39c3b007990b5a58ca24411c0e7ebc"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0007-0010-audit.json",
+    "report_sha256": "58e5f446bea7d6542139791bc4802dd6f111f7e8f655b97475ea2a028738d0be"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0009/report.json",
+    "report_sha256": "7dd2209c6a75b13aa129967977d516e82b35f82dffd2a2b4f4d5c147e6a685a5",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0009.vector-review.json",
+    "record_sha256": "dfe6be671fd678b3a71e1299fa314fc2748796347de7512723125c99566dd850"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:34:44Z"
+  }
+}

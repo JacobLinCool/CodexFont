@@ -1,0 +1,20 @@
+Redraw the complete 4×4 sheet from the fourth-reference identity copybook. The parent is still invalid because c4, c13, and c14 are horizontally mirrored. Use exactly one centered glyph per cell:
+
+- c1 ═: DOUBLE horizontal.
+- c2 ║: DOUBLE vertical.
+- c3 ╒: TOP-LEFT; DOWN SINGLE, RIGHT DOUBLE.
+- c4 ╓: TOP-LEFT; DOWN DOUBLE, RIGHT SINGLE.
+- c5 ╔: TOP-LEFT; DOWN DOUBLE, RIGHT DOUBLE.
+- c6 ╕: TOP-RIGHT; DOWN SINGLE, LEFT DOUBLE.
+- c7 ╖: TOP-RIGHT; DOWN DOUBLE, LEFT SINGLE.
+- c8 ╗: TOP-RIGHT; DOWN DOUBLE, LEFT DOUBLE.
+- c9 ╘: BOTTOM-LEFT; UP SINGLE, RIGHT DOUBLE.
+- c10 ╙: BOTTOM-LEFT; UP DOUBLE, RIGHT SINGLE.
+- c11 ╚: BOTTOM-LEFT; UP DOUBLE, RIGHT DOUBLE.
+- c12 ╛: BOTTOM-RIGHT; UP SINGLE, LEFT DOUBLE.
+- c13 ╜: BOTTOM-RIGHT; UP DOUBLE, LEFT SINGLE.
+- c14 ╝: BOTTOM-RIGHT; UP DOUBLE, LEFT DOUBLE.
+- c15 ╞: VERTICAL SINGLE, RIGHT DOUBLE.
+- c16 ╟: VERTICAL DOUBLE, RIGHT SINGLE.
+
+Do not mirror any glyph. A TOP-LEFT or BOTTOM-LEFT corner has its vertical stem on the LEFT and extends horizontally RIGHT. A TOP-RIGHT or BOTTOM-RIGHT corner has its vertical stem on the RIGHT and extends horizontally LEFT. Keep the 4×4 grid, white background, black geometric ink, and exact row-major order. Return only the corrected sheet.

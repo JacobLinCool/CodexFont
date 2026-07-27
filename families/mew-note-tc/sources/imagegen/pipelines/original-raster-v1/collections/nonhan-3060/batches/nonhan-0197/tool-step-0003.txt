@@ -1,0 +1,8 @@
+Correct only cells c2, c3, c5, and c6 of the parent 4×4 sheet. Preserve every other cell exactly. Keep one centered glyph per cell, the existing grid, white background, and black geometric ink.
+
+- c2 ┡ must have a RIGHT branch: UP is HEAVY; DOWN and RIGHT are LIGHT. No left branch.
+- c3 ┢ must have a RIGHT branch: DOWN is HEAVY; UP and RIGHT are LIGHT. No left branch.
+- c5 ┤ must have a LEFT branch: UP, DOWN, and LEFT are all LIGHT. No right branch.
+- c6 ┥ must have a LEFT branch: LEFT is HEAVY; UP and DOWN are both LIGHT. No right branch.
+
+LIGHT is thin. HEAVY is 2.5–3 times thicker. Match the fourth-reference identity copybook for topology and cell order. Do not move, mirror, relabel, add, or remove any other glyph. Return only the corrected complete 4×4 sheet.

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0037",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 577,
+    "end_rank": 592,
+    "characters": "曾寫隱早紀規殺血散叫態持界止爭念"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0037.source.json",
+    "descriptor_sha256": "8b7d3751ce4dd357a788a3ad0711ac726f2dc6ad3cf20aa13842013d86acd203",
+    "raster": "sources/imagegen/raster/common-0037.png",
+    "raster_sha256": "13db4ef2f52adf7423df3a4f267ded66e66b3847a7e021ac094998c65084dd9d"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0035-0038-audit.json",
+    "report_sha256": "8574012ce03278cc9f94a1ea2a0a685845b626d0e0c26dffaa3404505563e743"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0037/report.json",
+    "report_sha256": "dca202f683a5b95a16f344b06c1fb6db96dcfd25611e1126a4d6eaf2527e76a8",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0037.vector-review.json",
+    "record_sha256": "47bfa9baf9537bc112105d553374f7605a18e73eb86a99d820dbc4d7724ad70e"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:37:26Z"
+  }
+}

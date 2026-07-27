@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-han-delta-collection",
+  "collection_id": "clear-hand-tc-dictionary-salience-extension-1216-v1",
+  "family_id": "clear-hand-tc",
+  "vector_pipeline": "imagegen-raster-potrace-quadratic-v2",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/dictionary-salience-extension-1216.json",
+    "sha256": "8462d9669e6d7320f77c285a444e388da0f3e0d23ae408c7212c4302bdaed840",
+    "repertoire_id": "clear-hand-tc-dictionary-salience-extension-1216-v1"
+  },
+  "prompt": {
+    "path": "sources/imagegen/prompts/han-delta-grid-with-copybook-v1.md",
+    "sha256": "38f8705ecdc33271d861db54ce7bb6b397ada40253052d74a916b0e1f89a3e0c"
+  },
+  "style_reference": {
+    "role": "style-only-no-outline-import",
+    "path": "sources/imagegen/raster/common-0001.png",
+    "sha256": "2a4058fdb4e35ce2789f9ae73535542f78f4e94516ad4b9929986a93e36d3d81"
+  },
+  "identity_copybook_policy": {
+    "required": true,
+    "role": "identity-reference-only-no-outline-import",
+    "directory": "sources/imagegen/copybooks",
+    "external_font_binaries_committed": false,
+    "materializer": "scripts/materialize_han_delta_batches.py",
+    "reference_fonts": [
+      {
+        "path": "~/Library/Fonts/NotoSansTC-VariableFont_wght.ttf",
+        "sha256": "2e8fa01ed3024404cad6f84931e4526d21bb2011a353c70eae211a64a7a98e16",
+        "source_name": "Noto Sans TC",
+        "source_url": null,
+        "license": "OFL-1.1"
+      },
+      {
+        "path": "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+        "sha256": "876af2cd4854644e7f3e7feb2f688997fdb3343c6df6693611209c9dfb47ccec",
+        "source_name": "Arial Unicode MS (macOS system font)",
+        "source_url": null,
+        "license": "local macOS identity reference only; binary not redistributed"
+      }
+    ],
+    "compositions": [
+      {
+        "character": "𥳑",
+        "codepoint": "U+25CD1",
+        "method": "vertical-ideographic-composition",
+        "display": "竹＋閒",
+        "authorization": "project-owner-approved identity-copybook exception",
+        "components": [
+          {
+            "character": "竹",
+            "codepoint": "U+7AF9",
+            "placement": "upper"
+          },
+          {
+            "character": "閒",
+            "codepoint": "U+9592",
+            "placement": "lower"
+          }
+        ]
+      }
+    ]
+  },
+  "paths": {
+    "raster_directory": "sources/imagegen/raster",
+    "descriptor_directory": "sources/imagegen/batches",
+    "build_directory": "build/imagegen"
+  }
+}

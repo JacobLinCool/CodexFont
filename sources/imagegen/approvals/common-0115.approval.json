@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0115",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1825,
+    "end_rank": 1840,
+    "characters": "鋒削妓艱趁爵獎閑映扯牲押械誇逼冊"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0115.source.json",
+    "descriptor_sha256": "3844402dc88948668e741c9d05b3dfaafe43b49be744f7dc8a0372d071acce9c",
+    "raster": "sources/imagegen/raster/common-0115.png",
+    "raster_sha256": "e2caef32faebf96e077a2bda0e4634030c2366084f6270c327fbb2ae47b6f804"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0115-0118-audit.json",
+    "report_sha256": "ee0c75f47f3d0e613642c59a2bc163ae8dad5af4fe3416520eb3feff2f3ef01b"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0115/report.json",
+    "report_sha256": "f6b7909c8db0f746d9d4bcc390a763d5c141423ba8ee4f5a5fda0861892e1977",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0115.vector-review.json",
+    "record_sha256": "818b49e90ba71f8c10277a6ec0a1e499fd6e175a0c7163818ab91d1120ab5925"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:48:26Z"
+  }
+}

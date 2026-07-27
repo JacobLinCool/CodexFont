@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0099",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1569,
+    "end_rank": 1584,
+    "characters": "悅袖仗訪純薛郡蒸裴錫惟旦溶姿濃盧"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0099.source.json",
+    "descriptor_sha256": "8613e6851fda98ffa5e65a52df8b0d403c6d8f3275c7a61746e32957c358dc72",
+    "raster": "sources/imagegen/raster/common-0099.png",
+    "raster_sha256": "624bddb02c5a64908e55c948ac0ae2a4268bfca4516675b41872fb687f2d0d41"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0099-0102-audit.json",
+    "report_sha256": "73da88876914c4543a3301faccf2a6ecdd947717d78bf304bac1170b57158aa4"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0099/report.json",
+    "report_sha256": "fc47c71a0646ec08032b3af5401fffb1c5ab7beec29daef9823e21a7f362565b",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0099.vector-review.json",
+    "record_sha256": "be5d7e3d887f5edc6799144217e9bef8eb5d19635f3ccec18338fb2f6afc31dd"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:46:50Z"
+  }
+}

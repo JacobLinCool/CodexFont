@@ -1,0 +1,3037 @@
+{
+  "schema_version": 1,
+  "audit_id": "imagegen-common-0187-0188",
+  "audited_at": "2026-07-26T15:16:38+08:00",
+  "auditor": "Codex independent raster QA",
+  "authority": {
+    "provider": "Ministry of Digital Affairs, Taiwan, CNS11643 Chinese Standard Interchange Code Full Character Database",
+    "official_dataset_url": "https://data.gov.tw/dataset/5961",
+    "mapping_archive": {
+      "path": "tmp/cns-opendata/MapingTables.zip",
+      "sha256": "f59dacc4dbdef334d7a887c3da671af02778e2c80adb2a7fd1053f64dbf9e659",
+      "member": "Unicode/CNS2UNICODE_Unicode BMP.txt",
+      "member_timestamp": "2026-05-05"
+    },
+    "properties_archive": {
+      "path": "tmp/cns-opendata/Properties.zip",
+      "sha256": "50cad66f3fe6f3a4b6f4a7bf0431e1bfb8dabc3d8c7be4d61e1617b15a0d7a7b",
+      "members": [
+        "CNS_stroke.txt",
+        "CNS_strokes_sequence.txt"
+      ],
+      "member_timestamp": "2026-05-05"
+    },
+    "visual_copybook": {
+      "path": "sources/upstream/TW-Kai-98_1.ttf",
+      "sha256": "c206333edcc3c8c86ee547da4c78ad1c8f7ec2670a2b550a768532258f75806a",
+      "usage": "independently rasterized topology comparison only; no outline, coordinate or trace enters the image-generated glyph"
+    },
+    "stroke_sequence_digit_legend": {
+      "1": "horizontal",
+      "2": "vertical",
+      "3": "left-falling",
+      "4": "dot or right-falling",
+      "5": "turn or hook family"
+    }
+  },
+  "scope": {
+    "batch_ids": [
+      "common-0187",
+      "common-0188"
+    ],
+    "rank_range": [
+      2977,
+      3000
+    ],
+    "start_rank": 2977,
+    "end_rank": 3000,
+    "glyph_count": 24,
+    "repertoire": {
+      "path": "sources/imagegen/repertoires/common-3000.json",
+      "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+      "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd"
+    }
+  },
+  "method": {
+    "views": [
+      "original 1254 × 1254 RGB sheet",
+      "raw native cell crop",
+      "all 24 raw cells at exact 2× nearest-neighbour scale",
+      "all 24 raw cells at exact 4× nearest-neighbour scale",
+      "128 px, 64 px and 32 px complete isolated cells",
+      "all 24 generated cells beside independently rasterized Taiwan CNS copybook topology"
+    ],
+    "canonical_readability_keys": [
+      "native",
+      "128px",
+      "64px",
+      "32px"
+    ],
+    "grid_detection": "Exactly five long light-grey line groups per axis detected by projection; no equal-division or guessed-grid fallback accepted. Clearance is minimum distance from L<100 ink to a cell boundary.",
+    "stray_component_detection": "L<100 pixels in each raw cell grouped by 8-connectivity. No component below 20 px exists. Components below 100 px occur only at visually located intended short points recorded in small_component_exceptions.",
+    "artifact_review": [
+      "exact repertoire scalar and order",
+      "current CNS code, stroke count and stroke-sequence structure",
+      "Taiwan Traditional topology and simplified substitution",
+      "missing/extra semantic strokes and wrong turns/hooks",
+      "open counters and component separation",
+      "grid contact and stray dark components",
+      "thorn/spur, false connecting bridge and grey-grid contamination",
+      "common-0188 trailing eight grid cells are blank and do not enter the glyph sequence"
+    ],
+    "source_metadata_mutated": false
+  },
+  "policy": {
+    "pass_definition": "Exact requested scalar and current Taiwan CNS topology/stroke structure agree; glyph is recognizable at original, native, exact 2×/4× nearest-neighbour, 128, 64 and 32 px; ink clears the grid; no thorn, debris, wrong bridge, wrong hook, or missing/extra semantic stroke.",
+    "reject_definition": "Any uncertainty, simplified/incompatible variant, missing/extra semantic component, topology-changing join, wrong hook, reviewed-size ambiguity, grid contact, stray ink, thorn, spur, or wrong bridge is REJECT.",
+    "raster_limit": "A final raster establishes visible topology but cannot prove the temporal act of writing each stroke.",
+    "vectorization_limit": "PASS permits controlled tracing of isolated image-generated dark ink only; grid, background, antialias halo and CNS outlines are forbidden geometry.",
+    "descriptor_mutation": "This raster audit does not approve or modify source descriptors."
+  },
+  "batches": [
+    {
+      "batch_id": "common-0187",
+      "start_rank": 2977,
+      "end_rank": 2992,
+      "characters": "渺絳繭翹蒜蕉遁嗜囑拈捻氯貂逵霖鞏",
+      "raster": "sources/imagegen/raster/common-0187.png",
+      "sha256": "5bc8d8e94dace5a1b66624558bc8495c48d8f26aa77357315675a54fd0bd2f10",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        625,
+        924,
+        1221
+      ],
+      "grid_line_centres_y": [
+        25,
+        325,
+        622,
+        918,
+        1217
+      ],
+      "minimum_dark_ink_grid_clearance_px": 40,
+      "background_light_pixel_standard_deviation": 1.366442,
+      "smallest_dark_component_area_px": 85,
+      "source_descriptor": {
+        "path": "sources/imagegen/batches/common-0187.source.json",
+        "sha256": "70e55d07a54afaf2bd1d2ff0c23a6b1497df23a600b3628b8acbee2ccf79d6f8",
+        "state": "generated-unreviewed",
+        "review": {
+          "topology": "pending",
+          "raster_quality": "pending",
+          "vector_quality": "pending"
+        }
+      },
+      "pass": 16,
+      "reject": 0
+    },
+    {
+      "batch_id": "common-0188",
+      "start_rank": 2993,
+      "end_rank": 3000,
+      "characters": "嵌徙憎氈粥粲舶蟾",
+      "raster": "sources/imagegen/raster/common-0188.png",
+      "sha256": "734c34a2f59a930ea03b8e749c06386e94af089753bedbfb9d213b3392cc0ba4",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        625,
+        924,
+        1221
+      ],
+      "grid_line_centres_y": [
+        25,
+        325,
+        622,
+        918,
+        1217
+      ],
+      "minimum_dark_ink_grid_clearance_px": 51,
+      "background_light_pixel_standard_deviation": 0.998946,
+      "smallest_dark_component_area_px": 85,
+      "source_descriptor": {
+        "path": "sources/imagegen/batches/common-0188.source.json",
+        "sha256": "f3d25880b7a5d78431cbbb331c875e85b43dbfbc495df1f1590a03788e0a626d",
+        "state": "generated-unreviewed",
+        "review": {
+          "topology": "pending",
+          "raster_quality": "pending",
+          "vector_quality": "pending"
+        }
+      },
+      "pass": 8,
+      "reject": 0,
+      "trailing_blank_grid_cells_reviewed": 8
+    }
+  ],
+  "glyphs": [
+    {
+      "batch_id": "common-0187",
+      "index": 1,
+      "rank": 2977,
+      "row": 1,
+      "column": 1,
+      "character": "渺",
+      "codepoint": "U+6E3A",
+      "cns_code": "1-6040",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "444251115343",
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.17773438,
+        0.16015625,
+        0.81640625,
+        0.77734375
+      ],
+      "source_box": [
+        29,
+        25,
+        327,
+        325
+      ],
+      "dark_component_count_8conn": 8,
+      "smallest_dark_component_area_px": 148,
+      "dark_component_areas_px": [
+        148,
+        208,
+        227,
+        286,
+        307,
+        820,
+        948,
+        2258
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-6040（12 畫／序列 444251115343）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-6040（12 畫／序列 444251115343）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 2,
+      "rank": 2978,
+      "row": 1,
+      "column": 2,
+      "character": "絳",
+      "codepoint": "U+7D73",
+      "cns_code": "1-6142",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "554444354152",
+      "minimum_grid_clearance_px": 40,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.17773438,
+        0.1328125,
+        0.81835938,
+        0.80664062
+      ],
+      "source_box": [
+        327,
+        25,
+        625,
+        325
+      ],
+      "dark_component_count_8conn": 6,
+      "smallest_dark_component_area_px": 145,
+      "dark_component_areas_px": [
+        145,
+        154,
+        198,
+        1559,
+        1822,
+        1943
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-6142（12 畫／序列 554444354152）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-6142（12 畫／序列 554444354152）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 3,
+      "rank": 2979,
+      "row": 1,
+      "column": 3,
+      "character": "繭",
+      "codepoint": "U+7E6D",
+      "cns_code": "1-7860",
+      "cns_strokes": 19,
+      "cns_stroke_sequence": "2112252554534251214",
+      "minimum_grid_clearance_px": 50,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.24609375,
+        0.1875,
+        0.6875,
+        0.8359375
+      ],
+      "source_box": [
+        625,
+        25,
+        924,
+        325
+      ],
+      "dark_component_count_8conn": 6,
+      "smallest_dark_component_area_px": 90,
+      "dark_component_areas_px": [
+        90,
+        645,
+        725,
+        1460,
+        1723,
+        1878
+      ],
+      "dark_component_areas_under_100_px": [
+        90
+      ],
+      "small_component_boxes_under_100_px": [
+        {
+          "area_px": 90,
+          "local_bbox": [
+            106,
+            143,
+            117,
+            158
+          ],
+          "global_bbox": [
+            731,
+            168,
+            742,
+            183
+          ]
+        }
+      ],
+      "topology": "逐筆對照 CNS 1-7860（19 畫／序列 2112252554534251214）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [
+        "繭內糸構件的合法短點；未形成游離碎墨或錯橋"
+      ],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-7860（19 畫／序列 2112252554534251214）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 4,
+      "rank": 2980,
+      "row": 1,
+      "column": 4,
+      "character": "翹",
+      "codepoint": "U+7FF9",
+      "cns_code": "1-7728",
+      "cns_strokes": 18,
+      "cns_stroke_sequence": "121121121135544544",
+      "minimum_grid_clearance_px": 54,
+      "dark_component_count": 10,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.17773438,
+        0.19335938,
+        0.82226562,
+        0.78320312
+      ],
+      "source_box": [
+        924,
+        25,
+        1221,
+        325
+      ],
+      "dark_component_count_8conn": 10,
+      "smallest_dark_component_area_px": 97,
+      "dark_component_areas_px": [
+        97,
+        101,
+        146,
+        167,
+        684,
+        740,
+        881,
+        1005,
+        1117,
+        2138
+      ],
+      "dark_component_areas_under_100_px": [
+        97
+      ],
+      "small_component_boxes_under_100_px": [
+        {
+          "area_px": 97,
+          "local_bbox": [
+            149,
+            135,
+            166,
+            144
+          ],
+          "global_bbox": [
+            1073,
+            160,
+            1090,
+            169
+          ]
+        }
+      ],
+      "topology": "逐筆對照 CNS 1-7728（18 畫／序列 121121121135544544）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [
+        "右側羽構件的合法短橫；位置與 CNS 拓撲相符"
+      ],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-7728（18 畫／序列 121121121135544544）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 5,
+      "rank": 2981,
+      "row": 2,
+      "column": 1,
+      "character": "蒜",
+      "codepoint": "U+849C",
+      "cns_code": "1-6A63",
+      "cns_strokes": 14,
+      "cns_stroke_sequence": "21121123411234",
+      "minimum_grid_clearance_px": 52,
+      "dark_component_count": 9,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.17382812,
+        0.18945312,
+        0.75976562,
+        0.828125
+      ],
+      "source_box": [
+        29,
+        325,
+        327,
+        622
+      ],
+      "dark_component_count_8conn": 9,
+      "smallest_dark_component_area_px": 144,
+      "dark_component_areas_px": [
+        144,
+        231,
+        244,
+        254,
+        255,
+        306,
+        1078,
+        1185,
+        1528
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-6A63（14 畫／序列 21121123411234）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-6A63（14 畫／序列 21121123411234）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 6,
+      "rank": 2982,
+      "row": 2,
+      "column": 2,
+      "character": "蕉",
+      "codepoint": "U+8549",
+      "cns_code": "1-7226",
+      "cns_strokes": 16,
+      "cns_stroke_sequence": "2112324111214444",
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.21289062,
+        0.16210938,
+        0.74804688,
+        0.82617188
+      ],
+      "source_box": [
+        327,
+        325,
+        625,
+        622
+      ],
+      "dark_component_count_8conn": 8,
+      "smallest_dark_component_area_px": 120,
+      "dark_component_areas_px": [
+        120,
+        141,
+        163,
+        233,
+        292,
+        943,
+        1425,
+        1864
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-7226（16 畫／序列 2112324111214444）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-7226（16 畫／序列 2112324111214444）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 7,
+      "rank": 2983,
+      "row": 2,
+      "column": 3,
+      "character": "遁",
+      "codepoint": "U+9041",
+      "cns_code": "1-6738",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "3312251114554",
+      "minimum_grid_clearance_px": 52,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.16992188,
+        0.1953125,
+        0.81445312,
+        0.8046875
+      ],
+      "source_box": [
+        625,
+        325,
+        924,
+        622
+      ],
+      "dark_component_count_8conn": 4,
+      "smallest_dark_component_area_px": 157,
+      "dark_component_areas_px": [
+        157,
+        408,
+        1778,
+        3307
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-6738（13 畫／序列 3312251114554）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-6738（13 畫／序列 3312251114554）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 8,
+      "rank": 2984,
+      "row": 2,
+      "column": 4,
+      "character": "嗜",
+      "codepoint": "U+55DC",
+      "cns_code": "1-6344",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "2511213152511",
+      "minimum_grid_clearance_px": 50,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.16601562,
+        0.18554688,
+        0.7734375,
+        0.82421875
+      ],
+      "source_box": [
+        924,
+        325,
+        1221,
+        622
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 1017,
+      "dark_component_areas_px": [
+        1017,
+        1671,
+        3074
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-6344（13 畫／序列 2511213152511）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-6344（13 畫／序列 2511213152511）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 9,
+      "rank": 2985,
+      "row": 3,
+      "column": 1,
+      "character": "囑",
+      "codepoint": "U+56D1",
+      "cns_code": "1-7C5D",
+      "cns_strokes": 24,
+      "cns_stroke_sequence": "251513544342522135251214",
+      "minimum_grid_clearance_px": 46,
+      "dark_component_count": 7,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.15039062,
+        0.16992188,
+        0.75390625,
+        0.83789062
+      ],
+      "source_box": [
+        29,
+        622,
+        327,
+        918
+      ],
+      "dark_component_count_8conn": 7,
+      "smallest_dark_component_area_px": 85,
+      "dark_component_areas_px": [
+        85,
+        88,
+        108,
+        111,
+        983,
+        2344,
+        4051
+      ],
+      "dark_component_areas_under_100_px": [
+        85,
+        88
+      ],
+      "small_component_boxes_under_100_px": [
+        {
+          "area_px": 88,
+          "local_bbox": [
+            185,
+            91,
+            202,
+            98
+          ],
+          "global_bbox": [
+            214,
+            713,
+            231,
+            720
+          ]
+        },
+        {
+          "area_px": 85,
+          "local_bbox": [
+            138,
+            100,
+            153,
+            108
+          ],
+          "global_bbox": [
+            167,
+            722,
+            182,
+            730
+          ]
+        }
+      ],
+      "topology": "逐筆對照 CNS 1-7C5D（24 畫／序列 251513544342522135251214）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [
+        "屬構件上部兩個合法短筆；均未誤接相鄰主幹"
+      ],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-7C5D（24 畫／序列 251513544342522135251214）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 10,
+      "rank": 2986,
+      "row": 3,
+      "column": 2,
+      "character": "拈",
+      "codepoint": "U+62C8",
+      "cns_code": "1-4D62",
+      "cns_strokes": 8,
+      "cns_stroke_sequence": "15121251",
+      "minimum_grid_clearance_px": 44,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.14648438,
+        0.2109375,
+        0.70703125,
+        0.78710938
+      ],
+      "source_box": [
+        327,
+        622,
+        625,
+        918
+      ],
+      "dark_component_count_8conn": 2,
+      "smallest_dark_component_area_px": 2106,
+      "dark_component_areas_px": [
+        2106,
+        2635
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-4D62（8 畫／序列 15121251）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-4D62（8 畫／序列 15121251）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 11,
+      "rank": 2987,
+      "row": 3,
+      "column": 3,
+      "character": "捻",
+      "codepoint": "U+637B",
+      "cns_code": "1-5A6D",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "15134154544",
+      "minimum_grid_clearance_px": 44,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.14453125,
+        0.2109375,
+        0.83398438,
+        0.79296875
+      ],
+      "source_box": [
+        625,
+        622,
+        924,
+        918
+      ],
+      "dark_component_count_8conn": 8,
+      "smallest_dark_component_area_px": 126,
+      "dark_component_areas_px": [
+        126,
+        187,
+        239,
+        246,
+        512,
+        765,
+        1354,
+        2140
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-5A6D（11 畫／序列 15134154544）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-5A6D（11 畫／序列 15134154544）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 12,
+      "rank": 2988,
+      "row": 3,
+      "column": 4,
+      "character": "氯",
+      "codepoint": "U+6C2F",
+      "cns_code": "1-6029",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "311555154434",
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 9,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.25195312,
+        0.1640625,
+        0.80078125,
+        0.83203125
+      ],
+      "source_box": [
+        924,
+        622,
+        1221,
+        918
+      ],
+      "dark_component_count_8conn": 9,
+      "smallest_dark_component_area_px": 112,
+      "dark_component_areas_px": [
+        112,
+        159,
+        175,
+        218,
+        251,
+        273,
+        915,
+        1659,
+        1938
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-6029（12 畫／序列 311555154434）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-6029（12 畫／序列 311555154434）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 13,
+      "rank": 2989,
+      "row": 4,
+      "column": 1,
+      "character": "貂",
+      "codepoint": "U+8C82",
+      "cns_code": "1-6230",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "344353353251",
+      "minimum_grid_clearance_px": 50,
+      "dark_component_count": 7,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1640625,
+        0.22851562,
+        0.73242188,
+        0.80859375
+      ],
+      "source_box": [
+        29,
+        918,
+        327,
+        1217
+      ],
+      "dark_component_count_8conn": 7,
+      "smallest_dark_component_area_px": 113,
+      "dark_component_areas_px": [
+        113,
+        130,
+        390,
+        477,
+        1077,
+        1520,
+        2363
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-6230（12 畫／序列 344353353251）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-6230（12 畫／序列 344353353251）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 14,
+      "rank": 2990,
+      "row": 4,
+      "column": 2,
+      "character": "逵",
+      "codepoint": "U+9035",
+      "cns_code": "1-624D",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "121351214554",
+      "minimum_grid_clearance_px": 46,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.15234375,
+        0.22460938,
+        0.80078125,
+        0.84179688
+      ],
+      "source_box": [
+        327,
+        918,
+        625,
+        1217
+      ],
+      "dark_component_count_8conn": 6,
+      "smallest_dark_component_area_px": 159,
+      "dark_component_areas_px": [
+        159,
+        271,
+        354,
+        1151,
+        1267,
+        1863
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-624D（12 畫／序列 121351214554）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-624D（12 畫／序列 121351214554）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 15,
+      "rank": 2991,
+      "row": 4,
+      "column": 3,
+      "character": "霖",
+      "codepoint": "U+9716",
+      "cns_code": "1-7276",
+      "cns_strokes": 16,
+      "cns_stroke_sequence": "1452443412341234",
+      "minimum_grid_clearance_px": 54,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.21679688,
+        0.19921875,
+        0.81445312,
+        0.82226562
+      ],
+      "source_box": [
+        625,
+        918,
+        924,
+        1217
+      ],
+      "dark_component_count_8conn": 8,
+      "smallest_dark_component_area_px": 95,
+      "dark_component_areas_px": [
+        95,
+        101,
+        128,
+        132,
+        282,
+        1496,
+        1697,
+        1905
+      ],
+      "dark_component_areas_under_100_px": [
+        95
+      ],
+      "small_component_boxes_under_100_px": [
+        {
+          "area_px": 95,
+          "local_bbox": [
+            103,
+            108,
+            120,
+            115
+          ],
+          "global_bbox": [
+            728,
+            1026,
+            745,
+            1033
+          ]
+        }
+      ],
+      "topology": "逐筆對照 CNS 1-7276（16 畫／序列 1452443412341234）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [
+        "雨構件內的合法短點；未與林構件誤接"
+      ],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-7276（16 畫／序列 1452443412341234）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0187",
+      "index": 16,
+      "rank": 2992,
+      "row": 4,
+      "column": 4,
+      "character": "鞏",
+      "codepoint": "U+978F",
+      "cns_code": "1-6F6D",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "121354122125112",
+      "minimum_grid_clearance_px": 53,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.19726562,
+        0.17382812,
+        0.75390625,
+        0.82226562
+      ],
+      "source_box": [
+        924,
+        918,
+        1221,
+        1217
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 907,
+      "dark_component_areas_px": [
+        907,
+        1424,
+        3648
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-6F6D（15 畫／序列 121354122125112）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-6F6D（15 畫／序列 121354122125112）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0188",
+      "index": 1,
+      "rank": 2993,
+      "row": 1,
+      "column": 1,
+      "character": "嵌",
+      "codepoint": "U+5D4C",
+      "cns_code": "1-5E74",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "252122113534",
+      "minimum_grid_clearance_px": 53,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.23632812,
+        0.1796875,
+        0.82421875,
+        0.75585938
+      ],
+      "source_box": [
+        29,
+        25,
+        327,
+        325
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 206,
+      "dark_component_areas_px": [
+        206,
+        765,
+        844,
+        1046,
+        1781
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-5E74（12 畫／序列 252122113534）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-5E74（12 畫／序列 252122113534）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0188",
+      "index": 2,
+      "rank": 2994,
+      "row": 1,
+      "column": 2,
+      "character": "徙",
+      "codepoint": "U+5F99",
+      "cns_code": "1-5A36",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "33221212134",
+      "minimum_grid_clearance_px": 52,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.20703125,
+        0.19921875,
+        0.82617188,
+        0.73828125
+      ],
+      "source_box": [
+        327,
+        25,
+        625,
+        325
+      ],
+      "dark_component_count_8conn": 4,
+      "smallest_dark_component_area_px": 182,
+      "dark_component_areas_px": [
+        182,
+        345,
+        921,
+        2644
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-5A36（11 畫／序列 33221212134）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-5A36（11 畫／序列 33221212134）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0188",
+      "index": 3,
+      "rank": 2995,
+      "row": 1,
+      "column": 3,
+      "character": "憎",
+      "codepoint": "U+618E",
+      "cns_code": "1-6C70",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "424432524312511",
+      "minimum_grid_clearance_px": 54,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.22070312,
+        0.17773438,
+        0.74023438,
+        0.75585938
+      ],
+      "source_box": [
+        625,
+        25,
+        924,
+        325
+      ],
+      "dark_component_count_8conn": 8,
+      "smallest_dark_component_area_px": 85,
+      "dark_component_areas_px": [
+        85,
+        123,
+        125,
+        253,
+        283,
+        858,
+        1281,
+        1691
+      ],
+      "dark_component_areas_under_100_px": [
+        85
+      ],
+      "small_component_boxes_under_100_px": [
+        {
+          "area_px": 85,
+          "local_bbox": [
+            154,
+            141,
+            165,
+            155
+          ],
+          "global_bbox": [
+            779,
+            166,
+            790,
+            180
+          ]
+        }
+      ],
+      "topology": "逐筆對照 CNS 1-6C70（15 畫／序列 424432524312511）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [
+        "曾構件內的合法短點；位置與 CNS 拓撲相符"
+      ],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-6C70（15 畫／序列 424432524312511）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0188",
+      "index": 4,
+      "rank": 2996,
+      "row": 1,
+      "column": 4,
+      "character": "氈",
+      "codepoint": "U+6C08",
+      "cns_code": "1-7421",
+      "cns_strokes": 17,
+      "cns_stroke_sequence": "41252511251113115",
+      "minimum_grid_clearance_px": 60,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.203125,
+        0.22070312,
+        0.80078125,
+        0.70117188
+      ],
+      "source_box": [
+        924,
+        25,
+        1221,
+        325
+      ],
+      "dark_component_count_8conn": 2,
+      "smallest_dark_component_area_px": 1913,
+      "dark_component_areas_px": [
+        1913,
+        2845
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-7421（17 畫／序列 41252511251113115）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-7421（17 畫／序列 41252511251113115）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0188",
+      "index": 5,
+      "rank": 2997,
+      "row": 2,
+      "column": 1,
+      "character": "粥",
+      "codepoint": "U+7CA5",
+      "cns_code": "1-6136",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "515431534515",
+      "minimum_grid_clearance_px": 60,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.265625,
+        0.19921875,
+        0.76367188,
+        0.74414062
+      ],
+      "source_box": [
+        29,
+        325,
+        327,
+        622
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 116,
+      "dark_component_areas_px": [
+        116,
+        181,
+        1434,
+        1515,
+        1523
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-6136（12 畫／序列 515431534515）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-6136（12 畫／序列 515431534515）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0188",
+      "index": 6,
+      "rank": 2998,
+      "row": 2,
+      "column": 2,
+      "character": "粲",
+      "codepoint": "U+7CB2",
+      "cns_code": "2-4579",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "2135454431534",
+      "minimum_grid_clearance_px": 51,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.28515625,
+        0.171875,
+        0.76367188,
+        0.75585938
+      ],
+      "source_box": [
+        327,
+        325,
+        625,
+        622
+      ],
+      "dark_component_count_8conn": 6,
+      "smallest_dark_component_area_px": 105,
+      "dark_component_areas_px": [
+        105,
+        182,
+        475,
+        891,
+        1228,
+        1544
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 2-4579（13 畫／序列 2135454431534）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 2-4579（13 畫／序列 2135454431534）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0188",
+      "index": 7,
+      "rank": 2999,
+      "row": 2,
+      "column": 3,
+      "character": "舶",
+      "codepoint": "U+8236",
+      "cns_code": "1-5C72",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "33544132511",
+      "minimum_grid_clearance_px": 60,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.20117188,
+        0.20117188,
+        0.74609375,
+        0.73242188
+      ],
+      "source_box": [
+        625,
+        325,
+        924,
+        622
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 86,
+      "dark_component_areas_px": [
+        86,
+        103,
+        173,
+        1812,
+        2310
+      ],
+      "dark_component_areas_under_100_px": [
+        86
+      ],
+      "small_component_boxes_under_100_px": [
+        {
+          "area_px": 86,
+          "local_bbox": [
+            111,
+            141,
+            122,
+            156
+          ],
+          "global_bbox": [
+            736,
+            466,
+            747,
+            481
+          ]
+        }
+      ],
+      "topology": "逐筆對照 CNS 1-5C72（11 畫／序列 33544132511）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [
+        "舟構件內的合法短點；未形成碎墨或錯橋"
+      ],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-5C72（11 畫／序列 33544132511）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    },
+    {
+      "batch_id": "common-0188",
+      "index": 8,
+      "rank": 3000,
+      "row": 2,
+      "column": 4,
+      "character": "蟾",
+      "codepoint": "U+87FE",
+      "cns_code": "1-7875",
+      "cns_strokes": 19,
+      "cns_stroke_sequence": "2512143513354111251",
+      "minimum_grid_clearance_px": 56,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.19921875,
+        0.1875,
+        0.74023438,
+        0.765625
+      ],
+      "source_box": [
+        924,
+        325,
+        1221,
+        622
+      ],
+      "dark_component_count_8conn": 8,
+      "smallest_dark_component_area_px": 102,
+      "dark_component_areas_px": [
+        102,
+        160,
+        166,
+        193,
+        403,
+        791,
+        1890,
+        1905
+      ],
+      "dark_component_areas_under_100_px": [],
+      "small_component_boxes_under_100_px": [],
+      "topology": "逐筆對照 CNS 1-7875（19 畫／序列 2512143513354111251）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+      "small_component_review": [],
+      "identity": "PASS",
+      "taiwan_cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contact": "PASS",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 可見關係：逐筆對照 CNS 1-7875（19 畫／序列 2512143513354111251）；標準臺灣繁體部件、開口、轉折與鉤畫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點、內白或部件間隙"
+      ]
+    }
+  ],
+  "proofs": [
+    {
+      "path": "reports/proofs/imagegen-common-0187-0188/common-0187-all-native-2x.png",
+      "sha256": "a1c3b35b726a7d1c8adab54f32efce3078d5bab4b5b99493cf8123e1c29311c5",
+      "purpose": "all 16 raw source cells at exact 2× nearest-neighbour scale",
+      "width_px": 2600,
+      "height_px": 2600,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0187-0188/common-0187-all-native-4x.png",
+      "sha256": "2153a05fa33cfd98a69915aeb26d747195d8a046dcacb4bf846ad0839eb44806",
+      "purpose": "all 16 raw source cells at exact 4× nearest-neighbour scale",
+      "width_px": 4960,
+      "height_px": 4960,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0187-0188/common-0187-cns-reference-proof.png",
+      "sha256": "274029858d3f067f313febbd8c76a4d363538f4626ea74ec4c9b57ce59f6e354",
+      "purpose": "all 16 generated cells beside independently rasterized Taiwan CNS copybook topology",
+      "width_px": 1200,
+      "height_px": 2640,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0187-0188/common-0187-native-cell-proof.png",
+      "sha256": "aafc68c90b7ce32720ab12b907a36cd3587f21716d100a910d620a0c4e04f553",
+      "purpose": "all 16 unscaled raw native cell crops",
+      "width_px": 1280,
+      "height_px": 1360,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0187-0188/common-0187-size-proof.png",
+      "sha256": "371b6a5caaff94d23bfe06242388c3eebe08e42597e6a5ab00b74e78c1b3c3be",
+      "purpose": "all 16 isolated cells at 128 px, 64 px and 32 px",
+      "width_px": 1800,
+      "height_px": 820,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0187-0188/common-0188-all-native-2x.png",
+      "sha256": "1f5f2a237d92f6424b82d93c570e71077c61e28967e4b08e3636f5b53cfa9de3",
+      "purpose": "all 8 raw source cells at exact 2× nearest-neighbour scale",
+      "width_px": 2600,
+      "height_px": 1300,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0187-0188/common-0188-all-native-4x.png",
+      "sha256": "f129fd8368a590282f64de107783eaff941f4985b29daac42c34646ee8397e83",
+      "purpose": "all 8 raw source cells at exact 4× nearest-neighbour scale",
+      "width_px": 4960,
+      "height_px": 2480,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0187-0188/common-0188-cns-reference-proof.png",
+      "sha256": "501233dad54cf3aeab7b19b1a06fde44d8c8c813ef2fd227f16fc7dd92b98e9d",
+      "purpose": "all 8 generated cells beside independently rasterized Taiwan CNS copybook topology",
+      "width_px": 1200,
+      "height_px": 2640,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0187-0188/common-0188-native-cell-proof.png",
+      "sha256": "4c0a8d0f886ab1da3d8c67f17525e7fbcd50e68eb4b74f2a1cf5560e8c98f16d",
+      "purpose": "all 8 unscaled raw native cell crops",
+      "width_px": 1280,
+      "height_px": 1360,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0187-0188/common-0188-size-proof.png",
+      "sha256": "afdeab7e3aeb0766cfab4437adf98875395b39c6086b515464587a90b6597bb6",
+      "purpose": "all 8 isolated cells at 128 px, 64 px and 32 px",
+      "width_px": 1800,
+      "height_px": 820,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0187-0188/priority-24-cns-reference-proof.png",
+      "sha256": "627f28ab89c061327569676d45a46b589ae538cfba3903bfcf4b07d7601b9ecd",
+      "purpose": "all 24 generated cells beside independently rasterized Taiwan CNS copybook topology, with CNS identity evidence",
+      "width_px": 1520,
+      "height_px": 3960,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0187-0188/metrics.json",
+      "sha256": "18b0b2bbb2681879f5c6bbb8c77a1de5bb814823ab8e5f98b858ada7290e72ff",
+      "purpose": "machine-readable source, grid, component, CNS and proof-hash evidence"
+    }
+  ],
+  "all_native_2x_4x_review": [
+    {
+      "character": "渺",
+      "rank": 2977,
+      "codepoint": "U+6E3A",
+      "batch_id": "common-0187",
+      "index": 1,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "絳",
+      "rank": 2978,
+      "codepoint": "U+7D73",
+      "batch_id": "common-0187",
+      "index": 2,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "繭",
+      "rank": 2979,
+      "codepoint": "U+7E6D",
+      "batch_id": "common-0187",
+      "index": 3,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "翹",
+      "rank": 2980,
+      "codepoint": "U+7FF9",
+      "batch_id": "common-0187",
+      "index": 4,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "蒜",
+      "rank": 2981,
+      "codepoint": "U+849C",
+      "batch_id": "common-0187",
+      "index": 5,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "蕉",
+      "rank": 2982,
+      "codepoint": "U+8549",
+      "batch_id": "common-0187",
+      "index": 6,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "遁",
+      "rank": 2983,
+      "codepoint": "U+9041",
+      "batch_id": "common-0187",
+      "index": 7,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "嗜",
+      "rank": 2984,
+      "codepoint": "U+55DC",
+      "batch_id": "common-0187",
+      "index": 8,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "囑",
+      "rank": 2985,
+      "codepoint": "U+56D1",
+      "batch_id": "common-0187",
+      "index": 9,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "拈",
+      "rank": 2986,
+      "codepoint": "U+62C8",
+      "batch_id": "common-0187",
+      "index": 10,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "捻",
+      "rank": 2987,
+      "codepoint": "U+637B",
+      "batch_id": "common-0187",
+      "index": 11,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "氯",
+      "rank": 2988,
+      "codepoint": "U+6C2F",
+      "batch_id": "common-0187",
+      "index": 12,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "貂",
+      "rank": 2989,
+      "codepoint": "U+8C82",
+      "batch_id": "common-0187",
+      "index": 13,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "逵",
+      "rank": 2990,
+      "codepoint": "U+9035",
+      "batch_id": "common-0187",
+      "index": 14,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "霖",
+      "rank": 2991,
+      "codepoint": "U+9716",
+      "batch_id": "common-0187",
+      "index": 15,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "鞏",
+      "rank": 2992,
+      "codepoint": "U+978F",
+      "batch_id": "common-0187",
+      "index": 16,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "嵌",
+      "rank": 2993,
+      "codepoint": "U+5D4C",
+      "batch_id": "common-0188",
+      "index": 1,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "徙",
+      "rank": 2994,
+      "codepoint": "U+5F99",
+      "batch_id": "common-0188",
+      "index": 2,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "憎",
+      "rank": 2995,
+      "codepoint": "U+618E",
+      "batch_id": "common-0188",
+      "index": 3,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "氈",
+      "rank": 2996,
+      "codepoint": "U+6C08",
+      "batch_id": "common-0188",
+      "index": 4,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "粥",
+      "rank": 2997,
+      "codepoint": "U+7CA5",
+      "batch_id": "common-0188",
+      "index": 5,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "粲",
+      "rank": 2998,
+      "codepoint": "U+7CB2",
+      "batch_id": "common-0188",
+      "index": 6,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "舶",
+      "rank": 2999,
+      "codepoint": "U+8236",
+      "batch_id": "common-0188",
+      "index": 7,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    },
+    {
+      "character": "蟾",
+      "rank": 3000,
+      "codepoint": "U+87FE",
+      "batch_id": "common-0188",
+      "index": 8,
+      "native": "PASS",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "no_grid_contamination": "PASS"
+    }
+  ],
+  "priority_reviews": [
+    {
+      "character": "渺",
+      "rank": 2977,
+      "codepoint": "U+6E3A",
+      "cns_code": "1-6040",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "444251115343",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-6040（12 畫／序列 444251115343）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "絳",
+      "rank": 2978,
+      "codepoint": "U+7D73",
+      "cns_code": "1-6142",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "554444354152",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-6142（12 畫／序列 554444354152）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "繭",
+      "rank": 2979,
+      "codepoint": "U+7E6D",
+      "cns_code": "1-7860",
+      "cns_strokes": 19,
+      "cns_stroke_sequence": "2112252554534251214",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-7860（19 畫／序列 2112252554534251214）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "翹",
+      "rank": 2980,
+      "codepoint": "U+7FF9",
+      "cns_code": "1-7728",
+      "cns_strokes": 18,
+      "cns_stroke_sequence": "121121121135544544",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-7728（18 畫／序列 121121121135544544）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "蒜",
+      "rank": 2981,
+      "codepoint": "U+849C",
+      "cns_code": "1-6A63",
+      "cns_strokes": 14,
+      "cns_stroke_sequence": "21121123411234",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-6A63（14 畫／序列 21121123411234）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "蕉",
+      "rank": 2982,
+      "codepoint": "U+8549",
+      "cns_code": "1-7226",
+      "cns_strokes": 16,
+      "cns_stroke_sequence": "2112324111214444",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-7226（16 畫／序列 2112324111214444）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "遁",
+      "rank": 2983,
+      "codepoint": "U+9041",
+      "cns_code": "1-6738",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "3312251114554",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-6738（13 畫／序列 3312251114554）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "嗜",
+      "rank": 2984,
+      "codepoint": "U+55DC",
+      "cns_code": "1-6344",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "2511213152511",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-6344（13 畫／序列 2511213152511）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "囑",
+      "rank": 2985,
+      "codepoint": "U+56D1",
+      "cns_code": "1-7C5D",
+      "cns_strokes": 24,
+      "cns_stroke_sequence": "251513544342522135251214",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-7C5D（24 畫／序列 251513544342522135251214）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "拈",
+      "rank": 2986,
+      "codepoint": "U+62C8",
+      "cns_code": "1-4D62",
+      "cns_strokes": 8,
+      "cns_stroke_sequence": "15121251",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-4D62（8 畫／序列 15121251）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "捻",
+      "rank": 2987,
+      "codepoint": "U+637B",
+      "cns_code": "1-5A6D",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "15134154544",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-5A6D（11 畫／序列 15134154544）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "氯",
+      "rank": 2988,
+      "codepoint": "U+6C2F",
+      "cns_code": "1-6029",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "311555154434",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-6029（12 畫／序列 311555154434）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "貂",
+      "rank": 2989,
+      "codepoint": "U+8C82",
+      "cns_code": "1-6230",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "344353353251",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-6230（12 畫／序列 344353353251）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "逵",
+      "rank": 2990,
+      "codepoint": "U+9035",
+      "cns_code": "1-624D",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "121351214554",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-624D（12 畫／序列 121351214554）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "霖",
+      "rank": 2991,
+      "codepoint": "U+9716",
+      "cns_code": "1-7276",
+      "cns_strokes": 16,
+      "cns_stroke_sequence": "1452443412341234",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-7276（16 畫／序列 1452443412341234）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "鞏",
+      "rank": 2992,
+      "codepoint": "U+978F",
+      "cns_code": "1-6F6D",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "121354122125112",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-6F6D（15 畫／序列 121354122125112）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "嵌",
+      "rank": 2993,
+      "codepoint": "U+5D4C",
+      "cns_code": "1-5E74",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "252122113534",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-5E74（12 畫／序列 252122113534）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "徙",
+      "rank": 2994,
+      "codepoint": "U+5F99",
+      "cns_code": "1-5A36",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "33221212134",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-5A36（11 畫／序列 33221212134）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "憎",
+      "rank": 2995,
+      "codepoint": "U+618E",
+      "cns_code": "1-6C70",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "424432524312511",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-6C70（15 畫／序列 424432524312511）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "氈",
+      "rank": 2996,
+      "codepoint": "U+6C08",
+      "cns_code": "1-7421",
+      "cns_strokes": 17,
+      "cns_stroke_sequence": "41252511251113115",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-7421（17 畫／序列 41252511251113115）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "粥",
+      "rank": 2997,
+      "codepoint": "U+7CA5",
+      "cns_code": "1-6136",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "515431534515",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-6136（12 畫／序列 515431534515）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "粲",
+      "rank": 2998,
+      "codepoint": "U+7CB2",
+      "cns_code": "2-4579",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "2135454431534",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 2-4579（13 畫／序列 2135454431534）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "舶",
+      "rank": 2999,
+      "codepoint": "U+8236",
+      "cns_code": "1-5C72",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "33544132511",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-5C72（11 畫／序列 33544132511）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    },
+    {
+      "character": "蟾",
+      "rank": 3000,
+      "codepoint": "U+87FE",
+      "cns_code": "1-7875",
+      "cns_strokes": 19,
+      "cns_stroke_sequence": "2512143513354111251",
+      "native_2x": "PASS",
+      "native_4x": "PASS",
+      "cns_topology": "PASS",
+      "stroke_count_and_order": "PASS",
+      "no_thorns_or_spurs": "PASS",
+      "no_stray_ink": "PASS",
+      "no_wrong_bridges": "PASS",
+      "finding": "逐筆對照 CNS 1-7875（19 畫／序列 2512143513354111251）；標準臺灣繁體部件、開口、轉折與鉤畫完整"
+    }
+  ],
+  "priority_raster_review": [
+    "U+6E3A",
+    "U+7D73",
+    "U+7E6D",
+    "U+7FF9",
+    "U+849C",
+    "U+8549",
+    "U+9041",
+    "U+55DC",
+    "U+56D1",
+    "U+62C8",
+    "U+637B",
+    "U+6C2F",
+    "U+8C82",
+    "U+9035",
+    "U+9716",
+    "U+978F",
+    "U+5D4C",
+    "U+5F99",
+    "U+618E",
+    "U+6C08",
+    "U+7CA5",
+    "U+7CB2",
+    "U+8236",
+    "U+87FE"
+  ],
+  "priority_post_trace_review": [
+    "U+6E3A",
+    "U+7D73",
+    "U+7E6D",
+    "U+7FF9",
+    "U+849C",
+    "U+8549",
+    "U+9041",
+    "U+55DC",
+    "U+56D1",
+    "U+62C8",
+    "U+637B",
+    "U+6C2F",
+    "U+8C82",
+    "U+9035",
+    "U+9716",
+    "U+978F",
+    "U+5D4C",
+    "U+5F99",
+    "U+618E",
+    "U+6C08",
+    "U+7CA5",
+    "U+7CB2",
+    "U+8236",
+    "U+87FE"
+  ],
+  "small_component_exceptions": [
+    {
+      "character": "繭",
+      "rank": 2979,
+      "codepoint": "U+7E6D",
+      "batch_id": "common-0187",
+      "cell": 3,
+      "components": [
+        {
+          "area_px": 90,
+          "local_bbox": [
+            106,
+            143,
+            117,
+            158
+          ],
+          "global_bbox": [
+            731,
+            168,
+            742,
+            183
+          ],
+          "classification": "繭內糸構件的合法短點；未形成游離碎墨或錯橋",
+          "decision": "PASS"
+        }
+      ]
+    },
+    {
+      "character": "翹",
+      "rank": 2980,
+      "codepoint": "U+7FF9",
+      "batch_id": "common-0187",
+      "cell": 4,
+      "components": [
+        {
+          "area_px": 97,
+          "local_bbox": [
+            149,
+            135,
+            166,
+            144
+          ],
+          "global_bbox": [
+            1073,
+            160,
+            1090,
+            169
+          ],
+          "classification": "右側羽構件的合法短橫；位置與 CNS 拓撲相符",
+          "decision": "PASS"
+        }
+      ]
+    },
+    {
+      "character": "囑",
+      "rank": 2985,
+      "codepoint": "U+56D1",
+      "batch_id": "common-0187",
+      "cell": 9,
+      "components": [
+        {
+          "area_px": 88,
+          "local_bbox": [
+            185,
+            91,
+            202,
+            98
+          ],
+          "global_bbox": [
+            214,
+            713,
+            231,
+            720
+          ],
+          "classification": "屬構件上部兩個合法短筆；均未誤接相鄰主幹",
+          "decision": "PASS"
+        },
+        {
+          "area_px": 85,
+          "local_bbox": [
+            138,
+            100,
+            153,
+            108
+          ],
+          "global_bbox": [
+            167,
+            722,
+            182,
+            730
+          ],
+          "classification": "屬構件上部兩個合法短筆；均未誤接相鄰主幹",
+          "decision": "PASS"
+        }
+      ]
+    },
+    {
+      "character": "霖",
+      "rank": 2991,
+      "codepoint": "U+9716",
+      "batch_id": "common-0187",
+      "cell": 15,
+      "components": [
+        {
+          "area_px": 95,
+          "local_bbox": [
+            103,
+            108,
+            120,
+            115
+          ],
+          "global_bbox": [
+            728,
+            1026,
+            745,
+            1033
+          ],
+          "classification": "雨構件內的合法短點；未與林構件誤接",
+          "decision": "PASS"
+        }
+      ]
+    },
+    {
+      "character": "憎",
+      "rank": 2995,
+      "codepoint": "U+618E",
+      "batch_id": "common-0188",
+      "cell": 3,
+      "components": [
+        {
+          "area_px": 85,
+          "local_bbox": [
+            154,
+            141,
+            165,
+            155
+          ],
+          "global_bbox": [
+            779,
+            166,
+            790,
+            180
+          ],
+          "classification": "曾構件內的合法短點；位置與 CNS 拓撲相符",
+          "decision": "PASS"
+        }
+      ]
+    },
+    {
+      "character": "舶",
+      "rank": 2999,
+      "codepoint": "U+8236",
+      "batch_id": "common-0188",
+      "cell": 7,
+      "components": [
+        {
+          "area_px": 86,
+          "local_bbox": [
+            111,
+            141,
+            122,
+            156
+          ],
+          "global_bbox": [
+            736,
+            466,
+            747,
+            481
+          ],
+          "classification": "舟構件內的合法短點；未形成碎墨或錯橋",
+          "decision": "PASS"
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "single_glyph_regeneration_prompts": [],
+  "summary": {
+    "total": 24,
+    "pass": 24,
+    "reject": 0,
+    "approved_for_controlled_vectorization": 24,
+    "rejected_for_vectorization": 0,
+    "wrong_or_out_of_order_cells": 0,
+    "wrong_glyph_identity_findings": 0,
+    "simplified_or_incompatible_variants": 0,
+    "missing_or_extra_semantic_strokes": 0,
+    "wrong_hook_or_turn_findings": 0,
+    "grid_contacts": 0,
+    "stray_dark_component_findings": 0,
+    "thorn_or_spur_findings": 0,
+    "wrong_bridge_findings": 0,
+    "minimum_batch_clearances_px": [
+      40,
+      51
+    ],
+    "minimum_dark_component_areas_px": [
+      85,
+      85
+    ],
+    "legal_small_components": [
+      {
+        "character": "繭",
+        "rank": 2979,
+        "codepoint": "U+7E6D",
+        "batch_id": "common-0187",
+        "cell": 3,
+        "areas_px": [
+          90
+        ],
+        "native_component_bboxes_xyxy": [
+          [
+            106,
+            143,
+            117,
+            158
+          ]
+        ],
+        "sheet_component_bboxes_xyxy": [
+          [
+            731,
+            168,
+            742,
+            183
+          ]
+        ],
+        "finding": "繭內糸構件的合法短點；未形成游離碎墨或錯橋"
+      },
+      {
+        "character": "翹",
+        "rank": 2980,
+        "codepoint": "U+7FF9",
+        "batch_id": "common-0187",
+        "cell": 4,
+        "areas_px": [
+          97
+        ],
+        "native_component_bboxes_xyxy": [
+          [
+            149,
+            135,
+            166,
+            144
+          ]
+        ],
+        "sheet_component_bboxes_xyxy": [
+          [
+            1073,
+            160,
+            1090,
+            169
+          ]
+        ],
+        "finding": "右側羽構件的合法短橫；位置與 CNS 拓撲相符"
+      },
+      {
+        "character": "囑",
+        "rank": 2985,
+        "codepoint": "U+56D1",
+        "batch_id": "common-0187",
+        "cell": 9,
+        "areas_px": [
+          88,
+          85
+        ],
+        "native_component_bboxes_xyxy": [
+          [
+            185,
+            91,
+            202,
+            98
+          ],
+          [
+            138,
+            100,
+            153,
+            108
+          ]
+        ],
+        "sheet_component_bboxes_xyxy": [
+          [
+            214,
+            713,
+            231,
+            720
+          ],
+          [
+            167,
+            722,
+            182,
+            730
+          ]
+        ],
+        "finding": "屬構件上部兩個合法短筆；均未誤接相鄰主幹"
+      },
+      {
+        "character": "霖",
+        "rank": 2991,
+        "codepoint": "U+9716",
+        "batch_id": "common-0187",
+        "cell": 15,
+        "areas_px": [
+          95
+        ],
+        "native_component_bboxes_xyxy": [
+          [
+            103,
+            108,
+            120,
+            115
+          ]
+        ],
+        "sheet_component_bboxes_xyxy": [
+          [
+            728,
+            1026,
+            745,
+            1033
+          ]
+        ],
+        "finding": "雨構件內的合法短點；未與林構件誤接"
+      },
+      {
+        "character": "憎",
+        "rank": 2995,
+        "codepoint": "U+618E",
+        "batch_id": "common-0188",
+        "cell": 3,
+        "areas_px": [
+          85
+        ],
+        "native_component_bboxes_xyxy": [
+          [
+            154,
+            141,
+            165,
+            155
+          ]
+        ],
+        "sheet_component_bboxes_xyxy": [
+          [
+            779,
+            166,
+            790,
+            180
+          ]
+        ],
+        "finding": "曾構件內的合法短點；位置與 CNS 拓撲相符"
+      },
+      {
+        "character": "舶",
+        "rank": 2999,
+        "codepoint": "U+8236",
+        "batch_id": "common-0188",
+        "cell": 7,
+        "areas_px": [
+          86
+        ],
+        "native_component_bboxes_xyxy": [
+          [
+            111,
+            141,
+            122,
+            156
+          ]
+        ],
+        "sheet_component_bboxes_xyxy": [
+          [
+            736,
+            466,
+            747,
+            481
+          ]
+        ],
+        "finding": "舟構件內的合法短點；未形成碎墨或錯橋"
+      }
+    ],
+    "legal_small_components_under_100_px": 7,
+    "components_under_20_px": 0,
+    "all_native_2x_cells_reviewed": 24,
+    "all_native_4x_cells_reviewed": 24,
+    "priority_cells_reviewed": 24,
+    "priority_cells_rejected": 0,
+    "failed_cells": [],
+    "single_glyph_regeneration_prompts": [],
+    "source_metadata_mutated": false
+  }
+}

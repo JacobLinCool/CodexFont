@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0107",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1697,
+    "end_rank": 1712,
+    "characters": "霜孽桂碧誌驅嘆擁柴肢譽賭浩紹臟乏"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0107.source.json",
+    "descriptor_sha256": "4e7de9ed73d2a8edb23ad686e1bfad53674c9e0153f4c326ef7e89268f359bb1",
+    "raster": "sources/imagegen/raster/common-0107.png",
+    "raster_sha256": "48edeb5af9d5229cf5c3656956162dfc5a967ca2b7d217be233dc8e4d42efb77"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0107-0110-audit.json",
+    "report_sha256": "fdd07408ae937caaac661a384371af0f045db72b35107db3c120e67294eef2f1"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0107/report.json",
+    "report_sha256": "ec55580cbd9eca98b8e99f88c051467236fe5b9c3f7bd1e4dd14fbdef5ffa818",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0107.vector-review.json",
+    "record_sha256": "43c98c92a92c86fe00da445db88927e589f929e63f742063befdb4a583e627aa"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:47:35Z"
+  }
+}

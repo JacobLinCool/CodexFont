@@ -1,0 +1,39 @@
+Use case: font-source raster sheet
+Asset type: high-resolution 4×4 raster master sheet for an original Traditional Chinese handwriting font in the clear-hand-tc family
+
+Input images:
+1. Image 1 is STYLE ONLY. Match its fine black gel-pen weight, rounded terminals, natural right slant, optical scale, pure-white background, and faint 4×4 grid. Do not copy its characters or outlines.
+2. Image 2 is IDENTITY REFERENCE ONLY. Use it to disambiguate the exact Unicode character assigned to each cell. Do not trace, reproduce, or import its printed outlines or gray grid geometry.
+
+Primary request: write exactly 16 new isolated Traditional Chinese glyphs in a strict four-by-four grid, in this exact row-major order:
+〇忒烱挂 / 毬𥳑孢謔 / 杆昉諕皋 / 踰劭諛讎.
+
+Exact occupied cells:
+- Cell 01: U+3007 〇 IDEOGRAPHIC NUMBER ZERO
+- Cell 02: U+5FD2 忒
+- Cell 03: U+70F1 烱
+- Cell 04: U+6302 挂
+- Cell 05: U+6BEC 毬
+- Cell 06: U+25CD1 𥳑, composition 竹 above 閒 exactly as Image 2
+- Cell 07: U+5B62 孢
+- Cell 08: U+8B14 謔
+- Cell 09: U+6746 杆
+- Cell 10: U+6609 昉
+- Cell 11: U+8AD5 諕
+- Cell 12: U+768B 皋
+- Cell 13: U+8E30 踰
+- Cell 14: U+52AD 劭
+- Cell 15: U+8ADB 諛
+- Cell 16: U+8B8E 讎
+
+Verbatim rows:
+〇忒烱挂
+毬𥳑孢謔
+杆昉諕皋
+踰劭諛讎
+
+Composition: square image; five faint thin neutral-gray straight grid rules in each direction; four equal rows and four equal columns; generous outer margin; pure white background; exactly one centered black target glyph in every cell; all ink well away from separators.
+
+Preserve every requested Unicode identity and Taiwan Traditional character topology. Redraw from a blank canvas with complete standard strokes and open counters. Output each target exactly once and only in its assigned cell. Image 2 is identity evidence, never an outline source.
+
+Do not include labels, Unicode names, cell numbers, captions, signatures, logos, watermarks, extra text, simplified variants, duplicate or omitted characters, wrong or missing strokes, printed type, brush blobs, texture, shadows, sharp miter spikes, thorn-like protrusions, accidental hooks, tangled cursive, clipping, or connected cells.

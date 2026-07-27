@@ -1,0 +1,14 @@
+Use case: precise-object-edit
+Asset type: corrected 4×4 raster master sheet for clear-hand-tc
+
+Input images:
+1. Image 1 is the previous generated sheet. Preserve it exactly except for Cell 13.
+2. Image 2 is the identity copybook. Use only Cell 13 to verify topology; do not trace its printed outline.
+
+Primary request: replace only Cell 13 (row 4, column 1) with a newly handwritten U+6504 `攄`.
+
+Required topology for `攄`: hand radical `扌` on the left plus the complete component `慮` on the right. The right component must visibly contain `虍` above `思` (`田` above `心`). It must not contain `婁`, and it must not become `摟`, `攄` with missing `心`, or any other character.
+
+Constraints: keep Cells 01–12 and 14–16 unchanged in content, position, style, and grid; preserve the white background and faint grid; match the existing fine black gel-pen weight and rounded handwritten terminals; center the replacement with clear counters and no grid contact; draw a new original glyph without tracing.
+
+Avoid: changing any other cell, simplified forms, missing strokes, extra marks, printed type, spikes, thorns, clipping, signature, logo, or watermark.

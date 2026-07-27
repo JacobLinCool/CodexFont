@@ -1,0 +1,2287 @@
+{
+  "schema_version": 1,
+  "audit_id": "imagegen-common-0055-0058",
+  "audited_at": "2026-07-26",
+  "auditor": "Codex independent raster QA",
+  "scope": {
+    "batch_ids": [
+      "common-0055",
+      "common-0056",
+      "common-0057",
+      "common-0058"
+    ],
+    "rank_range": [
+      865,
+      928
+    ],
+    "glyph_count": 64,
+    "repertoire": {
+      "path": "sources/imagegen/repertoires/common-3000.json",
+      "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+      "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd"
+    }
+  },
+  "authority": {
+    "provider": "Ministry of Digital Affairs, Taiwan, CNS11643 Chinese Standard Interchange Code Full Character Database",
+    "official_dataset_url": "https://data.gov.tw/dataset/5961",
+    "mapping_archive": {
+      "path": "tmp/cns-opendata/MapingTables.zip",
+      "sha256": "f59dacc4dbdef334d7a887c3da671af02778e2c80adb2a7fd1053f64dbf9e659",
+      "member": "Unicode/CNS2UNICODE_Unicode BMP.txt",
+      "member_timestamp": "2026-05-05"
+    },
+    "properties_archive": {
+      "path": "tmp/cns-opendata/Properties.zip",
+      "sha256": "50cad66f3fe6f3a4b6f4a7bf0431e1bfb8dabc3d8c7be4d61e1617b15a0d7a7b",
+      "members": [
+        "CNS_stroke.txt",
+        "CNS_strokes_sequence.txt"
+      ],
+      "member_timestamp": "2026-05-05"
+    },
+    "visual_copybook": {
+      "path": "sources/upstream/TW-Kai-98_1.ttf",
+      "sha256": "c206333edcc3c8c86ee547da4c78ad1c8f7ec2670a2b550a768532258f75806a",
+      "usage": "rasterized visual topology comparison only; no outline, coordinate, or trace enters the image-generated glyph"
+    },
+    "stroke_sequence_digit_legend": {
+      "1": "horizontal",
+      "2": "vertical",
+      "3": "left-falling",
+      "4": "dot or right-falling",
+      "5": "turn or hook family"
+    }
+  },
+  "policy": {
+    "pass_definition": "The exact requested scalar is present, its visible Taiwan Traditional topology agrees with the current CNS mapping and stroke-sequence structure, it remains directly recognizable at native, 128, 64, and 32 px cell sizes, the ink is isolated from the grid, and no stray thorn or topology-changing defect is visible.",
+    "reject_definition": "Any uncertain identity, simplified substitution, missing or extra semantic component, topology-changing join, unreadability at a reviewed size, grid contact, stray ink, or thorn-like defect.",
+    "raster_limit": "A final raster can establish visible topology but cannot prove the temporal act of writing each stroke.",
+    "vectorization_limit": "PASS permits controlled tracing of the isolated dark ink only. Grid lines, near-white background variation, antialias halos, and CNS copybook outlines are forbidden geometry.",
+    "descriptor_mutation": "This audit does not change source descriptors or mark any source as approved."
+  },
+  "method": {
+    "views": [
+      "raw native cell crop",
+      "128 px per complete isolated cell",
+      "64 px per complete isolated cell",
+      "32 px per complete isolated cell",
+      "generated cell beside an independently rasterized CNS TW-Kai copybook"
+    ],
+    "grid_detection": "Exactly five long light-gray line groups per axis were detected by projection; the reported grid clearance is the minimum distance from a pixel darker than L=100 to the nearest detected cell boundary.",
+    "dark_component_check": "Every raw cell was checked with 8-connected components at L<100; no isolated dark component smaller than 10 px was present.",
+    "priority_manual_review": [
+      "園",
+      "尋",
+      "緊",
+      "遺",
+      "隊",
+      "聖",
+      "鳳",
+      "賈",
+      "網",
+      "熟",
+      "譯",
+      "歷",
+      "敵",
+      "慶",
+      "執",
+      "陶",
+      "島",
+      "謀",
+      "蓋",
+      "載",
+      "彈",
+      "爾",
+      "錯",
+      "麗",
+      "寬",
+      "輪",
+      "靜",
+      "閒",
+      "貌"
+    ],
+    "artifact_review": [
+      "wrong scalar or order",
+      "Taiwan Traditional topology",
+      "missing or extra stroke branch",
+      "simplified or non-Taiwan variant substitution",
+      "open counters and component separation",
+      "grid contact",
+      "stray dark marks",
+      "sharp miter or thorn-like protrusion"
+    ],
+    "background_note": "The paper is visually clean but not numerically flat #FFFFFF. Pixels at L>=245 have standard deviation 1.21 to 1.35 across the four sheets, so background normalization is mandatory before tracing."
+  },
+  "summary": {
+    "total": 64,
+    "pass": 64,
+    "reject": 0,
+    "approved_for_controlled_vectorization": 64,
+    "rejected_for_vectorization": 0,
+    "wrong_or_out_of_order_cells": 0,
+    "simplified_substitutions": 0,
+    "missing_or_extra_stroke_findings": 0,
+    "grid_contacts": 0,
+    "stray_dark_component_findings": 0,
+    "thorn_or_spur_findings": 0,
+    "priority_cells_reviewed": 29,
+    "priority_cells_rejected": 0,
+    "failed_cells": [],
+    "single_glyph_regeneration_prompts": []
+  },
+  "batches": [
+    {
+      "batch_id": "common-0055",
+      "start_rank": 865,
+      "end_rank": 880,
+      "characters": "園尋雪脫怕緊遺隊配附招沙聖鳳略賈",
+      "raster": "sources/imagegen/raster/common-0055.png",
+      "sha256": "752ed9513abec1270d2586ec483354cd1672cee2503812a31d0f8d94ce633a4b",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        625,
+        923,
+        1221
+      ],
+      "grid_line_centres_y": [
+        25,
+        325,
+        622,
+        918,
+        1217
+      ],
+      "minimum_dark_ink_grid_clearance_px": 41,
+      "background_light_pixel_standard_deviation": 1.345978,
+      "source_descriptor": "sources/imagegen/batches/common-0055.source.json",
+      "source_state_at_audit": "generated-unreviewed",
+      "source_review_at_audit": {
+        "topology": "pending",
+        "raster_quality": "pending",
+        "vector_quality": "pending"
+      },
+      "pass": 16,
+      "reject": 0
+    },
+    {
+      "batch_id": "common-0056",
+      "start_rank": 881,
+      "end_rank": 896,
+      "characters": "網甲凡朱借熟譯假歷敵侯慶套停索執",
+      "raster": "sources/imagegen/raster/common-0056.png",
+      "sha256": "591b83e369db0c3f79e09e6b5dfbaeed39df94bae743aa63d59484d0f1eb47d4",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        625,
+        923,
+        1221
+      ],
+      "grid_line_centres_y": [
+        25,
+        325,
+        622,
+        918,
+        1217
+      ],
+      "minimum_dark_ink_grid_clearance_px": 39,
+      "background_light_pixel_standard_deviation": 1.331962,
+      "source_descriptor": "sources/imagegen/batches/common-0056.source.json",
+      "source_state_at_audit": "generated-unreviewed",
+      "source_review_at_audit": {
+        "topology": "pending",
+        "raster_quality": "pending",
+        "vector_quality": "pending"
+      },
+      "pass": 16,
+      "reject": 0
+    },
+    {
+      "batch_id": "common-0057",
+      "start_rank": 897,
+      "end_rank": 912,
+      "characters": "陶島況麻謀蓋伯眉降育載彈阿沉伏乘",
+      "raster": "sources/imagegen/raster/common-0057.png",
+      "sha256": "097bb60931404e5b3429fba5822f2e0a6f7448646ccec449fe3c189ca78a3935",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        625,
+        923,
+        1221
+      ],
+      "grid_line_centres_y": [
+        25,
+        325,
+        622,
+        918,
+        1217
+      ],
+      "minimum_dark_ink_grid_clearance_px": 39,
+      "background_light_pixel_standard_deviation": 1.205391,
+      "source_descriptor": "sources/imagegen/batches/common-0057.source.json",
+      "source_state_at_audit": "generated-unreviewed",
+      "source_review_at_audit": {
+        "topology": "pending",
+        "raster_quality": "pending",
+        "vector_quality": "pending"
+      },
+      "pass": 16,
+      "reject": 0
+    },
+    {
+      "batch_id": "common-0058",
+      "start_rank": 913,
+      "end_rank": 928,
+      "characters": "爾錯級博悲麗寬輪困怎威靜閒徐貌婚",
+      "raster": "sources/imagegen/raster/common-0058.png",
+      "sha256": "e0adb0fb8572965894a2c7ae5b26d3799cb673927395ccc2aa0ec0c97480fc63",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        625,
+        923,
+        1220
+      ],
+      "grid_line_centres_y": [
+        25,
+        325,
+        622,
+        918,
+        1217
+      ],
+      "minimum_dark_ink_grid_clearance_px": 42,
+      "background_light_pixel_standard_deviation": 1.251238,
+      "source_descriptor": "sources/imagegen/batches/common-0058.source.json",
+      "source_state_at_audit": "generated-unreviewed",
+      "source_review_at_audit": {
+        "topology": "pending",
+        "raster_quality": "pending",
+        "vector_quality": "pending"
+      },
+      "pass": 16,
+      "reject": 0
+    }
+  ],
+  "glyphs": [
+    {
+      "batch_id": "common-0055",
+      "index": 1,
+      "rank": 865,
+      "row": 1,
+      "column": 1,
+      "character": "園",
+      "codepoint": "U+5712",
+      "cns_code": "1-6350",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "2512125135341",
+      "topology": "⿴囗袁；完整繁體園",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 57,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "外囗四邊與內白",
+        "袁的土、口與衣下分支",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 2,
+      "rank": 866,
+      "row": 1,
+      "column": 2,
+      "character": "尋",
+      "codepoint": "U+5C0B",
+      "cns_code": "1-5E72",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "511121251154",
+      "topology": "彐、工、口、寸四層完整；完整繁體尋",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 45,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "彐三橫",
+        "工、口與寸的分層交會",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 3,
+      "rank": 867,
+      "row": 1,
+      "column": 3,
+      "character": "雪",
+      "codepoint": "U+96EA",
+      "cns_code": "1-5D7B",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "14524434511",
+      "topology": "⿱雨彐",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 62,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "雨框、中央豎與四個內點",
+        "下彐三橫"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 4,
+      "rank": 868,
+      "row": 1,
+      "column": 4,
+      "character": "脫",
+      "codepoint": "U+812B",
+      "cns_code": "1-5C6B",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "35443425135",
+      "topology": "⿰月兌；臺灣字形兌完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 42,
+      "dark_component_count": 7,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "月內兩橫",
+        "兌上八、口與儿鉤"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 5,
+      "rank": 869,
+      "row": 2,
+      "column": 1,
+      "character": "怕",
+      "codepoint": "U+6015",
+      "cns_code": "1-4D4A",
+      "cns_strokes": 8,
+      "cns_stroke_sequence": "42432511",
+      "topology": "⿰忄白",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 58,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "忄三筆分離",
+        "白框與內橫"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 6,
+      "rank": 870,
+      "row": 2,
+      "column": 2,
+      "character": "緊",
+      "codepoint": "U+7DCA",
+      "cns_code": "1-6A3B",
+      "cns_strokes": 14,
+      "cns_stroke_sequence": "12512554554534",
+      "topology": "⿱臤糸；完整繁體緊",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 46,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "臣框、內橫與又交會",
+        "糸折鉤與四個末點",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 7,
+      "rank": 871,
+      "row": 2,
+      "column": 3,
+      "character": "遺",
+      "codepoint": "U+907A",
+      "cns_code": "1-725C",
+      "cns_strokes": 16,
+      "cns_stroke_sequence": "2512125111344554",
+      "topology": "⿺辶貴；完整繁體遺",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 52,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "貴的中、橫與貝框",
+        "辶點折與底捺",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 8,
+      "rank": 872,
+      "row": 2,
+      "column": 4,
+      "character": "隊",
+      "codepoint": "U+968A",
+      "cns_code": "1-6269",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "552431353334",
+      "topology": "⿰阝㒸；完整繁體隊",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 41,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "左阝折鉤",
+        "㒸上丷與豕的多分支",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 9,
+      "rank": 873,
+      "row": 3,
+      "column": 1,
+      "character": "配",
+      "codepoint": "U+914D",
+      "cns_code": "1-5859",
+      "cns_strokes": 10,
+      "cns_stroke_sequence": "1253511515",
+      "topology": "⿰酉己",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "酉框、內橫與內白",
+        "己折鉤"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 10,
+      "rank": 874,
+      "row": 3,
+      "column": 2,
+      "character": "附",
+      "codepoint": "U+9644",
+      "cns_code": "1-4F61",
+      "cns_strokes": 8,
+      "cns_stroke_sequence": "55232154",
+      "topology": "⿰阝付",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 53,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "左阝折鉤",
+        "付的亻、寸鉤與點"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 11,
+      "rank": 875,
+      "row": 3,
+      "column": 3,
+      "character": "招",
+      "codepoint": "U+62DB",
+      "cns_code": "1-4D5D",
+      "cns_strokes": 8,
+      "cns_stroke_sequence": "15153251",
+      "topology": "⿰扌召",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "扌三分支",
+        "召的刀與口內白"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 12,
+      "rank": 876,
+      "row": 3,
+      "column": 4,
+      "character": "沙",
+      "codepoint": "U+6C99",
+      "cns_code": "1-4A67",
+      "cns_strokes": 7,
+      "cns_stroke_sequence": "4445343",
+      "topology": "⿰氵少",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 44,
+      "dark_component_count": 7,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "三點水分離",
+        "少的中央鉤與撇"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 13,
+      "rank": 877,
+      "row": 4,
+      "column": 1,
+      "character": "聖",
+      "codepoint": "U+8056",
+      "cns_code": "1-657B",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "1221112513121",
+      "topology": "⿱⿰耳口王；完整繁體聖",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 54,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "耳內兩橫與末橫",
+        "口內白與王三橫",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 14,
+      "rank": 878,
+      "row": 4,
+      "column": 2,
+      "character": "鳳",
+      "codepoint": "U+9CF3",
+      "cns_code": "1-6B7A",
+      "cns_strokes": 14,
+      "cns_stroke_sequence": "35132511154444",
+      "topology": "⿵几鳥；完整繁體鳳",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 7,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "外几框與彎鉤",
+        "鳥的白形、折鉤與四個末點",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 15,
+      "rank": 879,
+      "row": 4,
+      "column": 3,
+      "character": "略",
+      "codepoint": "U+7565",
+      "cns_code": "1-5C29",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "25121354251",
+      "topology": "⿰田各",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 41,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "田四格與內白",
+        "各的夂與口"
+      ]
+    },
+    {
+      "batch_id": "common-0055",
+      "index": 16,
+      "rank": 880,
+      "row": 4,
+      "column": 4,
+      "character": "賈",
+      "codepoint": "U+8CC8",
+      "cns_code": "1-6672",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "1252212511134",
+      "topology": "⿱覀貝；完整繁體賈",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 53,
+      "dark_component_count": 7,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "覀框與雙內豎",
+        "貝框、內橫與下八",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 1,
+      "rank": 881,
+      "row": 1,
+      "column": 1,
+      "character": "網",
+      "codepoint": "U+7DB2",
+      "cns_code": "1-6A3D",
+      "cns_strokes": 14,
+      "cns_stroke_sequence": "55444425431415",
+      "topology": "⿰糹罔；完整繁體網",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 45,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "糹雙折與四個末點",
+        "罔的冂、丷與亡",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 2,
+      "rank": 882,
+      "row": 1,
+      "column": 2,
+      "character": "甲",
+      "codepoint": "U+7532",
+      "cns_code": "1-4672",
+      "cns_strokes": 5,
+      "cns_stroke_sequence": "25112",
+      "topology": "田形外框與中央豎完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 42,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "框內雙格",
+        "中央豎不斷裂"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 3,
+      "rank": 883,
+      "row": 1,
+      "column": 3,
+      "character": "凡",
+      "codepoint": "U+51E1",
+      "cns_code": "1-443B",
+      "cns_strokes": 3,
+      "cns_stroke_sequence": "354",
+      "topology": "几框與內點完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 57,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "几的撇與彎鉤",
+        "內點分離"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 4,
+      "rank": 884,
+      "row": 1,
+      "column": 4,
+      "character": "朱",
+      "codepoint": "U+6731",
+      "cns_code": "1-4837",
+      "cns_strokes": 6,
+      "cns_stroke_sequence": "311234",
+      "topology": "撇、牛形上部與木形下部分支完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 43,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "上撇與兩橫",
+        "中央豎、撇捺交會"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 5,
+      "rank": 885,
+      "row": 2,
+      "column": 1,
+      "character": "借",
+      "codepoint": "U+501F",
+      "cns_code": "1-542C",
+      "cns_strokes": 10,
+      "cns_stroke_sequence": "3212212511",
+      "topology": "⿰亻昔",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 48,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "亻兩筆",
+        "昔的艹形、橫與日框"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 6,
+      "rank": 886,
+      "row": 2,
+      "column": 2,
+      "character": "熟",
+      "codepoint": "U+719F",
+      "cns_code": "1-6D5E",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "412515513544444",
+      "topology": "⿱孰灬；完整熟字",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 51,
+      "dark_component_count": 9,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "孰的亨形、子與丸鉤點",
+        "灬四點分離",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 7,
+      "rank": 887,
+      "row": 2,
+      "column": 3,
+      "character": "譯",
+      "codepoint": "U+8B6F",
+      "cns_code": "1-7A41",
+      "cns_strokes": 20,
+      "cns_stroke_sequence": "41112512522112143112",
+      "topology": "⿰言睪；完整繁體譯",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 41,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "言的多層橫與口",
+        "睪的罒與幸多層橫",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 8,
+      "rank": 888,
+      "row": 2,
+      "column": 4,
+      "character": "假",
+      "codepoint": "U+5047",
+      "cns_code": "1-5875",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "32512115154",
+      "topology": "⿰亻叚",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 42,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "亻兩筆",
+        "叚左右框、內橫與又"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 9,
+      "rank": 889,
+      "row": 3,
+      "column": 1,
+      "character": "歷",
+      "codepoint": "U+6B77",
+      "cns_code": "1-7125",
+      "cns_strokes": 16,
+      "cns_stroke_sequence": "1331234312342121",
+      "topology": "⿸厂⿱秝止；完整繁體歷",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 50,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "厂下雙禾各自完整",
+        "下止的豎橫分支",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 10,
+      "rank": 890,
+      "row": 3,
+      "column": 2,
+      "character": "敵",
+      "codepoint": "U+6575",
+      "cns_code": "1-6D2E",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "414325122513134",
+      "topology": "⿰啇攵；完整繁體敵",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 42,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "啇的亠丷、冂與口",
+        "攵撇橫與下撇捺",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 11,
+      "rank": 891,
+      "row": 3,
+      "column": 3,
+      "character": "侯",
+      "codepoint": "U+4FAF",
+      "cns_code": "1-4F6C",
+      "cns_strokes": 9,
+      "cns_stroke_sequence": "325131134",
+      "topology": "亻、中央豎與侯形完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 48,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "亻與中央豎分離",
+        "右上折形與下矢"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 12,
+      "rank": 892,
+      "row": 3,
+      "column": 4,
+      "character": "慶",
+      "codepoint": "U+6176",
+      "cns_code": "1-6C63",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "413522154544354",
+      "topology": "广、內部廌勢與下心夂分支完整；完整繁體慶",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 43,
+      "dark_component_count": 9,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "广內多層框與橫點",
+        "下心點與夂交叉",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 13,
+      "rank": 893,
+      "row": 4,
+      "column": 1,
+      "character": "套",
+      "codepoint": "U+5957",
+      "cns_code": "1-546F",
+      "cns_strokes": 10,
+      "cns_stroke_sequence": "1342111154",
+      "topology": "⿱大镸",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 39,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "大撇捺",
+        "镸的多橫、豎鉤與厶點"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 14,
+      "rank": 894,
+      "row": 4,
+      "column": 2,
+      "character": "停",
+      "codepoint": "U+505C",
+      "cns_code": "1-5874",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "32412514515",
+      "topology": "⿰亻亭",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 45,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "亻兩筆",
+        "亭的亠、口、冖與丁鉤"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 15,
+      "rank": 895,
+      "row": 4,
+      "column": 3,
+      "character": "索",
+      "codepoint": "U+7D22",
+      "cns_code": "1-5744",
+      "cns_strokes": 10,
+      "cns_stroke_sequence": "1245554534",
+      "topology": "十、冖與下糸完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 40,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "十與冖分層",
+        "糸折鉤與四個末點"
+      ]
+    },
+    {
+      "batch_id": "common-0056",
+      "index": 16,
+      "rank": 896,
+      "row": 4,
+      "column": 4,
+      "character": "執",
+      "codepoint": "U+57F7",
+      "cns_code": "1-595A",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "12143112354",
+      "topology": "⿰幸丸；完整繁體執",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 46,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "幸的多層橫與中央豎",
+        "丸的撇、彎鉤與點",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 1,
+      "rank": 897,
+      "row": 1,
+      "column": 1,
+      "character": "陶",
+      "codepoint": "U+9676",
+      "cns_code": "1-5D77",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "55235311252",
+      "topology": "⿰阝匋",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 50,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "左阝折鉤",
+        "匋的勹與內缶",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 2,
+      "rank": 898,
+      "row": 1,
+      "column": 2,
+      "character": "島",
+      "codepoint": "U+5CF6",
+      "cns_code": "1-5535",
+      "cns_strokes": 10,
+      "cns_stroke_sequence": "3251115252",
+      "topology": "鳥本體與下山完整；完整繁體島",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 44,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "鳥的白形、多橫與外折鉤",
+        "下山三豎分支",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 3,
+      "rank": 899,
+      "row": 1,
+      "column": 3,
+      "character": "況",
+      "codepoint": "U+6CC1",
+      "cns_code": "1-4E53",
+      "cns_strokes": 8,
+      "cns_stroke_sequence": "44425135",
+      "topology": "⿰氵兄；臺灣繁體況",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 39,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "三點水分離",
+        "兄的口與儿鉤"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 4,
+      "rank": 900,
+      "row": 1,
+      "column": 4,
+      "character": "麻",
+      "codepoint": "U+9EBB",
+      "cns_code": "1-5E28",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "41312351235",
+      "topology": "⿸广林形雙木",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 46,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "广內白",
+        "雙木各自的豎、撇與點捺"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 5,
+      "rank": 901,
+      "row": 2,
+      "column": 1,
+      "character": "謀",
+      "codepoint": "U+8B00",
+      "cns_code": "1-723B",
+      "cns_strokes": 16,
+      "cns_stroke_sequence": "4111251122111234",
+      "topology": "⿰言某；完整繁體謀",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 42,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "言的多層橫與口",
+        "某的甘框與木分支",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 6,
+      "rank": 902,
+      "row": 2,
+      "column": 2,
+      "character": "蓋",
+      "codepoint": "U+84CB",
+      "cns_code": "1-6A64",
+      "cns_strokes": 14,
+      "cns_stroke_sequence": "21121215425221",
+      "topology": "⿱艹盍；完整繁體蓋",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 42,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "艹兩豎",
+        "去的土厶與皿三格",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 7,
+      "rank": 903,
+      "row": 2,
+      "column": 3,
+      "character": "伯",
+      "codepoint": "U+4F2F",
+      "cns_code": "1-4924",
+      "cns_strokes": 7,
+      "cns_stroke_sequence": "3232511",
+      "topology": "⿰亻白",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 54,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "亻兩筆",
+        "白框與內橫"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 8,
+      "rank": 904,
+      "row": 2,
+      "column": 4,
+      "character": "眉",
+      "codepoint": "U+7709",
+      "cns_code": "1-525F",
+      "cns_strokes": 9,
+      "cns_stroke_sequence": "521325111",
+      "topology": "尸形上框與下目完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 51,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "上框內部短豎",
+        "目框與兩內橫"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 9,
+      "rank": 905,
+      "row": 3,
+      "column": 1,
+      "character": "降",
+      "codepoint": "U+964D",
+      "cns_code": "1-5371",
+      "cns_strokes": 9,
+      "cns_stroke_sequence": "552354152",
+      "topology": "⿰阝夅",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 39,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "左阝折鉤",
+        "夂交叉與下方横豎"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 10,
+      "rank": 906,
+      "row": 3,
+      "column": 2,
+      "character": "育",
+      "codepoint": "U+80B2",
+      "cns_code": "1-4B3F",
+      "cns_strokes": 7,
+      "cns_stroke_sequence": "1543544",
+      "topology": "⿱亠⿱厶月",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 43,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "亠與厶折點",
+        "月框與兩內橫"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 11,
+      "rank": 907,
+      "row": 3,
+      "column": 3,
+      "character": "載",
+      "codepoint": "U+8F09",
+      "cns_code": "1-6725",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "1211251112543",
+      "topology": "車受十戈包圍；完整繁體載",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "車框、多層橫與中央豎",
+        "戈斜鉤、撇與點",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 12,
+      "rank": 908,
+      "row": 3,
+      "column": 4,
+      "character": "彈",
+      "codepoint": "U+5F48",
+      "cns_code": "1-6C5F",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "515251251251112",
+      "topology": "⿰弓單；完整繁體彈",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 46,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "弓的三折與鉤",
+        "單的雙口、田形與中央豎",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 13,
+      "rank": 909,
+      "row": 4,
+      "column": 1,
+      "character": "阿",
+      "codepoint": "U+963F",
+      "cns_code": "1-4F5F",
+      "cns_strokes": 8,
+      "cns_stroke_sequence": "55212515",
+      "topology": "⿰阝可",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 52,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "左阝折鉤",
+        "可的口內白與丁鉤"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 14,
+      "rank": 910,
+      "row": 4,
+      "column": 2,
+      "character": "沉",
+      "codepoint": "U+6C89",
+      "cns_code": "1-4A6A",
+      "cns_strokes": 7,
+      "cns_stroke_sequence": "4444535",
+      "topology": "⿰氵冗",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 46,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "三點水分離",
+        "冗的冖、几與彎鉤"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 15,
+      "rank": 911,
+      "row": 4,
+      "column": 3,
+      "character": "伏",
+      "codepoint": "U+4F0F",
+      "cns_code": "1-4733",
+      "cns_strokes": 6,
+      "cns_stroke_sequence": "321344",
+      "topology": "⿰亻犬",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 48,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "亻兩筆",
+        "犬的橫撇捺與點"
+      ]
+    },
+    {
+      "batch_id": "common-0057",
+      "index": 16,
+      "rank": 912,
+      "row": 4,
+      "column": 4,
+      "character": "乘",
+      "codepoint": "U+4E58",
+      "cns_code": "1-537D",
+      "cns_strokes": 10,
+      "cns_stroke_sequence": "3122111534",
+      "topology": "禾形主幹與中段雙側分支完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 50,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "上撇、多層橫與中央豎",
+        "左右側枝及下撇捺"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 1,
+      "rank": 913,
+      "row": 1,
+      "column": 1,
+      "character": "爾",
+      "codepoint": "U+723E",
+      "cns_code": "1-695F",
+      "cns_strokes": 14,
+      "cns_stroke_sequence": "13425234343434",
+      "topology": "頂橫、冂框與內部雙側交叉完整；完整繁體爾",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 44,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "冂框與雙內豎",
+        "四組內撇點／交叉保持分離",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 2,
+      "rank": 914,
+      "row": 1,
+      "column": 2,
+      "character": "錯",
+      "codepoint": "U+932F",
+      "cns_code": "1-7263",
+      "cns_strokes": 16,
+      "cns_stroke_sequence": "3411243112212511",
+      "topology": "⿰釒昔；完整繁體錯",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "釒的多層橫點",
+        "昔的艹形、橫與日框",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 3,
+      "rank": 915,
+      "row": 1,
+      "column": 3,
+      "character": "級",
+      "codepoint": "U+7D1A",
+      "cns_code": "1-5748",
+      "cns_strokes": 10,
+      "cns_stroke_sequence": "5544443554",
+      "topology": "⿰糹及；完整繁體級",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 44,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "糹雙折與四個末點",
+        "及的折鉤、撇與捺"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 4,
+      "rank": 916,
+      "row": 1,
+      "column": 4,
+      "character": "博",
+      "codepoint": "U+535A",
+      "cns_code": "1-5E3B",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "121351124154",
+      "topology": "⿰十尃",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 42,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "十獨立",
+        "尃的甫框、點與寸鉤"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 5,
+      "rank": 917,
+      "row": 2,
+      "column": 1,
+      "character": "悲",
+      "codepoint": "U+60B2",
+      "cns_code": "1-5F2B",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "311121114544",
+      "topology": "⿱非心",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 53,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "非的雙豎與六側橫",
+        "心鉤與三點"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 6,
+      "rank": 918,
+      "row": 2,
+      "column": 2,
+      "character": "麗",
+      "codepoint": "U+9E97",
+      "cns_code": "1-795E",
+      "cns_strokes": 19,
+      "cns_stroke_sequence": "1254125441352211515",
+      "topology": "雙上框與下鹿完整；完整繁體麗",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 44,
+      "dark_component_count": 10,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "上方兩組框、內點與中央連結",
+        "鹿的广、比形與彎鉤",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 7,
+      "rank": 919,
+      "row": 2,
+      "column": 3,
+      "character": "寬",
+      "codepoint": "U+5BEC",
+      "cns_code": "1-6C4F",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "445211225111354",
+      "topology": "⿱宀⿱艹見並保留末點；完整繁體寬",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 46,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "宀、艹兩豎與見框內橫",
+        "儿彎鉤及右下末點",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 8,
+      "rank": 920,
+      "row": 2,
+      "column": 4,
+      "character": "輪",
+      "codepoint": "U+8F2A",
+      "cns_code": "1-6F47",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "125111234125122",
+      "topology": "⿰車侖；完整繁體輪",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 43,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "車框、多層橫與中央豎",
+        "侖的人形、冊框與內豎",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 9,
+      "rank": 921,
+      "row": 3,
+      "column": 1,
+      "character": "困",
+      "codepoint": "U+56F0",
+      "cns_code": "1-495A",
+      "cns_strokes": 7,
+      "cns_stroke_sequence": "2512341",
+      "topology": "⿴囗木",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 55,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "外囗四邊與內白",
+        "木的中央交會"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 10,
+      "rank": 922,
+      "row": 3,
+      "column": 2,
+      "character": "怎",
+      "codepoint": "U+600E",
+      "cns_code": "1-512B",
+      "cns_strokes": 9,
+      "cns_stroke_sequence": "312114544",
+      "topology": "⿱乍心",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 52,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "乍的撇、雙橫與豎",
+        "心鉤與三點"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 11,
+      "rank": 923,
+      "row": 3,
+      "column": 3,
+      "character": "威",
+      "codepoint": "U+5A01",
+      "cns_code": "1-5064",
+      "cns_strokes": 9,
+      "cns_stroke_sequence": "131531543",
+      "topology": "戌形外勢包覆女形完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "厂戈勢的斜鉤與點",
+        "女的折、撇與交叉橫"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 12,
+      "rank": 924,
+      "row": 3,
+      "column": 4,
+      "character": "靜",
+      "codepoint": "U+975C",
+      "cns_code": "1-727B",
+      "cns_strokes": 16,
+      "cns_stroke_sequence": "1121351134435115",
+      "topology": "⿰青爭；完整繁體靜",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 46,
+      "dark_component_count": 7,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "青的多層橫與月框",
+        "爭的爫、彐與下鉤",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 13,
+      "rank": 925,
+      "row": 4,
+      "column": 1,
+      "character": "閒",
+      "codepoint": "U+9592",
+      "cns_code": "1-6267",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "251125113511",
+      "topology": "⿵門月；完整繁體閒",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 58,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "門的左右框、雙日形內白與鉤",
+        "內月框與兩橫",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 14,
+      "rank": 926,
+      "row": 4,
+      "column": 2,
+      "character": "徐",
+      "codepoint": "U+5F90",
+      "cns_code": "1-5541",
+      "cns_strokes": 10,
+      "cns_stroke_sequence": "3323411234",
+      "topology": "⿰彳余",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "彳雙撇與豎",
+        "余的人形、兩橫與木下分支"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 15,
+      "rank": 927,
+      "row": 4,
+      "column": 3,
+      "character": "貌",
+      "codepoint": "U+8C8C",
+      "cns_code": "1-6B32",
+      "cns_strokes": 14,
+      "cns_stroke_sequence": "34435333251135",
+      "topology": "⿰豸皃",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 56,
+      "dark_component_count": 7,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "豸的連續撇勢與彎鉤",
+        "皃的白框、儿與彎鉤",
+        "32 與 16 px 優先複核"
+      ]
+    },
+    {
+      "batch_id": "common-0058",
+      "index": 16,
+      "rank": 928,
+      "row": 4,
+      "column": 4,
+      "character": "婚",
+      "codepoint": "U+5A5A",
+      "cns_code": "1-5966",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "53135152511",
+      "topology": "⿰女昏",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "minimum_grid_clearance_px": 42,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "女的折撇與交叉橫",
+        "昏的氏鉤點與日框"
+      ]
+    }
+  ],
+  "priority_post_trace_review": [
+    "U+5712",
+    "U+5C0B",
+    "U+7DCA",
+    "U+907A",
+    "U+968A",
+    "U+8056",
+    "U+9CF3",
+    "U+8CC8",
+    "U+7DB2",
+    "U+719F",
+    "U+8B6F",
+    "U+6B77",
+    "U+6575",
+    "U+6176",
+    "U+57F7",
+    "U+9676",
+    "U+5CF6",
+    "U+8B00",
+    "U+84CB",
+    "U+8F09",
+    "U+5F48",
+    "U+723E",
+    "U+932F",
+    "U+9E97",
+    "U+5BEC",
+    "U+8F2A",
+    "U+975C",
+    "U+9592",
+    "U+8C8C"
+  ],
+  "proofs": {
+    "directory": "reports/proofs/imagegen-common-0055-0058",
+    "raw_native_cell_views": [
+      {
+        "path": "reports/proofs/imagegen-common-0055-0058/common-0055-native-cell-proof.png",
+        "sha256": "b632fb46d4cd38d8dc04d11ba7afac90d944881dbc282815a3e946a3d5b8aea4",
+        "width_px": 1280,
+        "height_px": 1360
+      },
+      {
+        "path": "reports/proofs/imagegen-common-0055-0058/common-0056-native-cell-proof.png",
+        "sha256": "8ec4d850918327bfef2ffcfa32139bc7c00209deb1ffa6a8184f3b4e781257d8",
+        "width_px": 1280,
+        "height_px": 1360
+      },
+      {
+        "path": "reports/proofs/imagegen-common-0055-0058/common-0057-native-cell-proof.png",
+        "sha256": "83fb7345fd7844cb227c6ac2eab57561bd9e09070da6686c14c639c321c44246",
+        "width_px": 1280,
+        "height_px": 1360
+      },
+      {
+        "path": "reports/proofs/imagegen-common-0055-0058/common-0058-native-cell-proof.png",
+        "sha256": "337afe94bd3e6c20ac709a4d04797a6279d1a906161eed0452a2fdd024991914",
+        "width_px": 1280,
+        "height_px": 1360
+      }
+    ],
+    "multi_size_views": [
+      {
+        "path": "reports/proofs/imagegen-common-0055-0058/common-0055-size-proof.png",
+        "sha256": "84c068d04f01149f7dbdfdf58b7a84aaf57d39d9c04e413b16e933bd9cab5561",
+        "width_px": 1800,
+        "height_px": 820
+      },
+      {
+        "path": "reports/proofs/imagegen-common-0055-0058/common-0056-size-proof.png",
+        "sha256": "4e9c7e3a5916b6ff672cbe26b8044314c1390b30e414d1bd16efcf5dca81bb91",
+        "width_px": 1800,
+        "height_px": 820
+      },
+      {
+        "path": "reports/proofs/imagegen-common-0055-0058/common-0057-size-proof.png",
+        "sha256": "f4db6c9c392c7545bcf004b845577ec121035a9f0f6254478ee6758948c1cd4f",
+        "width_px": 1800,
+        "height_px": 820
+      },
+      {
+        "path": "reports/proofs/imagegen-common-0055-0058/common-0058-size-proof.png",
+        "sha256": "863d0d9f9c46afbe862357da866ad1a62b38331b3e31a30eb6f4f08bb9304c88",
+        "width_px": 1800,
+        "height_px": 820
+      }
+    ],
+    "cns_reference_views": [
+      {
+        "path": "reports/proofs/imagegen-common-0055-0058/common-0055-cns-reference-proof.png",
+        "sha256": "6695252d5b1d9f15ca7dacd864b80970ca871d23697ac235b595f41e44dd4744",
+        "width_px": 1200,
+        "height_px": 2640
+      },
+      {
+        "path": "reports/proofs/imagegen-common-0055-0058/common-0056-cns-reference-proof.png",
+        "sha256": "97e37c2a6b8684409e240cf5c3b469586bfdae21d4ef6d4a6208456576e7d6c5",
+        "width_px": 1200,
+        "height_px": 2640
+      },
+      {
+        "path": "reports/proofs/imagegen-common-0055-0058/common-0057-cns-reference-proof.png",
+        "sha256": "e2e45ea29baf58147c6560058a9a60ccf89b8ff4833a7aa57d52f6c36137233e",
+        "width_px": 1200,
+        "height_px": 2640
+      },
+      {
+        "path": "reports/proofs/imagegen-common-0055-0058/common-0058-cns-reference-proof.png",
+        "sha256": "4b49941f830441db9627f8168d70a19b0635cda9edf350b293ec672ec2ad9c1b",
+        "width_px": 1200,
+        "height_px": 2640
+      }
+    ],
+    "priority_29_reference_view": {
+      "path": "reports/proofs/imagegen-common-0055-0058/priority-29-cns-reference-proof.png",
+      "sha256": "77d7658d4fda06deb406efacd00fbd76b3ca153e97fc1cf4413983b8e8c4b543",
+      "width_px": 1520,
+      "height_px": 4950
+    },
+    "metrics": {
+      "path": "reports/proofs/imagegen-common-0055-0058/metrics.json",
+      "sha256": "d51af714879a43437786c4425e9c9467c7147556359ec2a15f6e603db9206e24"
+    }
+  }
+}

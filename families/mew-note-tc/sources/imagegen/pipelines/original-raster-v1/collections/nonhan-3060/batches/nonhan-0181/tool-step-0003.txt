@@ -1,0 +1,8 @@
+Correct only cells 8, 10, 12, and 14 of the first reference image. Preserve every other glyph, the complete grid, and all margins exactly. Use the fourth-reference copybook literally: these four glyphs are single upper/lower hook pieces, never middle brace pieces and never complete braces or parentheses.
+
+- cell 8 U+23A7 ⎧: one mostly vertical stroke in the lower/right part of the cell, curving gently to the right only at its top. No centre notch and no bottom curve.
+- cell 10 U+23A9 ⎩: one mostly vertical stroke in the upper/left part of the cell, curving gently to the right only at its bottom. No centre notch and no top curve.
+- cell 12 U+23AB ⎫: mirror cell 8 horizontally—one mostly vertical stroke in the lower/left part, curving gently to the left only at its top. No centre notch and no bottom curve.
+- cell 14 U+23AD ⎭: mirror cell 10 horizontally—one mostly vertical stroke in the upper/right part, curving gently to the left only at its bottom. No centre notch and no top curve.
+
+Keep cells 9 and 13 as the current middle brace pieces. Match the thin monoline style. Return only the corrected 4×4 sheet.

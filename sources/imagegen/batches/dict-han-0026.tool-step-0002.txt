@@ -1,0 +1,16 @@
+Use case: precise-object-edit
+Asset type: three-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the edit target. Image 2 is the authoritative identity copybook only; never trace its printed outlines. Change ONLY Cells 01, 12, and 16. Preserve the other 13 glyphs, grid, canvas, spacing, and fine gel-pen style.
+
+- Cell 01 must be U+5095 傕: 亻 on the left and a complete 隺 on the right. Add the essential 冖 above 隹; the current plain 亻-plus-隹 form is incomplete.
+- Cell 12 must be U+770A 眊: 目 on the left and 毛 on the right. The current 目-plus-区 form is wrong.
+- Cell 16 must be U+8662 虢: 寽 on the left and 虎 on the right. The current 号-plus-虎 form is 號 and is wrong. Draw 寽 with 爫 above 寸; do not use 号.
+
+Required full row-major result:
+傕噁塋婺
+徂忑撣枳
+殄殢殽眊
+紓芡薺虢
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

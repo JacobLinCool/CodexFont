@@ -1,0 +1,29 @@
+Recreate the complete sheet. Image 1 is rejected because it contains unrelated Chinese, Latin, and kana glyphs. Image 4 is the binding identity copybook; Images 2–3 guide only the subtle handwritten black-ink contour.
+
+The exact row-major Unicode order is:
+Row 1: ⎐ ⎑ ⎒ ⎓
+Row 2: ⎔ ⎕ ⎖ ⎗
+Row 3: ⎘ ⎙ ⎚ ⎛
+Row 4: ⎜ ⎝ ⎞ ⎟
+
+Match Image 4 cell by cell:
+- 01 ⎐: hollow diamond resting on a horizontal underline.
+- 02 ⎑: hollow diamond bisected horizontally and resting on an underline.
+- 03 ⎒: hollow diamond bisected horizontally beneath a horizontal overbar.
+- 04 ⎓: solid horizontal line above a dashed horizontal line.
+- 05 ⎔: hollow white hexagon.
+- 06 ⎕: hollow vertical rectangle.
+- 07 ⎖: vertical solid-black lower-left triangular-half technical mark.
+- 08 ⎗: left-return transfer symbol with a dashed source box.
+- 09 ⎘: right-return transfer symbol with a dashed destination box.
+- 10 ⎙: box with a protruding tab.
+- 11 ⎚: horizontal outlined capsule/box.
+- 12 ⎛: upper section of a large left parenthesis.
+- 13 ⎜: straight vertical middle section of a large left parenthesis.
+- 14 ⎝: lower section of a large left parenthesis.
+- 15 ⎞: upper section of a large right parenthesis.
+- 16 ⎟: straight vertical middle/lower section of a large right parenthesis.
+
+No Chinese characters, Latin letters, digits, kana, or substitutions are allowed. Use one centered symbol per cell on a pure-white square canvas.
+
+Reproduce Image 4’s exact regular 4×4 segmentation grid: five continuous, hairline-thin, pale neutral-gray vertical rules and five matching horizontal rules, including a complete outer border, at precisely equal quarter-canvas intervals. Rules must be straight, complete, evenly spaced, and much thinner/lighter than glyph strokes. No glyph touches a rule. No labels, code points, headings, texture, shadow, or extra marks.

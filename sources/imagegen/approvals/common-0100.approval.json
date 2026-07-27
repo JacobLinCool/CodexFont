@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0100",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1585,
+    "end_rank": 1600,
+    "characters": "戀批腐宇拾祿仍債插斑伐彎藍迴騙后"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0100.source.json",
+    "descriptor_sha256": "1fb00b4e424792a469ea7bbc7cefb13f131b6ff487400c72f8d420cb9a6108c8",
+    "raster": "sources/imagegen/raster/common-0100.png",
+    "raster_sha256": "f8f591064a204e1e0c49de082f5618af4bbfb29c7b06309ada109593ff6a1e7f"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0099-0102-audit.json",
+    "report_sha256": "73da88876914c4543a3301faccf2a6ecdd947717d78bf304bac1170b57158aa4"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0100/report.json",
+    "report_sha256": "a6449e39cbdb572cf81f1b47451cfe796145ee05eeafaed003a33720a587a64a",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0100.vector-review.json",
+    "record_sha256": "106b94a5b071284b03200f3f9f97b0eb3e7a2a5c2503729759ca86867fc01895"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:46:50Z"
+  }
+}

@@ -1,0 +1,5 @@
+Preserve the topology, fill patterns, row-major order, and complete 4×4 grid exactly. Uniformly scale every one of the sixteen black glyph designs down to about 85% of its current width and height, centered within the same cell.
+
+Do not change any occupied quadrant, shade density relationship, solid fill, or pattern. The only change is a uniform reduction of the glyph design area so no cell uses more than about 28% of the full cell area as black ink. Keep c2 sparse, c3 medium, c4 dark, and all quadrant forms semantically identical. Do not add outlines, holes inside solid regions, labels, or extra marks.
+
+Return only the corrected complete sheet.

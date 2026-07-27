@@ -1,0 +1,16 @@
+Use case: precise-object-edit
+Asset type: two-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cells 04 and 13. Preserve all other 14 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 04 must be U+83D1 菑. Preserve 艹 at the top. Beneath it, add a clearly visible 巛 of three repeated bent/chevron strokes above a complete 田. Do not collapse the middle into a single line or write 苗, 菌, 菓, or another grass character.
+
+Cell 13 must be U+9029 逩. Preserve a complete 辶 sweeping around the lower left. Replace the current unclear interior with a complete 奔: 大 above 卉, with the lower 十-and-廾 strokes distinct. Do not write 逮, 遠, 迍, 奔 without 辶, or another walk-radical character.
+
+Required full row-major result:
+粼胝荳菑
+藎藷袷裀
+褙豳蹕迍
+逩郯醚醛
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

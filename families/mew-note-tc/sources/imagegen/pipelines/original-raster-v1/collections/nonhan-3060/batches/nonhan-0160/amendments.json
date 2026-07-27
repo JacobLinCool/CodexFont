@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "record_type": "mew-note-tc-generation-amendments",
+  "family_id": "mew-note-tc",
+  "pipeline_id": "original-raster-v1",
+  "collection_id": "nonhan-3060",
+  "batch_id": "nonhan-0160",
+  "family_context": {
+    "schema_version": 1,
+    "record_type": "codexfont-family-evidence-binding",
+    "family_id": "mew-note-tc",
+    "family_contract": {
+      "path": "families/mew-note-tc/family.json",
+      "sha256": "5d9799a4a8c33632d0285c2639e127e2b6a1080da03c652c99ebc760ab1a599f"
+    },
+    "pipeline_id": "original-raster-v1",
+    "pipeline_contract": {
+      "path": "families/mew-note-tc/pipeline.json",
+      "sha256": "84c1f9cd5e7908c020198d737da182b98b1f701021f7edb10d717902c3bf24ed"
+    },
+    "collection_id": "nonhan-3060",
+    "collection_contract": {
+      "path": "families/mew-note-tc/collections.json",
+      "sha256": "75e4ca4bc269e272739635afea6be8ecda6020e4d1f09be1d39d9e70d01d741f"
+    },
+    "collection_record_sha256": "476957d833b232065d2ee46fe4840ae25fbe0da4d60c21603c9ef295b74de91e",
+    "authoring_contract": {
+      "path": "families/mew-note-tc/authoring.json",
+      "sha256": "2fcf4549ecf28086cf09c7a1f934b5944643608506e0610f05d1db4ce6f61c7a"
+    },
+    "binding_sha256": "7b8a71bcba9bea594f3748a6c5b025873372e3210b88d665529d2ca3b456a43c"
+  },
+  "batch_contract_sha256": "57f223d53e4905974e74c041e8e1856a2a698fbc42ccd28c15c37129d0f3b547",
+  "implementation": {
+    "path": "scripts/mew_note_history_amendment.py",
+    "sha256": "c25e1028fdac6db3de1f24ae8324d6c6a4571f9c2e648b6d7bf6d4ba91b6e8e8"
+  },
+  "revisions": [
+    {
+      "sequence": 1,
+      "reason": "strict-vector-build-rejected",
+      "prior_history_file_sha256": "1a7b635f4e2d7c32bfd28e1e12880638b6e26221c3ea1e4540411d050dd33746",
+      "prior_source_file_sha256": "8e2d4db1d045d8c028136ed49a45977eb9db4d823727969209c9ae926e3bbc56",
+      "prior_raster_sha256": "a7b07b4316802e3bce9c876c7a2fa8daa8aaa580b14e152d0294e8d4124f3fd4",
+      "prior_accepted_call_id": "exec-053cdf05-01c6-4ed5-b9e6-b60c06b8bc12",
+      "prior_accepted_output_sha256": "a7b07b4316802e3bce9c876c7a2fa8daa8aaa580b14e152d0294e8d4124f3fd4",
+      "prior_vector_build": null,
+      "amended_history_file_sha256": "8601167ed5fc00a34aa0d145f3cb786ca00e7e26460cb9444483ebdb07306d83",
+      "amended_source_file_sha256": "2a7ae85584703210808210dfa338a093b0f362260825e4c74b57977c4d1de323",
+      "amended_raster_sha256": "963f4178a8815b0bfd49298cec07aefe2832a33ca4dc19c1b11e0598934345a1"
+    }
+  ],
+  "amendments_sha256": "5c0f07202c596ac6114a161592398a6ba2d02b3465db73bdc46949cabd9a8f84"
+}

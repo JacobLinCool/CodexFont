@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "audit_id": "imagegen-common-0004-0006",
+  "audited_at": "2026-07-26",
+  "auditor": "Codex independent raster QA",
+  "scope": {
+    "batch_ids": [
+      "common-0004",
+      "common-0005",
+      "common-0006"
+    ],
+    "rank_range": [
+      49,
+      96
+    ],
+    "glyph_count": 48,
+    "repertoire": {
+      "path": "sources/imagegen/repertoires/common-3000.json",
+      "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a"
+    }
+  },
+  "authority": {
+    "provider": "Ministry of Digital Affairs, Taiwan, CNS11643 Chinese Standard Interchange Code Full Character Database",
+    "official_dataset_url": "https://data.gov.tw/dataset/5961",
+    "mapping_archive": {
+      "path": "tmp/cns-opendata/MapingTables.zip",
+      "sha256": "f59dacc4dbdef334d7a887c3da671af02778e2c80adb2a7fd1053f64dbf9e659",
+      "member": "Unicode/CNS2UNICODE_Unicode BMP.txt",
+      "member_timestamp": "2026-05-05"
+    },
+    "properties_archive": {
+      "path": "tmp/cns-opendata/Properties.zip",
+      "sha256": "50cad66f3fe6f3a4b6f4a7bf0431e1bfb8dabc3d8c7be4d61e1617b15a0d7a7b",
+      "members": [
+        "CNS_stroke.txt",
+        "CNS_strokes_sequence.txt"
+      ],
+      "member_timestamp": "2026-05-05"
+    },
+    "visual_copybook": {
+      "path": "sources/upstream/TW-Kai-98_1.ttf",
+      "sha256": "c206333edcc3c8c86ee547da4c78ad1c8f7ec2670a2b550a768532258f75806a",
+      "usage": "rasterized visual topology comparison only; no outline, coordinate, or trace enters the image-generated glyph"
+    },
+    "stroke_sequence_digit_legend": {
+      "1": "horizontal",
+      "2": "vertical",
+      "3": "left-falling",
+      "4": "dot or right-falling",
+      "5": "turn or hook family"
+    }
+  },
+  "policy": {
+    "pass_definition": "The exact requested scalar is present, its visible Taiwan Traditional topology agrees with the current CNS mapping and stroke-sequence structure, it remains directly recognizable at native, 128, 64, and 32 px cell sizes, the ink is isolated from the grid, and no stray thorn or topology-changing defect is visible.",
+    "reject_definition": "Any uncertain identity, simplified substitution, missing or extra semantic component, topology-changing join, unreadability at a reviewed size, grid contact, stray ink, or thorn-like defect.",
+    "raster_limit": "A final raster can establish visible topology but cannot prove the temporal act of writing each stroke.",
+    "vectorization_limit": "PASS permits controlled tracing of the isolated dark ink only. Grid lines, near-white background variation, antialias halos, and CNS copybook outlines are forbidden geometry."
+  },
+  "method": {
+    "views": [
+      "native cell crop",
+      "128 px per cell",
+      "64 px per cell",
+      "32 px per cell",
+      "generated cell beside an independently rasterized CNS TW-Kai copybook"
+    ],
+    "grid_detection": "Long light-gray line groups were detected by projection; the reported grid clearance is the minimum distance from a pixel darker than L=100 to the nearest detected cell boundary.",
+    "artifact_review": [
+      "wrong scalar or order",
+      "Taiwan Traditional topology",
+      "open counters and component separation",
+      "grid contact",
+      "stray dark marks",
+      "sharp miter or thorn-like protrusion"
+    ],
+    "background_note": "The paper is visually clean but not numerically flat #FFFFFF. Pixels at L>=245 have about 1.23 standard deviation, so background normalization is mandatory before tracing."
+  },
+  "summary": {
+    "total": 48,
+    "pass": 48,
+    "reject": 0,
+    "approved_for_controlled_vectorization": 48,
+    "rejected_for_vectorization": 0,
+    "wrong_or_out_of_order_cells": 0,
+    "simplified_substitutions": 0,
+    "grid_contacts": 0,
+    "thorn_or_spur_findings": 0,
+    "failed_cells": [],
+    "single_glyph_regeneration_prompts": []
+  },
+  "batches": [
+    {
+      "batch_id": "common-0004",
+      "start_rank": 49,
+      "end_rank": 64,
+      "characters": "文西小後五詩水家方下種自如心分天",
+      "raster": "sources/imagegen/raster/common-0004.png",
+      "sha256": "19cc75f131f522fb0d1047bc093a1ebc5f64df1b182a641b1cbefe30e07190af",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [10, 320, 626, 933, 1242],
+      "grid_line_centres_y": [12, 320, 626, 933, 1240],
+      "minimum_dark_ink_grid_clearance_px": 27,
+      "pass": 16,
+      "reject": 0
+    },
+    {
+      "batch_id": "common-0005",
+      "start_rank": 65,
+      "end_rank": 80,
+      "characters": "喻相十等得傳年個容與可宋體外書他",
+      "raster": "sources/imagegen/raster/common-0005.png",
+      "sha256": "ae2c5f9767dc999df7f44928a9de07bb92d8d3ff6f3a4a3adf3a7bf92142c933",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [30, 327, 626, 924, 1221],
+      "grid_line_centres_y": [26, 325, 622, 918, 1218],
+      "minimum_dark_ink_grid_clearance_px": 47,
+      "pass": 16,
+      "reject": 0
+    },
+    {
+      "batch_id": "common-0006",
+      "start_rank": 81,
+      "end_rank": 96,
+      "characters": "道多兒長紅法日語其義南頭六代學和",
+      "raster": "sources/imagegen/raster/common-0006.png",
+      "sha256": "3148edddc8ac4736262058163e738dee6ccd4b5c8e101992292cbb6f8b5b5cff",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [30, 327, 625, 924, 1220],
+      "grid_line_centres_y": [26, 326, 622, 918, 1218],
+      "minimum_dark_ink_grid_clearance_px": 43,
+      "pass": 16,
+      "reject": 0
+    }
+  ],
+  "glyphs": [
+    {"batch_id":"common-0004","index":1,"rank":49,"row":1,"column":1,"character":"文","codepoint":"U+6587","cns_code":"1-4546","cns_strokes":4,"cns_stroke_sequence":"4134","topology":"文（亠與交叉撇捺）","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":40,"issues":[],"post_trace_checks":["保留上點與橫畫間隙","交叉處不得膨脹成尖角"]},
+    {"batch_id":"common-0004","index":2,"rank":50,"row":1,"column":2,"character":"西","codepoint":"U+897F","cns_code":"1-4869","cns_strokes":6,"cns_stroke_sequence":"125351","topology":"頂橫、完整外框、兩個內部轉折與底橫","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":58,"issues":[],"post_trace_checks":["保留兩個內部轉折與下方內白"]},
+    {"batch_id":"common-0004","index":3,"rank":51,"row":1,"column":3,"character":"小","codepoint":"U+5C0F","cns_code":"1-4451","cns_strokes":3,"cns_stroke_sequence":"534","topology":"中央長鉤加左右不對稱點畫","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":59,"issues":[],"post_trace_checks":["中央鉤端保持圓順","兩側點不得黏入主筆"]},
+    {"batch_id":"common-0004","index":4,"rank":52,"row":1,"column":4,"character":"後","codepoint":"U+5F8C","cns_code":"1-5125","cns_strokes":9,"cns_stroke_sequence":"332554354","topology":"⿰彳⿱幺夊（臺灣繁體後）","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":40,"issues":[],"post_trace_checks":["保留彳、幺、夊三層分區","夊交會不可封死或長刺"]},
+    {"batch_id":"common-0004","index":5,"rank":53,"row":2,"column":1,"character":"五","codepoint":"U+4E94","cns_code":"1-446C","cns_strokes":4,"cns_stroke_sequence":"1251","topology":"臺灣四畫五，上下長橫包住中央折勢","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":42,"issues":[],"post_trace_checks":["中央折勢與上下橫保持開放"]},
+    {"batch_id":"common-0004","index":6,"rank":54,"row":2,"column":2,"character":"詩","codepoint":"U+8A69","cns_code":"1-665D","cns_strokes":13,"cns_stroke_sequence":"4111251121154","topology":"⿰言寺（完整繁體言旁）","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":40,"issues":[],"post_trace_checks":["言的三橫與口保持分離","寺下鉤和點不得黏連"]},
+    {"batch_id":"common-0004","index":7,"rank":55,"row":2,"column":3,"character":"水","codepoint":"U+6C34","cns_code":"1-4555","cns_strokes":4,"cns_stroke_sequence":"5534","topology":"中央鉤、左折、交叉撇與右捺","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":36,"issues":[],"post_trace_checks":["中央交會只作平滑合併，不新增尖刺"]},
+    {"batch_id":"common-0004","index":8,"rank":56,"row":2,"column":4,"character":"家","codepoint":"U+5BB6","cns_code":"1-5525","cns_strokes":10,"cns_stroke_sequence":"4451353334","topology":"⿱宀豕","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":40,"issues":[],"post_trace_checks":["屋頂與豕保持間隙","豕中央鉤與四個下部分支不得糊合"]},
+    {"batch_id":"common-0004","index":9,"rank":57,"row":3,"column":1,"character":"方","codepoint":"U+65B9","cns_code":"1-4549","cns_strokes":4,"cns_stroke_sequence":"4153","topology":"上點、橫、橫折鉤與撇","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":48,"issues":[],"post_trace_checks":["下方折鉤內角保持圓順"]},
+    {"batch_id":"common-0004","index":10,"rank":58,"row":3,"column":2,"character":"下","codepoint":"U+4E0B","cns_code":"1-4436","cns_strokes":3,"cns_stroke_sequence":"124","topology":"⿱一卜","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":58,"issues":[],"post_trace_checks":["右點與中央豎保持可見分離"]},
+    {"batch_id":"common-0004","index":11,"rank":59,"row":3,"column":3,"character":"種","codepoint":"U+7A2E","cns_code":"1-6A21","cns_strokes":14,"cns_stroke_sequence":"31234312511121","topology":"⿰禾重（完整繁體種）","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":40,"issues":[],"post_trace_checks":["重的框、兩個內橫、中央豎與兩個下橫都要保留","左右部件間隙不得封死"]},
+    {"batch_id":"common-0004","index":12,"rank":60,"row":3,"column":4,"character":"自","codepoint":"U+81EA","cns_code":"1-485C","cns_strokes":6,"cns_stroke_sequence":"325111","topology":"首撇加完整目形，含兩個內橫","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":43,"issues":[],"post_trace_checks":["保留兩個內橫形成的三段內白"]},
+    {"batch_id":"common-0004","index":13,"rank":61,"row":4,"column":1,"character":"如","codepoint":"U+5982","cns_code":"1-4771","cns_strokes":6,"cns_stroke_sequence":"531251","topology":"⿰女口","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":27,"issues":[],"post_trace_checks":["女部交叉處不得結塊","口的內白保持開放"]},
+    {"batch_id":"common-0004","index":14,"rank":62,"row":4,"column":2,"character":"心","codepoint":"U+5FC3","cns_code":"1-4540","cns_strokes":4,"cns_stroke_sequence":"4544","topology":"左點、中央臥鉤與上右兩點","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":46,"issues":[],"post_trace_checks":["三個點保持獨立","臥鉤末端不可形成尖刺"]},
+    {"batch_id":"common-0004","index":15,"rank":63,"row":4,"column":3,"character":"分","codepoint":"U+5206","cns_code":"1-4521","cns_strokes":4,"cns_stroke_sequence":"3453","topology":"⿱八刀","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":30,"issues":[],"post_trace_checks":["八與刀之間保持空白","刀鉤內角保持圓順"]},
+    {"batch_id":"common-0004","index":16,"rank":64,"row":4,"column":4,"character":"天","codepoint":"U+5929","cns_code":"1-4532","cns_strokes":4,"cns_stroke_sequence":"1134","topology":"⿱一大，兩橫與下方撇捺完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":37,"issues":[],"post_trace_checks":["兩橫不得合併","下方交會不得長刺"]},
+    {"batch_id":"common-0005","index":1,"rank":65,"row":1,"column":1,"character":"喻","codepoint":"U+55BB","cns_code":"1-5E51","cns_strokes":12,"cns_stroke_sequence":"251341351125","topology":"⿰口俞，俞內月與刂皆可辨","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":48,"issues":[],"post_trace_checks":["俞的月形兩內橫與刂雙豎保持分離","三個口形內白不可封死"]},
+    {"batch_id":"common-0005","index":2,"rank":66,"row":1,"column":2,"character":"相","codepoint":"U+76F8","cns_code":"1-525E","cns_strokes":9,"cns_stroke_sequence":"123425111","topology":"⿰木目","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":60,"issues":[],"post_trace_checks":["目內兩橫與木部交叉保持清楚"]},
+    {"batch_id":"common-0005","index":3,"rank":67,"row":1,"column":3,"character":"十","codepoint":"U+5341","cns_code":"1-4432","cns_strokes":2,"cns_stroke_sequence":"12","topology":"單一橫豎交叉","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":61,"issues":[],"post_trace_checks":["交點平滑且不得外冒尖角"]},
+    {"batch_id":"common-0005","index":4,"rank":68,"row":1,"column":4,"character":"等","codepoint":"U+7B49","cns_code":"1-612B","cns_strokes":12,"cns_stroke_sequence":"314314121154","topology":"⿱竹寺","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":47,"issues":[],"post_trace_checks":["竹頭六筆與寺部保持層次","寸鉤與點保持分離"]},
+    {"batch_id":"common-0005","index":5,"rank":69,"row":2,"column":1,"character":"得","codepoint":"U+5F97","cns_code":"1-5A35","cns_strokes":11,"cns_stroke_sequence":"33225111154","topology":"⿰彳㝵，日、一、寸完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":55,"issues":[],"post_trace_checks":["日內白與下方寸鉤保持開放","右下點不得黏鉤"]},
+    {"batch_id":"common-0005","index":6,"rank":70,"row":2,"column":2,"character":"傳","codepoint":"U+50B3","cns_code":"1-632E","cns_strokes":13,"cns_stroke_sequence":"3212511214154","topology":"⿰亻專（完整繁體傳）","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":52,"issues":[],"post_trace_checks":["專的層疊橫畫、中央豎與右點不得遺失","底部寸鉤內白保持開放"]},
+    {"batch_id":"common-0005","index":7,"rank":71,"row":2,"column":3,"character":"年","codepoint":"U+5E74","cns_code":"1-4821","cns_strokes":6,"cns_stroke_sequence":"311212","topology":"臺灣六畫年，三層橫畫與中央豎完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":54,"issues":[],"post_trace_checks":["三層橫畫不可合併"]},
+    {"batch_id":"common-0005","index":8,"rank":72,"row":2,"column":4,"character":"個","codepoint":"U+500B","cns_code":"1-5436","cns_strokes":10,"cns_stroke_sequence":"3225122511","topology":"⿰亻固（囗內古完整）","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":55,"issues":[],"post_trace_checks":["外囗與內古的兩層內白不得封死"]},
+    {"batch_id":"common-0005","index":9,"rank":73,"row":3,"column":1,"character":"容","codepoint":"U+5BB9","cns_code":"1-5529","cns_strokes":10,"cns_stroke_sequence":"4453434251","topology":"⿱宀谷","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":55,"issues":[],"post_trace_checks":["宀與谷分離","谷的八、人、口層次與口內白保持清楚"]},
+    {"batch_id":"common-0005","index":10,"rank":74,"row":3,"column":2,"character":"與","codepoint":"U+8207","cns_code":"1-6A58","cns_strokes":14,"cns_stroke_sequence":"12533211511134","topology":"臺灣十四畫與：上部雙側腔、中軸與下方一、八完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":54,"issues":[],"post_trace_checks":["上部左右三層腔與中軸保持可辨","下長橫與八的兩筆不得黏連"]},
+    {"batch_id":"common-0005","index":11,"rank":75,"row":3,"column":3,"character":"可","codepoint":"U+53EF","cns_code":"1-462B","cns_strokes":5,"cns_stroke_sequence":"12515","topology":"⿹丁口","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":56,"issues":[],"post_trace_checks":["口內白與外鉤內白都要保留"]},
+    {"batch_id":"common-0005","index":12,"rank":76,"row":3,"column":4,"character":"宋","codepoint":"U+5B8B","cns_code":"1-497A","cns_strokes":7,"cns_stroke_sequence":"4451234","topology":"⿱宀木","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":56,"issues":[],"post_trace_checks":["屋頂與木的中央豎保持間隙"]},
+    {"batch_id":"common-0005","index":13,"rank":77,"row":4,"column":1,"character":"體","codepoint":"U+9AD4","cns_code":"1-7C55","cns_strokes":23,"cns_stroke_sequence":"25124535442512211251431","topology":"⿰骨豊（完整繁體體）","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":55,"issues":[],"post_trace_checks":["骨的上部腔與月內兩橫保持開放","豊上部曲的四格、下部豆口、雙點與底橫不得合併"]},
+    {"batch_id":"common-0005","index":14,"rank":78,"row":4,"column":2,"character":"外","codepoint":"U+5916","cns_code":"1-4640","cns_strokes":5,"cns_stroke_sequence":"35424","topology":"⿰夕卜","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":58,"issues":[],"post_trace_checks":["夕的點與卜的點不得因門檻化遺失"]},
+    {"batch_id":"common-0005","index":15,"rank":79,"row":4,"column":3,"character":"書","codepoint":"U+66F8","cns_code":"1-5573","cns_strokes":10,"cns_stroke_sequence":"5111212511","topology":"完整繁體書，上部聿勢與下部日","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":51,"issues":[],"post_trace_checks":["上部多層橫畫不得合併","下方日的兩段內白保持開放"]},
+    {"batch_id":"common-0005","index":16,"rank":80,"row":4,"column":4,"character":"他","codepoint":"U+4ED6","cns_code":"1-456C","cns_strokes":5,"cns_stroke_sequence":"32525","topology":"⿰亻也","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":55,"issues":[],"post_trace_checks":["也的中央豎與外鉤保持清楚關係"]},
+    {"batch_id":"common-0006","index":1,"rank":81,"row":1,"column":1,"character":"道","codepoint":"U+9053","cns_code":"1-672C","cns_strokes":13,"cns_stroke_sequence":"4313251114554","topology":"⿺辶首；臺灣辶為四個可見筆勢","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":49,"issues":[],"post_trace_checks":["首的兩點、框與兩內橫保持可辨","辶四個筆勢和底捺不可被簡化成錯誤三畫形"]},
+    {"batch_id":"common-0006","index":2,"rank":82,"row":1,"column":2,"character":"多","codepoint":"U+591A","cns_code":"1-4769","cns_strokes":6,"cns_stroke_sequence":"354354","topology":"⿱夕夕","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":44,"issues":[],"post_trace_checks":["上下兩個夕保持不同層次與點畫"]},
+    {"batch_id":"common-0006","index":3,"rank":83,"row":1,"column":3,"character":"兒","codepoint":"U+5152","cns_code":"1-4C23","cns_strokes":8,"cns_stroke_sequence":"32151135","topology":"⿱臼儿（完整繁體兒）","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":63,"issues":[],"post_trace_checks":["臼中央開口與兩個內橫保持可辨","儿的兩腿不得黏合"]},
+    {"batch_id":"common-0006","index":4,"rank":84,"row":1,"column":4,"character":"長","codepoint":"U+9577","cns_code":"1-4F5B","cns_strokes":8,"cns_stroke_sequence":"21111534","topology":"完整繁體長，三層上橫、長中橫與下部撇捺完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":51,"issues":[],"post_trace_checks":["中橫交會和下部轉折不得形成尖刺"]},
+    {"batch_id":"common-0006","index":5,"rank":85,"row":2,"column":1,"character":"紅","codepoint":"U+7D05","cns_code":"1-5278","cns_strokes":9,"cns_stroke_sequence":"554444121","topology":"⿰糸工（完整繁體糸旁）","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":56,"issues":[],"post_trace_checks":["糸的折勢與四點保持可辨","工的三筆不得黏入糸旁"]},
+    {"batch_id":"common-0006","index":6,"rank":86,"row":2,"column":2,"character":"法","codepoint":"U+6CD5","cns_code":"1-4E4E","cns_strokes":8,"cns_stroke_sequence":"44412154","topology":"⿰氵去","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":65,"issues":[],"post_trace_checks":["三點水各自獨立","去的下折與點保持分離"]},
+    {"batch_id":"common-0006","index":7,"rank":87,"row":2,"column":3,"character":"日","codepoint":"U+65E5","cns_code":"1-454A","cns_strokes":4,"cns_stroke_sequence":"2511","topology":"完整外框加單一內橫，形成兩段內白","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":76,"issues":[],"post_trace_checks":["兩段內白不得封死","框角保持圓順"]},
+    {"batch_id":"common-0006","index":8,"rank":88,"row":2,"column":4,"character":"語","codepoint":"U+8A9E","cns_code":"1-6B23","cns_strokes":14,"cns_stroke_sequence":"41112511251251","topology":"⿰言吾（完整繁體言旁與吾）","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":51,"issues":[],"post_trace_checks":["言與吾各自的口內白保持開放","五部折勢與三層橫畫不得糊合"]},
+    {"batch_id":"common-0006","index":9,"rank":89,"row":3,"column":1,"character":"其","codepoint":"U+5176","cns_code":"1-4C27","cns_strokes":8,"cns_stroke_sequence":"12211134","topology":"兩豎、四層橫畫與下方八","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":46,"issues":[],"post_trace_checks":["四層橫畫間距與下八分離"]},
+    {"batch_id":"common-0006","index":10,"rank":90,"row":3,"column":2,"character":"義","codepoint":"U+7FA9","cns_code":"1-6578","cns_strokes":13,"cns_stroke_sequence":"4311213151543","topology":"⿱羊我（完整繁體義）","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":43,"issues":[],"post_trace_checks":["羊部三橫與我部橫畫保持層次","我部兩鉤、點與末撇不得糊成尖結"]},
+    {"batch_id":"common-0006","index":11,"rank":91,"row":3,"column":3,"character":"南","codepoint":"U+5357","cns_code":"1-5032","cns_strokes":9,"cns_stroke_sequence":"122543112","topology":"⿱十⿵冂𢆉，框內丷、二與末豎完整","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":54,"issues":[],"post_trace_checks":["上十的豎與框內末豎維持可辨角色","框鉤與兩個內橫不得黏合"]},
+    {"batch_id":"common-0006","index":12,"rank":92,"row":3,"column":4,"character":"頭","codepoint":"U+982D","cns_code":"1-7324","cns_strokes":16,"cns_stroke_sequence":"1251431132511134","topology":"⿰豆頁（完整繁體頭）","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":54,"issues":[],"post_trace_checks":["豆的口、雙點與底橫保持分離","頁的框、兩內橫與下方八保持開放"]},
+    {"batch_id":"common-0006","index":13,"rank":93,"row":4,"column":1,"character":"六","codepoint":"U+516D","cns_code":"1-447A","cns_strokes":4,"cns_stroke_sequence":"4134","topology":"⿱亠八","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":59,"issues":[],"post_trace_checks":["上點、橫與下方八保持分離"]},
+    {"batch_id":"common-0006","index":14,"rank":94,"row":4,"column":2,"character":"代","codepoint":"U+4EE3","cns_code":"1-456E","cns_strokes":5,"cns_stroke_sequence":"32154","topology":"⿰亻弋","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":58,"issues":[],"post_trace_checks":["弋的提、斜鉤與上點保持獨立","鉤端不得長刺"]},
+    {"batch_id":"common-0006","index":15,"rank":95,"row":4,"column":3,"character":"學","codepoint":"U+5B78","cns_code":"1-7050","cns_strokes":16,"cns_stroke_sequence":"3434321151145551","topology":"⿱𦥯子（完整繁體學）","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":54,"issues":[],"post_trace_checks":["上部左右腔與中央四個交叉筆勢保持可辨","冖和下方子不得黏連","子內白與底橫保持清楚"]},
+    {"batch_id":"common-0006","index":16,"rank":96,"row":4,"column":4,"character":"和","codepoint":"U+548C","cns_code":"1-4C4F","cns_strokes":8,"cns_stroke_sequence":"31234251","topology":"⿰禾口","decision":"PASS","readability":{"native":"PASS","128px":"PASS","64px":"PASS","32px":"PASS"},"minimum_grid_clearance_px":54,"issues":[],"post_trace_checks":["禾的五個筆勢與口內白保持可辨"]}
+  ],
+  "known_reference_corrections": [
+    {
+      "character": "與",
+      "codepoint": "U+8207",
+      "current_cns": {
+        "code": "1-6A58",
+        "strokes": 14,
+        "stroke_sequence": "12533211511134",
+        "word_url": "https://www.cns11643.gov.tw/wordView.jsp?ID=92760"
+      },
+      "note": "The repository's older authored test describes 13 strokes; this audit deliberately uses the current official 14-stroke record."
+    },
+    {
+      "character": "道",
+      "codepoint": "U+9053",
+      "current_cns": {
+        "code": "1-672C",
+        "strokes": 13,
+        "stroke_sequence": "4313251114554",
+        "word_url": "https://www.cns11643.gov.tw/wordView.jsp?ID=91948"
+      },
+      "note": "The repository's older authored test describes 12 strokes; this audit deliberately uses the current official 13-stroke record and the Taiwan four-gesture 辶."
+    }
+  ],
+  "priority_post_trace_review": [
+    "U+5F8C",
+    "U+8A69",
+    "U+7A2E",
+    "U+55BB",
+    "U+50B3",
+    "U+8207",
+    "U+9AD4",
+    "U+9053",
+    "U+7D05",
+    "U+8A9E",
+    "U+7FA9",
+    "U+5357",
+    "U+982D",
+    "U+5B78"
+  ]
+}

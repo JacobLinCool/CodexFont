@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0102",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1617,
+    "end_rank": 1632,
+    "characters": "暮狹礙握樸祝妖悟夾扁爛鴻掃枕葬巡"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0102.source.json",
+    "descriptor_sha256": "3b03446a5787502bdd164e525604ea38683a1e577f73e3a8d07e9e2efeac21f8",
+    "raster": "sources/imagegen/raster/common-0102.png",
+    "raster_sha256": "36de61ac8f2246d5e4f9c27b58217a642c708cbf2358704d825100471d615b78"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0099-0102-audit.json",
+    "report_sha256": "73da88876914c4543a3301faccf2a6ecdd947717d78bf304bac1170b57158aa4"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0102/report.json",
+    "report_sha256": "2448bb7a83d308127a24255656eaa556fa0181e40c8e4ed60e42d3d9db610396",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0102.vector-review.json",
+    "record_sha256": "884b0a3207b49bba790b95a87dd4d73f92de4d2c08d9f26d6dfd9efba0981a01"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:47:13Z"
+  }
+}

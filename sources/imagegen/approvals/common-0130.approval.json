@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0130",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2065,
+    "end_rank": 2080,
+    "characters": "蓄恥炭爆凍嚇捲擅焉誦鑽隙黛企券昨"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0130.source.json",
+    "descriptor_sha256": "0c970c36dc4b6e66e45e6a0fa444e8cf83c78a2e56d0b078b9b8c1dcb3702ea5",
+    "raster": "sources/imagegen/raster/common-0130.png",
+    "raster_sha256": "7f3ad3ec1638175a009f6a27d82bff22811ab47e9f2dfd01132a216b9ad2acbb"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0127-0130-audit.json",
+    "report_sha256": "dc7606cebcc248de142dd8dec804766826e31a29284c20f9cd4487fd734dc6e9"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0130/report.json",
+    "report_sha256": "242994d6772d6b31e99d9abe2060f3a47447ca04d0bd0d41a28476f023673ac5",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0130.vector-review.json",
+    "record_sha256": "06bb7fe087f27c2d2867af89965f7da8a8aad9939eb6801700eef7c28d766a0c"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T02:04:32Z"
+  }
+}

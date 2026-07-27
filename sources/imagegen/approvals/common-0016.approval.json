@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0016",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 241,
+    "end_rank": 256,
+    "characters": "做進就品玉百從石變木江軍居受立首"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0016.source.json",
+    "descriptor_sha256": "0e532b608a4fed048e18babbf7feaebca9b67d585bd33aa0f56650889a1b816f",
+    "raster": "sources/imagegen/raster/common-0016.png",
+    "raster_sha256": "1042dcda91e9560bb4352883cd9368fd260973ab6e696461b8502965441d3b48"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0015-0018-audit.json",
+    "report_sha256": "6f6d7c61f49a1182985445716eeebb2662a00771c6ae134b7d8fa4e340b96868"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0016/report.json",
+    "report_sha256": "1efc47d16fa682f0c015ac052ee910ffc52c8546025acb1b7347cd8d91077cc7",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0016.vector-review.json",
+    "record_sha256": "612431f9fbfe5a7594e3fa09a366408213bf6e6c77f0ac0b53ec25e7891b7631"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:35:07Z"
+  }
+}

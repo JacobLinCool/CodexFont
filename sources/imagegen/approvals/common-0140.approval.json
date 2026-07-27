@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0140",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2225,
+    "end_rank": 2240,
+    "characters": "瞧腫娶斥碼拆簿衍躁姚窄襟駐坊滋漂"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0140.source.json",
+    "descriptor_sha256": "f1f2c4ee9e6e6555f92e953f64d67cef3a5cdabf5cf6a14942a6208e0de65af8",
+    "raster": "sources/imagegen/raster/common-0140.png",
+    "raster_sha256": "bb38031ba0ba57554fc183da524797761a25c9abe6f9dfc4e0ed4b57307fa98a"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0139-0142-audit.json",
+    "report_sha256": "01e3d728cf9754e064a3ede5e7d5da1c76eb88d01da429b941247404a0d4b0ba"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0140/report.json",
+    "report_sha256": "8abde39d064d61812470219ce631d3538bc1e23a56f6419b57877c0c4bd4cf15",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0140.vector-review.json",
+    "record_sha256": "47f57a5cd347cc7f885f697b2598628f5a536a43702016640ca010ed37c0fb48"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T02:04:32Z"
+  }
+}

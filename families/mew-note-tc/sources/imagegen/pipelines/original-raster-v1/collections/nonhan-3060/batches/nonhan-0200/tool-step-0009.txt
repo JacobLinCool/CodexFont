@@ -1,0 +1,8 @@
+Preserve rows 1–3 exactly. Erase the entire fourth (bottom) row and redraw its four glyphs from left to right. Do not use c-number labels; use these explicit grid positions:
+
+- Bottom row, column 1: ╜ — a BOTTOM-RIGHT corner. DOUBLE vertical strokes on the RIGHT; one SINGLE bottom horizontal stroke extending LEFT.
+- Bottom row, column 2: ╝ — a BOTTOM-RIGHT corner. DOUBLE vertical strokes on the RIGHT; DOUBLE bottom horizontal strokes extending LEFT.
+- Bottom row, column 3: ╞ — one SINGLE vertical line; DOUBLE horizontal strokes extending RIGHT from its middle. No left branch.
+- Bottom row, column 4: ╟ — DOUBLE vertical lines; one SINGLE horizontal stroke extending RIGHT from their middle. No left branch.
+
+The fourth-reference identity copybook shows this exact bottom-row order: ╜, ╝, ╞, ╟. Keep the complete detectable 4×4 grid, exactly one glyph per cell, and no extra marks. Return only the complete corrected sheet.

@@ -1,0 +1,21 @@
+Use case: precise-object-edit
+Asset type: second single-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cell 09. Preserve all other 15 glyphs, especially the corrected 蘄 in Cell 02 and 嚲 in Cell 11, plus the grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 09 must be U+99F8 駸. The current edit still reads as U+99FF 駿 because the right side remains 夋. Preserve 馬 on the left, but erase the entire right side and rebuild it from blank white space.
+
+The new right side must contain exactly three vertically stacked elements, matching the ninth copybook cell:
+1. a 彐-like top element with its squared turn and horizontal strokes;
+2. a separate 冖-like middle cover with a long horizontal and two short downward ends;
+3. a clear 又 at the bottom with its two crossing, sweeping strokes.
+
+There must be no 厶 triangle, no separated 八 pair, and no 夂 walking leg. The result must not resemble 駿.
+
+Required full row-major result:
+耄蘄訾諤
+轢醪鉉雎
+駸嗒嚲囷
+圻寔峒无
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

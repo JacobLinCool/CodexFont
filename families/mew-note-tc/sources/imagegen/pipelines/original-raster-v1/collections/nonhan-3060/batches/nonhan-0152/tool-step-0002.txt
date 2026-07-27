@@ -1,0 +1,27 @@
+Recreate every glyph in Image 1 while preserving its exact pure-white 1600×1600 canvas, thin regular 4×4 segmentation grid, margins, centering, and scale. Image 4 is the binding row-major identity copybook; Images 2–3 guide only the subtle handwritten black-ink character. These are precise mathematical relation symbols, not approximate text. Copy every component and slash placement from Image 4.
+
+Required exact Unicode order:
+Row 1: ⋠ ⋡ ⋢ ⋣
+Row 2: ⋤ ⋥ ⋦ ⋧
+Row 3: ⋨ ⋩ ⋪ ⋫
+Row 4: ⋬ ⋭ ⋮ ⋯
+
+Match Image 4 cell by cell:
+- 01 ⋠ DOES NOT PRECEDE OR EQUAL: the left-facing curved predecessor/equality relation crossed by one diagonal negation slash.
+- 02 ⋡ DOES NOT SUCCEED OR EQUAL: exact mirror of cell 01, crossed by one diagonal negation slash.
+- 03 ⋢ NOT SQUARE IMAGE OF OR EQUAL TO: left-open square relation above two horizontal equality bars, all crossed by one diagonal slash.
+- 04 ⋣ NOT SQUARE ORIGINAL OF OR EQUAL TO: exact mirror of cell 03, crossed by one diagonal slash.
+- 05 ⋤ SQUARE IMAGE OF OR NOT EQUAL TO: left-open square relation above two equality bars; the diagonal negation slash crosses the lower equality portion as shown in Image 4.
+- 06 ⋥ SQUARE ORIGINAL OF OR NOT EQUAL TO: exact mirror of cell 05.
+- 07 ⋦ LESS-THAN BUT NOT EQUIVALENT TO: one less-than angle above a tilde/wave crossed by a diagonal slash.
+- 08 ⋧ GREATER-THAN BUT NOT EQUIVALENT TO: exact mirror of cell 07.
+- 09 ⋨ PRECEDES BUT NOT EQUIVALENT TO: one clean left-facing curved predecessor relation above a tilde/wave crossed by a diagonal slash.
+- 10 ⋩ SUCCEEDS BUT NOT EQUIVALENT TO: exact mirror of cell 09.
+- 11 ⋪ NOT NORMAL SUBGROUP OF: the left-pointing outlined triangular normal-subgroup relation crossed by one diagonal slash, exactly as Image 4.
+- 12 ⋫ DOES NOT CONTAIN AS NORMAL SUBGROUP: exact mirror of cell 11, crossed by one diagonal slash.
+- 13 ⋬ NOT NORMAL SUBGROUP OF OR EQUAL TO: cell 11 plus a separate horizontal underline.
+- 14 ⋭ DOES NOT CONTAIN AS NORMAL SUBGROUP OR EQUAL: cell 12 plus a separate horizontal underline.
+- 15 ⋮ VERTICAL ELLIPSIS: exactly three solid dots vertically aligned.
+- 16 ⋯ MIDLINE HORIZONTAL ELLIPSIS: exactly three solid dots horizontally aligned.
+
+Keep mirrored pairs visibly distinct and keep every slash continuous and unambiguous. Preserve all five vertical and all five horizontal grid rules. No substitutions, duplicate symbols, labels, code points, headings, texture, shadow, or extra marks.

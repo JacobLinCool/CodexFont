@@ -1,0 +1,112 @@
+{
+  "schema_version": 2,
+  "batch_id": "imagegen-nonhan-0121",
+  "state": "generated-unreviewed",
+  "generator": "built-in-image_gen",
+  "generator_call": "functions-exec-image_gen-sha256-91d07d6e84a824f4",
+  "repertoire": {
+    "path": "../repertoires/nonhan-3060.json",
+    "sha256": "42791eeb3981f04895529ad7770b00a86a815f9c4dffa16369df9f7ec1892ce4",
+    "repertoire_id": "clear-hand-tc-nonhan-3060-v1",
+    "batch_id": "nonhan-0121"
+  },
+  "raster": "../raster/nonhan-0121.png",
+  "raster_sha256": "91d07d6e84a824f45ffe207f5f0d3f85a6d2acffe5439240c8c66e10f20b0b0d",
+  "prompt": "../prompts/nonhan-0121.md",
+  "copybook": {
+    "path": "../copybooks/nonhan-0121.png",
+    "sha256": "0d16143e011101354b8bd83ddc59f7352f393b3daf06add140a854017b3f80d6",
+    "role": "identity-reference-only-no-outline-import"
+  },
+  "style_reference": {
+    "path": "../raster/common-0001.png",
+    "sha256": "2a4058fdb4e35ce2789f9ae73535542f78f4e94516ad4b9929986a93e36d3d81",
+    "role": "style-only"
+  },
+  "grid": {
+    "rows": 4,
+    "columns": 4,
+    "glyphs": [
+      {
+        "canonical_rank": 1274,
+        "authoring_rank": 1763,
+        "character": "₰",
+        "codepoint": "U+20B0",
+        "name": "GERMAN PENNY SIGN",
+        "gc": "Sc",
+        "outline_required": true,
+        "profile_id": "proportional",
+        "metrics": {
+          "horizontal_advance": {
+            "kind": "source-proportional"
+          },
+          "vertical_advance": {
+            "kind": "fixed",
+            "value": 1024
+          },
+          "side_bearings": {
+            "left": 48,
+            "right": 48
+          }
+        },
+        "copybook_reference": {
+          "role": "identity-reference-only-no-outline-import",
+          "font_path": "/System/Library/Fonts/LucidaGrande.ttc",
+          "font_sha256": "d1030f2b3c967b740d236f2a59d38b69705eda36e0633c88eaef06d8b0833ab6",
+          "font_index": 0,
+          "postscript_name": "LucidaGrande",
+          "glyph_name": "pfennig",
+          "validation": [
+            "exact-cmap-hit",
+            "non-notdef-glyph-name",
+            "non-empty-distinct-outline",
+            "non-empty-pillow-raster"
+          ]
+        }
+      },
+      {
+        "canonical_rank": 1275,
+        "authoring_rank": 1764,
+        "character": "₱",
+        "codepoint": "U+20B1",
+        "name": "PESO SIGN",
+        "gc": "Sc",
+        "outline_required": true,
+        "profile_id": "proportional",
+        "metrics": {
+          "horizontal_advance": {
+            "kind": "source-proportional"
+          },
+          "vertical_advance": {
+            "kind": "fixed",
+            "value": 1024
+          },
+          "side_bearings": {
+            "left": 48,
+            "right": 48
+          }
+        },
+        "copybook_reference": {
+          "role": "identity-reference-only-no-outline-import",
+          "font_path": "/System/Library/Fonts/LucidaGrande.ttc",
+          "font_sha256": "d1030f2b3c967b740d236f2a59d38b69705eda36e0633c88eaef06d8b0833ab6",
+          "font_index": 0,
+          "postscript_name": "LucidaGrande",
+          "glyph_name": "peso",
+          "validation": [
+            "exact-cmap-hit",
+            "non-notdef-glyph-name",
+            "non-empty-distinct-outline",
+            "non-empty-pillow-raster"
+          ]
+        }
+      }
+    ],
+    "empty_grid_cells": 14
+  },
+  "review": {
+    "identity": "pending",
+    "raster_quality": "pending",
+    "vector_quality": "pending"
+  }
+}

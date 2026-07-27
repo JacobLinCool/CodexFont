@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0168",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2673,
+    "end_rank": 2688,
+    "characters": "岑慾檔貸扎濱盪趾摺梓橡諭謊跪驟鰭"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0168.source.json",
+    "descriptor_sha256": "2a5499bfd95ad8880fc8f357aba804b823894b4453238b5590bb5477d6ff14cc",
+    "raster": "sources/imagegen/raster/common-0168.png",
+    "raster_sha256": "bc5bee438ec209c6051473793fa56d1c9a57840fd6e7ebf1ab3585327b8d3297"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0167-0170-audit.json",
+    "report_sha256": "e57cd0658739389bb9e5e240c71b7c022fc260cb4cdb3a0150ddc572dec03efd"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0168/report.json",
+    "report_sha256": "06ee5856afaa8f5f079aad0a2f255f4fbe1497323bece0eec57d8fc03bacfbe4",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0168.vector-review.json",
+    "record_sha256": "0d697675597e39976a9d09d24877d096fa0d433564e6ee5613ff73544d1e0c30"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:57:54Z"
+  }
+}

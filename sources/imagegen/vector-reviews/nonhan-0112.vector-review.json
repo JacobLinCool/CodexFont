@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-nonhan-glyph-review",
+  "review_state": "approved",
+  "batch_id": "nonhan-0112",
+  "batch_kind": "raster-outline",
+  "reviewer": {
+    "name": "Codex Primary Glyph Reviewer",
+    "role": "Vector and Small-Size QA"
+  },
+  "reviewed_at": "2026-07-26T12:44:48Z",
+  "attestation": "I_REVIEWED_EVERY_NONHAN_GLYPH_AT_12_16_20_32_56_PX_IN_BOTH_POLARITIES",
+  "evidence": {
+    "path": "build/imagegen/imagegen-nonhan-0112/report.json",
+    "sha256": "cd668627fb3c678f9331c441013c513c3bb9ac89e376da44cfaf2664b1092d2d"
+  },
+  "scope": {
+    "all_glyphs_reviewed": true,
+    "checks": [
+      "glyph-identity",
+      "simple-nonempty-quadratic-outline",
+      "exact-horizontal-and-vertical-metrics",
+      "profile-invariants",
+      "zero-micro-edges-and-thorns",
+      "five-size-legibility"
+    ],
+    "sizes_px": [
+      12,
+      16,
+      20,
+      32,
+      56
+    ],
+    "polarities": [
+      "black-on-white",
+      "white-on-black"
+    ]
+  },
+  "proofs": [
+    {
+      "kind": "small-size:black-on-white:12px",
+      "path": "build/imagegen/imagegen-nonhan-0112/proof/black-on-white-12px.png",
+      "sha256": "ac8a7d8c8001c8608a13cd4f8ed310a0af3c167e237d1fa94fb321490ca9e860",
+      "decision": "PASS"
+    },
+    {
+      "kind": "small-size:white-on-black:12px",
+      "path": "build/imagegen/imagegen-nonhan-0112/proof/white-on-black-12px.png",
+      "sha256": "8ab0a47bf85c72dc7bc95c66f71bbe979f22d3cdefdcac7212ea31b701adbfb6",
+      "decision": "PASS"
+    },
+    {
+      "kind": "small-size:black-on-white:16px",
+      "path": "build/imagegen/imagegen-nonhan-0112/proof/black-on-white-16px.png",
+      "sha256": "7102da3f779de7056a9d280f65e988e813f549f5334af3bca27de25b2c2b60f5",
+      "decision": "PASS"
+    },
+    {
+      "kind": "small-size:white-on-black:16px",
+      "path": "build/imagegen/imagegen-nonhan-0112/proof/white-on-black-16px.png",
+      "sha256": "93248f64ef476a8f8220cc13a3dd12e48832acf5b2a0b69d1828f7a28905737f",
+      "decision": "PASS"
+    },
+    {
+      "kind": "small-size:black-on-white:20px",
+      "path": "build/imagegen/imagegen-nonhan-0112/proof/black-on-white-20px.png",
+      "sha256": "90551ab717c4bc3f8474e2b517efefae50d11e4f704b18263e97081713c54b41",
+      "decision": "PASS"
+    },
+    {
+      "kind": "small-size:white-on-black:20px",
+      "path": "build/imagegen/imagegen-nonhan-0112/proof/white-on-black-20px.png",
+      "sha256": "f4397f26ed6386ec36f949db8a45c516a687903bb9535d383f8bbfcc57a1bef6",
+      "decision": "PASS"
+    },
+    {
+      "kind": "small-size:black-on-white:32px",
+      "path": "build/imagegen/imagegen-nonhan-0112/proof/black-on-white-32px.png",
+      "sha256": "df192fa5f31f68de30a145913c8ea2af25eaacaf99d3832bb1c34f811b1638b2",
+      "decision": "PASS"
+    },
+    {
+      "kind": "small-size:white-on-black:32px",
+      "path": "build/imagegen/imagegen-nonhan-0112/proof/white-on-black-32px.png",
+      "sha256": "05bfae40ca8db36a09ead8c03773112161cfe298cf75d0efc104937f2fac297c",
+      "decision": "PASS"
+    },
+    {
+      "kind": "small-size:black-on-white:56px",
+      "path": "build/imagegen/imagegen-nonhan-0112/proof/black-on-white-56px.png",
+      "sha256": "a253946461aeb5824680c2e6a0851c6584ed8c2a25e92ea49462fcd75a29a3cb",
+      "decision": "PASS"
+    },
+    {
+      "kind": "small-size:white-on-black:56px",
+      "path": "build/imagegen/imagegen-nonhan-0112/proof/white-on-black-56px.png",
+      "sha256": "7d769f258580056785e83b913a4f34e0fc288869d7980834b71da5afe0f667fc",
+      "decision": "PASS"
+    },
+    {
+      "kind": "segmented-source",
+      "path": "build/imagegen/imagegen-nonhan-0112/proof/segmented-source-contact.png",
+      "sha256": "06344579847759f44d7035d97102721e59d360eacebb97451872d0ddb473f6b6",
+      "decision": "PASS"
+    },
+    {
+      "kind": "edge-connect",
+      "path": "build/imagegen/imagegen-nonhan-0112/proof/edge-connect.png",
+      "sha256": "3694083e8c28ee78aa4f6cb87cddc9ab75b1220c0a9838009ce633ab6de666bc",
+      "decision": "PASS"
+    }
+  ],
+  "glyphs": [
+    {
+      "authoring_rank": 1649,
+      "character": "㇀",
+      "codepoint": "U+31C0",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1650,
+      "character": "㇁",
+      "codepoint": "U+31C1",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1651,
+      "character": "㇂",
+      "codepoint": "U+31C2",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1652,
+      "character": "㇃",
+      "codepoint": "U+31C3",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1653,
+      "character": "㇄",
+      "codepoint": "U+31C4",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1654,
+      "character": "㇅",
+      "codepoint": "U+31C5",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1655,
+      "character": "㇆",
+      "codepoint": "U+31C6",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1656,
+      "character": "㇇",
+      "codepoint": "U+31C7",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1657,
+      "character": "㇈",
+      "codepoint": "U+31C8",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1658,
+      "character": "㇉",
+      "codepoint": "U+31C9",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1659,
+      "character": "㇍",
+      "codepoint": "U+31CD",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1660,
+      "character": "㇎",
+      "codepoint": "U+31CE",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1661,
+      "character": "㇏",
+      "codepoint": "U+31CF",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1662,
+      "character": "㇐",
+      "codepoint": "U+31D0",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1663,
+      "character": "㇑",
+      "codepoint": "U+31D1",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    },
+    {
+      "authoring_rank": 1664,
+      "character": "㇒",
+      "codepoint": "U+31D2",
+      "decision": "PASS",
+      "notes": "PASS: identity, simple outline, exact metrics, profile invariants, zero micro edges/thorns, and all five sizes were explicitly reviewed."
+    }
+  ],
+  "summary": {
+    "glyph_count": 16,
+    "pass_count": 16,
+    "reject_count": 0,
+    "rejected_codepoints": []
+  }
+}

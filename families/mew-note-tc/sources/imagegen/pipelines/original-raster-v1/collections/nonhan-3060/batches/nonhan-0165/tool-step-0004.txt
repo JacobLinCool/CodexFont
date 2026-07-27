@@ -1,0 +1,21 @@
+Recreate the full sheet because Image 1 shifted the chess sequence one cell early. Image 4 is the binding identity copybook. Images 2–3 guide only the subtle handwritten contour.
+
+The exact row-major Unicode order is:
+Row 1: ♑ ♒ ♓ ♔
+Row 2: ♕ ♖ ♗ ♘
+Row 3: ♙ ♚ ♛ ♜
+Row 4: ♝ ♞ ♟ ♠
+
+This ordering is absolute:
+- Cell 09 is the WHITE/HOLLOW PAWN ♙. It must not be black.
+- Cell 10 is BLACK KING ♚.
+- Cell 11 is BLACK QUEEN ♛.
+- Cell 12 is BLACK ROOK ♜.
+- Cell 13 is BLACK BISHOP ♝.
+- Cell 14 is BLACK KNIGHT ♞.
+- Cell 15 is BLACK PAWN ♟.
+- Cell 16 is BLACK SPADE ♠.
+
+Match every symbol’s identity and solid-versus-hollow structure to Image 4. The six black chess pieces in cells 10–15 must be distinct and predominantly solid opaque black: king with king top; queen with pointed multi-peak crown; rook as crenellated tower; bishop with mitre; knight as horse head; pawn with round head and flared base.
+
+Use a pure-white square canvas and one centered glyph per cell. Reproduce the exact segmentation grid from Image 4: five continuous, one-pixel-like, pale neutral-gray vertical rules and five matching horizontal rules, including the outer edges, at precisely equal quarter-canvas intervals. Rules must be straight, complete, evenly spaced, and much lighter/thinner than glyph strokes. No glyph touches a rule. No labels, code points, texture, shadow, or extra marks.

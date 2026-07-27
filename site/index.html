@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Codex Font 是一個實驗性的開放字體計畫。試用原創字體、檢查缺字，也歡迎一起建立新字體。">
+  <meta name="theme-color" content="#f1eadc">
+  <title>Codex Font — 實驗性的開放字體計畫</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <header class="site-header">
+    <a class="wordmark" href="./" aria-label="Codex Font 首頁">
+      <span class="wordmark-mark" aria-hidden="true">字</span>
+      <span>Codex Font</span>
+    </a>
+    <nav aria-label="主要導覽">
+      <a href="#about">關於</a>
+      <a href="#typefaces">字體</a>
+      <a href="#specimen">試寫</a>
+      <a href="#coverage">缺字</a>
+    </nav>
+    <button class="quiet-button" id="theme-toggle" type="button" aria-pressed="false">
+      深色
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="intro" id="about" aria-labelledby="page-title">
+      <p class="section-number">OPEN TYPE EXPERIMENT</p>
+      <h1 id="page-title">Codex Font</h1>
+      <p class="intro-lead">讓 Codex 製作開放字體。</p>
+      <div class="intro-copy">
+        <p>這是一個實驗性的開放字體計畫。我們從原稿開始製作字形，並以 SIL Open Font License 開放使用。</p>
+        <p>歡迎試用 Preview 版本，回報缺字或不自然的字形。你也可以利用 repository 裡的 skill 貢獻新字體。</p>
+      </div>
+      <div class="intro-actions">
+        <a class="primary-link" href="#typefaces">查看字體</a>
+        <a class="text-link" href="https://github.com/JacobLinCool/CodexFont">在 GitHub 參與 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="font-index" id="typefaces" aria-labelledby="typefaces-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">01</p>
+          <h2 id="typefaces-title">字體</h2>
+        </div>
+        <p id="font-count">正在讀取…</p>
+      </div>
+
+      <div class="font-list" id="font-list"></div>
+
+      <div class="font-overview">
+        <div class="font-story">
+          <p class="section-number">目前版本</p>
+          <div class="font-title-line">
+            <h3 id="detail-name">—</h3>
+            <span id="detail-status">—</span>
+          </div>
+          <p class="font-tagline" id="detail-tagline">—</p>
+          <p id="detail-description">—</p>
+          <ul id="feature-list"></ul>
+          <div class="downloads" id="download-list" aria-label="下載字體"></div>
+        </div>
+
+        <div class="repertoire-progress">
+          <div class="progress-heading">
+            <div>
+              <p class="section-number">字集進度</p>
+              <p class="progress-count" id="progress-count">—</p>
+            </div>
+            <strong id="progress-percent">—</strong>
+          </div>
+          <p class="progress-note" id="progress-note">正在核對正式字體的 cmap…</p>
+          <div
+            class="progress-stack"
+            id="progress-stack"
+            role="progressbar"
+            aria-label="完整字集進度"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"
+          ></div>
+          <ul class="progress-legend" id="progress-legend"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="specimen" id="specimen" aria-labelledby="specimen-title">
+      <div class="specimen-topline">
+        <div>
+          <p class="section-number">02</p>
+          <h2 id="specimen-title">試寫</h2>
+        </div>
+        <div class="selected-font">
+          <span id="font-status">—</span>
+          <strong id="font-name">載入中</strong>
+          <span id="font-version">—</span>
+        </div>
+      </div>
+
+      <div class="sample-stage" id="sample-stage">
+        <p class="sample-label">點一下就能改字。</p>
+        <div
+          class="hero-sample font-preview"
+          id="hero-sample"
+          contenteditable="true"
+          role="textbox"
+          aria-label="字體試寫文字"
+          aria-multiline="true"
+          spellcheck="false"
+        >慢慢寫，把字寫清楚。</div>
+        <p class="fallback-note">缺字以下方檢查結果為準。</p>
+      </div>
+
+      <div class="control-panel" aria-label="字體預覽控制">
+        <label>
+          <span>大小 <output id="size-output">72 px</output></span>
+          <input id="size-control" type="range" min="18" max="144" value="72">
+        </label>
+        <label>
+          <span>行高 <output id="leading-output">1.35</output></span>
+          <input id="leading-control" type="range" min="90" max="220" value="135">
+        </label>
+        <label>
+          <span>字距 <output id="tracking-output">0 em</output></span>
+          <input id="tracking-control" type="range" min="-5" max="20" value="0">
+        </label>
+        <button class="direction-button" id="direction-toggle" type="button" aria-pressed="false">
+          直排
+        </button>
+      </div>
+    </section>
+
+    <section class="coverage-lab" id="coverage" aria-labelledby="coverage-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">03</p>
+          <h2 id="coverage-title">找缺字</h2>
+        </div>
+        <p>貼上一段文字，立刻找出這個版本還沒有的字。</p>
+      </div>
+
+      <div class="coverage-grid">
+        <div class="text-entry">
+          <label for="paragraph-input">貼上文字</label>
+          <textarea id="paragraph-input" rows="9" spellcheck="false"></textarea>
+          <div class="entry-meta">
+            <span id="character-count">0 字元</span>
+            <button class="quiet-button" id="clear-text" type="button">清除</button>
+          </div>
+        </div>
+
+        <div class="coverage-result" aria-live="polite">
+          <div class="coverage-score">
+            <div>
+              <span>支援</span>
+              <strong id="coverage-percent">—</strong>
+            </div>
+            <p id="coverage-summary">正在讀取字集…</p>
+          </div>
+          <div class="coverage-bar" aria-hidden="true">
+            <span id="coverage-bar-fill"></span>
+          </div>
+          <div class="missing-panel">
+            <h3>缺字</h3>
+            <div class="missing-list" id="missing-list"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="paragraph-sheet">
+        <div class="sheet-margin" aria-hidden="true"></div>
+        <div class="paragraph-preview font-preview" id="paragraph-preview"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="footer-links" id="footer-download-list" aria-label="下載與專案連結"></nav>
+    <a href="https://github.com/JacobLinCool/CodexFont">GitHub <span aria-hidden="true">↗</span></a>
+  </footer>
+
+  <template id="font-card-template">
+    <button class="font-card" type="button">
+      <span class="font-card-index"></span>
+      <span class="font-card-name"></span>
+      <span class="font-card-sample"></span>
+      <span class="font-card-meta" aria-live="polite"></span>
+    </button>
+  </template>
+
+  <template id="missing-chip-template">
+    <span class="missing-chip">
+      <span class="missing-character"></span>
+      <code class="missing-codepoint"></code>
+      <span class="missing-occurrences"></span>
+    </span>
+  </template>
+
+  <noscript>請開啟 JavaScript，才能試寫和檢查缺字。</noscript>
+</body>
+</html>

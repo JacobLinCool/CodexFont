@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0019",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 289,
+    "end_rank": 304,
+    "characters": "眼類劉車病向點縣何政把親易葉全論"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0019.source.json",
+    "descriptor_sha256": "bfa4a31793644721a94d1a85095d84d1678c479d178b1a547d91664ddc06022d",
+    "raster": "sources/imagegen/raster/common-0019.png",
+    "raster_sha256": "92b7ac413fd6de575a3a1133fa493d2ac5e7c3077ff0a7ed7063466d6a4c77b3"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0019-0022-audit.json",
+    "report_sha256": "7160d13441761da0aabbeef25983279b2d21314092d1560f01c9337f9ad6e89f"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0019/report.json",
+    "report_sha256": "67efe79902bdff8164dcf7be64c78d2a4a07e9ba595942fb1d3bbd3645f6844c",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0019.vector-review.json",
+    "record_sha256": "e96cc85cfdb66f9d3f6c4487c136af57b0b9597e78337c0212d6e9e6eaaf9527"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:35:32Z"
+  }
+}

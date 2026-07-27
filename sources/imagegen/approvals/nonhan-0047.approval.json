@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-nonhan-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "nonhan-0047",
+  "batch_kind": "raster-outline",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/nonhan-3060.json",
+    "sha256": "42791eeb3981f04895529ad7770b00a86a815f9c4dffa16369df9f7ec1892ce4",
+    "repertoire_id": "clear-hand-tc-nonhan-3060-v1",
+    "batch_id": "nonhan-0047",
+    "start_authoring_rank": 663,
+    "end_authoring_rank": 664,
+    "glyph_codepoints": [
+      "U+FF5F",
+      "U+FF60"
+    ]
+  },
+  "source": {
+    "descriptor": {
+      "path": "sources/imagegen/batches/nonhan-0047.source.json",
+      "sha256": "6a83826171b54dda16950f251f0821271aa3813b43b263125c0ff039480c0c9d"
+    },
+    "raster": {
+      "path": "sources/imagegen/raster/nonhan-0047.png",
+      "sha256": "214187b9a8d7125ea05840b8093c6d0479446e4e06af8c242eb1dc10e11d8783"
+    },
+    "copybook": {
+      "path": "sources/imagegen/copybooks/nonhan-0047.png",
+      "sha256": "8cfb58635531c9c0ff3075418673b1c1da0dd4cf364f152cf32493036dbff216"
+    },
+    "prompt": {
+      "path": "sources/imagegen/prompts/nonhan-0047.md",
+      "sha256": "ff8f74d35468afd75f3d1477a5bdc55b5810b01540f0d9303b167dadeb4ee4dc"
+    },
+    "style_reference": {
+      "path": "sources/imagegen/raster/common-0001.png",
+      "sha256": "2a4058fdb4e35ce2789f9ae73535542f78f4e94516ad4b9929986a93e36d3d81"
+    }
+  },
+  "vector_build": {
+    "report": {
+      "path": "build/imagegen/imagegen-nonhan-0047/report.json",
+      "sha256": "b306c657ac5a1f5da976d7c35db0f4ff7d87605a776a495cb30bc79a1087f519"
+    },
+    "pipeline": "imagegen-raster-potrace-quadratic-nonhan-v3",
+    "artifacts_sha256": {
+      "font/ClearHandTC-NonHan0047-Unreviewed.otf": "a1d159c9afc271f5b69f41e4e741fed07d91d38249b9c96fe7d11028c85031a8",
+      "font/ClearHandTC-NonHan0047-Unreviewed.ttf": "a1d159c9afc271f5b69f41e4e741fed07d91d38249b9c96fe7d11028c85031a8",
+      "glyph-report/uff5f.json": "5fc33f9d0a50c8827d6edfee10f94e295e6d1900087e3d0ad5000b02573eff1e",
+      "glyph-report/uff60.json": "dec668f7bc53d90f6a64ba63906a51772c4868bdeb72d0edad837e424c62ceef",
+      "png/uff5f-source.png": "274a56eb6f31c661b6284b51d0cb133b85bc948a5b1b0a2f5bf2080be6abcce8",
+      "png/uff60-source.png": "03d5c7bd90d0c00ba99ef7e442577b88a10f7a97922d12a4d3a8264ae76a3c52",
+      "proof/black-on-white-12px.png": "2792dbadce39a2ed548338dd81a2789833049ef89d9044663d22170e90fbdad0",
+      "proof/black-on-white-16px.png": "b6a2d155c2a71b32baa05f4e7f7b8046fd31421e85989c06c0ec9976188f24ab",
+      "proof/black-on-white-20px.png": "fc9e592414212bde6f5ebffd3e2099065fd3b956a1ebd073316b4d0a3b4908aa",
+      "proof/black-on-white-32px.png": "1a528a1f9d6dbf7c141504dd25b4488f5e179f49a48ff8fa3ab610b675a4cf13",
+      "proof/black-on-white-56px.png": "ca24d991104d9535c19a1b9ef96c1e89da3d70a51f27f504dae51caf556a732b",
+      "proof/edge-connect.png": "62a8e5b3f6eeb8885df3cd052a94eaa0ff507aa171face3b0dbbe3ae2b2b004d",
+      "proof/segmented-source-contact.png": "ad4c1eddbb0b00385faf70a47add58c97723ce6b1804a1d3645955ce12df69bf",
+      "proof/white-on-black-12px.png": "f9a3f0463dd282b21e52ea673a720e7bdc37bebdfe6c92a078df5e1d2f3c219f",
+      "proof/white-on-black-16px.png": "b75252eef6c9d1eb11ee7b9f15a44bf6ef68e7413c15c29e7eeba0bf413c4feb",
+      "proof/white-on-black-20px.png": "e38ab0fd64f1524eb9f791cb849a2cbe7239b39f93927e0dbccda8f52890af6c",
+      "proof/white-on-black-32px.png": "02b6e4bd7aa5378034f4140845cbfd5c4038e1599749945877d5e61e57eb0709",
+      "proof/white-on-black-56px.png": "f09560e2d37a2f00832dfad17cbb10bfe1b609db363409dd26c996fb03bab36b",
+      "svg/uff5f.svg": "bd743936c9d02778ca841ea6d089920415b980cf0470f1a12d4a33b56cbf3dd6",
+      "svg/uff60.svg": "486eff3eadaae402f76113ed3846c4f3b12263e9c3990638bafa61c11f437e88"
+    }
+  },
+  "visual_review": {
+    "path": "sources/imagegen/vector-reviews/nonhan-0047.vector-review.json",
+    "sha256": "4e9d1e025c6b7b9be18381c0da2741d20769a9ecf9f80febfa76e9e610f3e3ce"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex Primary Release Approver",
+    "approved_at": "2026-07-26T12:33:28Z",
+    "attestation": "I_AUTHORIZE_THIS_HASH_PINNED_NONHAN_BATCH_FOR_THE_RELEASE_FONT"
+  }
+}

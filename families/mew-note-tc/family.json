@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "record_type": "codexfont-family-contract",
+  "family_id": "mew-note-tc",
+  "names": {
+    "family": "Mew Note TC",
+    "localized_family_zh_tw": "喵筆記體",
+    "style": "Regular",
+    "full_name": "Mew Note TC Regular",
+    "postscript_name": "MewNoteTC-Regular"
+  },
+  "release_identity": {
+    "product_status": "0.1 Preview",
+    "opentype_version": "1.000",
+    "font_revision": 1.0,
+    "license": "OFL-1.1"
+  },
+  "contracts": {
+    "design_brief": {
+      "path": "families/mew-note-tc/design-brief.json",
+      "sha256": "87711053759df0c5e5344d1224304f42d07d5c766fd69c06516d033daa0b3d25"
+    },
+    "collections": {
+      "path": "families/mew-note-tc/collections.json",
+      "sha256": "75e4ca4bc269e272739635afea6be8ecda6020e4d1f09be1d39d9e70d01d741f"
+    },
+    "authoring": {
+      "path": "families/mew-note-tc/authoring.json",
+      "sha256": "2fcf4549ecf28086cf09c7a1f934b5944643608506e0610f05d1db4ce6f61c7a"
+    },
+    "motif": {
+      "path": "families/mew-note-tc/motif-contract.json",
+      "sha256": "c19a5d00844c7460168a4a77481c370f625ce22a35bf6d624aaafaf87f0bab7e"
+    },
+    "pilot_provenance": {
+      "path": "families/mew-note-tc/pilots/provenance-v2.json",
+      "sha256": "8b773decfde5e38912c2a724ced29e2e0b98e1a62b583b33da982268759e07b0"
+    },
+    "pilot_review": {
+      "path": "families/mew-note-tc/pilots/review-v2.json",
+      "sha256": "ad960f480e327ee29e8b52018626ad8d922865074869664c2dde9cfc6d24f5ea"
+    },
+    "pilot_provenance_history_v1": {
+      "path": "families/mew-note-tc/pilots/provenance.json",
+      "sha256": "b1ca4dc585f784a73932d0cf84140e4ba6e0f9ba50650438b495908b0dd5374e"
+    },
+    "pilot_review_history_v1": {
+      "path": "families/mew-note-tc/pilots/review.json",
+      "sha256": "b76b5470046f896bfd9fbf5a3a50446c334a489be6b13ee2d1dd33885170b9ca"
+    }
+  },
+  "workspace": {
+    "family_root": "families/mew-note-tc",
+    "source_root": "families/mew-note-tc/sources/imagegen",
+    "build_root": "build/families/mew-note-tc",
+    "release_root": "dist/mew-note-tc"
+  },
+  "authoring": {
+    "mode": "original-raster-first",
+    "pilot_state": "pilot-approved-bulk-authoring-allowed",
+    "bulk_authoring_allowed": true,
+    "active_pilot_ids": [
+      "mew-note-han-style-pilot-v2",
+      "mew-note-nonhan-style-pilot"
+    ],
+    "batch_capacity": 16,
+    "clear_hand_identity_reference_allowed": true,
+    "clear_hand_raster_reuse_allowed": false,
+    "clear_hand_outline_reuse_allowed": false,
+    "clear_hand_review_reuse_allowed": false,
+    "clear_hand_approval_reuse_allowed": false,
+    "detached_cat_contour_allowed": false,
+    "tail_terminal_allowed": true,
+    "maximum_tail_terminals_per_glyph": 1,
+    "neutral_safety_allowed": true
+  },
+  "release_target": {
+    "encoded_han": 6060,
+    "encoded_nonhan": 3060,
+    "encoded_total": 9120,
+    "visible_encoded": 9103,
+    "semantic_empty": 17,
+    "required_kana": 189,
+    "unencoded_vertical_alternates": 93,
+    "glyph_order_including_notdef": 9214,
+    "requirements_denominator": 18071,
+    "coverage_percent": 50.4676,
+    "formats": [
+      "ttf",
+      "otf",
+      "woff",
+      "woff2"
+    ],
+    "features": [
+      "kern",
+      "mark",
+      "mkmk",
+      "vert",
+      "vrt2"
+    ]
+  },
+  "licensing": {
+    "path": "OFL.txt",
+    "sha256": "8f5205c5b79e80cdfcbcdea8178383b32b66fd9aa239c3ebe05cef0e891065ec",
+    "identifier": "OFL-1.1"
+  },
+  "stop_conditions": [
+    "Do not author a pilot when any contract hash is stale",
+    "Do not scale beyond the pilot until every pilot glyph passes identity, motif, geometry, and small-size review",
+    "Do not begin bulk authoring unless the pinned active pilot review is ACCEPT for every active pilot ID",
+    "Do not treat a rejected historical pilot as an active authorization input",
+    "Do not admit a detached cat hat or any Clear Hand raster, outline, review, or approval",
+    "Do not publish coverage unless the compiled cmap contains exactly the declared 9120-codepoint partition"
+  ]
+}

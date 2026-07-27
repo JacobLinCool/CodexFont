@@ -1,0 +1,13 @@
+Preserve all sixteen glyphs and all five existing vertical grid rules exactly. Repair only the horizontal grid geometry.
+
+Erase the current horizontal rules and draw exactly five continuous single gray horizontal rules at precise normalized heights:
+
+- top border: 0%;
+- first divider: 25%;
+- second divider: 50%;
+- third divider: 75%;
+- bottom border: 100%.
+
+These rules must create four exactly equal-height rows. Each must be one solid continuous 2–3 pixel-wide neutral-gray stroke with no shadow, doubled edge, or outline. Keep every glyph centered in its intended row and do not add or remove any content.
+
+Return only the corrected complete 4×4 sheet.

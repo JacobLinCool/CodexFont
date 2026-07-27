@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "batch_id": "imagegen-nonhan-0184",
+  "state": "generated-unreviewed",
+  "generator": "built-in-image_gen",
+  "generator_call": "functions-exec-image_gen-sha256-313d4c1799218fe6",
+  "repertoire": {
+    "path": "../repertoires/nonhan-3060.json",
+    "sha256": "42791eeb3981f04895529ad7770b00a86a815f9c4dffa16369df9f7ec1892ce4",
+    "repertoire_id": "clear-hand-tc-nonhan-3060-v1",
+    "batch_id": "nonhan-0184"
+  },
+  "raster": "../raster/nonhan-0184.png",
+  "raster_sha256": "313d4c1799218fe6bd18c7247af88a57e6dc063c29917e142adc91f234170dfa",
+  "prompt": "../prompts/nonhan-0184.md",
+  "copybook": {
+    "path": "../copybooks/nonhan-0184.png",
+    "sha256": "602bee906fba03bd38e08ee5346dc8d2fee661d3c3c8c77676bc1d0d372667c4",
+    "role": "identity-reference-only-no-outline-import"
+  },
+  "style_reference": {
+    "path": "../raster/common-0001.png",
+    "sha256": "2a4058fdb4e35ce2789f9ae73535542f78f4e94516ad4b9929986a93e36d3d81",
+    "role": "style-only"
+  },
+  "grid": {
+    "rows": 4,
+    "columns": 4,
+    "glyphs": [
+      {
+        "canonical_rank": 1980,
+        "authoring_rank": 2718,
+        "character": "⏐",
+        "codepoint": "U+23D0",
+        "name": "VERTICAL LINE EXTENSION",
+        "gc": "So",
+        "outline_required": true,
+        "profile_id": "proportional",
+        "metrics": {
+          "horizontal_advance": {
+            "kind": "source-proportional"
+          },
+          "vertical_advance": {
+            "kind": "fixed",
+            "value": 1024
+          },
+          "side_bearings": {
+            "left": 48,
+            "right": 48
+          }
+        },
+        "copybook_reference": {
+          "role": "identity-reference-only-no-outline-import",
+          "font_path": "/System/Library/Fonts/Supplemental/STIXTwoMath.otf",
+          "font_sha256": "3a5f3f26f40d5698b3c62dd085d48d6663696a3f80825aab8b553d5097518e8c",
+          "font_index": 0,
+          "postscript_name": "STIXTwoMath-Regular",
+          "glyph_name": "uni23D0",
+          "validation": [
+            "exact-cmap-hit",
+            "non-notdef-glyph-name",
+            "non-empty-distinct-outline",
+            "non-empty-pillow-raster"
+          ]
+        }
+      }
+    ],
+    "empty_grid_cells": 15
+  },
+  "review": {
+    "identity": "pending",
+    "raster_quality": "pending",
+    "vector_quality": "pending"
+  }
+}

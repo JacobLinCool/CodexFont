@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0006",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 81,
+    "end_rank": 96,
+    "characters": "道多兒長紅法日語其義南頭六代學和"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0006.source.json",
+    "descriptor_sha256": "ac6ea1a39752c827ecb872999639bebd9154e63995e87e30e1f19e9698d03be7",
+    "raster": "sources/imagegen/raster/common-0006.png",
+    "raster_sha256": "3148edddc8ac4736262058163e738dee6ccd4b5c8e101992292cbb6f8b5b5cff"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0004-0006-audit.json",
+    "report_sha256": "9ddf6f234235987e5f7a0d4bcc40b52cd2a98fc95bba08467fc352d931e241f3"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0006/report.json",
+    "report_sha256": "497a4dea87e6b0748a199eb4f11f28591ff610c9bf80151da029444f365a565c",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0006.vector-review.json",
+    "record_sha256": "ea66f9e599403067d5ec522a054dd0a898666619037eb8eea108f65f9fd0d2bd"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:34:28Z"
+  }
+}

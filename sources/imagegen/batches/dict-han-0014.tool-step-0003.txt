@@ -1,0 +1,22 @@
+Use case: font-source raster sheet correction
+Asset type: corrected high-resolution 4×4 raster master sheet for the original Traditional Chinese handwriting font clear-hand-tc
+
+Input images:
+1. Image 1 is STYLE ONLY. Match its fine black gel-pen weight, rounded terminals, natural right slant, optical scale, pure-white background, and faint 4×4 grid. Do not copy its characters or outlines.
+2. Image 2 is IDENTITY REFERENCE ONLY. Use it to disambiguate the exact Unicode character assigned to each cell. Do not trace or reproduce its printed outlines.
+3. Image 3 is the EDIT TARGET. Preserve its canvas, grid, spacing, and all twelve already-correct cells exactly.
+
+Primary request: correct only Cells 01, 03, 07, and 10 of Image 3.
+- Cell 01 must be U+5592 `喒`: `口` on the left plus the complete right-side topology shown in Image 2, including the person-derived stroke and `昝`/日 structure. It must not be `喧`, `咱`, `唁`, or `口宣`.
+- Cell 03 must be U+64BE `撾`: `扌` on the left plus complete `過` on the right, including `辶` and the enclosed `咼`. It must not be `摧`, `捶`, `搥`, or `扌追`.
+- Cell 07 must be U+9F4E `齎`: complete `齊` above complete `貝`. The lower part must be an enclosed `貝` with its internal strokes and bottom feet. It must not be `齋`, `齌`, or `齏`.
+- Cell 10 must be U+64E3 `擣`: `扌` on the left plus complete Traditional `壽` on the right. It must not be `搗`, `扌島`, or any bird component.
+
+The complete row-major sheet must remain:
+喒噶撾蹴
+鶚鷲齎仝
+徭擣暄浹
+涿甯碴苴
+
+Constraints: change only Cells 01, 03, 07, and 10; preserve every other glyph exactly; use complete standard strokes; one centered black glyph per cell; open counters; keep ink away from separators.
+Avoid: wrong variants, missing strokes, altered correct cells, extra text, printed type, brush blobs, sharp spikes, thorn-like protrusions, clipping, signature, logo, or watermark.

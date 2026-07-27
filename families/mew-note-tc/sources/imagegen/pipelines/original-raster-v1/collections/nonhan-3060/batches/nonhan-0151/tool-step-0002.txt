@@ -1,0 +1,27 @@
+Recreate every glyph in Image 1 while preserving its exact pure-white 1600×1600 canvas, thin regular 4×4 segmentation grid, margins, centering, and scale. Image 4 is the binding row-major identity copybook; Images 2–3 guide only the subtle handwritten black-ink character. Do not interpret these as ordinary text: reproduce each mathematical symbol’s exact stroke inventory and spatial relationship from Image 4.
+
+Required exact Unicode order:
+Row 1: ⋐ ⋑ ⋒ ⋓
+Row 2: ⋔ ⋕ ⋖ ⋗
+Row 3: ⋘ ⋙ ⋚ ⋛
+Row 4: ⋜ ⋝ ⋞ ⋟
+
+Match Image 4 cell by cell:
+- 01 ⋐ DOUBLE SUBSET: two nested left-opening horizontal C forms sharing the same right-facing open ends. No dot and no angle bracket.
+- 02 ⋑ DOUBLE SUPERSET: exact horizontal mirror of cell 01, two nested right-opening C forms. No dot and no angle bracket.
+- 03 ⋒ DOUBLE INTERSECTION: two nested downward-opening arch/cap forms.
+- 04 ⋓ DOUBLE UNION: two nested upward-opening U/cup forms; both the outer and inner U must be present.
+- 05 ⋔ PITCHFORK: one rounded arch with a central vertical stem extending above and below.
+- 06 ⋕ EQUAL AND PARALLEL TO: two close vertical parallel strokes crossed by two short horizontal equality strokes.
+- 07 ⋖ LESS-THAN WITH DOT: one less-than angle with one solid dot inside it.
+- 08 ⋗ GREATER-THAN WITH DOT: exact mirror of cell 07.
+- 09 ⋘ VERY MUCH LESS-THAN: three separate nested less-than angles.
+- 10 ⋙ VERY MUCH GREATER-THAN: three separate nested greater-than angles.
+- 11 ⋚ LESS-THAN EQUAL TO OR GREATER-THAN: less-than on top, one horizontal equality bar in the middle, greater-than below.
+- 12 ⋛ GREATER-THAN EQUAL TO OR LESS-THAN: greater-than on top, one horizontal equality bar in the middle, less-than below.
+- 13 ⋜ EQUAL TO OR LESS-THAN: one short horizontal overbar above a less-than angle.
+- 14 ⋝ EQUAL TO OR GREATER-THAN: one short horizontal overbar above a greater-than angle.
+- 15 ⋞ EQUAL TO OR PRECEDES: two clean nested left-opening curved predecessor arcs joined at a single left-middle point, exactly as Image 4; no curl or spiral.
+- 16 ⋟ EQUAL TO OR SUCCEEDS: exact horizontal mirror of cell 15; no curl or spiral.
+
+Use one centered glyph per cell with generous clearance. Preserve all five vertical and all five horizontal grid rules. No substitutions, duplicate symbols, labels, code points, headings, texture, shadow, or extra marks.

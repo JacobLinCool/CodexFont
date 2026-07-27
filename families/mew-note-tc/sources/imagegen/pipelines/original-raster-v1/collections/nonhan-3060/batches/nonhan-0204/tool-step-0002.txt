@@ -1,0 +1,22 @@
+Redraw the entire 4×4 sheet as filled Unicode block elements. The parent is invalid because it uses hollow outlines. Except for the shade patterns c2–c4, every occupied region must be SOLID BLACK with no outline-only boxes and no interior white hole.
+
+Use one consistent centered square design area in every cell:
+
+- c1 ▐: solid RIGHT HALF.
+- c2 ░: LIGHT SHADE, an even sparse black pattern covering about 25%.
+- c3 ▒: MEDIUM SHADE, an even checker or dot pattern covering about 50%.
+- c4 ▓: DARK SHADE, an even mostly-black pattern covering about 75%, with small white gaps.
+- c5 ▔: solid UPPER ONE-EIGHTH band.
+- c6 ▕: solid RIGHT ONE-EIGHTH band.
+- c7 ▖: solid LOWER-LEFT quadrant.
+- c8 ▗: solid LOWER-RIGHT quadrant.
+- c9 ▘: solid UPPER-LEFT quadrant.
+- c10 ▙: solid UPPER-LEFT + LOWER-LEFT + LOWER-RIGHT quadrants; only upper-right is white.
+- c11 ▚: solid UPPER-LEFT + LOWER-RIGHT quadrants; the other two quadrants are white.
+- c12 ▛: solid UPPER-LEFT + UPPER-RIGHT + LOWER-LEFT quadrants; only lower-right is white.
+- c13 ▜: solid UPPER-LEFT + UPPER-RIGHT + LOWER-RIGHT quadrants; only lower-left is white.
+- c14 ▝: solid UPPER-RIGHT quadrant.
+- c15 ▞: solid UPPER-RIGHT + LOWER-LEFT quadrants; the other two quadrants are white.
+- c16 ▟: solid UPPER-RIGHT + LOWER-LEFT + LOWER-RIGHT quadrants; only upper-left is white.
+
+Keep softly handmade outer edges, but make all quadrant boundaries unambiguous. Preserve a detectable 4×4 pale-gray grid, exactly one glyph per cell, no outlines, labels, tails, or extra marks. Follow the fourth-reference identity copybook for topology. Return only the corrected complete sheet.

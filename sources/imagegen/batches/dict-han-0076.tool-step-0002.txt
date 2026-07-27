@@ -1,0 +1,12 @@
+Use case: precise-object-edit
+Asset type: corrected 4×4 raster master sheet for clear-hand-tc
+
+Input images:
+1. Image 1 is the previous handwritten sheet. Preserve it except for Cells 01 and 03.
+2. Image 2 is the identity copybook. Use Cells 01 and 03 only to verify topology; do not trace its printed outlines.
+
+Replace only:
+- Cell 01 U+6397 `掗`: `扌` on the left plus the complete `亞` on the right.
+- Cell 03 U+65EF `旯`: `日` above `九`; the top component must be a closed `日`, not `口`, and the lower component must be `九`, not `儿`.
+
+Keep all other fourteen cells unchanged. Match the same fine black gel-pen hand, rounded joins, white background, and faint grid. Avoid missing strokes, substituted components, spikes, thorns, clipping, extra marks, signatures, logos, or watermarks.

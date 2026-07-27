@@ -1,0 +1,49 @@
+Use case: font-source raster sheet
+Asset type: high-resolution 4×4 raster master sheet for an original
+Traditional Chinese handwriting font in the clear-hand-tc family
+
+Input images:
+1. Image 1 is STYLE ONLY. Match its fine black gel-pen weight, rounded
+   terminals, natural right slant, optical scale, pure-white background, and
+   faint 4×4 grid. Do not copy its characters or outlines.
+2. Image 2 is IDENTITY REFERENCE ONLY. Use it to disambiguate the exact
+   Unicode character assigned to each cell. Do not trace, reproduce, or import
+   its printed outlines or gray grid geometry.
+
+Primary request: write exactly 16 new isolated Traditional
+Chinese glyphs in a strict four-by-four grid, in this exact row-major order:
+襦鉞陞忤 / 橐縹觥訶 / 閹咿垓旛 / 繇蒴虯侗.
+
+Exact occupied cells:
+- Cell 01: U+8966 `襦` CJK UNIFIED IDEOGRAPH-8966
+- Cell 02: U+925E `鉞` CJK UNIFIED IDEOGRAPH-925E
+- Cell 03: U+965E `陞` CJK UNIFIED IDEOGRAPH-965E
+- Cell 04: U+5FE4 `忤` CJK UNIFIED IDEOGRAPH-5FE4
+- Cell 05: U+6A50 `橐` CJK UNIFIED IDEOGRAPH-6A50
+- Cell 06: U+7E39 `縹` CJK UNIFIED IDEOGRAPH-7E39
+- Cell 07: U+89E5 `觥` CJK UNIFIED IDEOGRAPH-89E5
+- Cell 08: U+8A36 `訶` CJK UNIFIED IDEOGRAPH-8A36
+- Cell 09: U+95B9 `閹` CJK UNIFIED IDEOGRAPH-95B9
+- Cell 10: U+54BF `咿` CJK UNIFIED IDEOGRAPH-54BF
+- Cell 11: U+5793 `垓` CJK UNIFIED IDEOGRAPH-5793
+- Cell 12: U+65DB `旛` CJK UNIFIED IDEOGRAPH-65DB
+- Cell 13: U+7E47 `繇` CJK UNIFIED IDEOGRAPH-7E47
+- Cell 14: U+84B4 `蒴` CJK UNIFIED IDEOGRAPH-84B4
+- Cell 15: U+866F `虯` CJK UNIFIED IDEOGRAPH-866F
+- Cell 16: U+4F97 `侗` CJK UNIFIED IDEOGRAPH-4F97
+
+Text (verbatim):
+襦鉞陞忤
+橐縹觥訶
+閹咿垓旛
+繇蒴虯侗
+
+Constraints: preserve every requested Unicode identity and Taiwan Traditional
+character topology; output each target exactly once and only in its assigned
+cell; use complete standard strokes; keep one centered black glyph per occupied
+cell with open counters; keep all ink away from separators. All sixteen cells are occupied.
+
+Avoid: simplified variants, wrong or missing strokes, duplicate or omitted
+characters, extra text, printed type, brush blobs, texture, shadows, sharp
+miter spikes, thorn-like protrusions, accidental hooks, tangled cursive,
+clipping, connected cells, signature, logo, or watermark.

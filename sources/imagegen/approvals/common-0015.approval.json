@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0015",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 225,
+    "end_rank": 240,
+    "characters": "拍太李都現數話只儒路美原食工實樂"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0015.source.json",
+    "descriptor_sha256": "f0d5a678a7d1583c8af2f092a06b5d250535c310fd4a4ffdbf86213fc4d7dc47",
+    "raster": "sources/imagegen/raster/common-0015.png",
+    "raster_sha256": "9ed8345a1d199560d1a0de67a561d5d6002ae86a75efd6f6f8917e6156254030"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0015-0018-audit.json",
+    "report_sha256": "6f6d7c61f49a1182985445716eeebb2662a00771c6ae134b7d8fa4e340b96868"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0015/report.json",
+    "report_sha256": "4be197ea3bdcfdc3641902bbae9b2a3d9f92f648c68d11e2ce83cc167ce50569",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0015.vector-review.json",
+    "record_sha256": "750ca6f9b5d1bd5335bbdac340b0f178dd35e0d807f9d9410c0f373fec56a3cb"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:35:07Z"
+  }
+}

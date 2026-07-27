@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-generation-history",
+  "batch_id": "dict-han-0001",
+  "generator": "built-in-image_gen",
+  "collection": {
+    "path": "../collections/clear-hand-tc-dictionary-salience-1216.json",
+    "sha256": "5623b1f977d1412b233a34c255627749ffed71f86182125ea91d7d1f1fb869c2",
+    "collection_id": "clear-hand-tc-dictionary-salience-extension-1216-v1",
+    "family_id": "clear-hand-tc"
+  },
+  "intended_materialization": {
+    "draft": {
+      "path": "dict-han-0001.draft.json",
+      "sha256": "0733c32052d0773e77e1d437b6a1b1e374b57a488855dbd9ff4d0420444afdea"
+    },
+    "prompt": {
+      "path": "../prompts/dict-han-0001.md",
+      "sha256": "df88fca7a62b0db743a52a50a44eb780ed50d89e9dbf8a4c2fec0fd7c124b4dd"
+    }
+  },
+  "steps": [
+    {
+      "sequence": 1,
+      "operation": "generate",
+      "disposition": "accepted",
+      "call_id": "exec-484969bd-f82f-4a8f-ae0f-d852d552e18a",
+      "prompt": {
+        "path": "dict-han-0001.tool-step-0001.txt",
+        "sha256": "5f3c9466f60c716263c64deac3a34b84b58c660a5e012d0618c21bdb75b27065"
+      },
+      "input_images": [
+        {
+          "role": "style-reference",
+          "retention": "retained-reference",
+          "path": "../raster/common-0001.png",
+          "sha256": "2a4058fdb4e35ce2789f9ae73535542f78f4e94516ad4b9929986a93e36d3d81"
+        },
+        {
+          "role": "identity-copybook",
+          "retention": "retained-reference",
+          "path": "../copybooks/dict-han-0001.png",
+          "sha256": "9c636003b36c2d8c0ef4450ffdcb4fc62e61dc95fe778a2cb7f73af6a96e3e31"
+        }
+      ],
+      "parent_output_sha256": null,
+      "output": {
+        "retention": "retained-final",
+        "path": "../raster/dict-han-0001.png",
+        "sha256": "4051b686f938cab3e645c31902dcfc12d4192486dbcfbcd74c16ca343541643e"
+      }
+    }
+  ],
+  "canonical_output": {
+    "accepted_step": 1,
+    "path": "../raster/dict-han-0001.png",
+    "sha256": "4051b686f938cab3e645c31902dcfc12d4192486dbcfbcd74c16ca343541643e"
+  }
+}

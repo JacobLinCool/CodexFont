@@ -1,0 +1,20 @@
+Redraw all sixteen cells as the exact U+2550–U+255F single/double box-drawing set. A SINGLE arm is one stroke; a DOUBLE arm is two distinct parallel strokes. Never collapse a double arm into a thick or single stroke.
+
+- c1 ═: DOUBLE horizontal.
+- c2 ║: DOUBLE vertical.
+- c3 ╒: down SINGLE, right DOUBLE.
+- c4 ╓: down DOUBLE, right SINGLE.
+- c5 ╔: down DOUBLE, right DOUBLE.
+- c6 ╕: down SINGLE, left DOUBLE.
+- c7 ╖: down DOUBLE, left SINGLE.
+- c8 ╗: down DOUBLE, left DOUBLE.
+- c9 ╘: up SINGLE, right DOUBLE.
+- c10 ╙: up DOUBLE, right SINGLE.
+- c11 ╚: up DOUBLE, right DOUBLE.
+- c12 ╛: up SINGLE, left DOUBLE.
+- c13 ╜: up DOUBLE, left SINGLE.
+- c14 ╝: up DOUBLE, left DOUBLE.
+- c15 ╞: up SINGLE, down SINGLE, right DOUBLE.
+- c16 ╟: up DOUBLE, down DOUBLE, right SINGLE.
+
+Match the fourth-reference copybook's junction topology and parallel spacing. Preserve the exact grid and return only the corrected sheet.

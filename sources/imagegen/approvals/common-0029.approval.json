@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0029",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 449,
+    "end_rank": 464,
+    "characters": "反杜雨般父陳依集們員統志里廣青共"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0029.source.json",
+    "descriptor_sha256": "4a1fe670e0ea46a4fc7e524783f2ddfac877e32384c7d9d213fec990278ba08b",
+    "raster": "sources/imagegen/raster/common-0029.png",
+    "raster_sha256": "7d24654aa53abc6aff152c4a11a34dbd5bf6b7c8aaeae1d34e5210ff6de008bb"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0027-0030-audit.json",
+    "report_sha256": "d3d62f4ea77b44c58546aa1c86408b97336e33012d81e351ce101e5406ff6d91"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0029/report.json",
+    "report_sha256": "5fad8b40c448b1a2b01613d16d95780025a22de9993d4344bcb59720e6bbddb4",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0029.vector-review.json",
+    "record_sha256": "4116a63f5f1c8ea49dea12cd43926db7b17509ce791a7f2204d2f103734509a3"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:36:47Z"
+  }
+}

@@ -1,0 +1,5 @@
+Correct only cell 5 (row 2, column 1) of the first reference image. Preserve every other glyph, mark, blank cell, grid line, and margin exactly.
+
+Cell 5 is U+3095 HIRAGANA LETTER SMALL KA, ゕ. The current glyph is still katakana small A, ァ, and is wrong. Replace it with a miniature hiragana か copied from cell 5 of the fourth reference: the recognizable multi-stroke hiragana ka structure, including its left/main strokes and separate right-hand stroke. Keep it small, matching the scale of cell 6's small hiragana け.
+
+Do not draw ア or ァ. Do not change cell 6. Return only the corrected 4×4 sheet.

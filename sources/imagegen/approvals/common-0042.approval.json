@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0042",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 657,
+    "end_rank": 672,
+    "characters": "良劇防投怪富諸吳始野犯味順齣勞基"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0042.source.json",
+    "descriptor_sha256": "9bd92e0d3a7abf97d86b68e5fd7e0292e0b23e72056aa633918314b6d3a7dddf",
+    "raster": "sources/imagegen/raster/common-0042.png",
+    "raster_sha256": "bb690b08896fde104aaeacc3498d0a0299555fadbe66857095ec1cebf0dd06ec"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0039-0042-audit.json",
+    "report_sha256": "49dc53a99dd9b3672757b410e0465f368ff0ab3ba8afddc2c8fe1b600df113c7"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0042/report.json",
+    "report_sha256": "31b1e4342dbae4c23c01a389eaba60bbb915aff205ec312340593deabfa1a8d0",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0042.vector-review.json",
+    "record_sha256": "f84ef1e1c9fd5a40c8bdc70ce917a00156ed86843c568447bfbfa4091dba21dc"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:37:48Z"
+  }
+}

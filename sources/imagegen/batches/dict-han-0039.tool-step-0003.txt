@@ -1,0 +1,16 @@
+Use case: precise-object-edit
+Asset type: second two-cell compositional correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cells 07 and 14. Preserve all other 14 glyphs, especially the now-correct 絰 in Cell 15, plus the grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 07 must be U+69E7 槧. The current edit duplicated 車 and 斤 into two stacked rows. Erase that cell and redraw it from a blank white cell. In the upper half, draw exactly ONE 車 on the left and exactly ONE 斤 on the right, together forming one 斬. In the lower half, draw exactly ONE 木 centered below 斬. There must not be a second 車, a second 斤, or any repeated upper row.
+
+Cell 14 must be U+7CF4 糴. The current left side still reads as bare 米 because 入 is not complete. Preserve the full 翟 on the right. On the left, redraw 籴 with two unmistakable, separate slanting strokes forming 入 at the top, then a complete 米 below it. The 入 must sit clearly above 米 rather than collapsing into 米's central vertical. Keep the ninth and tenth strokes spatially distinct as shown by the fourteenth copybook cell.
+
+Required full row-major result:
+剡圉坂怙
+掰擀槧橛
+洄淩煨磔
+筌糴絰纛
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, repeated components, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

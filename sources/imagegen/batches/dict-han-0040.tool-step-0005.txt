@@ -1,0 +1,14 @@
+Use case: precise-object-edit
+Asset type: one-cell outline-quality correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cell 02, Row 1 Column 2. Preserve all other 15 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 02 must remain U+8604 蘄. Redraw the complete glyph cleanly: 艹 across the top, the two clear 口 components and complete 單 structure below it on the left, and a complete 斤 on the right. Use uniform rounded gel-pen strokes. At every turn and intersection—especially the upper end and curved descending stroke of 斤, and the small corners around the two 口 forms—use broad smooth joins or visibly separated rounded strokes. Remove every tiny pinched/tapered hairpin that could create a near-coincident micro-thorn during vectorization. Every terminal and turn must be blunt or smoothly rounded, with no tiny spike, cusp, doubled-back hook, or sub-stroke protrusion. Preserve the correct Unicode topology and do not simplify or omit any stroke.
+
+Required full row-major result:
+耄蘄訾諤
+轢醪鉉雎
+駸嗒嚲囷
+圻寔峒无
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

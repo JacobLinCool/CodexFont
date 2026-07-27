@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "record_type": "codexfont-family-collection-contract",
+  "family_id": "mew-note-tc",
+  "milestone": {
+    "product_status": "0.1 Preview",
+    "requirements_path": "inventories/font_requirements.json",
+    "requirements_sha256": "658c5e7070e6875dac4392b988357107b662467cd976863d053df046d9b65a6a",
+    "requirements_count": 18071,
+    "cmap_target": 9120,
+    "coverage_percent": 50.4676,
+    "strictly_exceeds_half": true,
+    "visible_encoded_target": 9103,
+    "semantic_empty_target": 17,
+    "unencoded_vertical_alternates_target": 93,
+    "glyph_order_target_including_notdef": 9214
+  },
+  "collections": [
+    {
+      "id": "han-6060",
+      "kind": "encoded-visible-han",
+      "encoded_count": 6060,
+      "visible_count": 6060,
+      "semantic_empty_count": 0,
+      "authoring_batch_capacity": 16,
+      "family_repertoire": {
+        "path": "families/mew-note-tc/sources/imagegen/repertoires/han-6060.json",
+        "sha256": "af05221c760a302ec4ad026ec39b2d59f23d6f785e85e5416f66e05bda394e13",
+        "repertoire_id": "mew-note-tc-han-6060-v1"
+      },
+      "ordered_segments": [
+        {
+          "id": "dictionary-salience-base-3000",
+          "count": 3000,
+          "path": "sources/imagegen/repertoires/common-3000.json",
+          "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+          "record_path": "characters[].codepoint",
+          "role": "identity-sequence-only-no-raster-outline-review-approval-reuse"
+        },
+        {
+          "id": "moe-common-extension-1844",
+          "count": 1844,
+          "path": "sources/imagegen/repertoires/moe-common-extension-1844.json",
+          "sha256": "f5f8e22beb919617cfd95d40d15f745e921e6434e95866fc7f9b184495bb2652",
+          "record_path": "characters[].codepoint",
+          "role": "identity-sequence-only-no-raster-outline-review-approval-reuse"
+        },
+        {
+          "id": "dictionary-salience-additional-1216",
+          "count": 1216,
+          "path": "sources/imagegen/repertoires/dictionary-salience-extension-1216.json",
+          "sha256": "8462d9669e6d7320f77c285a444e388da0f3e0d23ae408c7212c4302bdaed840",
+          "input_path": "inventories/han_characters.json",
+          "input_sha256": "75b1a21224a335592ed9d5d170dca87aeb622c253e5ae6e354a6d6d717877cf7",
+          "requirements_path": "inventories/font_requirements.json",
+          "requirements_sha256": "658c5e7070e6875dac4392b988357107b662467cd976863d053df046d9b65a6a",
+          "selection": "Keep records required by font_requirements; exclude codepoints in the first two ordered segments; sort occurrence_count DESC then codepoint_decimal ASC; take the first 1216",
+          "sequence_sha256": "0e9a74e906fcd637f9de06056dd867ead9e72e39085d2e3d9ef5235392483e98",
+          "role": "deterministic-identity-selection-only"
+        }
+      ],
+      "sequence_serialization": "Concatenate uppercase U+XXXX or U+XXXXX lines, each followed by LF, in ordered segment order",
+      "sequence_sha256": "92615b5084df953c58622a9b14f7527291f7dc2357ac086d29944efa7f3eceea",
+      "characters_sha256": "c97b1f6b751dc221196f45fb4c74b798e5d39e70bec7fc151882c28166f748bb",
+      "common_han_required": 4808,
+      "existing_uncommon_han": 36,
+      "additional_uncommon_han": 1216,
+      "family_repertoire_state": "identity-sequence-frozen-authoring-not-started"
+    },
+    {
+      "id": "nonhan-3060",
+      "kind": "encoded-nonhan",
+      "encoded_count": 3060,
+      "visible_count": 3043,
+      "semantic_empty_count": 17,
+      "family_repertoire": {
+        "path": "families/mew-note-tc/sources/imagegen/repertoires/nonhan-3060.json",
+        "sha256": "adc50b4b9360a2cf591d8ad920ad4fc285bd2ce78eacf2e59dfeff921de2a578",
+        "repertoire_id": "mew-note-tc-nonhan-3060-v1"
+      },
+      "identity_source": {
+        "path": "sources/imagegen/repertoires/nonhan-3060.json",
+        "sha256": "42791eeb3981f04895529ad7770b00a86a815f9c4dffa16369df9f7ec1892ce4",
+        "role": "identity-metrics-and-semantic-policy-only-no-raster-outline-review-approval-reuse"
+      },
+      "required_subsets": [
+        {
+          "id": "hiragana",
+          "range": "U+3041..U+309F",
+          "count": 93
+        },
+        {
+          "id": "katakana",
+          "range": "U+30A0..U+30FF",
+          "count": 96
+        },
+        {
+          "id": "kana-total",
+          "members": [
+            "hiragana",
+            "katakana"
+          ],
+          "count": 189
+        }
+      ],
+      "family_repertoire_state": "identity-sequence-frozen-authoring-not-started"
+    },
+    {
+      "id": "vertical-93",
+      "kind": "unencoded-vertical-alternates",
+      "encoded_count": 0,
+      "visible_count": 93,
+      "semantic_empty_count": 0,
+      "family_repertoire": {
+        "path": "families/mew-note-tc/sources/imagegen/repertoires/vertical-93.json",
+        "sha256": "edb411e96ca0b72af79cc8ccfe4d7b643edcf44a866c67d3d16e7e1faff913a4",
+        "repertoire_id": "mew-note-tc-vertical-93-v1"
+      },
+      "identity_source": {
+        "path": "sources/imagegen/repertoires/vertical-93.json",
+        "sha256": "5ed215e4c69fddf3561c9c4f264f4081f16e86235574f6f462d5918087c74786",
+        "role": "identity-shaping-and-placement-policy-only-no-raster-outline-review-approval-reuse"
+      },
+      "required_features": [
+        "vert",
+        "vrt2"
+      ],
+      "family_repertoire_state": "identity-sequence-frozen-authoring-not-started"
+    }
+  ],
+  "partition_contract": {
+    "encoded_collection_ids": [
+      "han-6060",
+      "nonhan-3060"
+    ],
+    "encoded_overlap_count": 0,
+    "fallback_counts_as_coverage": false,
+    "clear_hand_glyph_evidence_reusable": false,
+    "every_visible_glyph_requires_mew_note_raster_review_and_approval": true
+  },
+  "stop_conditions": [
+    "Stop if any source hash, deterministic Han sequence hash, collection count, or partition count changes",
+    "Stop if a Mew Note glyph would reuse Clear Hand raster, outline, vector report, review, or approval evidence",
+    "Stop if the 189 required kana or any of the 93 vertical alternates are incomplete"
+  ]
+}

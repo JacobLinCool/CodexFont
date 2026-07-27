@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0008",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 113,
+    "end_rank": 128,
+    "characters": "著白清氣七能參發卷對老色九古風言"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0008.source.json",
+    "descriptor_sha256": "0261424596a24880342aa03d3e1c02845e414c80452c7af98860430f2d546c24",
+    "raster": "sources/imagegen/raster/common-0008.png",
+    "raster_sha256": "ad69b57091a1ee4851188c7ffd994c0e0ad3ee7f10fc972ec4677646ffc491cd"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0007-0010-audit.json",
+    "report_sha256": "58e5f446bea7d6542139791bc4802dd6f111f7e8f655b97475ea2a028738d0be"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0008/report.json",
+    "report_sha256": "29ce3af0ecd6ee09a20d9b9d3fa6934a921344ebdf6b5dd748c8cc78ce14934c",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0008.vector-review.json",
+    "record_sha256": "543c734c836153b84e48ebcfdadfd3ad42681f90fd213ce86d4dc82160753bb4"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:34:28Z"
+  }
+}

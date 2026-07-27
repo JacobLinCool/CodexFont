@@ -1,0 +1,67 @@
+# Image-generated Han-delta sheet dict-han-0002
+
+- Generator: built-in `image_gen`
+- Generator call: `<PENDING: filled only by register>`
+- Raster: `../raster/dict-han-0002.png`
+- Raster SHA-256: `<PENDING: filled only by register>`
+- Collection: `../collections/clear-hand-tc-dictionary-salience-1216.json` (`5623b1f977d1412b233a34c255627749ffed71f86182125ea91d7d1f1fb869c2`)
+- Repertoire: `../repertoires/dictionary-salience-extension-1216.json` (`8462d9669e6d7320f77c285a444e388da0f3e0d23ae408c7212c4302bdaed840`)
+- Prompt template: `../prompts/han-delta-grid-with-copybook-v1.md` (`38f8705ecdc33271d861db54ce7bb6b397ada40253052d74a916b0e1f89a3e0c`)
+- Style reference: `../raster/common-0001.png` (`2a4058fdb4e35ce2789f9ae73535542f78f4e94516ad4b9929986a93e36d3d81`)
+- Identity copybook: `../copybooks/dict-han-0002.png` (`9b18da6aa9eb7a1d27371eaa766196fe5a42ee6c77230dd904e226cde9354991`)
+- Copybook role: identity-reference-only-no-outline-import
+- State: awaiting generation; all review gates pending
+
+## Exact tool prompt
+
+```text
+Use case: font-source raster sheet
+Asset type: high-resolution 4×4 raster master sheet for an original
+Traditional Chinese handwriting font in the clear-hand-tc family
+
+Input images:
+1. Image 1 is STYLE ONLY. Match its fine black gel-pen weight, rounded
+   terminals, natural right slant, optical scale, pure-white background, and
+   faint 4×4 grid. Do not copy its characters or outlines.
+2. Image 2 is IDENTITY REFERENCE ONLY. Use it to disambiguate the exact
+   Unicode character assigned to each cell. Do not trace, reproduce, or import
+   its printed outlines or gray grid geometry.
+
+Primary request: write exactly 16 new isolated Traditional
+Chinese glyphs in a strict four-by-four grid, in this exact row-major order:
+朓箸蹇衾 / 鹵綬曜聒 / 鉅掇亢崗 / 擢暱嗔蓼.
+
+Exact occupied cells:
+- Cell 01: U+6713 `朓` CJK UNIFIED IDEOGRAPH-6713
+- Cell 02: U+7BB8 `箸` CJK UNIFIED IDEOGRAPH-7BB8
+- Cell 03: U+8E47 `蹇` CJK UNIFIED IDEOGRAPH-8E47
+- Cell 04: U+887E `衾` CJK UNIFIED IDEOGRAPH-887E
+- Cell 05: U+9E75 `鹵` CJK UNIFIED IDEOGRAPH-9E75
+- Cell 06: U+7DAC `綬` CJK UNIFIED IDEOGRAPH-7DAC
+- Cell 07: U+66DC `曜` CJK UNIFIED IDEOGRAPH-66DC
+- Cell 08: U+8052 `聒` CJK UNIFIED IDEOGRAPH-8052
+- Cell 09: U+9245 `鉅` CJK UNIFIED IDEOGRAPH-9245
+- Cell 10: U+6387 `掇` CJK UNIFIED IDEOGRAPH-6387
+- Cell 11: U+4EA2 `亢` CJK UNIFIED IDEOGRAPH-4EA2
+- Cell 12: U+5D17 `崗` CJK UNIFIED IDEOGRAPH-5D17
+- Cell 13: U+64E2 `擢` CJK UNIFIED IDEOGRAPH-64E2
+- Cell 14: U+66B1 `暱` CJK UNIFIED IDEOGRAPH-66B1
+- Cell 15: U+55D4 `嗔` CJK UNIFIED IDEOGRAPH-55D4
+- Cell 16: U+84FC `蓼` CJK UNIFIED IDEOGRAPH-84FC
+
+Text (verbatim):
+朓箸蹇衾
+鹵綬曜聒
+鉅掇亢崗
+擢暱嗔蓼
+
+Constraints: preserve every requested Unicode identity and Taiwan Traditional
+character topology; output each target exactly once and only in its assigned
+cell; use complete standard strokes; keep one centered black glyph per occupied
+cell with open counters; keep all ink away from separators. All sixteen cells are occupied.
+
+Avoid: simplified variants, wrong or missing strokes, duplicate or omitted
+characters, extra text, printed type, brush blobs, texture, shadows, sharp
+miter spikes, thorn-like protrusions, accidental hooks, tangled cursive,
+clipping, connected cells, signature, logo, or watermark.
+```

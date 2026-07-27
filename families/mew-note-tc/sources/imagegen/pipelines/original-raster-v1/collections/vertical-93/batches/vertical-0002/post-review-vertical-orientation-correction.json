@@ -1,0 +1,590 @@
+{
+  "schema_version": 1,
+  "record_type": "mew-note-tc-post-review-vertical-orientation-correction",
+  "family_id": "mew-note-tc",
+  "pipeline_id": "original-raster-v1",
+  "collection_id": "vertical-93",
+  "batch_id": "vertical-0002",
+  "family_context": {
+    "schema_version": 1,
+    "record_type": "codexfont-family-evidence-binding",
+    "family_id": "mew-note-tc",
+    "family_contract": {
+      "path": "families/mew-note-tc/family.json",
+      "sha256": "5d9799a4a8c33632d0285c2639e127e2b6a1080da03c652c99ebc760ab1a599f"
+    },
+    "pipeline_id": "original-raster-v1",
+    "pipeline_contract": {
+      "path": "families/mew-note-tc/pipeline.json",
+      "sha256": "84c1f9cd5e7908c020198d737da182b98b1f701021f7edb10d717902c3bf24ed"
+    },
+    "collection_id": "vertical-93",
+    "collection_contract": {
+      "path": "families/mew-note-tc/collections.json",
+      "sha256": "75e4ca4bc269e272739635afea6be8ecda6020e4d1f09be1d39d9e70d01d741f"
+    },
+    "collection_record_sha256": "1dfebdca6a4b69a167681151bf48f94bcee489a939c15c55b2303f3b8a891055",
+    "authoring_contract": {
+      "path": "families/mew-note-tc/authoring.json",
+      "sha256": "2fcf4549ecf28086cf09c7a1f934b5944643608506e0610f05d1db4ce6f61c7a"
+    },
+    "binding_sha256": "cfebd1f75fbcc37ce97ecab9da3f8adbac76fd1baef5f67098f0d74d1da44895"
+  },
+  "batch_contract_sha256": "4510256b699ca097e570a4114f15ed30fc5a005fb947bdb46cb6e0df89b12b62",
+  "implementation": {
+    "path": "scripts/mew_note_post_review_vertical_orientation_correction.py",
+    "sha256": "6c06869d10e3d71fc805aef168aa50aa1d68cf4c1192112e9cc7e69988e9b48e"
+  },
+  "reason": "release-vertical-orientation-rejected",
+  "orientation_contract": {
+    "axis": "horizontal",
+    "diagnostic": "source-ink-bbox-horizontal-to-vertical-ratio",
+    "targets": [
+      {
+        "cell": 6,
+        "character": "」",
+        "codepoint": "U+300D",
+        "report_source_box": [
+          318,
+          313,
+          625,
+          615
+        ],
+        "minimum_horizontal_to_vertical_ratio": 1.7,
+        "expected_core_component_count": 1
+      },
+      {
+        "cell": 8,
+        "character": "』",
+        "codepoint": "U+300F",
+        "report_source_box": [
+          930,
+          313,
+          1237,
+          615
+        ],
+        "minimum_horizontal_to_vertical_ratio": 1.5,
+        "expected_core_component_count": 2
+      }
+    ]
+  },
+  "rejected_orientation": [
+    {
+      "cell": 6,
+      "character": "」",
+      "codepoint": "U+300D",
+      "source_ink_bbox_normalized": [
+        0.363281,
+        0.316406,
+        0.677734,
+        0.642578
+      ],
+      "ink_width": 0.314453,
+      "ink_height": 0.326172,
+      "horizontal_to_vertical_ratio": 0.964071,
+      "minimum_horizontal_to_vertical_ratio": 1.7,
+      "source_core_component_count": 1,
+      "contour_count": 1,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "decision": "REJECT"
+    },
+    {
+      "cell": 8,
+      "character": "』",
+      "codepoint": "U+300F",
+      "source_ink_bbox_normalized": [
+        0.291016,
+        0.289062,
+        0.636719,
+        0.640625
+      ],
+      "ink_width": 0.345703,
+      "ink_height": 0.351563,
+      "horizontal_to_vertical_ratio": 0.983332,
+      "minimum_horizontal_to_vertical_ratio": 1.5,
+      "source_core_component_count": 2,
+      "contour_count": 2,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0,
+      "decision": "REJECT"
+    }
+  ],
+  "prior_evidence": {
+    "history": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/history.json",
+      "sha256": "c6e9c47af8e208f5662d0f4f929b32f7da6e88d0e956d3a9d9ae08c5ea1f530d",
+      "retention": "hash-only-superseded"
+    },
+    "source": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/source.json",
+      "sha256": "88854dc66159b12ba13b5db5ef89ea2a360f6fcc2d8f080f5e5ce6794da99a15",
+      "retention": "hash-only-superseded"
+    },
+    "raster": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/raster.png",
+      "sha256": "4b8afddc8ed0399acf1905a7967c83dcf37dd1021a767a895a8fe93dec8f4048",
+      "retention": "hash-only-superseded"
+    },
+    "review": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/review.json",
+      "sha256": "ce3f070a26d894cda1e06048c29c38af59e0dcc7f4e241312ed095f17f894fda",
+      "retention": "hash-only-superseded"
+    },
+    "release_approval": {
+      "path": "families/mew-note-tc/approvals/original-raster-v1-preview.approval.json",
+      "sha256": "61cf38ff06a3adeb050fdf75ab98c9c52984eeb68f61c97d8d8f0fc6467af819",
+      "retention": "hash-only-superseded-after-reapproval"
+    },
+    "build": {
+      "report": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/report.json",
+        "sha256": "ed1632d73d85a1eca8384fb38225d4bd192ea4be911186bb0c97e3e3a02d1919",
+        "retention": "hash-only-derived-superseded"
+      },
+      "ttf": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/font/MewNoteTC-Vertical0002-Unreviewed.ttf",
+        "sha256": "1cd06109d6d6b4262e7af4aa2ea2f74ad01b590b959acf38143f250d67d55b28",
+        "retention": "hash-only-derived-superseded"
+      },
+      "black_on_white": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/proof/small-sizes-black-on-white.png",
+        "sha256": "2f66db86667d7fb849cbc407a2f799dc8c216fb20ce0030aec3075726e1c1d1f",
+        "retention": "hash-only-derived-superseded"
+      },
+      "white_on_black": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/proof/small-sizes-white-on-black.png",
+        "sha256": "53e7c6e3d4b8f91008ea2edb6dcc7eaa319214386475fad0e79d26f9ad75edcd",
+        "retention": "hash-only-derived-superseded"
+      },
+      "segmented_source": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/proof/segmented-source-contact.png",
+        "sha256": "1eb5171e48c5d015378461036c1de00d1915b9b054aaa33b14c76ba8c4376717",
+        "retention": "hash-only-derived-superseded"
+      }
+    }
+  },
+  "candidate_generation": {
+    "call_id": "call_WUgMqJyIuObkzWRskiXh3M6S",
+    "actual_tool_prompt": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/tool-step-0008.txt",
+      "sha256": "e470db776fd45f9aeaee1eadeb6c3df7a8abfd3ca99d93834f12b481edff9951"
+    },
+    "raw_candidate": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/vertical-orientation-raw-candidate.png",
+      "sha256": "ef4f3c21df6b685cc151d90f26ab2101d8473455c3048a6bec6bd160fc18cbaf",
+      "retention": "retained-original-imagegen-output"
+    }
+  },
+  "composite_installation": {
+    "algorithm": "rgb-png-cell-interior-rectangular-replacement-v1",
+    "pixel_hash_algorithm": "sha256-framed-rgb-row-major-v1",
+    "canvas": {
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    "regions": [
+      {
+        "cell": 6,
+        "character": "」",
+        "codepoint": "U+300D",
+        "report_source_box": [
+          318,
+          313,
+          625,
+          615
+        ],
+        "replacement_box": [
+          319,
+          314,
+          624,
+          614
+        ],
+        "minimum_horizontal_to_vertical_ratio": 1.7,
+        "expected_core_component_count": 1,
+        "superseded_region_sha256": "b4c3eade474b569c73bda954ea8e25f7c8555fbe5e3f7f5341d2c7e86d8d3baf",
+        "candidate_region_sha256": "c9401ece98891dacfd3f37606f862f8d3c1bf449e0880e90a0fef8a56c5558bc"
+      },
+      {
+        "cell": 8,
+        "character": "』",
+        "codepoint": "U+300F",
+        "report_source_box": [
+          930,
+          313,
+          1237,
+          615
+        ],
+        "replacement_box": [
+          931,
+          314,
+          1236,
+          614
+        ],
+        "minimum_horizontal_to_vertical_ratio": 1.5,
+        "expected_core_component_count": 2,
+        "superseded_region_sha256": "85f0ed2a993d5414047a021c3bab717d19ff53ec5c3abaafa3710f9056b86192",
+        "candidate_region_sha256": "d28aa542a18640dc17764b11db99a66f63a3ffaa83cc24b463171805f70ae90f"
+      }
+    ],
+    "preserved_outside_regions_sha256": "42083d6ac711ff68b0fa1146c348fa11114dc59644dff0d8ccd12549729b9165",
+    "installed_composite_sha256": "d632bff9cf2e210805ea4e21ca8519278e5537ec870c50dab4d68abd3025af25"
+  },
+  "correction_generation": {
+    "appended_sequence": 8,
+    "parent_output_sha256": "4b8afddc8ed0399acf1905a7967c83dcf37dd1021a767a895a8fe93dec8f4048",
+    "history": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/history.json",
+      "sha256": "c672d4fa801b1e46a9378c376a49b4b348420081d9cbb1dbcb293104e9869ec2"
+    },
+    "source": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/source.json",
+      "sha256": "2f1e5b34ada029474b421a4280af21610d46f8222983b88741703d33f2f360dc"
+    },
+    "raster": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/raster.png",
+      "sha256": "d632bff9cf2e210805ea4e21ca8519278e5537ec870c50dab4d68abd3025af25"
+    },
+    "build": {
+      "report": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/report.json",
+        "sha256": "4374c7001f5e7dde682cb93c8a6a3216662f06a3771e8c2fc70ae0f906a9967a"
+      },
+      "ttf": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/font/MewNoteTC-Vertical0002-Unreviewed.ttf",
+        "sha256": "d205ab9f9a52ee85ea52076a80436926c15803bbfb951b768fdef3ba5b22f70d"
+      },
+      "black_on_white": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/proof/small-sizes-black-on-white.png",
+        "sha256": "2a38901e340c4540495df2392aff1416418c1d770f948578535321cb89fd9347"
+      },
+      "white_on_black": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/proof/small-sizes-white-on-black.png",
+        "sha256": "607aed5adbcd2b7332800b8a72a5d50b558eb6b7868a49c5d3fbe8067db8f377"
+      },
+      "segmented_source": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/proof/segmented-source-contact.png",
+        "sha256": "adf736552e6debb3ca3e2ca01f8726cab679635a1724e2c36a37f737cfb9bf4b"
+      }
+    },
+    "batch_vector_evidence": {
+      "report": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/report.json",
+        "sha256": "4374c7001f5e7dde682cb93c8a6a3216662f06a3771e8c2fc70ae0f906a9967a"
+      },
+      "black_on_white": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/proof/small-sizes-black-on-white.png",
+        "sha256": "2a38901e340c4540495df2392aff1416418c1d770f948578535321cb89fd9347"
+      },
+      "white_on_black": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/proof/small-sizes-white-on-black.png",
+        "sha256": "607aed5adbcd2b7332800b8a72a5d50b558eb6b7868a49c5d3fbe8067db8f377"
+      },
+      "segmented_source": {
+        "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/vertical-93/batches/vertical-0002/proof/segmented-source-contact.png",
+        "sha256": "adf736552e6debb3ca3e2ca01f8726cab679635a1724e2c36a37f737cfb9bf4b"
+      },
+      "glyph_count": 16,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0
+    },
+    "orientation_diagnostics": [
+      {
+        "cell": 6,
+        "character": "」",
+        "codepoint": "U+300D",
+        "source_ink_bbox_normalized": [
+          0.191406,
+          0.318359,
+          0.800781,
+          0.427734
+        ],
+        "ink_width": 0.609375,
+        "ink_height": 0.109375,
+        "horizontal_to_vertical_ratio": 5.571429,
+        "minimum_horizontal_to_vertical_ratio": 1.7,
+        "source_core_component_count": 1,
+        "contour_count": 1,
+        "micro_edge_count": 0,
+        "acute_micro_turn_count": 0,
+        "decision": "ACCEPT"
+      },
+      {
+        "cell": 8,
+        "character": "』",
+        "codepoint": "U+300F",
+        "source_ink_bbox_normalized": [
+          0.222656,
+          0.289062,
+          0.761719,
+          0.623047
+        ],
+        "ink_width": 0.539063,
+        "ink_height": 0.333985,
+        "horizontal_to_vertical_ratio": 1.614034,
+        "minimum_horizontal_to_vertical_ratio": 1.5,
+        "source_core_component_count": 2,
+        "contour_count": 2,
+        "micro_edge_count": 0,
+        "acute_micro_turn_count": 0,
+        "decision": "ACCEPT"
+      }
+    ],
+    "unchanged_non_target_glyphs": [
+      {
+        "character": "〈",
+        "codepoint": "U+3008",
+        "source_png_sha256": "3959c40f77aaa0547bc79cf082c0033e6b85661ba70cc60797aeb7f57f03dd6a",
+        "svg_sha256": "08d97b1a08cc826c92c77053dd95eebdc8a47eeb32fa516dd8aa499426cafe1b",
+        "proof_png_sha256": "3bfcf29d15064cfa6cafc4f767c456022ecfdc44103889fcb939d2460d835357"
+      },
+      {
+        "character": "〉",
+        "codepoint": "U+3009",
+        "source_png_sha256": "e8367385fb161328ffdee8105ac97c6247569d2da97fa0c38ecbc63730fc19a7",
+        "svg_sha256": "2f2c13c89bd2fccb6a79d994f1cad7af2ce940bf9419d47f24412d3b96043184",
+        "proof_png_sha256": "0656d8cc0ceee50419935a18683056fba211f61b28334c9e8b0952d77a902693"
+      },
+      {
+        "character": "《",
+        "codepoint": "U+300A",
+        "source_png_sha256": "efe5945f7f2622ec543efabeb31f8b395d64fc7ca173889d5bb5d46be47ed739",
+        "svg_sha256": "10f95bec8330ecb43f3d70798cae0b2ac41d4423244bc73e6dc294116147e448",
+        "proof_png_sha256": "edcaef08628e8e69e0f4bc7bb7f1e6257059e99adf7007c7d77e11ddd61fb3d3"
+      },
+      {
+        "character": "》",
+        "codepoint": "U+300B",
+        "source_png_sha256": "c6aa1bf6d94fff0c2090d62d57c1585ef235a923b824d72ec3cf4aad9916c20d",
+        "svg_sha256": "d6882a735a65be54eb1c0e9e4b76accb58cc80ae5b3f8d59b3d2b64919c44c13",
+        "proof_png_sha256": "08b59cfe7e6c83b91e33c0de71927ea00113e1979c859a272c0bdca37f586a20"
+      },
+      {
+        "character": "「",
+        "codepoint": "U+300C",
+        "source_png_sha256": "1edf93f5a36b0208da2fb77eea429a3f222c6cb51c143da8d0a5a84d462175ff",
+        "svg_sha256": "53ab196a0cef14a0b9dc4e27ecbb012086070bcee5aad7dba079f2a6207f1d15",
+        "proof_png_sha256": "54aa6ce36b2f136c7b978894c2e39c07a66cb978d3242a1b15ad56b2a8ca1b27"
+      },
+      {
+        "character": "『",
+        "codepoint": "U+300E",
+        "source_png_sha256": "f0788c590084e797a240dbfae3e8d8369185a02575522f6d47b8057c76b71439",
+        "svg_sha256": "690ffd943af756bf238c317ee9238204ab9cf0ce3f287ad9b3b9d48f7c620567",
+        "proof_png_sha256": "43ea95729852aa48e74a2c8422e56d57189db8900383553b143b6fadb599a53c"
+      },
+      {
+        "character": "【",
+        "codepoint": "U+3010",
+        "source_png_sha256": "22346696f6fdf0985ac92f0284434da6adfd6a8482dec57b25ab32269c34cde5",
+        "svg_sha256": "06930eae95ab7c80e7f92e58a204d171c9499a82c6f85992bdbef356c8d238c4",
+        "proof_png_sha256": "92a69acb894faa553b7bfaeb59f0be740d9a97c229264771ba1741ecd88f3d35"
+      },
+      {
+        "character": "】",
+        "codepoint": "U+3011",
+        "source_png_sha256": "0c1171522ef8dc0e7d2bc56784d5a803c9c0af9f155f54a14ee16d33b7e5f6bd",
+        "svg_sha256": "89ec2a9f4292c820da724044da4353414b159cdc7f9f57fa398d9399cb9156e4",
+        "proof_png_sha256": "8f213e31976407c42e166dfb18f3a2c3c92063e9e17b7e7ad210f302fc6c947d"
+      },
+      {
+        "character": "〔",
+        "codepoint": "U+3014",
+        "source_png_sha256": "cce81ab50a46a190f7bd19bdb351b0cc891e5b938b359b6a589e4acb0b2f8d4d",
+        "svg_sha256": "f5cc015c5172b108b6c928ffcbf31acae0d7323288424ba7ca96b276d537e883",
+        "proof_png_sha256": "4fdb55c17ff7b0c4e2dc4608d2ab2a7f12cc9da238499d1326240bee42ef6538"
+      },
+      {
+        "character": "〕",
+        "codepoint": "U+3015",
+        "source_png_sha256": "2b697e755d3d360e8e2c643a8b196dee2147747d295382f4436b4cbf8c43ed86",
+        "svg_sha256": "968887e2ba0816151ee907accb4efb7bdcf8edabcc27e175b854db4a7e56335a",
+        "proof_png_sha256": "bf6b86c2c2f446cba6ac19328c01346009d9d8df8f70043dd14f29dd8d7432d5"
+      },
+      {
+        "character": "〖",
+        "codepoint": "U+3016",
+        "source_png_sha256": "afb188207307f6beaaf863156767b5e78d59a6df77b7a2695032f24ffc8ab152",
+        "svg_sha256": "41e5a4823a341c8702738193f21d97b9108e1a5ff70cd27040aae9751f0dcf46",
+        "proof_png_sha256": "7ca0d1a04154e27f754e169945e90a507755d6ce42de1ac6232da52db7d7bbc8"
+      },
+      {
+        "character": "〗",
+        "codepoint": "U+3017",
+        "source_png_sha256": "ecc888ee6a4a686ade35dd99ac04bbfa903972eaaf308848ee37c43f595d4452",
+        "svg_sha256": "66ee8d4bb43ec6ba74a130f874702c018ab9c3fe41b484410523c338f3fd4318",
+        "proof_png_sha256": "828b0733a2c7f623aa08550646050a557f28685e20f3fc639cb20bd331b6d8ad"
+      },
+      {
+        "character": "〘",
+        "codepoint": "U+3018",
+        "source_png_sha256": "3455bdc54874bc32d9af03cdb8b4b01111502f98065b72917e9d43fa4bb156e5",
+        "svg_sha256": "a8901c615299116984bf986ae3c917163f6dbe4aa2a522df2d0c04864826e983",
+        "proof_png_sha256": "59b0c91733a6196a0cb7f591b161b36bd7ad151132651caeb174dfcb734b65cf"
+      },
+      {
+        "character": "〙",
+        "codepoint": "U+3019",
+        "source_png_sha256": "5bb35d53c530dfac05e154a51e724bd5041c6cc885f112c995babd6297c56318",
+        "svg_sha256": "7ca22047ffd3d8e912ead2e7ceab0150eb0f5e18b3dd2fe0eed71a0f4f9c8470",
+        "proof_png_sha256": "d960470f002da1831cc8a263164fc792ece070a83500e318a70d38b5eafefde9"
+      }
+    ],
+    "candidate_preflight": {
+      "raw_candidate_sha256": "ef4f3c21df6b685cc151d90f26ab2101d8473455c3048a6bec6bd160fc18cbaf",
+      "installed_composite_sha256": "d632bff9cf2e210805ea4e21ca8519278e5537ec870c50dab4d68abd3025af25",
+      "ttf_sha256": "d205ab9f9a52ee85ea52076a80436926c15803bbfb951b768fdef3ba5b22f70d",
+      "orientation_diagnostics": [
+        {
+          "cell": 6,
+          "character": "」",
+          "codepoint": "U+300D",
+          "source_ink_bbox_normalized": [
+            0.191406,
+            0.318359,
+            0.800781,
+            0.427734
+          ],
+          "ink_width": 0.609375,
+          "ink_height": 0.109375,
+          "horizontal_to_vertical_ratio": 5.571429,
+          "minimum_horizontal_to_vertical_ratio": 1.7,
+          "source_core_component_count": 1,
+          "contour_count": 1,
+          "micro_edge_count": 0,
+          "acute_micro_turn_count": 0,
+          "decision": "ACCEPT"
+        },
+        {
+          "cell": 8,
+          "character": "』",
+          "codepoint": "U+300F",
+          "source_ink_bbox_normalized": [
+            0.222656,
+            0.289062,
+            0.761719,
+            0.623047
+          ],
+          "ink_width": 0.539063,
+          "ink_height": 0.333985,
+          "horizontal_to_vertical_ratio": 1.614034,
+          "minimum_horizontal_to_vertical_ratio": 1.5,
+          "source_core_component_count": 2,
+          "contour_count": 2,
+          "micro_edge_count": 0,
+          "acute_micro_turn_count": 0,
+          "decision": "ACCEPT"
+        }
+      ],
+      "unchanged_non_target_glyphs": [
+        {
+          "character": "〈",
+          "codepoint": "U+3008",
+          "source_png_sha256": "3959c40f77aaa0547bc79cf082c0033e6b85661ba70cc60797aeb7f57f03dd6a",
+          "svg_sha256": "08d97b1a08cc826c92c77053dd95eebdc8a47eeb32fa516dd8aa499426cafe1b",
+          "proof_png_sha256": "3bfcf29d15064cfa6cafc4f767c456022ecfdc44103889fcb939d2460d835357"
+        },
+        {
+          "character": "〉",
+          "codepoint": "U+3009",
+          "source_png_sha256": "e8367385fb161328ffdee8105ac97c6247569d2da97fa0c38ecbc63730fc19a7",
+          "svg_sha256": "2f2c13c89bd2fccb6a79d994f1cad7af2ce940bf9419d47f24412d3b96043184",
+          "proof_png_sha256": "0656d8cc0ceee50419935a18683056fba211f61b28334c9e8b0952d77a902693"
+        },
+        {
+          "character": "《",
+          "codepoint": "U+300A",
+          "source_png_sha256": "efe5945f7f2622ec543efabeb31f8b395d64fc7ca173889d5bb5d46be47ed739",
+          "svg_sha256": "10f95bec8330ecb43f3d70798cae0b2ac41d4423244bc73e6dc294116147e448",
+          "proof_png_sha256": "edcaef08628e8e69e0f4bc7bb7f1e6257059e99adf7007c7d77e11ddd61fb3d3"
+        },
+        {
+          "character": "》",
+          "codepoint": "U+300B",
+          "source_png_sha256": "c6aa1bf6d94fff0c2090d62d57c1585ef235a923b824d72ec3cf4aad9916c20d",
+          "svg_sha256": "d6882a735a65be54eb1c0e9e4b76accb58cc80ae5b3f8d59b3d2b64919c44c13",
+          "proof_png_sha256": "08b59cfe7e6c83b91e33c0de71927ea00113e1979c859a272c0bdca37f586a20"
+        },
+        {
+          "character": "「",
+          "codepoint": "U+300C",
+          "source_png_sha256": "1edf93f5a36b0208da2fb77eea429a3f222c6cb51c143da8d0a5a84d462175ff",
+          "svg_sha256": "53ab196a0cef14a0b9dc4e27ecbb012086070bcee5aad7dba079f2a6207f1d15",
+          "proof_png_sha256": "54aa6ce36b2f136c7b978894c2e39c07a66cb978d3242a1b15ad56b2a8ca1b27"
+        },
+        {
+          "character": "『",
+          "codepoint": "U+300E",
+          "source_png_sha256": "f0788c590084e797a240dbfae3e8d8369185a02575522f6d47b8057c76b71439",
+          "svg_sha256": "690ffd943af756bf238c317ee9238204ab9cf0ce3f287ad9b3b9d48f7c620567",
+          "proof_png_sha256": "43ea95729852aa48e74a2c8422e56d57189db8900383553b143b6fadb599a53c"
+        },
+        {
+          "character": "【",
+          "codepoint": "U+3010",
+          "source_png_sha256": "22346696f6fdf0985ac92f0284434da6adfd6a8482dec57b25ab32269c34cde5",
+          "svg_sha256": "06930eae95ab7c80e7f92e58a204d171c9499a82c6f85992bdbef356c8d238c4",
+          "proof_png_sha256": "92a69acb894faa553b7bfaeb59f0be740d9a97c229264771ba1741ecd88f3d35"
+        },
+        {
+          "character": "】",
+          "codepoint": "U+3011",
+          "source_png_sha256": "0c1171522ef8dc0e7d2bc56784d5a803c9c0af9f155f54a14ee16d33b7e5f6bd",
+          "svg_sha256": "89ec2a9f4292c820da724044da4353414b159cdc7f9f57fa398d9399cb9156e4",
+          "proof_png_sha256": "8f213e31976407c42e166dfb18f3a2c3c92063e9e17b7e7ad210f302fc6c947d"
+        },
+        {
+          "character": "〔",
+          "codepoint": "U+3014",
+          "source_png_sha256": "cce81ab50a46a190f7bd19bdb351b0cc891e5b938b359b6a589e4acb0b2f8d4d",
+          "svg_sha256": "f5cc015c5172b108b6c928ffcbf31acae0d7323288424ba7ca96b276d537e883",
+          "proof_png_sha256": "4fdb55c17ff7b0c4e2dc4608d2ab2a7f12cc9da238499d1326240bee42ef6538"
+        },
+        {
+          "character": "〕",
+          "codepoint": "U+3015",
+          "source_png_sha256": "2b697e755d3d360e8e2c643a8b196dee2147747d295382f4436b4cbf8c43ed86",
+          "svg_sha256": "968887e2ba0816151ee907accb4efb7bdcf8edabcc27e175b854db4a7e56335a",
+          "proof_png_sha256": "bf6b86c2c2f446cba6ac19328c01346009d9d8df8f70043dd14f29dd8d7432d5"
+        },
+        {
+          "character": "〖",
+          "codepoint": "U+3016",
+          "source_png_sha256": "afb188207307f6beaaf863156767b5e78d59a6df77b7a2695032f24ffc8ab152",
+          "svg_sha256": "41e5a4823a341c8702738193f21d97b9108e1a5ff70cd27040aae9751f0dcf46",
+          "proof_png_sha256": "7ca0d1a04154e27f754e169945e90a507755d6ce42de1ac6232da52db7d7bbc8"
+        },
+        {
+          "character": "〗",
+          "codepoint": "U+3017",
+          "source_png_sha256": "ecc888ee6a4a686ade35dd99ac04bbfa903972eaaf308848ee37c43f595d4452",
+          "svg_sha256": "66ee8d4bb43ec6ba74a130f874702c018ab9c3fe41b484410523c338f3fd4318",
+          "proof_png_sha256": "828b0733a2c7f623aa08550646050a557f28685e20f3fc639cb20bd331b6d8ad"
+        },
+        {
+          "character": "〘",
+          "codepoint": "U+3018",
+          "source_png_sha256": "3455bdc54874bc32d9af03cdb8b4b01111502f98065b72917e9d43fa4bb156e5",
+          "svg_sha256": "a8901c615299116984bf986ae3c917163f6dbe4aa2a522df2d0c04864826e983",
+          "proof_png_sha256": "59b0c91733a6196a0cb7f591b161b36bd7ad151132651caeb174dfcb734b65cf"
+        },
+        {
+          "character": "〙",
+          "codepoint": "U+3019",
+          "source_png_sha256": "5bb35d53c530dfac05e154a51e724bd5041c6cc885f112c995babd6297c56318",
+          "svg_sha256": "7ca22047ffd3d8e912ead2e7ceab0150eb0f5e18b3dd2fe0eed71a0f4f9c8470",
+          "proof_png_sha256": "d960470f002da1831cc8a263164fc792ece070a83500e318a70d38b5eafefde9"
+        }
+      ],
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0
+    }
+  },
+  "required_next_gates": [
+    "independent-raster-vector-technical-review",
+    "collection-release-reapproval"
+  ],
+  "state": "corrected-unreviewed-unapproved",
+  "correction_sha256": "54ff69177f2a902e2c2677561eb5e93c0717aa4ae69b2cd5069b06b24d063687"
+}

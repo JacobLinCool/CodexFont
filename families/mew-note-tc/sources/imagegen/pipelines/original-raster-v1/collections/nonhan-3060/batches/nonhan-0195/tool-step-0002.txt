@@ -1,0 +1,15 @@
+Correct the weight structure of cells 2, 4, 6, 8, 10, 12, 14, 15, and 16. Preserve all light-only cells, the exact 4×4 grid, orientation, dash count, and margins.
+
+Use two unmistakably different handwritten stroke widths: LIGHT equals the current thin monoline; HEAVY is approximately 2.5–3 times thicker.
+
+- cell 2 ━: one HEAVY horizontal.
+- cell 4 ┃: one HEAVY vertical.
+- cell 6 ┅: three HEAVY horizontal dashes.
+- cell 8 ┇: three HEAVY vertical dashes.
+- cell 10 ┉: four HEAVY horizontal dashes.
+- cell 12 ┋: four HEAVY vertical dashes.
+- cell 14 ┍: LIGHT vertical down stroke joined to HEAVY horizontal right stroke.
+- cell 15 ┎: HEAVY vertical down stroke joined to LIGHT horizontal right stroke.
+- cell 16 ┏: HEAVY vertical down stroke joined to HEAVY horizontal right stroke.
+
+Keep cells 1, 3, 5, 7, 9, 11, and 13 thin. Follow the fourth-reference identity copybook exactly. Return only the corrected sheet.

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0022",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 337,
+    "end_rank": 352,
+    "characters": "晉帶運兵制信師遠連城解雲土錢約服"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0022.source.json",
+    "descriptor_sha256": "bd612d2fd79bddd98c6c6bc2fa946b85d5325a5414adb4a667a85c80292bce78",
+    "raster": "sources/imagegen/raster/common-0022.png",
+    "raster_sha256": "74a0e3ac1098e84a44e8d3837725a1b38a605e352f0049bf37e4be6b5b91ff4c"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0019-0022-audit.json",
+    "report_sha256": "7160d13441761da0aabbeef25983279b2d21314092d1560f01c9337f9ad6e89f"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0022/report.json",
+    "report_sha256": "1b7e9faa8c4e36a540481dc5e8d481f108e6e60e40659d1b6ab95f10c4105e34",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0022.vector-review.json",
+    "record_sha256": "0495d103ed84eb116ec66d668399277e32bcdf2f33dd67abfea483f88429ef6d"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:35:54Z"
+  }
+}

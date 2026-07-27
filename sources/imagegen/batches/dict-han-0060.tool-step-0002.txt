@@ -1,0 +1,20 @@
+Use case: precise-object-edit
+Asset type: four-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cells 02, 06, 12, and 13. Preserve all other 12 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 02 must be U+8407 萇. Preserve 艹 at the top. Replace the 其-like lower part with a complete 長, including its long vertical body, internal horizontals, and lower diagonal sweep. Do not write 萁, 苌, 莀, or another grass character.
+
+Cell 06 must be U+8806 蠆. Replace the unclear left-right insect form with the correct stacked construction shown by the identity copybook: a complete compact 萬 across the upper portion, including 艹 and the 禺-like body, above one complete 虫 in the lower portion. Do not write 蠡, 蟲, 蝎, or another insect character.
+
+Cell 12 must be U+98E3 飣. Preserve a complete 飠 on the left. Replace 欠 with one simple, unmistakable 丁 on the right: a horizontal top stroke and a vertical downstroke ending in a hook. Do not write 飲, 飯, 餞, or another food-radical character.
+
+Cell 13 must be U+9A03 騃. Preserve a complete 馬 on the left. Replace the 婁-like right side with a complete 矣: 厶 above 矢, with the lower 大-like sweeps and central short strokes distinct. Do not write 騾, 騶, 騁, or another horse character.
+
+Required full row-major result:
+芯萇蒔蜊
+蝎蠆貔輥
+邅銨鍔飣
+騃騶髡鶿
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

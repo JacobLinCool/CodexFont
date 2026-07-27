@@ -1,0 +1,18 @@
+Use case: precise-object-edit
+Asset type: three-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cells 01, 03, and 13. Preserve all other 13 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 01 must be U+9319 錙. Preserve a complete 金 on the left. Replace 正 with a complete 甾 on the right: three repeated 巛 bends above a complete 田. Do not write 鉦, 錨, 鍇, or another metal-radical character.
+
+Cell 03 must be U+9917 餗. Preserve a complete 飠 on the left. Replace the 良-like right side with 束: a central vertical passing through the 口-like middle enclosure, with the top horizontal and the lower 木 sweeps all visible. Do not write 食, 養, 餬, or another food-radical character.
+
+Cell 13 must be U+56D3 囓. Preserve a complete 口 on the left. Replace the current unrelated right side with a compact but complete 齧: 丰 at the upper left and 刀 at the upper right, above a complete 齒 in the lower half. Keep the small internal tooth compartments legible. Do not write 曜, 嚙, 齧 without 口, or another mouth character.
+
+Required full row-major result:
+錙鑞餗餬
+餼饉髖髣
+魆鷙卬哆
+囓垤埒堙
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

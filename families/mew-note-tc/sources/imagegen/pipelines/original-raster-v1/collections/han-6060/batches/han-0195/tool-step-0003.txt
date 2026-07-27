@@ -1,0 +1,20 @@
+Correct the Mew Note TC han-6060/han-0195 sheet again.
+
+Image 1 is the rejected parent correction. Image 2 is the approved Mew Note TC v2 style pilot (style rhythm only). Image 3 is the identity-only copybook (code point identity only).
+
+The parent's 4×4 grid is now correct. Preserve exactly five thin neutral-gray horizontal rules centered near y = 12, 310, 618, 925, and 1241, and five evenly spaced vertical rules including all outer borders.
+
+The parent has one identity error: cell 07 is not 匏. It resembles 玄 plus 包. Rewrite cell 07 as the exact Traditional Chinese character 匏 (U+530F), matching the copybook topology: the left component is 夸 and the right component is 包. The 夸 component must begin with 大 and continue into 亏; it must not be the dot-topped component 玄.
+
+Recreate the complete 1254 by 1254 sheet. Keep one centered black handwritten Traditional Chinese glyph per cell, in this exact row-major order:
+
+劬劾募勦
+匍匐匏匕
+匙匝匱匾
+卅仟卉卞
+
+Preserve every other glyph identity and all cell positions. Preserve restrained connected tail terminals only in cells 02 劾, 06 匐, 10 匝, and 14 仟. Every tail must continue directly from an existing final stroke in the same connected contour.
+
+Use original upright rounded gel-pen handwriting with low contrast, soft human terminals, generous padding, and no contact with grid rules. Do not trace or reuse any raster or outline from the references.
+
+No detached decorations, floating marks, cat ears, hats, faces, whiskers, paws, silhouettes, spikes, sharp thorns, self-intersections, shadows, paper texture, labels, captions, signatures, or watermarks. Render only the 16 requested glyphs and the neutral-gray grid.

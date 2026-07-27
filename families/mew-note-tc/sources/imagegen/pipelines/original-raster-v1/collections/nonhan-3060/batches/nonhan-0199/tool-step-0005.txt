@@ -1,0 +1,16 @@
+Discard the parent's invalid five-row arrangement and redraw a fresh, complete 4×4 sheet. The canvas must have exactly four equal rows and four equal columns. There must be exactly one glyph centered in each of sixteen cells. Do not place any glyph below row 4.
+
+Use the fourth-reference identity copybook as the exact topology map:
+
+Row 1: c1 ╀ = UP heavy; c2 ╁ = DOWN heavy; c3 ╂ = UP+DOWN heavy; c4 ╃ = LEFT+UP heavy.
+Row 2: c5 ╄ = RIGHT+UP heavy; c6 ╅ = LEFT+DOWN heavy; c7 ╆ = RIGHT+DOWN heavy; c8 ╇ = UP+LEFT+RIGHT heavy.
+Row 3: c9 ╈ = DOWN+LEFT+RIGHT heavy; c10 ╉ = UP+DOWN+LEFT heavy; c11 ╊ = UP+DOWN+RIGHT heavy; c12 ╋ = all four arms heavy.
+All arms not named heavy in c1–c12 are LIGHT.
+
+Row 4 contains only:
+c13 ╌ = two separated LIGHT horizontal dashes;
+c14 ╍ = two separated HEAVY horizontal dashes;
+c15 ╎ = two separated LIGHT vertical dashes;
+c16 ╏ = two separated HEAVY vertical dashes.
+
+LIGHT is thin. HEAVY is 2.5–3 times thicker. Row 4 must contain no crosses. Keep a white background, thin pale-gray 4×4 grid, ample padding, and black geometric ink. Return only the corrected sheet.

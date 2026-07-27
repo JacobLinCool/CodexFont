@@ -1,0 +1,14 @@
+Use case: precise-object-edit
+Asset type: one-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cell 04. Preserve all other 15 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 04 must be U+5AE0 嫠. The current result still uses an incorrect left-right 女-plus-complex layout. Remove it completely. The finished glyph must NOT have 女 as a left radical. Follow the identity copybook's vertical construction: write 未 at the upper left and 攵 at the upper right as one compact top band; from beneath that band, write a descending 厂-like shelter; place one complete 女 at the bottom inside/under that shelter. Keep every component distinct and legible. Do not write 嬙, 嫩, 嬴, or another woman-radical character.
+
+Required full row-major result:
+嗝圇奼嫠
+嬙嵯忡怫
+惸扞搴斕
+昃栲桷欷
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

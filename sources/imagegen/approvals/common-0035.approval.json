@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0035",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 545,
+    "end_rank": 560,
+    "characters": "切破筆絕識致卿資組待鐵笑存留惡懷"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0035.source.json",
+    "descriptor_sha256": "898d3bee524f4fbece24117e7ad2982fb572657d6f1a603edc77e9390d1b885f",
+    "raster": "sources/imagegen/raster/common-0035.png",
+    "raster_sha256": "772b6506ab5bb1cd73610b3f1458fe124fc24c23f0369b6a8ca6d03e59155e45"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0035-0038-audit.json",
+    "report_sha256": "8574012ce03278cc9f94a1ea2a0a685845b626d0e0c26dffaa3404505563e743"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0035/report.json",
+    "report_sha256": "bf3eff223f91b63ec22739eae73be7dbcc4a0a06e99e2a070dbf8a292e6fa28a",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0035.vector-review.json",
+    "record_sha256": "3a40de61f96e7e98cec6be2d9e32304f9068cd8cc5df373bef1fc2dd06c17a61"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:37:06Z"
+  }
+}

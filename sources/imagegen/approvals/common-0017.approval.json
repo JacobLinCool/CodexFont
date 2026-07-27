@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0017",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 257,
+    "end_rank": 272,
+    "characters": "具業電酒便先各死看河空屬新黃非產"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0017.source.json",
+    "descriptor_sha256": "71a44557c9182bfa5013e2fd29586f905978048aab97f91273cb011019a47876",
+    "raster": "sources/imagegen/raster/common-0017.png",
+    "raster_sha256": "95bf518ca73b362a45d6478b5826174bccc1a74875ad5d9850b1dd0d0ed9e080"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0015-0018-audit.json",
+    "report_sha256": "6f6d7c61f49a1182985445716eeebb2662a00771c6ae134b7d8fa4e340b96868"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0017/report.json",
+    "report_sha256": "7a00d644e7df7a77001416e5962e1fa2844300ea717735208fc282299130edc9",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0017.vector-review.json",
+    "record_sha256": "54d6dd8c14d805edca43d1d7d3ddb26bfe922d365681b123aed646981dd468b8"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:35:32Z"
+  }
+}

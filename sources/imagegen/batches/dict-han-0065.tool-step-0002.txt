@@ -1,0 +1,20 @@
+Use case: precise-object-edit
+Asset type: corrected 4×4 raster master sheet for clear-hand-tc
+
+Input images:
+1. Image 1 is the previous generated sheet. Preserve it exactly except for Cells 04, 05, 06, 09, 10, 11, 14, and 15.
+2. Image 2 is the identity copybook. Use only the named cells to verify topology; do not trace its printed outlines.
+
+Primary request: replace only these eight cells with newly handwritten glyphs:
+- Cell 04: U+9120 `鄠`, exactly `雩` on the left plus `阝` on the right. The left side retains `雨` above `亏`; do not write `雪`.
+- Cell 05: U+91C5 `釅`, exactly `酉` on the left plus the complete Traditional `嚴` on the right. Do not write `翏`.
+- Cell 06: U+95B6 `閶`, exactly `門` enclosing `昌`, with two stacked `日` boxes. Do not write `間`.
+- Cell 09: U+979A `鞚`, exactly `革` on the left plus `空` on the right. Do not write `句`.
+- Cell 10: U+9832 `頲`, exactly `廷` on the left plus `頁` on the right.
+- Cell 11: U+98BB `颻`, exactly `䍃` on the left plus `風` on the right. Do not reverse the components.
+- Cell 14: U+9AF4 `髴`, exactly `髟` above and around `弗`; keep the complete `弗`.
+- Cell 15: U+9B2F `鬯`, the standalone traditional form shown in the copybook: upper open container with its crossing stroke and four distinct interior dots, plus `匕` below. Do not write a plain `凶`.
+
+Constraints: keep all other eight cells unchanged in content, position, style, and grid; preserve the white background and faint grid; match the fine black gel-pen weight and rounded terminals; center each replacement with open counters and no grid contact.
+
+Avoid: changing any other cell, missing components, simplified forms, spikes, thorns, clipping, extra marks, signature, logo, or watermark.

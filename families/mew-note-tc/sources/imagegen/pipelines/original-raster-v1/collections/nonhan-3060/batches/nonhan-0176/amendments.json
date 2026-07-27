@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "record_type": "mew-note-tc-generation-amendments",
+  "family_id": "mew-note-tc",
+  "pipeline_id": "original-raster-v1",
+  "collection_id": "nonhan-3060",
+  "batch_id": "nonhan-0176",
+  "family_context": {
+    "schema_version": 1,
+    "record_type": "codexfont-family-evidence-binding",
+    "family_id": "mew-note-tc",
+    "family_contract": {
+      "path": "families/mew-note-tc/family.json",
+      "sha256": "5d9799a4a8c33632d0285c2639e127e2b6a1080da03c652c99ebc760ab1a599f"
+    },
+    "pipeline_id": "original-raster-v1",
+    "pipeline_contract": {
+      "path": "families/mew-note-tc/pipeline.json",
+      "sha256": "84c1f9cd5e7908c020198d737da182b98b1f701021f7edb10d717902c3bf24ed"
+    },
+    "collection_id": "nonhan-3060",
+    "collection_contract": {
+      "path": "families/mew-note-tc/collections.json",
+      "sha256": "75e4ca4bc269e272739635afea6be8ecda6020e4d1f09be1d39d9e70d01d741f"
+    },
+    "collection_record_sha256": "476957d833b232065d2ee46fe4840ae25fbe0da4d60c21603c9ef295b74de91e",
+    "authoring_contract": {
+      "path": "families/mew-note-tc/authoring.json",
+      "sha256": "2fcf4549ecf28086cf09c7a1f934b5944643608506e0610f05d1db4ce6f61c7a"
+    },
+    "binding_sha256": "7b8a71bcba9bea594f3748a6c5b025873372e3210b88d665529d2ca3b456a43c"
+  },
+  "batch_contract_sha256": "af339fd759a69f5a6d9f81072f40a3b312a771f9a81aa37c03412625c93365ae",
+  "implementation": {
+    "path": "scripts/mew_note_history_amendment.py",
+    "sha256": "c25e1028fdac6db3de1f24ae8324d6c6a4571f9c2e648b6d7bf6d4ba91b6e8e8"
+  },
+  "revisions": [
+    {
+      "sequence": 1,
+      "reason": "strict-vector-build-rejected",
+      "prior_history_file_sha256": "684dd2d979b702c632a51fd3a32a5c7ac2d34f50dbd673e0e27f9e5a2710a86c",
+      "prior_source_file_sha256": "f966bb9b753a4851d32d2931f3f9fc1d5c357ae2594c0a13d0bf560b042d776b",
+      "prior_raster_sha256": "2028bd0b5cf4a07d360a20ca4a34ef737644cab7b4262568a7bb652710f8118c",
+      "prior_accepted_call_id": "exec-d090162a-745d-43a0-aef2-249cf8fd4396",
+      "prior_accepted_output_sha256": "2028bd0b5cf4a07d360a20ca4a34ef737644cab7b4262568a7bb652710f8118c",
+      "prior_vector_build": null,
+      "amended_history_file_sha256": "769724d53d383d1580071b22c84c4c0cd3b35a74b8867e12309b9efccffca0c3",
+      "amended_source_file_sha256": "f19b357906e73acfd43892c8ef86d750072f7df8fa5d0cd938b268d6c839e6bc",
+      "amended_raster_sha256": "9a8be4f87aacc31e56df7a555870fd737378448885b51e897a53bcba4ec55422"
+    }
+  ],
+  "amendments_sha256": "bc66466ab36bc92e652004ccef0b53da1a908a7c47e08e2a6828108b01119cd7"
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0157",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2497,
+    "end_rank": 2512,
+    "characters": "蔓醬偵搗癢篤蔣屑擠樵涕謁啞巫帆懲"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0157.source.json",
+    "descriptor_sha256": "4f5310c0f25c01e7a7fae7f17cf62b3f2e6b5386f3990afd6010ce4aede0a744",
+    "raster": "sources/imagegen/raster/common-0157.png",
+    "raster_sha256": "a9ad0487281ea250326b3f6d91cccfea4368822c41ffceb35536f00903d10f94"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0155-0158-audit.json",
+    "report_sha256": "3a0bddc2c8cb61576ee564ce80c9d178a2d8509a49d7dac1a5b148b7c42c1f79"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0157/report.json",
+    "report_sha256": "c8d03cbcd9ab9122b02da5002cbb6001e467307e63f5bc5cf24747250e81cb81",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0157.vector-review.json",
+    "record_sha256": "4a018f49a13dd4883d1fa83e51ccc89984024e5d380e54e189eb07bd68c4f151"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:54:01Z"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "record_type": "mew-note-tc-generation-history",
+  "family_id": "mew-note-tc",
+  "pipeline_id": "original-raster-v1",
+  "collection_id": "han-6060",
+  "batch_id": "han-0277",
+  "family_context": {
+    "schema_version": 1,
+    "record_type": "codexfont-family-evidence-binding",
+    "family_id": "mew-note-tc",
+    "family_contract": {
+      "path": "families/mew-note-tc/family.json",
+      "sha256": "5d9799a4a8c33632d0285c2639e127e2b6a1080da03c652c99ebc760ab1a599f"
+    },
+    "pipeline_id": "original-raster-v1",
+    "pipeline_contract": {
+      "path": "families/mew-note-tc/pipeline.json",
+      "sha256": "84c1f9cd5e7908c020198d737da182b98b1f701021f7edb10d717902c3bf24ed"
+    },
+    "collection_id": "han-6060",
+    "collection_contract": {
+      "path": "families/mew-note-tc/collections.json",
+      "sha256": "75e4ca4bc269e272739635afea6be8ecda6020e4d1f09be1d39d9e70d01d741f"
+    },
+    "collection_record_sha256": "e496ee51e8132eb89b8e803b7fa9ab4ab0cda25ab9efcd98542562ea4f0f6cfb",
+    "authoring_contract": {
+      "path": "families/mew-note-tc/authoring.json",
+      "sha256": "2fcf4549ecf28086cf09c7a1f934b5944643608506e0610f05d1db4ce6f61c7a"
+    },
+    "binding_sha256": "6311b85d42b19d1b8a9e06ce851fee04ee7a687c617067340fa3c7f1aa881c8d"
+  },
+  "batch_contract_sha256": "fd55a3fe8efb354f5e7d3e159e08263cdd1b527df0a449cc259bffefc882e1fc",
+  "generator": "built-in-image_gen",
+  "intended_materialization": {
+    "draft": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0277/draft.json",
+      "sha256": "b4a12bb25883f6e5fc6580d3e5ab4dbf7c3e95f39d18beb046d5a2c2e4749cbb"
+    },
+    "prompt": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0277/prompt.md",
+      "sha256": "bcb453dd27727ef146f2956e4599711e6311364c351e7bd63236f3cd10657f4a"
+    },
+    "identity_copybook": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0277/identity-copybook.png",
+      "sha256": "18301b171306441c8ab5e05e56c051a6d7c145fc2e836b8f0b5a385aa47db8df",
+      "role": "identity-reference-only-no-outline-import"
+    }
+  },
+  "steps": [
+    {
+      "sequence": 1,
+      "operation": "generate",
+      "disposition": "accepted",
+      "call_id": "exec-6e08c6ec-68ad-4ad9-9076-80d1b0335644",
+      "actual_tool_prompt": {
+        "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0277/tool-step-0001.txt",
+        "sha256": "9f4bf9cf558b3c4c323aefaf4651f2e9179f72aaed48a2d4ce36f9c533559685"
+      },
+      "inputs": [
+        {
+          "role": "style-reference",
+          "retention": "retained-reference",
+          "path": "families/mew-note-tc/pilots/mew-note-han-v2-raster.png",
+          "sha256": "b6ae4ac12a769e979b86df7af1a3d7f4a824ea79ba67bf7b43802c3fc49eff82"
+        },
+        {
+          "role": "identity-copybook",
+          "retention": "retained-reference",
+          "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0277/identity-copybook.png",
+          "sha256": "18301b171306441c8ab5e05e56c051a6d7c145fc2e836b8f0b5a385aa47db8df"
+        }
+      ],
+      "parent_output_sha256": null,
+      "output": {
+        "retention": "retained-final",
+        "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0277/raster.png",
+        "sha256": "ec07b1741503c4da23814f161df517eabee8a9a39c496b7ab1346b6ad9759bc9"
+      }
+    }
+  ],
+  "accepted_final": {
+    "call_id": "exec-6e08c6ec-68ad-4ad9-9076-80d1b0335644",
+    "raster": {
+      "retention": "retained-final",
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0277/raster.png",
+      "sha256": "ec07b1741503c4da23814f161df517eabee8a9a39c496b7ab1346b6ad9759bc9"
+    }
+  },
+  "state": "generated-unreviewed",
+  "history_sha256": "d52265f6fec2ac488faf6dbab63b10a2aeab417ed30faf4dea22129a70cdfd1d"
+}

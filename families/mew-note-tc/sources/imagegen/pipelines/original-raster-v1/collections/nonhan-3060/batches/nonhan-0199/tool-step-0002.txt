@@ -1,0 +1,23 @@
+Redraw the entire 4×4 sheet as the exact U+2540–U+254F box-drawing set. LIGHT is thin; HEAVY is 2.5–3 times thicker. For c1–c12, preserve a four-arm cross and apply weight independently:
+
+- c1 ╀: up HEAVY; down, left, right LIGHT.
+- c2 ╁: down HEAVY; up, left, right LIGHT.
+- c3 ╂: up and down HEAVY; left and right LIGHT.
+- c4 ╃: left and up HEAVY; right and down LIGHT.
+- c5 ╄: right and up HEAVY; left and down LIGHT.
+- c6 ╅: left and down HEAVY; right and up LIGHT.
+- c7 ╆: right and down HEAVY; left and up LIGHT.
+- c8 ╇: up, left, right HEAVY; down LIGHT.
+- c9 ╈: down, left, right HEAVY; up LIGHT.
+- c10 ╉: left, up, down HEAVY; right LIGHT.
+- c11 ╊: right, up, down HEAVY; left LIGHT.
+- c12 ╋: all four arms HEAVY.
+
+For c13–c16 preserve exactly two dash segments:
+
+- c13 ╌: two LIGHT horizontal dashes.
+- c14 ╍: two HEAVY horizontal dashes.
+- c15 ╎: two LIGHT vertical dashes.
+- c16 ╏: two HEAVY vertical dashes.
+
+Follow the fourth-reference copybook exactly. Return only the corrected sheet.

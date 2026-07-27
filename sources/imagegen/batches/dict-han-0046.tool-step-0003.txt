@@ -1,0 +1,16 @@
+Use case: precise-object-edit
+Asset type: corrected 4×4 raster master sheet for clear-hand-tc
+
+Input images:
+1. Image 1 is the latest generated sheet. Preserve it exactly except for Cells 09, 12, 13, and 16.
+2. Image 2 is the identity copybook. Use only the corresponding cells to verify topology; do not trace its printed outlines.
+
+Primary request: replace only these four cells with newly handwritten glyphs:
+- Cell 09 (row 3, column 1): U+7AAC `窬`. Draw `穴` at the top. Under it draw `俞`: a small `亼` roof, `月` on the lower left, and vertical knife `刂` on the lower right. There is no `羽` anywhere.
+- Cell 12 (row 3, column 4): U+7E34 `縴`. Draw `糹` on the left. On the right draw `牽`: `玄` at the top, a clear covering stroke `冖` across the middle, and `牛` at the bottom. There is no `戈`, `截`, `韋`, or second silk radical.
+- Cell 13 (row 4, column 1): U+8204 `舄`. Copy only the component logic from the reference: `臼` at the top, then the distinctive curved/hooked lower body of `舄`, with four separate fire dots `灬` along the bottom. It is not `易`; do not put `日` over `勿`.
+- Cell 16 (row 4, column 4): U+89F1 `觱`. Use a compact vertical stack: the complete `咸` component occupies the upper half and the complete `角` component occupies the lower half. Do not place `角` and `辛`, `羊`, or any other component side by side.
+
+Constraints: keep all other twelve cells unchanged, especially the now-correct Cells 01, 07, and 11; preserve the white background and faint grid; match the existing fine black gel-pen weight and rounded handwritten terminals; center each replacement with open counters and no grid contact; draw new original glyphs without tracing.
+
+Avoid: changing any other cell, simplified forms, missing strokes, extra marks, printed type, spikes, thorns, clipping, signature, logo, or watermark.

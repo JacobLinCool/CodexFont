@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0182",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2897,
+    "end_rank": 2912,
+    "characters": "祇纓尸恕搏曄楞睦綵諂閻頒侮沛罩耿"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0182.source.json",
+    "descriptor_sha256": "563ae42bc70456a3a3c886df481dc8f1be701d73ad0d4f795f4f5a7a8d85bd53",
+    "raster": "sources/imagegen/raster/common-0182.png",
+    "raster_sha256": "1925c685c0264ab57312608fe5173cd4f4e0f9a85dae220a7a6a9ae39b919bcf"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0179-0182-audit.json",
+    "report_sha256": "96123ee18a6487ead60d130ed402f48d4f4139ccfb17942716f88f73fdbf6dc0"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0182/report.json",
+    "report_sha256": "c46a986ad9cfe1c4e14771a81fa691511fd0e0550656eb05392f41eba7c4646f",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0182.vector-review.json",
+    "record_sha256": "e68c20e87c46478ad30647189436e750c542344e6d72a04ddcc8ae81076d0212"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T07:12:16Z"
+  }
+}

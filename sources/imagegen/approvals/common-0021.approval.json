@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0021",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 321,
+    "end_rank": 336,
+    "characters": "異管極放英接衣區帝州任注落君宗直"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0021.source.json",
+    "descriptor_sha256": "c9af3a0665edeb5915a3b2f166dff56b60d874ff1fae69b2eedd4dcdbe88b11c",
+    "raster": "sources/imagegen/raster/common-0021.png",
+    "raster_sha256": "3ea1c41b6e980d5371f7ac24c924037f056bbba792dfc00e20f0df5255ca14cc"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0019-0022-audit.json",
+    "report_sha256": "7160d13441761da0aabbeef25983279b2d21314092d1560f01c9337f9ad6e89f"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0021/report.json",
+    "report_sha256": "3274166128e64b58d5bf68a52e7cd9b9cf20eb0af6ac8bb2df92845494e9f648",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0021.vector-review.json",
+    "record_sha256": "3d8233ced615e14d843ceff1e3c9db59c70d6bb244058961eb0cf092dba7c6a1"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:35:54Z"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0067",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1057,
+    "end_rank": 1072,
+    "characters": "免忙燕翻酸醉塊付吸築誠限姐換偏替"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0067.source.json",
+    "descriptor_sha256": "556d3e8e775706827e4ce61dc7ed890214b2ea478811f1a016be9f38739a77cb",
+    "raster": "sources/imagegen/raster/common-0067.png",
+    "raster_sha256": "9bc70c9a7a3c938c4fadbfb56d428bdd240759e29d5fc50fe9be440d1cf97958"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0067-0070-audit.json",
+    "report_sha256": "c0cbb9eb193aab5ce39aa5ea2d3c7a4d079749d7d795a2a16c9e17403e457892"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0067/report.json",
+    "report_sha256": "81dd9bb150994cdd716741bcff1c7d5d875b8f951010598a8c9ca3235a12c0b7",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0067.vector-review.json",
+    "record_sha256": "a62d85dd3676581140d7aa03188921b0c83efe2bfc8596caadab4f9291908b39"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:40:45Z"
+  }
+}

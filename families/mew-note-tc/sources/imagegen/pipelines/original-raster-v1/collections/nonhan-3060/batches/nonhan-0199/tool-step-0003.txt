@@ -1,0 +1,25 @@
+Redraw the complete 4×4 sheet. The parent is invalid because row 4 contains extra cross glyphs above the intended dash glyphs, and cells c6–c12 have incorrect arm weights. Use exactly one glyph in each cell and exactly sixteen glyphs total. Keep the existing grid, white background, and black geometric ink.
+
+Rows 1–3 are four-arm crosses:
+
+- c1 ╀: UP HEAVY; DOWN, LEFT, RIGHT LIGHT.
+- c2 ╁: DOWN HEAVY; UP, LEFT, RIGHT LIGHT.
+- c3 ╂: UP and DOWN HEAVY; LEFT and RIGHT LIGHT.
+- c4 ╃: LEFT and UP HEAVY; RIGHT and DOWN LIGHT.
+- c5 ╄: RIGHT and UP HEAVY; LEFT and DOWN LIGHT.
+- c6 ╅: LEFT and DOWN HEAVY; RIGHT and UP LIGHT.
+- c7 ╆: RIGHT and DOWN HEAVY; LEFT and UP LIGHT.
+- c8 ╇: UP, LEFT, RIGHT HEAVY; DOWN LIGHT.
+- c9 ╈: DOWN, LEFT, RIGHT HEAVY; UP LIGHT.
+- c10 ╉: LEFT, UP, DOWN HEAVY; RIGHT LIGHT.
+- c11 ╊: RIGHT, UP, DOWN HEAVY; LEFT LIGHT.
+- c12 ╋: all four arms HEAVY.
+
+Row 4 contains dash glyphs only. It must contain no crosses and no extra marks:
+
+- c13 ╌: exactly two separated LIGHT horizontal dash segments.
+- c14 ╍: exactly two separated HEAVY horizontal dash segments.
+- c15 ╎: exactly two separated LIGHT vertical dash segments.
+- c16 ╏: exactly two separated HEAVY vertical dash segments.
+
+LIGHT is thin. HEAVY is 2.5–3 times thicker. Follow the fourth-reference identity copybook exactly for topology and row-major order. Return only the corrected complete 4×4 sheet.

@@ -1,0 +1,22 @@
+Use case: font-source raster sheet correction
+Asset type: corrected high-resolution 4×4 raster master sheet for the original Traditional Chinese handwriting font clear-hand-tc
+
+Input images:
+1. Image 1 is STYLE ONLY. Match its fine black gel-pen weight, rounded terminals, natural right slant, optical scale, pure-white background, and faint 4×4 grid. Do not copy its characters or outlines.
+2. Image 2 is IDENTITY REFERENCE ONLY. Use its Cell 01 to disambiguate the exact U+5592 topology. Do not trace or reproduce its printed outlines.
+3. Image 3 is the EDIT TARGET. Preserve its canvas, grid, spacing, and all fifteen already-correct cells exactly.
+
+Primary request: correct only Cell 01 of Image 3 to U+5592 `喒`.
+- Write `口` on the far left.
+- On the right, write the complete `偺`-derived topology shown in Cell 01 of Image 2: a narrow `亻` person radical, then the complete `昝` structure with its upper `夂`-derived crossing strokes and a distinct enclosed `日` box at the bottom.
+- The right side must visibly include the lower `日` box. Do not use a roof, `宀`, `宣`, `亘`, or a long baseline.
+- The finished glyph must be `喒`, not `喧`, `咱`, `唁`, or any other near-form.
+
+The complete row-major sheet must remain:
+喒噶撾蹴
+鶚鷲齎仝
+徭擣暄浹
+涿甯碴苴
+
+Constraints: change only Cell 01; preserve every other glyph exactly; use complete standard strokes; one centered black glyph per cell; open counters; keep ink away from separators.
+Avoid: wrong variants, missing strokes, altered correct cells, extra text, printed type, brush blobs, sharp spikes, thorn-like protrusions, clipping, signature, logo, or watermark.

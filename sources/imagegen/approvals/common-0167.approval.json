@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0167",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2657,
+    "end_rank": 2672,
+    "characters": "埃岐笛鑼雍霍嘔堤秉頹顫傘宙睜頁孺"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0167.source.json",
+    "descriptor_sha256": "75ae75fc37842a5ace7a544351b54799859e4f92e578f02b20aa029e331bdcd0",
+    "raster": "sources/imagegen/raster/common-0167.png",
+    "raster_sha256": "f0418f39b28ae4139db7cf9005674cd3735022326e85104883c6ad952919f641"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0167-0170-audit.json",
+    "report_sha256": "e57cd0658739389bb9e5e240c71b7c022fc260cb4cdb3a0150ddc572dec03efd"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0167/report.json",
+    "report_sha256": "79036c615a03ec1d65ee4bafd72ab193e9798d81d02482c0815089f3df9f9035",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0167.vector-review.json",
+    "record_sha256": "a20299a1c00b085ff7eb4629e46481e0c4eee8f906610e50eca296305af19f6c"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:57:54Z"
+  }
+}

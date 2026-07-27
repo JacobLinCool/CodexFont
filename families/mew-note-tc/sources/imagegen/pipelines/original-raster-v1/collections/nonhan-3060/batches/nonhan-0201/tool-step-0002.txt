@@ -1,0 +1,9 @@
+Correct only cells c1, c3, c4, c5, and c7 of the parent 4×4 sheet. Preserve every other glyph and the grid exactly.
+
+- c1 ╠: DOUBLE vertical strokes, with DOUBLE horizontal strokes extending RIGHT. No left branch.
+- c3 ╢: DOUBLE vertical strokes, with one SINGLE horizontal stroke extending LEFT. No right branch.
+- c4 ╣: DOUBLE vertical strokes, with DOUBLE horizontal strokes extending LEFT. No right branch.
+- c5 ╤: DOUBLE horizontal strokes extending both LEFT and RIGHT, with one SINGLE vertical stroke extending DOWN.
+- c7 ╦: DOUBLE horizontal strokes extending both LEFT and RIGHT, with DOUBLE vertical strokes extending DOWN.
+
+Keep one centered glyph per cell. Do not collapse a declared double line into one line, do not mirror any branch, and do not change c2, c6, c8–c16. Match the fourth-reference identity copybook for topology. Return only the corrected complete sheet.

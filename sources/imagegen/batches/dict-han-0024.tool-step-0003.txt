@@ -1,0 +1,19 @@
+Use case: precise-object-edit
+Asset type: single-cell compositional handwriting correction
+
+Image 1 is the edit target. Image 2 is the authoritative identity copybook only. Change ONLY Cell 13; preserve all other glyphs, including the corrected 幘 in Cell 10, plus the grid and canvas.
+
+Cell 13 must be U+65B2 斲. The 斤 on the right is usable. Replace only the incorrect 酉-like left side by hand-drawing the distinctive 𠁁 component shown in the thirteenth copybook cell:
+- two close parallel vertical stems;
+- at the upper level, one small square lobe opens outward to the left of the first stem and one opens outward to the right of the second stem;
+- at the lower level, two larger opposing square-corner lobes fill the space around/between the stems;
+- a low horizontal joins the two stems.
+There must be no single enclosing rectangle and no 酉 interior horizontal bars. Keep this compact left component beside 斤.
+
+Required full row-major result:
+祛絜綃縐
+衽酢閎齁
+偈幘忐抃
+斲珥瘢眄
+
+Use original fine black gel-pen strokes. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

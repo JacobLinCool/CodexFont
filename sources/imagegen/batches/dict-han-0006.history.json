@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-generation-history",
+  "batch_id": "dict-han-0006",
+  "generator": "built-in-image_gen",
+  "collection": {
+    "path": "../collections/clear-hand-tc-dictionary-salience-1216.json",
+    "sha256": "5623b1f977d1412b233a34c255627749ffed71f86182125ea91d7d1f1fb869c2",
+    "collection_id": "clear-hand-tc-dictionary-salience-extension-1216-v1",
+    "family_id": "clear-hand-tc"
+  },
+  "intended_materialization": {
+    "draft": {
+      "path": "dict-han-0006.draft.json",
+      "sha256": "6fe4e8de5a13cf60093d1a7f0dde06600d507164e493150fc28a84813528480c"
+    },
+    "prompt": {
+      "path": "../prompts/dict-han-0006.md",
+      "sha256": "22ece91118e2fefed4e7ade034cf957f59e30e0ba3a16024a6222fd6f261e61e"
+    }
+  },
+  "steps": [
+    {
+      "sequence": 1,
+      "operation": "generate",
+      "disposition": "accepted",
+      "call_id": "call_PsHrWpZzMajTs1eUkXzPeSEW",
+      "prompt": {
+        "path": "dict-han-0006.tool-step-0001.txt",
+        "sha256": "41c28a6c09a1f1d0e1e716fb5360f12581ce450807918722c9a87651423ca344"
+      },
+      "input_images": [
+        {
+          "role": "style-reference",
+          "retention": "retained-reference",
+          "path": "../raster/common-0001.png",
+          "sha256": "2a4058fdb4e35ce2789f9ae73535542f78f4e94516ad4b9929986a93e36d3d81"
+        },
+        {
+          "role": "identity-copybook",
+          "retention": "retained-reference",
+          "path": "../copybooks/dict-han-0006.png",
+          "sha256": "6e4ffccd96aa36b6361555637eda77be77bdb7626d9c7452c11d3af31de87394"
+        }
+      ],
+      "parent_output_sha256": null,
+      "output": {
+        "retention": "retained-final",
+        "path": "../raster/dict-han-0006.png",
+        "sha256": "ac770d9859859e4e98edc024d8ae84c34778df5586098523a15849946058fe66"
+      }
+    }
+  ],
+  "canonical_output": {
+    "accepted_step": 1,
+    "path": "../raster/dict-han-0006.png",
+    "sha256": "ac770d9859859e4e98edc024d8ae84c34778df5586098523a15849946058fe66"
+  }
+}

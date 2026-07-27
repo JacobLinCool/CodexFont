@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "record_type": "mew-note-tc-post-review-generation-correction",
+  "family_id": "mew-note-tc",
+  "pipeline_id": "original-raster-v1",
+  "collection_id": "nonhan-3060",
+  "batch_id": "nonhan-0048",
+  "family_context": {
+    "schema_version": 1,
+    "record_type": "codexfont-family-evidence-binding",
+    "family_id": "mew-note-tc",
+    "family_contract": {
+      "path": "families/mew-note-tc/family.json",
+      "sha256": "5d9799a4a8c33632d0285c2639e127e2b6a1080da03c652c99ebc760ab1a599f"
+    },
+    "pipeline_id": "original-raster-v1",
+    "pipeline_contract": {
+      "path": "families/mew-note-tc/pipeline.json",
+      "sha256": "84c1f9cd5e7908c020198d737da182b98b1f701021f7edb10d717902c3bf24ed"
+    },
+    "collection_id": "nonhan-3060",
+    "collection_contract": {
+      "path": "families/mew-note-tc/collections.json",
+      "sha256": "75e4ca4bc269e272739635afea6be8ecda6020e4d1f09be1d39d9e70d01d741f"
+    },
+    "collection_record_sha256": "476957d833b232065d2ee46fe4840ae25fbe0da4d60c21603c9ef295b74de91e",
+    "authoring_contract": {
+      "path": "families/mew-note-tc/authoring.json",
+      "sha256": "2fcf4549ecf28086cf09c7a1f934b5944643608506e0610f05d1db4ce6f61c7a"
+    },
+    "binding_sha256": "7b8a71bcba9bea594f3748a6c5b025873372e3210b88d665529d2ca3b456a43c"
+  },
+  "batch_contract_sha256": "e5f7f33b5ae8cb804e5f958e1a4142bdf5a377e7c70d20085ee656a8c17cefa3",
+  "implementation": {
+    "path": "scripts/mew_note_post_review_correction.py",
+    "sha256": "4916973b7d649c0850abe357a81786b27d3438b146c68774cc0457409e40577d"
+  },
+  "reason": "release-metric-envelope-rejected",
+  "metric_contract": {
+    "codepoint": "U+FFEB",
+    "character": "￫",
+    "profile_id": "halfwidth",
+    "horizontal_advance": 512,
+    "left_bearing": 32,
+    "right_bearing": 32,
+    "maximum_ink_width": 448
+  },
+  "rejected_release_metric": {
+    "bounds": [
+      275,
+      310,
+      751,
+      559
+    ],
+    "width": 476,
+    "maximum_ink_width": 448,
+    "decision": "REJECT"
+  },
+  "prior_evidence": {
+    "history": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0048/history.json",
+      "sha256": "5586aec567a9824dc3c94283e6f7132ee710ab2a59d65d75655ba6c151aea2bc",
+      "retention": "hash-only-superseded"
+    },
+    "source": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0048/source.json",
+      "sha256": "b5df42891b306a8b5a031e846b9b29ad14ac530d557da70d888b9dd9af99f9f9",
+      "retention": "hash-only-superseded"
+    },
+    "raster": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0048/raster.png",
+      "sha256": "0fb606d5b25896c327ee6f637468bedc40702021b7376e729346463170b4c4ea",
+      "retention": "hash-only-rejected"
+    },
+    "review": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0048/review.json",
+      "sha256": "d84a71dc39dad8e2c15ee7bc539b51ad7360a2b8957d66f56568d604ebacefab",
+      "retention": "hash-only-superseded"
+    },
+    "release_approval": {
+      "path": "families/mew-note-tc/approvals/original-raster-v1-preview.approval.json",
+      "sha256": "7aee0d83b851eaec12c66b405fd5b788f7fe3bdb7e6cde00438176113f0d3617",
+      "retention": "hash-only-superseded-after-reapproval"
+    },
+    "vector_report": {
+      "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0048/report.json",
+      "sha256": "481bb1c8f7c880e049dc723f80e933ad37ae01fd45384e06125026ef79562f7f",
+      "retention": "hash-only-derived-superseded"
+    },
+    "vector_ttf": {
+      "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0048/font/MewNoteTC-Nonhan0048-Unreviewed.ttf",
+      "sha256": "c22a6e2e8c1089bc463caac0ec4f2592cdc264bc9b1cfd27598e62f0a5a4819a",
+      "retention": "hash-only-derived-superseded"
+    }
+  },
+  "correction_generation": {
+    "appended_sequence": 4,
+    "call_id": "call_wnyznbkNVSoPDDRMKfEPsVd2",
+    "parent_output_sha256": "0fb606d5b25896c327ee6f637468bedc40702021b7376e729346463170b4c4ea",
+    "candidate_preflight": {
+      "candidate_raster_sha256": "e30643d97acbc2fa79b3c4aefdfabd043954e38d8db2d3f6c710ec55e16a7600",
+      "ttf_sha256": "7b313fc3dd2378db9b7da6dfee788db3b0a5b64144107ea59727b6b76207c36b",
+      "bounds": [
+        308,
+        314,
+        685,
+        533
+      ],
+      "width": 377,
+      "micro_edge_count": 0,
+      "acute_micro_turn_count": 0
+    },
+    "history": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0048/history.json",
+      "sha256": "0c7c0a7f9707e0180449ba37761a4977b0088b89397a86a08309579accf986c0"
+    },
+    "source": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0048/source.json",
+      "sha256": "c2b9de7142ae56f9e8efe4de78f969a061703789d502a7dcc899704128b721b7"
+    },
+    "raster": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0048/raster.png",
+      "sha256": "e30643d97acbc2fa79b3c4aefdfabd043954e38d8db2d3f6c710ec55e16a7600"
+    },
+    "vector_report": {
+      "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0048/report.json",
+      "sha256": "7183ac9b12ef6048541da2c7c92bbeeb2c89cff87ed1b8259cef3b9c663f2a5e"
+    },
+    "vector_ttf": {
+      "path": "build/families/mew-note-tc/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0048/font/MewNoteTC-Nonhan0048-Unreviewed.ttf",
+      "sha256": "7b313fc3dd2378db9b7da6dfee788db3b0a5b64144107ea59727b6b76207c36b"
+    },
+    "corrected_bounds": [
+      308,
+      314,
+      685,
+      533
+    ],
+    "corrected_width": 377,
+    "micro_edge_count": 0,
+    "acute_micro_turn_count": 0
+  },
+  "required_next_gates": [
+    "independent-raster-vector-technical-review",
+    "collection-release-reapproval"
+  ],
+  "state": "corrected-unreviewed-unapproved",
+  "correction_sha256": "c71041385770341e4ab64e559ef8846af99765d67f397710aa4dcbc3f53e5475"
+}

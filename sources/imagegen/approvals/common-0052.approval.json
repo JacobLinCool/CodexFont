@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0052",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 817,
+    "end_rank": 832,
+    "characters": "唱疾險恩技軾曹談終戶乃亞楚刑護窮"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0052.source.json",
+    "descriptor_sha256": "41fdeb52b3f359ebec0c5c06f5262145ac6185285fe6804cc7110d76b6d4c124",
+    "raster": "sources/imagegen/raster/common-0052.png",
+    "raster_sha256": "61696537b5112de0bf22b640ac00b1ce135ee5a23ac10010f5ac36ba419676aa"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0051-0054-audit.json",
+    "report_sha256": "190b103d2d630bbff82a29aad98f2dc8682c370d7a47adce2b1bb3cc8a7a777c"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0052/report.json",
+    "report_sha256": "6f46be2a899ff832548a3ecf9b703ec22336e891d76170ad981875e815634337",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0052.vector-review.json",
+    "record_sha256": "a5d38df8cdfb675660a38467af102221051a380084b39aea6636010edea4e10b"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:38:54Z"
+  }
+}

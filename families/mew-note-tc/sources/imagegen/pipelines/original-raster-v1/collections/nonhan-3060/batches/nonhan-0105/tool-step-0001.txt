@@ -1,0 +1,28 @@
+Use case: logo-brand
+Asset type: original typeface source glyph sheet
+Primary request: create one new Mew Note TC sheet for nonhan-3060/nonhan-0105.
+Input images: Images 1 and 2 are the approved Mew Note TC Han and non-Han style pilots (style rhythm only); Image 3 is an identity-only copybook (code point identity only).
+Scene/backdrop: pure white square background with exactly five horizontal and five vertical thin neutral-gray rules forming a 4 by 4 grid, including all four outer border rules. No other background marks.
+Style/medium: original upright rounded gel-pen handwriting, black ink, low contrast, soft human terminals, consistent with Images 1 and 2 without copying any raster or outline.
+Composition/framing: one centered glyph per cell, row-major, generous padding, no contact with grid rules.
+Exact row-major rows (verbatim):
+ゑをんゔ
+ゕゖ゙゚
+゛゜ゝゞ
+ゟ
+Exact cells (verbatim):
+Cell 01: U+3091 ゑ — soft-terminal
+Cell 02: U+3092 を — soft-terminal
+Cell 03: U+3093 ん — soft-terminal
+Cell 04: U+3094 ゔ — tail-terminal
+Cell 05: U+3095 ゕ — soft-terminal
+Cell 06: U+3096 ゖ — soft-terminal
+Cell 07: U+3099 ゙ — neutral-safety
+Cell 08: U+309A ゚ — neutral-safety
+Cell 09: U+309B ゛ — soft-terminal
+Cell 10: U+309C ゜ — tail-terminal
+Cell 11: U+309D ゝ — soft-terminal
+Cell 12: U+309E ゞ — soft-terminal
+Cell 13: U+309F ゟ — soft-terminal
+Tail-terminal cells only: 4, 10. In each listed cell, use at most one restrained curl continuing an existing final stroke in the same connected contour. All other cells must have no cat tail.
+Constraints: preserve every Traditional Chinese character exactly; do not simplify, substitute, translate, normalize, label, number, caption, shade, or decorate. No detached ears, hats, faces, whiskers, paws, silhouettes, floating marks, spikes, sharp thorns, self-intersections, shadows, paper texture, signatures, or watermarks. The identity copybook must never be traced, transformed, pasted, or reused as an outline. Render only the 16 requested glyphs and the neutral-gray grid.

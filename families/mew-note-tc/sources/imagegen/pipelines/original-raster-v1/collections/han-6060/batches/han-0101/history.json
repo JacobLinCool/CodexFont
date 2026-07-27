@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "record_type": "mew-note-tc-generation-history",
+  "family_id": "mew-note-tc",
+  "pipeline_id": "original-raster-v1",
+  "collection_id": "han-6060",
+  "batch_id": "han-0101",
+  "family_context": {
+    "schema_version": 1,
+    "record_type": "codexfont-family-evidence-binding",
+    "family_id": "mew-note-tc",
+    "family_contract": {
+      "path": "families/mew-note-tc/family.json",
+      "sha256": "5d9799a4a8c33632d0285c2639e127e2b6a1080da03c652c99ebc760ab1a599f"
+    },
+    "pipeline_id": "original-raster-v1",
+    "pipeline_contract": {
+      "path": "families/mew-note-tc/pipeline.json",
+      "sha256": "84c1f9cd5e7908c020198d737da182b98b1f701021f7edb10d717902c3bf24ed"
+    },
+    "collection_id": "han-6060",
+    "collection_contract": {
+      "path": "families/mew-note-tc/collections.json",
+      "sha256": "75e4ca4bc269e272739635afea6be8ecda6020e4d1f09be1d39d9e70d01d741f"
+    },
+    "collection_record_sha256": "e496ee51e8132eb89b8e803b7fa9ab4ab0cda25ab9efcd98542562ea4f0f6cfb",
+    "authoring_contract": {
+      "path": "families/mew-note-tc/authoring.json",
+      "sha256": "2fcf4549ecf28086cf09c7a1f934b5944643608506e0610f05d1db4ce6f61c7a"
+    },
+    "binding_sha256": "6311b85d42b19d1b8a9e06ce851fee04ee7a687c617067340fa3c7f1aa881c8d"
+  },
+  "batch_contract_sha256": "3dcf0499c181214e87ec4d1af989cabb7b43ef9e36f0f4990afc84c1b387a235",
+  "generator": "built-in-image_gen",
+  "intended_materialization": {
+    "draft": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0101/draft.json",
+      "sha256": "cc78aa9216e3cdbd9362f4a544e25c6efa8f51977f4eb2319461e0f60176aefd"
+    },
+    "prompt": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0101/prompt.md",
+      "sha256": "2ee2627a11f20cee69b8d4f7e315ba42b1b1e139f23a159f8ad6d45d9cca4a47"
+    },
+    "identity_copybook": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0101/identity-copybook.png",
+      "sha256": "9c59f299f922d7606fcb2b0e3c5d56200bec060ccec161263433d49f4b55788e",
+      "role": "identity-reference-only-no-outline-import"
+    }
+  },
+  "steps": [
+    {
+      "sequence": 1,
+      "operation": "generate",
+      "disposition": "accepted",
+      "call_id": "exec-0e1d588e-47c2-4d7e-bf81-cf9cd8cefae1",
+      "actual_tool_prompt": {
+        "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0101/tool-step-0001.txt",
+        "sha256": "1f395e3f50fdfbf278f0a19f0998f27359e5b321240da5e1a191aa106a20137d"
+      },
+      "inputs": [
+        {
+          "role": "style-reference",
+          "retention": "retained-reference",
+          "path": "families/mew-note-tc/pilots/mew-note-han-v2-raster.png",
+          "sha256": "b6ae4ac12a769e979b86df7af1a3d7f4a824ea79ba67bf7b43802c3fc49eff82"
+        },
+        {
+          "role": "identity-copybook",
+          "retention": "retained-reference",
+          "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0101/identity-copybook.png",
+          "sha256": "9c59f299f922d7606fcb2b0e3c5d56200bec060ccec161263433d49f4b55788e"
+        }
+      ],
+      "parent_output_sha256": null,
+      "output": {
+        "retention": "retained-final",
+        "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0101/raster.png",
+        "sha256": "e9cd6d796e8d4dfa160e3d633729800fa6a9d73b010abf413dcc9406749620cd"
+      }
+    }
+  ],
+  "accepted_final": {
+    "call_id": "exec-0e1d588e-47c2-4d7e-bf81-cf9cd8cefae1",
+    "raster": {
+      "retention": "retained-final",
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0101/raster.png",
+      "sha256": "e9cd6d796e8d4dfa160e3d633729800fa6a9d73b010abf413dcc9406749620cd"
+    }
+  },
+  "state": "generated-unreviewed",
+  "history_sha256": "e3ff47aace8cc4b0d7bcf1e1370afd71dcaf55d87cc048c690b7c604fc72dc29"
+}

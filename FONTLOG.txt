@@ -1,0 +1,60 @@
+Clear Hand TC FONTLOG
+
+Version 0.100 — public preview — 2026-07-27
+
+- Expanded the encoded repertoire to exactly 9,120 Unicode scalars:
+  6,060 Han characters and 3,060 non-Han characters. The Han set covers all
+  4,808 characters in Taiwan's Ministry of Education common-character table.
+- Added 3,043 visible non-Han glyphs covering Latin, Greek, IPA, Bopomofo,
+  kana, digits, punctuation, combining marks, fullwidth forms, mathematical
+  and technical symbols, arrows, geometric symbols, box drawing, and block
+  elements.
+- Added 17 independently approved semantic-empty spacing and control glyphs
+  with explicit zero-ink evidence and Unicode-appropriate metrics.
+- Added 93 independently approved, unencoded vertical alternates selected by
+  the OpenType `vert` and `vrt2` features.
+- Generated every new visible outline from an original white-background,
+  black-ink imagegen raster. No external font outline, authored fallback,
+  alias, or programmatically drawn replacement enters the release.
+- Normalized only the em-boundary placement and Unicode-defined fractions of
+  image-generated box-drawing and block-element topology; the visible
+  contours remain derived from the approved raster originals.
+- Required exact source identity, topology, edge-contact, small-size coverage,
+  zero micro-edge, and zero acute-micro-turn checks before manual review and
+  release authorization.
+- Reviewed every visible non-Han glyph at 12, 16, 20, 32, and 56 px in both
+  black-on-white and white-on-black proofs.
+- Added GPOS kerning and mark/mkmk positioning together with GDEF mark
+  classes, while preserving exact horizontal and vertical metrics across all
+  shipped formats.
+- Shipped matching TrueType-quadratic TTF, OTF, WOFF, and WOFF2 artifacts with
+  an exact 9,120-entry cmap and a 9,214-entry glyph order including `.notdef`
+  and the 93 vertical alternates.
+- Bound the release report to the frozen Han, non-Han, and vertical
+  repertoires; all raster, descriptor, review, authorization, proof, and
+  artifact SHA-256 evidence; and deterministic rebuild results.
+
+Scope boundary
+
+Version 0.100 is the 9,120-codepoint public preview, not the complete
+18,071-codepoint repertoire described by PROMPT.md. Unsupported characters
+must be rendered by an explicitly selected fallback family and are not counted
+as Clear Hand TC coverage.
+
+Mew Note TC FONTLOG
+
+Version 0.1 Preview — 2026-07-29
+
+- Added the original Mew Note TC family with rounded gel-pen strokes and
+  occasional identity-safe cat-tail terminals.
+- Shipped 9,088 encoded codepoints: 6,028 Han and 3,060 non-Han, plus 93
+  unencoded vertical alternates.
+- Covered all 4,808 Ministry of Education common Han characters, all 93
+  hiragana, and all 96 katakana.
+- Withheld two atomic 16-glyph Han batches because one scalar in each could
+  not be proven by the frozen exact-cmap identity catalog.
+- Generated and independently reviewed every shipped visible glyph from
+  family-local raster originals. All admitted outlines have zero micro edges
+  and zero acute micro turns.
+- Added merged-font proofs at 12, 16, 20, 24, 32, 36, 56, and 72 px in both
+  polarities, plus 56 px HarfBuzz vertical-shaping proofs.

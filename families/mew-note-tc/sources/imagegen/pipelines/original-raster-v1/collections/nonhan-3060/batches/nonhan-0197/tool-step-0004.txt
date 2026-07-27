@@ -1,0 +1,20 @@
+Redraw the complete 4×4 sheet from the fourth-reference identity copybook. The parent remains invalid: c2 has an extra LEFT arm, c5 points RIGHT instead of LEFT, and c6 has the wrong vertical weight. Use exactly one glyph per cell and exactly the following topology:
+
+- c1 ┠: RIGHT LIGHT; UP and DOWN HEAVY.
+- c2 ┡: RIGHT and DOWN LIGHT; UP HEAVY. No left arm.
+- c3 ┢: RIGHT and UP LIGHT; DOWN HEAVY. No left arm.
+- c4 ┣: RIGHT, UP, DOWN HEAVY.
+- c5 ┤: LEFT, UP, DOWN LIGHT. No right arm.
+- c6 ┥: LEFT HEAVY; UP and DOWN LIGHT. No right arm.
+- c7 ┦: LEFT and DOWN LIGHT; UP HEAVY.
+- c8 ┧: LEFT and UP LIGHT; DOWN HEAVY.
+- c9 ┨: LEFT LIGHT; UP and DOWN HEAVY.
+- c10 ┩: LEFT and DOWN LIGHT; UP HEAVY.
+- c11 ┪: LEFT and UP LIGHT; DOWN HEAVY.
+- c12 ┫: LEFT, UP, DOWN HEAVY.
+- c13 ┬: LEFT, RIGHT, DOWN LIGHT.
+- c14 ┭: LEFT HEAVY; RIGHT and DOWN LIGHT.
+- c15 ┮: RIGHT HEAVY; LEFT and DOWN LIGHT.
+- c16 ┯: LEFT and RIGHT HEAVY; DOWN LIGHT.
+
+LIGHT is thin. HEAVY is 2.5–3 times thicker. No glyph may have an undeclared arm. Keep the 4×4 grid, white background, centered glyphs, and black geometric ink. Return only the corrected sheet.

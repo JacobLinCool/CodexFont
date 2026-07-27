@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0087",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1377,
+    "end_rank": 1392,
+    "characters": "旅繡采繩搭弓揮鞋歇幫泉膠御撞杯沿"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0087.source.json",
+    "descriptor_sha256": "dc9c86db8772b2a613a25d90c6f7014d2c64dfe5c7236c324a8488f6ccdded60",
+    "raster": "sources/imagegen/raster/common-0087.png",
+    "raster_sha256": "eda8e358206d734acec2199daf92ad44c0f9172dfc5ee017d4a259e496e8a434"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0087-0090-audit.json",
+    "report_sha256": "2a4f1868343dcf168a93cd3c8a2ea03f5fc17e01d89696119ecafe15765f6f01"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0087/report.json",
+    "report_sha256": "c508c19499e211f453e46846cd7e8b094110d6990581bd2f1542a8f431126cb3",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0087.vector-review.json",
+    "record_sha256": "d5f84642c32076a5d38fd136453e00bd1acbb4df5b5a3cb3b9443ed78845cfd8"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:44:03Z"
+  }
+}

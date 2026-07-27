@@ -1,0 +1,14 @@
+Use case: precise-object-edit
+Asset type: one-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cell 05. Preserve all other 15 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 05 must be U+7D86 綆. Preserve a complete 糹 on the left. Replace the current 巠-like right side with a complete 更 on the right: top horizontal, central 日-like enclosure crossed by the descending vertical, and the lower crossing sweep. Do not write 經, 緩, 絚, or another silk-radical character.
+
+Required full row-major result:
+痼睍瞼秸
+綆耨臠臢
+舳芊菫葆
+訇蹐躧逡
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

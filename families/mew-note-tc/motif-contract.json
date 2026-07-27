@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "record_type": "mew-note-tc-motif-contract",
+  "family_id": "mew-note-tc",
+  "principle": "A readable handwritten family with occasional attached cat-tail terminals, never unrelated cat artwork placed on top of a glyph",
+  "global_rules": {
+    "units_per_em": 1024,
+    "median_stroke_width_units": {
+      "minimum": 62,
+      "maximum": 88
+    },
+    "maximum_stroke_contrast_ratio": 1.35,
+    "slant_degrees": {
+      "minimum": -1,
+      "maximum": 3
+    },
+    "maximum_motif_sites_per_glyph": 1,
+    "maximum_decorative_ink_area_ratio": 0.04,
+    "maximum_bbox_growth_units_per_side": 56,
+    "detached_decorative_contours_allowed": false,
+    "source_topology_extra_decorative_components_allowed": false
+  },
+  "motif_classes": [
+    {
+      "id": "tail-terminal",
+      "use": "One restrained curl extending an identity-safe existing final stroke",
+      "detached": false,
+      "geometry": {
+        "must_extend_existing_final_stroke": true,
+        "must_share_final_stroke_contour": true,
+        "maximum_outward_reach_units": 96,
+        "maximum_backward_curl_units": 72,
+        "maximum_tail_to_stroke_width_ratio": 1.2,
+        "minimum_inner_gap_units": 18,
+        "self_intersection_allowed": false
+      }
+    },
+    {
+      "id": "soft-terminal",
+      "use": "Rounded terminal rhythm without a tail curl",
+      "detached": false,
+      "geometry": {
+        "minimum_terminal_radius_units": 18
+      }
+    },
+    {
+      "id": "neutral-safety",
+      "use": "No decorative topology; preserve identity and use only the family stroke weight and rounding",
+      "detached": false,
+      "geometry": {
+        "decorative_component_count": 0
+      }
+    }
+  ],
+  "assignment_policy": {
+    "every_visible_glyph_has_exactly_one_motif_class": true,
+    "semantic_empty_class": "neutral-safety",
+    "neutral_safety_allowed": true,
+    "neutral_safety_required_groups": [
+      "semantic-empty",
+      "combining-marks",
+      "box-drawing",
+      "block-elements",
+      "identity-sensitive-mathematical-operators",
+      "identity-sensitive-vertical-punctuation"
+    ],
+    "tail_assignment": {
+      "repertoire_maximum_ratio": 0.35,
+      "readable_text_minimum_sample_glyphs": 40,
+      "readable_text_ratio": {
+        "minimum": 0.15,
+        "maximum": 0.35
+      },
+      "maximum_consecutive_tail_glyphs": 2,
+      "tail_on_every_glyph_forbidden": true
+    },
+    "technical_symbols_have_no_decorative_ratio_target": true
+  },
+  "geometry_gates": {
+    "max_micro_edge_count": 0,
+    "max_acute_micro_turn_count": 0,
+    "max_self_intersection_count": 0,
+    "max_cropped_ink_count": 0,
+    "minimum_counter_gap_pixels_at_20px": 1,
+    "motif_must_remain_inside_advance": true,
+    "tail_must_preserve_identity_and_stroke_topology": true,
+    "detached_cat_contour_decision": "REJECT"
+  },
+  "review_gates": {
+    "proof_sizes_px": [
+      16,
+      20,
+      24,
+      32,
+      56,
+      72
+    ],
+    "proof_polarities": [
+      "black-on-white",
+      "white-on-black"
+    ],
+    "identity_must_pass_at_px": 16,
+    "short_text_must_pass_at_px": 20,
+    "assigned_motif_must_be_recognizable_at_px": 32,
+    "spike_review_px": 72,
+    "independent_review_required": true
+  },
+  "pilot_failures": [
+    {
+      "id": "floating-cat-hat",
+      "decision": "REJECT",
+      "reason": "A detached cat silhouette or hat above the source glyph is an unrelated contour, not a terminal treatment"
+    },
+    {
+      "id": "identity-changing-decoration",
+      "decision": "REJECT",
+      "reason": "A tail may not add, remove, bridge, or disguise semantic strokes"
+    },
+    {
+      "id": "random-pointed-thorn",
+      "decision": "REJECT",
+      "reason": "A sharp protrusion that is not part of the declared tail geometry is a vector defect"
+    }
+  ]
+}

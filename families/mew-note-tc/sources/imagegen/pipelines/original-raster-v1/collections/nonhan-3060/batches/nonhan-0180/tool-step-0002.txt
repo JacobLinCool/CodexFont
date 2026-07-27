@@ -1,0 +1,27 @@
+Recreate the complete 4×4 glyph sheet because Image 1 has incorrect identities and order. Image 4 is the binding row-major identity copybook; Images 2–3 guide only the subtle handwritten black-ink stroke character.
+
+Required exact Unicode order:
+Row 1: ⎐ ⎑ ⎒ ⎓
+Row 2: ⎔ ⎕ ⎖ ⎗
+Row 3: ⎘ ⎙ ⎚ ⎛
+Row 4: ⎜ ⎝ ⎞ ⎟
+
+Match Image 4 cell by cell:
+- 01 ⎐: hollow diamond resting on a horizontal underline.
+- 02 ⎑: hollow diamond bisected horizontally and resting on an underline.
+- 03 ⎒: hollow diamond bisected horizontally beneath a horizontal overbar.
+- 04 ⎓: solid horizontal line above a dashed horizontal line.
+- 05 ⎔: hollow white hexagon.
+- 06 ⎕: hollow vertical rectangle/box.
+- 07 ⎖: vertical solid black lower-left triangular-half technical mark as shown.
+- 08 ⎗: left-return transfer symbol with a dashed source box.
+- 09 ⎘: right-return transfer symbol with a dashed destination box.
+- 10 ⎙: box with a protruding tab.
+- 11 ⎚: horizontal outlined capsule/box.
+- 12 ⎛: upper section of a large left parenthesis.
+- 13 ⎜: vertical middle section of a large left parenthesis.
+- 14 ⎝: lower section of a large left parenthesis.
+- 15 ⎞: upper section of a large right parenthesis.
+- 16 ⎟: vertical middle/lower section of a large right parenthesis.
+
+Use one centered glyph per cell on a pure white square canvas, equal 4×4 spacing and generous margins. Preserve exact row-major order. Make solid portions opaque black. Do not add visible grid lines, labels, code points, headings, borders, texture, shadow, or extra marks.

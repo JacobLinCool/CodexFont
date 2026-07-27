@@ -1,0 +1,19 @@
+Use case: precise-object-edit
+Asset type: corrected 4×4 raster master sheet for clear-hand-tc
+
+Input images:
+1. Image 1 is the previous generated sheet. Preserve it exactly except for Cells 01, 07, 09, 11, 12, 13, and 16.
+2. Image 2 is the identity copybook. Use only the corresponding cells to verify topology; do not trace its printed outlines.
+
+Primary request: replace only these seven cells with newly handwritten glyphs:
+- Cell 01: U+6A89 `檉`, exactly `木` on the left plus complete `聖` on the right (`耳`, `口`, and `王`). Do not write `罷`, `票`, or `罩`.
+- Cell 07: U+775A `睚`, exactly `目` on the left plus `厓` on the right. The `厂` enclosing two stacked `土` forms must be visible; do not use bare `圭`.
+- Cell 09: U+7AAC `窬`, `穴` above complete `俞` (`亼`, `月`, and `刂`). Do not use `羽`, `禹`, or `咼`.
+- Cell 11: U+7E1F `縟`, exactly `糹` on the left plus `辱` on the right (`辰` above `寸`). Do not use `專`.
+- Cell 12: U+7E34 `縴`, exactly `糹` on the left plus complete `牽` on the right (`玄`, `冖`, and `牛`). Do not use `纖`, `截`, or `戔`.
+- Cell 13: U+8204 `舄`, a vertical character with `臼` on top and the hooked lower form above four fire dots `灬`. Do not write `易`, `舀`, or `鳥`.
+- Cell 16: U+89F1 `觱`, the complete `咸` component above `角` in one vertical structure. Do not arrange `角` and another component side by side; do not produce `解`.
+
+Constraints: keep all other nine cells unchanged in content, position, style, and grid; preserve the white background and faint grid; match the existing fine black gel-pen weight and rounded handwritten terminals; center each replacement with open counters and no grid contact; draw new original glyphs without tracing.
+
+Avoid: changing any other cell, simplified forms, missing strokes, extra marks, printed type, spikes, thorns, clipping, signature, logo, or watermark.

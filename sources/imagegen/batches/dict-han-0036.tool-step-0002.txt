@@ -1,0 +1,16 @@
+Use case: precise-object-edit
+Asset type: two-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cells 01 and 03. Preserve all other 14 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 01 must be U+8DB2 趲. The current right side is an unrelated low-complexity component and is wrong. Preserve a clear 走 construction along the left and bottom. Handwrite a compact but complete 贊 on the right: two distinct 先 components across the top and a complete 貝 below them. Do not write 趨, 趙, 趁, or another 走 character.
+
+Cell 03 must be U+9267 鉧. Preserve 金 on the left. Replace the incorrect 勺/旬-like right side with a complete 母 on the right: the closed bent outer form, its crossing central horizontal, and the two internal dot strokes must all remain visible. Do not write 鈞, 鉤, 鋸, or another metal-radical character.
+
+Required full row-major result:
+趲蹭鉧銑
+鴞佼侷俅
+僊儆刖嶂
+嶷廄彧懃
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

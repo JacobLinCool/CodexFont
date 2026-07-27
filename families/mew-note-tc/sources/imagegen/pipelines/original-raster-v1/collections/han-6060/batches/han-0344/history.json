@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "record_type": "mew-note-tc-generation-history",
+  "family_id": "mew-note-tc",
+  "pipeline_id": "original-raster-v1",
+  "collection_id": "han-6060",
+  "batch_id": "han-0344",
+  "family_context": {
+    "schema_version": 1,
+    "record_type": "codexfont-family-evidence-binding",
+    "family_id": "mew-note-tc",
+    "family_contract": {
+      "path": "families/mew-note-tc/family.json",
+      "sha256": "5d9799a4a8c33632d0285c2639e127e2b6a1080da03c652c99ebc760ab1a599f"
+    },
+    "pipeline_id": "original-raster-v1",
+    "pipeline_contract": {
+      "path": "families/mew-note-tc/pipeline.json",
+      "sha256": "84c1f9cd5e7908c020198d737da182b98b1f701021f7edb10d717902c3bf24ed"
+    },
+    "collection_id": "han-6060",
+    "collection_contract": {
+      "path": "families/mew-note-tc/collections.json",
+      "sha256": "75e4ca4bc269e272739635afea6be8ecda6020e4d1f09be1d39d9e70d01d741f"
+    },
+    "collection_record_sha256": "e496ee51e8132eb89b8e803b7fa9ab4ab0cda25ab9efcd98542562ea4f0f6cfb",
+    "authoring_contract": {
+      "path": "families/mew-note-tc/authoring.json",
+      "sha256": "2fcf4549ecf28086cf09c7a1f934b5944643608506e0610f05d1db4ce6f61c7a"
+    },
+    "binding_sha256": "6311b85d42b19d1b8a9e06ce851fee04ee7a687c617067340fa3c7f1aa881c8d"
+  },
+  "batch_contract_sha256": "8af8ca61c70ea6db838ef26621a218787ac9617b5948ec5ba83459aecf407183",
+  "generator": "built-in-image_gen",
+  "intended_materialization": {
+    "draft": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0344/draft.json",
+      "sha256": "7812452e4f7a21c460338b063c489ecb500ae92772f8e1275f7f8e2e28f98da8"
+    },
+    "prompt": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0344/prompt.md",
+      "sha256": "620ac8f27d44ad5ceda971d5d21c1e910b6c5b32bd28a994d1b0095e68e8b9eb"
+    },
+    "identity_copybook": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0344/identity-copybook.png",
+      "sha256": "4961fb76e9a05f00ed4b05e0b6732adf5429b65814f1d0a5f38c33dfe53e96ef",
+      "role": "identity-reference-only-no-outline-import"
+    }
+  },
+  "steps": [
+    {
+      "sequence": 1,
+      "operation": "generate",
+      "disposition": "rejected",
+      "call_id": "exec-7ed908dd-d4ff-4791-860b-6e2079b38e57",
+      "actual_tool_prompt": {
+        "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0344/tool-step-0001.txt",
+        "sha256": "a6e8bec152f28f703376f58d4a824fd97a0008bdf29bc13efa25c1320896e58b"
+      },
+      "inputs": [
+        {
+          "role": "style-reference",
+          "retention": "retained-reference",
+          "path": "families/mew-note-tc/pilots/mew-note-han-v2-raster.png",
+          "sha256": "b6ae4ac12a769e979b86df7af1a3d7f4a824ea79ba67bf7b43802c3fc49eff82"
+        },
+        {
+          "role": "identity-copybook",
+          "retention": "retained-reference",
+          "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0344/identity-copybook.png",
+          "sha256": "4961fb76e9a05f00ed4b05e0b6732adf5429b65814f1d0a5f38c33dfe53e96ef"
+        }
+      ],
+      "parent_output_sha256": null,
+      "output": {
+        "retention": "hash-only-rejected",
+        "path": null,
+        "sha256": "819fe571c9f97b21f4e734d59b272d7fbc2206f3c08c18811207cb37dcbc7ba3"
+      }
+    },
+    {
+      "sequence": 2,
+      "operation": "correction",
+      "disposition": "rejected",
+      "call_id": "exec-6a1de6d1-9d32-418a-894d-fb54b2bb27e2",
+      "actual_tool_prompt": {
+        "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0344/tool-step-0002.txt",
+        "sha256": "699d5bf57760ac88637c47945600e439bc9a8fb6416b3aca376ad69e2d0510aa"
+      },
+      "inputs": [
+        {
+          "role": "parent-output",
+          "retention": "hash-only-rejected",
+          "path": null,
+          "sha256": "819fe571c9f97b21f4e734d59b272d7fbc2206f3c08c18811207cb37dcbc7ba3"
+        },
+        {
+          "role": "style-reference",
+          "retention": "retained-reference",
+          "path": "families/mew-note-tc/pilots/mew-note-han-v2-raster.png",
+          "sha256": "b6ae4ac12a769e979b86df7af1a3d7f4a824ea79ba67bf7b43802c3fc49eff82"
+        },
+        {
+          "role": "identity-copybook",
+          "retention": "retained-reference",
+          "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0344/identity-copybook.png",
+          "sha256": "4961fb76e9a05f00ed4b05e0b6732adf5429b65814f1d0a5f38c33dfe53e96ef"
+        }
+      ],
+      "parent_output_sha256": "819fe571c9f97b21f4e734d59b272d7fbc2206f3c08c18811207cb37dcbc7ba3",
+      "output": {
+        "retention": "hash-only-rejected",
+        "path": null,
+        "sha256": "2a10cabc09b55f15686b4a3edafe28ab9f6cc74dde77aae5587b0233e4904a11"
+      }
+    },
+    {
+      "sequence": 3,
+      "operation": "correction",
+      "disposition": "accepted",
+      "call_id": "exec-38784de9-c234-4513-be21-7aaa86577d71",
+      "actual_tool_prompt": {
+        "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0344/tool-step-0003.txt",
+        "sha256": "bbbffa2c292d53a026824d11bf28667b7007c595a95ed84b9e9fc03d402f9e6d"
+      },
+      "inputs": [
+        {
+          "role": "parent-output",
+          "retention": "hash-only-rejected",
+          "path": null,
+          "sha256": "2a10cabc09b55f15686b4a3edafe28ab9f6cc74dde77aae5587b0233e4904a11"
+        },
+        {
+          "role": "style-reference",
+          "retention": "retained-reference",
+          "path": "families/mew-note-tc/pilots/mew-note-han-v2-raster.png",
+          "sha256": "b6ae4ac12a769e979b86df7af1a3d7f4a824ea79ba67bf7b43802c3fc49eff82"
+        },
+        {
+          "role": "identity-copybook",
+          "retention": "retained-reference",
+          "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0344/identity-copybook.png",
+          "sha256": "4961fb76e9a05f00ed4b05e0b6732adf5429b65814f1d0a5f38c33dfe53e96ef"
+        }
+      ],
+      "parent_output_sha256": "2a10cabc09b55f15686b4a3edafe28ab9f6cc74dde77aae5587b0233e4904a11",
+      "output": {
+        "retention": "retained-final",
+        "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0344/raster.png",
+        "sha256": "75480af4d494b93ddfe2dd824f8b2e0e732a31c3c816ec5c607c860912dd3713"
+      }
+    }
+  ],
+  "accepted_final": {
+    "call_id": "exec-38784de9-c234-4513-be21-7aaa86577d71",
+    "raster": {
+      "retention": "retained-final",
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/han-6060/batches/han-0344/raster.png",
+      "sha256": "75480af4d494b93ddfe2dd824f8b2e0e732a31c3c816ec5c607c860912dd3713"
+    }
+  },
+  "state": "generated-unreviewed",
+  "history_sha256": "3410b8fbab97adc6374cfe4d308ee8b4819a7f37643a6ad5481bcc63725cb217"
+}

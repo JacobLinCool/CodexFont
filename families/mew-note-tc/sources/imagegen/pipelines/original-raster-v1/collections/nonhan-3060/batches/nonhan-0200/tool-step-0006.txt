@@ -1,0 +1,8 @@
+Horizontally flip only the glyphs in c13 and c14, in place, around the vertical centerline of each cell. Preserve their vertical position, stroke count, spacing, and weight. Do not alter the grid or any other glyph.
+
+After the flip:
+
+- c13 has its double vertical strokes on the RIGHT and its single bottom horizontal stroke extending LEFT.
+- c14 has its double vertical strokes on the RIGHT and its double bottom horizontal strokes extending LEFT.
+
+This is a literal left-right mirror of the two existing glyphs only. Keep exactly one glyph in every cell and return the complete 4×4 sheet.

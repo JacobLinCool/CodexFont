@@ -1,0 +1,3448 @@
+{
+  "schema_version": 1,
+  "record_type": "clear-hand-han-delta-collection-review",
+  "decision": "ACCEPTED",
+  "family_id": "clear-hand-tc",
+  "release": "0.1 Preview",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/dictionary-salience-extension-1216.json",
+    "sha256": "8462d9669e6d7320f77c285a444e388da0f3e0d23ae408c7212c4302bdaed840",
+    "repertoire_id": "clear-hand-tc-dictionary-salience-extension-1216-v1",
+    "count": 1216,
+    "sequence_sha256": "3b28f33b80e7675ccdba24d0e678b30581f4eb55fd7418ab1447f10a889267d7"
+  },
+  "collection": {
+    "path": "sources/imagegen/collections/clear-hand-tc-dictionary-salience-1216.json",
+    "sha256": "5623b1f977d1412b233a34c255627749ffed71f86182125ea91d7d1f1fb869c2",
+    "collection_id": "clear-hand-tc-dictionary-salience-extension-1216-v1"
+  },
+  "review": {
+    "reviewer_name": "Codex independent glyph reviewer",
+    "reviewer_role": "Independent collection reviewer",
+    "reviewed_at": "2026-07-29T02:23:41Z",
+    "scope": "all 1,216 glyphs: Traditional Chinese identity and topology, handwritten raster quality, vector contour quality, unexpected spikes/thorns, counter openness, and 12/16/20/32/56 px legibility",
+    "method": "identity-copybook comparison plus black-on-white, white-on-black, and segmented-source proof inspection"
+  },
+  "source_batches": [
+    {
+      "batch_id": "dict-han-0001",
+      "characters": "〇忒烱挂毬𥳑孢謔杆昉諕皋踰劭諛讎",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0001.source.json",
+        "sha256": "7248fd132e8c16ac13b71156110759974ce523f2d5867584a3e43cafef595c79"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0001.history.json",
+        "sha256": "cf3a8278dafee0c9cceda3f95f5a1dfb635e6ed3e9a500c5339a1b78b744d360"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0001.png",
+        "sha256": "4051b686f938cab3e645c31902dcfc12d4192486dbcfbcd74c16ca343541643e"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0001/report.json",
+        "sha256": "c58a2cd53291004c4f99d9f263b6ac172b552a20dab6782ecc14397108b1e903"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0001/font/ClearHandTC-ImagegenDictHan0001-Unreviewed.ttf",
+        "sha256": "34515605cb402422f74cb419a26c6db069b1b48beba74b9097accff79a259b6d"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0001/proof/small-sizes-black-on-white.png",
+          "sha256": "e2b90e29bc0da112d20e299254c5bdcf8e7cb88c5cf0083ccdf02a74e41acf1d"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0001/proof/small-sizes-white-on-black.png",
+          "sha256": "7525ee220d5d27e40cdef2575d413fccd1a3518235a537c37343f406e0e6bc02"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0001/proof/segmented-source-contact.png",
+          "sha256": "6707deef80d2cb75a5527beae4fa82d69267cb3898c630b4196fadd904e2903d"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0002",
+      "characters": "朓箸蹇衾鹵綬曜聒鉅掇亢崗擢暱嗔蓼",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0002.source.json",
+        "sha256": "30cdad9d43cc9ea0c92ba80234b8873b86b6739141a788ad6711214fe731fece"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0002.history.json",
+        "sha256": "eea49ff7e552e5f0a0b2081c484e6d1839f361eda4cdfb4924760fd09c91e761"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0002.png",
+        "sha256": "e7f1ce0ac6f1fd4a10725e7d0afd4dd170ff604e0f6258aa2de268592318398a"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0002/report.json",
+        "sha256": "1e6c2bb69a15e02a31d7421f604d61439a677b88d938ce87e43c26384f1f4742"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0002/font/ClearHandTC-ImagegenDictHan0002-Unreviewed.ttf",
+        "sha256": "9bf230c764eeedf97ee3657a6304b6fcd5270664cea1df6be06488f0dcbf0037"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0002/proof/small-sizes-black-on-white.png",
+          "sha256": "26f35b12a98766ca3bfaf489360b8b4ef4d1a9856f18a234aa76541f253a72e0"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0002/proof/small-sizes-white-on-black.png",
+          "sha256": "1c724e13b9bd9fa3373c2f6479facae4568dba34e2654797aa735364fec9e016"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0002/proof/segmented-source-contact.png",
+          "sha256": "0fa47058743fa6915cba92eb095bc86803b1ec5f325bf18df7e3b8aa36bea540"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0003",
+      "characters": "佚熏芸諡昺藜迸饌謫偓琰紈嶸誄伎槃",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0003.source.json",
+        "sha256": "ae35f718c6f131a890506fee18efeac1d7a78694b2ddc16bb84afb6b611af56e"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0003.history.json",
+        "sha256": "b32c7c63306824e838623378e6e39fcc30eccb3cc57d9033ea3abed2da590ae6"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0003.png",
+        "sha256": "3e9d43a0fac75830f59717b644e16a27c1d85a85ca53bd55973a040ec4c0b374"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0003/report.json",
+        "sha256": "4c9f944a2fa51b2ef63e0d89fdc222e10e9af03def2858955ca0cb216f80a63a"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0003/font/ClearHandTC-ImagegenDictHan0003-Unreviewed.ttf",
+        "sha256": "8e9c7626251e9d2f73571161b7651e4aa8a608fde9502501b69fae6a56ef11f2"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0003/proof/small-sizes-black-on-white.png",
+          "sha256": "a9a664fd0ced4078947de45ca9352b09f09b5ed5320a2998140730c30c8152b1"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0003/proof/small-sizes-white-on-black.png",
+          "sha256": "617375c4f51bd6f478eed1130ff45583c3fc2f715147a24837e532e1fe1f4e08"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0003/proof/segmented-source-contact.png",
+          "sha256": "79a171aee9116967355a1e2f24f3a6a97dabe673f25a3bae534af30e228f2652"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0004",
+      "characters": "翦珪糶劄鈿饋拏檯邯偁廩攛皁墩彊憨",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0004.source.json",
+        "sha256": "5647f07b35c18bcf34ac15ef562dd33d9d75b52b1b37ca86abdaa852e67e62f5"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0004.history.json",
+        "sha256": "102572a0b1bf61b5a195d293542768c9e76f319a3761aceb67d22881d3eee5ae"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0004.png",
+        "sha256": "fc6466173cc500456d88fe1934847dc370ba5a8e47d56855326802502dd63abe"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0004/report.json",
+        "sha256": "c1da48f8c7e67cfe26ab808d13e8518c506d65a2eabd966f2a6daf49db04672e"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0004/font/ClearHandTC-ImagegenDictHan0004-Unreviewed.ttf",
+        "sha256": "3a10e5e4b7c59a7fac81b03684709df1638c05a71aac07a4ab60baf7d53fc64c"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0004/proof/small-sizes-black-on-white.png",
+          "sha256": "bdd09d930fa07d54cf13ba2ff1e1aa61dc37f701dd503fa3bcdc099022acc12c"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0004/proof/small-sizes-white-on-black.png",
+          "sha256": "22ca906afe5a62e33fca4a536dd8b09e5723bf7e1cfdd002f813ce75d7dbfd47"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0004/proof/segmented-source-contact.png",
+          "sha256": "4c83e836607a9ede11269c75f2aa43f53bdf6cc25970900f5d6295fbe5cf65d8"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0005",
+      "characters": "摻枷鎧丰汴謾邈鄲隄沓潁眇鴟摶潢簌",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0005.source.json",
+        "sha256": "f50fedd91621f644c716c0ea749f2766041bc29e75ee1e3131efb468dd5fd8dd"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0005.history.json",
+        "sha256": "9842156a6c4d0318451d5d09ec36bce65226a67c7e56dfdf0f745f5123de2714"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0005.png",
+        "sha256": "1d777d4602035a29b52eb3dce93068ed0005a99c722e62ca9c1d01933b244ff0"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0005/report.json",
+        "sha256": "7c72bdd93fbbd3016c807c849c2f291267df1839797bb8db8e50a2ada78f31c4"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0005/font/ClearHandTC-ImagegenDictHan0005-Unreviewed.ttf",
+        "sha256": "ffb4e164f74d386aef77f55adb786f079fbdf9132023e7b1924d519ea48b5849"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0005/proof/small-sizes-black-on-white.png",
+          "sha256": "28490197def317f16b0fc47349fbe7d009611c51231810772baefe3f0ac2f9e3"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0005/proof/small-sizes-white-on-black.png",
+          "sha256": "64d28ab7ada107c5b4ed6967ae7ba86960a389a1c5e93ec3097f733190370ea5"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0005/proof/segmented-source-contact.png",
+          "sha256": "490ee9818d5e34d22a1fe79d2b4ba446116619951fbd37affec9fe72c8898afc"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0006",
+      "characters": "嶠睢臊逋椿涅濕掐砲菇轆鳧佈慵攸殫",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0006.source.json",
+        "sha256": "ae7fd2e35802072a8f21d2470a4b090858011326e5e4b6c3f27915a02e81fa53"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0006.history.json",
+        "sha256": "7d1d15f952afb563dfbaf8177c5ca609282a4e4f233943ac816dbd72b24924e0"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0006.png",
+        "sha256": "ac770d9859859e4e98edc024d8ae84c34778df5586098523a15849946058fe66"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0006/report.json",
+        "sha256": "2ea879128d27fe7133ef780594b8e0da1e25239da27e40923d53f20860dd5481"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0006/font/ClearHandTC-ImagegenDictHan0006-Unreviewed.ttf",
+        "sha256": "2c7fff8b767a4e3ad4bb560c35e8a97fc1316eb45e3618c4c98b5244c6e88168"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0006/proof/small-sizes-black-on-white.png",
+          "sha256": "b1bbe2b4ac0b42320f2b0cd74a32245585ae4d97fd8ba70d73cfaa07fe171cc4"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0006/proof/small-sizes-white-on-black.png",
+          "sha256": "dfc217c824d8e45b459f9074365140fc772887cb8f8282947900e78ba9570349"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0006/proof/segmented-source-contact.png",
+          "sha256": "48ad99e4b82280d9db76bb70c1751d0e8fe8ab89f3a911f685a94f8466cdbc0b"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0007",
+      "characters": "駰鶻冲屣憋楣燼踞鄴饗鬻斛畿笳醮陂",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0007.source.json",
+        "sha256": "c3f35f8188626ca58cb6bfb2fa6e8421180de5fc89f767cc3cde15531bb0802a"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0007.history.json",
+        "sha256": "8e70d2e41dcb132db66977ddce796bfbe8167c6bcc385294980ab01eaa541ed7"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0007.png",
+        "sha256": "2755a93900c669ea21c595485105771faf4297ac715cea9835278219abecd47c"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0007/report.json",
+        "sha256": "05fb34694f0999d28364157fca1e89060383c7b2c1b57dc668a3e2672ff89f31"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0007/font/ClearHandTC-ImagegenDictHan0007-Unreviewed.ttf",
+        "sha256": "407af679336da8b095667082b18a8d0aa0042fd5b1d67eed51d1121aa5277e63"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0007/proof/small-sizes-black-on-white.png",
+          "sha256": "874724179e84c3cd44080b4b9fc5a3f3fd114e75c8ec07e6f9d16f8d692bc088"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0007/proof/small-sizes-white-on-black.png",
+          "sha256": "c12a586b010f8cea3714c4176a7057045b328a17ecef5528f2939f32ba54e4e7"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0007/proof/segmented-source-contact.png",
+          "sha256": "55b73f05090a2bac0f624a120c14fc365036b75a60fcb153c76679e6a7f6f8af"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0008",
+      "characters": "顥勺幃穰昊秘飆齧曇歆牋嫋愆杓泯瀧",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0008.source.json",
+        "sha256": "d21f1fcfa11e324e13f142d9df55894e934458de5c18e0feb46aadababb5c4b7"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0008.history.json",
+        "sha256": "fbfe56caa3392ecb47631bd20658e7c9fe5e795355f283ae13b809d01f075211"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0008.png",
+        "sha256": "473ca7e0b15493cf9f84f552265a13ae3a9a541343b47ee17499c749475d5ab0"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0008/report.json",
+        "sha256": "60261e8edd9715c77615893826e7b3ea354c078c01483500d00a965fbc718a9d"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0008/font/ClearHandTC-ImagegenDictHan0008-Unreviewed.ttf",
+        "sha256": "266ff02d17f4b642f5cea2bfef3fd2acb9b1e4f05cb64592b13167e09aadf71e"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0008/proof/small-sizes-black-on-white.png",
+          "sha256": "f4a631807b5935b260e1a2e1dedb439043a985adbf1eeaa20a17e35a33816f7d"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0008/proof/small-sizes-white-on-black.png",
+          "sha256": "3075ebbea3d38099d056c32ef69ea80865ee9899379df8d8b0ddc90bd43508f9"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0008/proof/segmented-source-contact.png",
+          "sha256": "0e4422b379ffa237626a727be1848902147b9e99da0af468f54b916314ffbbc3"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0009",
+      "characters": "紆圜坯夯槊粘頎宕幡惲懨拊籙胺脛郢",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0009.source.json",
+        "sha256": "f3ed721af2882077463b5d9b5916b4b8306f3cb58c0b7302c4a4700122b6bd9f"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0009.history.json",
+        "sha256": "b51f03ce3e3a96db5e2814a0ca018380b50bad874cdd790729bfe1a54e3a90a3"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0009.png",
+        "sha256": "bcea85466ff765a557936ec2cdf0d4de678c63751fbb2bdfb91ff392e17ed472"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0009/report.json",
+        "sha256": "710f4099b7241d607d9af8c243f2c10881cace388e9bbde6d36752746d2c5fbd"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0009/font/ClearHandTC-ImagegenDictHan0009-Unreviewed.ttf",
+        "sha256": "f60709922b00bd1fbbc132e67d0838ab93b1339952374925308eea818320a40c"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0009/proof/small-sizes-black-on-white.png",
+          "sha256": "a65499354791e83417ce34b1aed848be37a46ba9690a591edced215b5d68cdf6"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0009/proof/small-sizes-white-on-black.png",
+          "sha256": "b6a5cc8c35aabfa840ed975ebabc72189e11519eee2f1a2522bc9d2572f9968e"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0009/proof/segmented-source-contact.png",
+          "sha256": "5ba100533f9ebfab5c209eff7f4ec2f2dbb8c163ae0e638698a563c928c2112f"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0010",
+      "characters": "剗咧喙楮沂碣闇驍嵬洵滷烯祜箍觔諳",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0010.source.json",
+        "sha256": "5e3b427fb471d20b72a356a6c2b0dc7ca6c417a0b77f9e33ddc86d1e5a447f8a"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0010.history.json",
+        "sha256": "a3d41335c53c62314c57388b388b2ffb8ec6582b17db3b21e74727dbb5c54425"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0010.png",
+        "sha256": "74e5e53db3d6c3202525e97ca05c2836b323032400ff0564a62bc5b52058ee60"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0010/report.json",
+        "sha256": "19b9b6d60894d09323dbffe9d2dfb124c49a3e856c49ef31e22080f4c755fd94"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0010/font/ClearHandTC-ImagegenDictHan0010-Unreviewed.ttf",
+        "sha256": "cc6c39fb913c15f847a1029c5caeadb0666b14431d33b2a0539595371e84291f"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0010/proof/small-sizes-black-on-white.png",
+          "sha256": "b5eb0f827c1efc6de9cda635303d6dbd474f4fad2989e79fce381746ae89a356"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0010/proof/small-sizes-white-on-black.png",
+          "sha256": "6e0a96723bc0a53c85a997e9d2dd9c996b62ce61a4200817d77edaffa8737cb1"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0010/proof/segmented-source-contact.png",
+          "sha256": "517e3bfb96cebaf70bf2679d91f796311dfb73eea3db3607054c1538be660812"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0011",
+      "characters": "譙邃旄椽笄笏裱襃謐迤陟儻寰泠琨筲",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0011.source.json",
+        "sha256": "57167e873f0fcde6afd130b1bd182871ddefc63dfaeb00165d9171e365cafd9d"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0011.history.json",
+        "sha256": "9d6c9932562709787848692e4ef726664759efc79e3d633a3780d0ccec9b6053"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0011.png",
+        "sha256": "b8d78563b7bba829599bbbede8cc8cfbe8d8f6d607ff32918e90985367517f9e"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0011/report.json",
+        "sha256": "66fda18e4ec9e4c049d62837529165214a143b341f3ee753c1c150fe4f944f15"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0011/font/ClearHandTC-ImagegenDictHan0011-Unreviewed.ttf",
+        "sha256": "9c5c22c33a1ed9c19e71a24b928a41c981f092531775135b3ebdfe9fffeba94c"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0011/proof/small-sizes-black-on-white.png",
+          "sha256": "b0702377958fa3be74d67f2d343a457da54f798bb66b9f96ab1498bcc24fe0c4"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0011/proof/small-sizes-white-on-black.png",
+          "sha256": "fa9b8d43e0ae3042afa74ccd4a10fa103e336bf512a50c9b1672c67ba00e9dff"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0011/proof/segmented-source-contact.png",
+          "sha256": "db5674b4757036f807b1b7f282ef651101d83d53d6b96550fac14c5d670efffa"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0012",
+      "characters": "纍衲蹌鐫佺晷琦篋苕茨蘧倞垛屨彀蟄",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0012.source.json",
+        "sha256": "4d3e7d8b02d94249e1ed8250bf834dfd9e99992d3239204d26d7e0bd772b1086"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0012.history.json",
+        "sha256": "1fdc6b3735dfe21abd755f9c4bc0e804a13b00c381ae537ecc9e6dea32b3ad1c"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0012.png",
+        "sha256": "5e101e17fdb3a6f0acb30f5b7ec1a317af2afe6b7380212af53764e99f28cb0c"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0012/report.json",
+        "sha256": "a5babf760e7e923a7337938e6ccef0eb6651645a7aab96410959772d845c6709"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0012/font/ClearHandTC-ImagegenDictHan0012-Unreviewed.ttf",
+        "sha256": "7afc6c28a18b270379c5c009db7b538d9d69167903322034bbb7cde838949923"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0012/proof/small-sizes-black-on-white.png",
+          "sha256": "9ae4e97ccf5cf6d84d5d152fb074c1ed61bd0bc303bad2eba5ae349c3fbbbc83"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0012/proof/small-sizes-white-on-black.png",
+          "sha256": "81daa42d9fa3443f8641774a815b61ed68d0878f02f78b23be7e946ba4600575"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0012/proof/segmented-source-contact.png",
+          "sha256": "94c882a816f1e7acd5b796279b73a396f02074380ba2fe3982ac67ca4ce909ad"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0013",
+      "characters": "襦鉞陞忤橐縹觥訶閹咿垓旛繇蒴虯侗",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0013.source.json",
+        "sha256": "fbe01620bad3521242663929c15e1b7c4612dfb52392cd2b5c12956d991a091f"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0013.history.json",
+        "sha256": "fdf864ed3416bcd2ff0dacb4d6856e8856c77a61644caae4a1040b95a90803ea"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0013.png",
+        "sha256": "ccfec8b1d8a9fa2e327d353ba0c2fe2c2fc06d3fc1c7cdab62c56d301b7c1775"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0013/report.json",
+        "sha256": "4a44f07fe9e926cadf8663d25a2f91eae85bfcb09f3fe084b6c1f54600a75af5"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0013/font/ClearHandTC-ImagegenDictHan0013-Unreviewed.ttf",
+        "sha256": "d502f6346a5cac79249f5226778517bba376b3fff94d14d3d300b13e6e7a4d41"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0013/proof/small-sizes-black-on-white.png",
+          "sha256": "d3692a13ee2adca5d3410e95c3b2d856214661db3b32ec962dfbe8ae44930ac4"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0013/proof/small-sizes-white-on-black.png",
+          "sha256": "e2904131e7f49cebfab8f188badba934362cc1c9341c1ef9be5d4f45e97d1cb1"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0013/proof/segmented-source-contact.png",
+          "sha256": "b829235ed2dbad095468155f3f91ef31230a6d1923dd1df7ea8d9c6f8f5072af"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0014",
+      "characters": "喒噶撾蹴鶚鷲齎仝徭擣暄浹涿甯碴苴",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0014.source.json",
+        "sha256": "aa79ef727086a23132c1913e3ba8bba05a68300474f374972a826c837c5cb124"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0014.history.json",
+        "sha256": "8d15dce2d78211415ae756c9232521aad3fc630443f4c0a32dd68d62252fe956"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0014.png",
+        "sha256": "c31ea4df91cd8a37dc4b56c3fba3cc5de5eb631fbbc2a7b66edb7c2fc232b572"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0014/report.json",
+        "sha256": "c1082a0dd689fb750954710c308fbecff4ad8272ecf6a5280ef5727b09ecdf78"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0014/font/ClearHandTC-ImagegenDictHan0014-Unreviewed.ttf",
+        "sha256": "a96674be85598561cfacf7b72245b2267281aee38ee2d7f05315923e89cc4eed"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0014/proof/small-sizes-black-on-white.png",
+          "sha256": "620c1e36c9a3ddd2bcaba3d4be85f1f619f120c1944eb0ea72d2b5a8aafa4daa"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0014/proof/small-sizes-white-on-black.png",
+          "sha256": "a2ccdac5f868c735e1dfa38a49b65aa868034537f23130b5feb69b327d3de3ab"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0014/proof/segmented-source-contact.png",
+          "sha256": "dc4080a952e54f5036c6c2dc132dff0572b4afee87d3ab47152bf68be2549d66"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0015",
+      "characters": "褊誹孛巉搥杼翫遒鼂僉愷慳掂栖灞璫",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0015.source.json",
+        "sha256": "aa6ce9f9784963544cbf546d334a6f1936b150202faa154aae98fe91c49e6c2a"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0015.history.json",
+        "sha256": "5f9d2b0c925c858fbb2834279cb37a9e5ddd550f8d835ea5d1d85ac8267f887a"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0015.png",
+        "sha256": "b17b504ed993ca3a80c608ebf7b5c7892659d87b67c62a1ce174abd0185abafc"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0015/report.json",
+        "sha256": "f53c148302bd2b2b4ac690985dbee5fdee6161e815aeedef301277a91626f505"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0015/font/ClearHandTC-ImagegenDictHan0015-Unreviewed.ttf",
+        "sha256": "e22a41d5832182ca0f201fea6d6a265ad81ac18f639ad42889b60dcbcac93c22"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0015/proof/small-sizes-black-on-white.png",
+          "sha256": "44f160647b43aff51d9b9e3410446599f9d1fee11764741964c6dad4e483d088"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0015/proof/small-sizes-white-on-black.png",
+          "sha256": "e515adecc056d14ef71afab48b4eafe2c6cad097707c0521b45befb7fc787250"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0015/proof/segmented-source-contact.png",
+          "sha256": "c0352ab21dd3753309a5114196c1feeca145f741291dbfb64943df95bdfc6aba"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0016",
+      "characters": "諢遶鉶鑪鴈㑳亹哽弋汎漉澠濮煢獼瑾",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0016.source.json",
+        "sha256": "d1c2ffaae4d25514d2b228ab93b0ca129261d5da487a8202d1e0856297af9764"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0016.history.json",
+        "sha256": "87ad456cff0e05591578d0178580e6c27cd9ac0859d03462642c95fb30f51f1d"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0016.png",
+        "sha256": "d72dcae682bea96032393e94fa01f582a14c6c612b124025e0e7f7432035217a"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0016/report.json",
+        "sha256": "a58fe8284209c0a2b7816641f0c6126f0cbc600e767ac1e21f5ac82d66273d56"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0016/font/ClearHandTC-ImagegenDictHan0016-Unreviewed.ttf",
+        "sha256": "531fdfb0893a5fa84cf90424335bfeb133bba366d4a670561af7869c8ffeb29f"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0016/proof/small-sizes-black-on-white.png",
+          "sha256": "eb47cd24f18aa9e40d189419db6d6c2f5aedac9615f3b0cab2e056a4deee10f4"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0016/proof/small-sizes-white-on-black.png",
+          "sha256": "1e9d5234de28b669e4f9c743e40c2340a218b3e84d6f37317e2cc5fadeb1648d"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0016/proof/segmented-source-contact.png",
+          "sha256": "f870aca79cc51a32090dc422b6341c538cf3fe46f9a70e6fadefb3638b665126"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0017",
+      "characters": "翊衿踅輅幄撅椹槿猗稗篦腴芾茜蓍蓽",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0017.source.json",
+        "sha256": "895f63f7bce7aa8d9961601245970999f676714ec3fda79eab91106cedd30c23"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0017.history.json",
+        "sha256": "290f99fe16736cf35ff38ce11d5a2da3defed9dda65e58eced57daf33b0c5d5a"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0017.png",
+        "sha256": "95320399d5c9ba2e1ca56431df30cab97cdcc7a8860eddfec5dd58986a345500"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0017/report.json",
+        "sha256": "9252f03eba2278fc271dd9710556f0593cbb66622ec26df6f2529d749486bb1c"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0017/font/ClearHandTC-ImagegenDictHan0017-Unreviewed.ttf",
+        "sha256": "5ed7aa64ea3640607ad2df0ab2efeaf3932912606f961cf6df3a02d2288a9aaf"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0017/proof/small-sizes-black-on-white.png",
+          "sha256": "e84898e3ebc8ed7ef7b5c13c7a36ddb81e8a87e465b7fc263d6b5d6e7b694195"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0017/proof/small-sizes-white-on-black.png",
+          "sha256": "bd83b84f71b8757403a7db0f4373f67e6d4df71094a5a9e4f163812446f0252e"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0017/proof/segmented-source-contact.png",
+          "sha256": "02de0106aadb9f8ecad782eba3793e785aa0b157339c6d4a3967d548277c2d6a"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0018",
+      "characters": "覈鑊喏悒惇擿柢檐汛瓚菖薊蜒攧旆淥",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0018.source.json",
+        "sha256": "907dab158c8811b209b20ff25e4ace95707b9dd0c072d6606feaefd8fe7e0ea4"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0018.history.json",
+        "sha256": "3751fcf224d19542212b6408d3c5a884a170e54617f8e0e6dc5e8c5a133dcb8f"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0018.png",
+        "sha256": "409cc5bf487b67c0097a222fd0ab98c3229bbd3ccb67f528837456244e26e413"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0018/report.json",
+        "sha256": "8d18532d014d0b6d3efda004440faac48bfe1de54612a6902b8074cfafe15b44"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0018/font/ClearHandTC-ImagegenDictHan0018-Unreviewed.ttf",
+        "sha256": "34d29f2a855d3cf410ed9df19da430615408fafb92bf4f8babe3b719c2799680"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0018/proof/small-sizes-black-on-white.png",
+          "sha256": "314ae3000b9074ce4fc4c39050bcf64f6c8741d2ffc3cfc40602a1ae35cebeed"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0018/proof/small-sizes-white-on-black.png",
+          "sha256": "180223d4e781e8de023c37c54c94dfc5eed686a2a0645b81829337dc5194c40e"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0018/proof/segmented-source-contact.png",
+          "sha256": "1564f7992dc90d0aa9e218a687e1db345c84bacd28ad672bda6b8d274dddc805"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0019",
+      "characters": "溟籀緋肐裾讜踉踊蹀頦僂愍捺漭璨癰",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0019.source.json",
+        "sha256": "dcaa249b4b84612f83f0d6726d35b67d109635f73cdb3d9b631c81d98a9991a8"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0019.history.json",
+        "sha256": "3de4bf6f265b0f922391c148f61bb158ae7c47f8705fbaa2313663ce98829090"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0019.png",
+        "sha256": "473e1055e4fa693d527c20a275c50cddaca0fd61bfe1f3a3253a038b44d91f3e"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0019/report.json",
+        "sha256": "0acf71def11354a0a36775f1c69541f99648bea6d930475104d0ad053d006be0"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0019/font/ClearHandTC-ImagegenDictHan0019-Unreviewed.ttf",
+        "sha256": "f69ffb7a978c769f65320bcdbbc4d631b128d8a9cf9ea101f555d08cf4b31637"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0019/proof/small-sizes-black-on-white.png",
+          "sha256": "8ca7f4f4b4b4065beec7fcc8b8442d220331aa027b4af9e231e06e28ea8e9ab7"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0019/proof/small-sizes-white-on-black.png",
+          "sha256": "2b62d8cfdce10769c981beaf19eb7194d8685092e716e4942e42315984829e3d"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0019/proof/segmented-source-contact.png",
+          "sha256": "9d6dabc7b4079899578fe7d9f9b72a7f0449905ff396e6d4323eaea22c5dd656"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0020",
+      "characters": "筮紬軫迓鴇鼐囿嬛徠斝棱櫟滎熒羆蘅",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0020.source.json",
+        "sha256": "472a761eec68e13271bdbc2b0aeeac0021f3eae97157ce1322ae27baa5b1f172"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0020.history.json",
+        "sha256": "db6b4cc4cc1361dd58b0478959e42fc0a0d1a348cf83cb2af4ff54c6b4883547"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0020.png",
+        "sha256": "f15d73dc5a90c14f56901a14617513d7e4f0339b79f4ec8fcce0d617ca6060e5"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0020/report.json",
+        "sha256": "83a9aabc6bfcdde4b453b4b9c8ee0e3958dee911097e78e56dcbefb5fc7a2fcf"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0020/font/ClearHandTC-ImagegenDictHan0020-Unreviewed.ttf",
+        "sha256": "f2834ab7b262e13991a4be51f611594c4ca5c9d94b66c4859fe61ed3853546d1"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0020/proof/small-sizes-black-on-white.png",
+          "sha256": "abead66eacb74fdd12c2dfd33bd1f5ac91b53099baa1a361d58c90b519d4d25a"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0020/proof/small-sizes-white-on-black.png",
+          "sha256": "53a298f080d12c22484e75d56da1c2f373925689f693eb3fac9a05b67e09b8ab"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0020/proof/segmented-source-contact.png",
+          "sha256": "0bcfce78826480e7fd731f3231f06d5cdd6ccb826a66fa993bc9bf3d9af38639"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0021",
+      "characters": "虺跖酶醴閬倈哏徼樗檣罅翮蓑觚跤嬭",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0021.source.json",
+        "sha256": "fd9690958821fd0b6430055412eca2bcddceef23c6c36c7f738d445f2a669a7b"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0021.history.json",
+        "sha256": "1b66d6967758736081f015a38c01d4cb4317a1165c17d04f42463270ae771b69"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0021.png",
+        "sha256": "a6e36aced6ddeaa25b7c6853a4367fb1fac5d9fd41273c887935c4d07442795d"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0021/report.json",
+        "sha256": "f96c3fa22b60aeef8898ea292598be96a4d9fcbc921a063960eb1cc88f32c0cd"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0021/font/ClearHandTC-ImagegenDictHan0021-Unreviewed.ttf",
+        "sha256": "47fd553cb293d4d3cac6c33bafef38db74bd251475d865c3751a0191aec3b847"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0021/proof/small-sizes-black-on-white.png",
+          "sha256": "210f0ae7a97776d7181f73dbc21087cd901fe0c40144b91b094786225771b5c5"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0021/proof/small-sizes-white-on-black.png",
+          "sha256": "feba8145e944dc492ca7f562197b707a6965d943302addcae6f2493431ff8b2a"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0021/proof/segmented-source-contact.png",
+          "sha256": "eba541ce3f0f7685f9f6f67d8f93707fc28b7f9829590477de4dd52ceda4792e"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0022",
+      "characters": "摭殞泮漚潯礴糲芷苫蒯蕤薈薹蹻郝鍼",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0022.source.json",
+        "sha256": "1c8c535c95092760ce51f33e5a923f18a660266b0ab998530e82e890a9c1d722"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0022.history.json",
+        "sha256": "cf1877a7f3cf2489490c84bb4c717751fecc63bc4287b918e3908e56c1fae9a2"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0022.png",
+        "sha256": "2583bd75b1187f47506911657bae7583971e9dd53540173cc8b47191effa4490"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0022/report.json",
+        "sha256": "81be1289625f03e2c055150ccfc7c8647596111f5ec5c5af1a4a692e6a430343"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0022/font/ClearHandTC-ImagegenDictHan0022-Unreviewed.ttf",
+        "sha256": "71864c13d041d150e250f493819fb3e578f73510f76be7a1c5b9d5b3acb0fc34"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0022/proof/small-sizes-black-on-white.png",
+          "sha256": "195ea98d313dc7b9133cbb8e3ad6df7b8ac3da1900d4ad9172e8d3119b8d2dee"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0022/proof/small-sizes-white-on-black.png",
+          "sha256": "607e6c184836546d2badba8030819f39f55ad0f2687eb8ca24d07ac850891af2"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0022/proof/segmented-source-contact.png",
+          "sha256": "6543f2d431482335b9bc6fe0c155e913deb9fe09740cbb8eebcaaf2cf0c32b56"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0023",
+      "characters": "顙鰲麈咭崧崽忻搦樾橈欒汜洒灩猝瞅",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0023.source.json",
+        "sha256": "16c44da7e991139e3526348665eb3b1982eee176f1f64abcc467a237d827bd08"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0023.history.json",
+        "sha256": "80ad66306fe9dcecf0237e6080ddd1c6f4daac8845f8fdd46d00a730a697e9ef"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0023.png",
+        "sha256": "06efdaa557273a3485fee6da1803e9ea122208aca2e95960fde360462468ec56"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0023/report.json",
+        "sha256": "f5df261acc64737c74078a54641afaae8b4e9c530844522990ce748a00d46302"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0023/font/ClearHandTC-ImagegenDictHan0023-Unreviewed.ttf",
+        "sha256": "270efba25772310854e3814efa2f0c55106ca46b9f9c2d3e0f6ec86fe34b2e37"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0023/proof/small-sizes-black-on-white.png",
+          "sha256": "46f88190df6fa630bc384fe98e1f2754ab32a3d40c24a0a446f7f5a1e6535b26"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0023/proof/small-sizes-white-on-black.png",
+          "sha256": "535673e2be6f30cf302aaa2b08d663d4dad0d42b3616722c30f527968f0ba524"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0023/proof/segmented-source-contact.png",
+          "sha256": "f5cf2810c8dd9d1b3233280db2a78c323eb50be6abc2f7bc877c98d597cf39b5"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0024",
+      "characters": "祛絜綃縐衽酢閎齁偈幘忐抃斲珥瘢眄",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0024.source.json",
+        "sha256": "b5e31869d9ff3dd0c0fa742c8061b27f528a06fdb50d03fb583c8e4aa412c3d9"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0024.history.json",
+        "sha256": "ccf0b845ed45788d2a0c9eabab951273bf2391660ce4126c32a9a991ac862cdd"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0024.png",
+        "sha256": "beae00d818bcca4e6e6e08b4cabc1fe1224722ce40256dc0c467632d8e558dfa"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0024/report.json",
+        "sha256": "9e5f9ed63c4fdc5a99b54ff8e83fbff0b361ec91f72bd9bd94551b3650e84356"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0024/font/ClearHandTC-ImagegenDictHan0024-Unreviewed.ttf",
+        "sha256": "da31d3935329b829457353466fb4df9144123b05999d06dd06de4f12a007899a"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0024/proof/small-sizes-black-on-white.png",
+          "sha256": "86e1ee350fb0fe257dbd89e20e5ac8b402440d88196bebf359ea758fec475e7b"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0024/proof/small-sizes-white-on-black.png",
+          "sha256": "bf47302831e63a73643e83054d73096dcf450f8418f9ee51f5653a581288374f"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0024/proof/segmented-source-contact.png",
+          "sha256": "3152b4cea4d610305198e165019cabcc16796684395fdf0ab1773060461f6ab8"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0025",
+      "characters": "眥磣縝縞耦苯菟蔻賚趄鍘鎬闥龕俛傒",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0025.source.json",
+        "sha256": "2c1e11806a1b71da4b65b6f3ea8be8182bedc77f4bf6e9ab19dede89f967f313"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0025.history.json",
+        "sha256": "9b4a366a72a467a8abc6e58ef933caba4537dce8596cecc6ceabbe7d9e4d7c1b"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0025.png",
+        "sha256": "065c8d2f6fe6d6677e8276c7e83e6dd4cfa5ea85ac9d92966663b03a04ad7606"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0025/report.json",
+        "sha256": "d805082ad7a0f4c7c81b0ef7f76d515d0ae95e1a8b62938d62bc011046b131d4"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0025/font/ClearHandTC-ImagegenDictHan0025-Unreviewed.ttf",
+        "sha256": "5348ac269c13385fb37a1e5dd7d67446afc27fed36d8fd0ab6d8ddfadc80be3e"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0025/proof/small-sizes-black-on-white.png",
+          "sha256": "d1e502dbbc23d708bb685f62ccb7c80c855fb62388542ace0cc1fab112f48af6"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0025/proof/small-sizes-white-on-black.png",
+          "sha256": "05d09e0e099f00c81531a171f2faeed80a2fc355768b5884ef7cc48001d2ff03"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0025/proof/segmented-source-contact.png",
+          "sha256": "0797254071c9f224e58b2dcaa39e34de4265fcb84b262ba4ecde50ae80b01e7e"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0026",
+      "characters": "傕噁塋婺徂忑撣枳殄殢殽眊紓芡薺虢",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0026.source.json",
+        "sha256": "8c7deb2ab8a921e6c99b7f00ef2d0f3b3b6fcaca2e71ddbb15a8809acb3c22fb"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0026.history.json",
+        "sha256": "9d3d290914be3c890de34eb36ac64ec4e62caf2d0f47ffa9acf4aab934760304"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0026.png",
+        "sha256": "d4e40c4852f46fb8c7c4b4f4f72836cd9ea74a3a5b922b464315172fd8306195"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0026/report.json",
+        "sha256": "4ed65c33384c431d353a9c032c78f76c0e75243e7449beaa6a83448dcf00ab13"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0026/font/ClearHandTC-ImagegenDictHan0026-Unreviewed.ttf",
+        "sha256": "8ae5712bd9d1f524f3c431f6fa9457b13212ddd2f17d0dd836d245aff51881f8"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0026/proof/small-sizes-black-on-white.png",
+          "sha256": "48d77f53a4251628033dec10c862c5461f73ade59a1a8ac12a3f78eafc19e589"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0026/proof/small-sizes-white-on-black.png",
+          "sha256": "8ddebe53b5c01fe3b75c7c2b060f78eb8bf4c09c36017beaa6981410d5e9d5fa"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0026/proof/segmented-source-contact.png",
+          "sha256": "e5765929b70013cfd66b6721ac8d133af17b74e5c86f6010d27d6f9e5c5e4831"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0027",
+      "characters": "蛉蜚醯鐙閫颭髫嶔悛懆捋捽撂旒旻昵",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0027.source.json",
+        "sha256": "3cf5034e659a5e2b4cf29d734794ed6aabbbe74910fad6e1bd537a93a6a01bdd"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0027.history.json",
+        "sha256": "e9f23dd6868d278cff355d9a8069ecc780fdcb5e39a919a284e9f9795ea51890"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0027.png",
+        "sha256": "c066caff8a785984cfe682ffe3fdb8790a8b1e2b9db15606982c3eb0a5303fa9"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0027/report.json",
+        "sha256": "fd5f328985828cc62d723fbeb655c947cbe71d89ae1aaf8e594276f602c4c150"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0027/font/ClearHandTC-ImagegenDictHan0027-Unreviewed.ttf",
+        "sha256": "637bca8bad7f3fb13b3922fbace751b741671201bebebd92906af792cabb97cb"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0027/proof/small-sizes-black-on-white.png",
+          "sha256": "df9d1dfd47aeacb9905cb460b1f6372367c708710bd6633e0aea1767a2ecc196"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0027/proof/small-sizes-white-on-black.png",
+          "sha256": "a90d389b8de6a1e042b0650be9b7f900d3d3e09f309a46e8812ec7d127dc1994"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0027/proof/segmented-source-contact.png",
+          "sha256": "11adde747bd8ce1a16fd73c60d60eeed1f2d782686efea95f32664c5a518929d"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0028",
+      "characters": "杌櫪溷璟甓碓糰罡翶胯薏虀蜍儕冪咂",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0028.source.json",
+        "sha256": "ffaedfa9bb825b3df2796dec385b3dcebcda4c34be748fc0647fafc0f49a07ee"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0028.history.json",
+        "sha256": "401ece7f29bbd6b72b2bec50ccc778cf440f8862d60bdb55f04e91ab8948645c"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0028.png",
+        "sha256": "9c534e81d2f617267ea90a15fa2aa12ae3d75f37ba80babf8ca5b256a2de46a8"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0028/report.json",
+        "sha256": "92c1916d050e5a7ef01bc5b67167e1cc0741429e2bf71f8406dffea134133e2a"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0028/font/ClearHandTC-ImagegenDictHan0028-Unreviewed.ttf",
+        "sha256": "80db5c2cb4a107dd7c8cf3049a413e3082bb9692ba23f1aa3ba440934b48f657"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0028/proof/small-sizes-black-on-white.png",
+          "sha256": "652ae5bebba37bec943071104f28d95f1f21dd86d045f8a4b1ab0cae2cbec947"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0028/proof/small-sizes-white-on-black.png",
+          "sha256": "dbc5055e7be6611fd550ad6f9309104bbf3a307914afefeb7cb4964b5e94488b"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0028/proof/segmented-source-contact.png",
+          "sha256": "bb2019da78d760df18c6c0505b9d1bf17d21c22f8c608bd3c16f194be1b609cd"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0029",
+      "characters": "嬖廕怛扃挹揎搠暝槅炷猊猢猻甑緲縵",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0029.source.json",
+        "sha256": "10999bc6326d0d7f8e98837bb68ddf02cfb28aacf018e463a0cb9cc916b8dd9e"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0029.history.json",
+        "sha256": "93438db62d4448ea1ba72336c0cba5dfa0849613d60e668eb065bfed82df0462"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0029.png",
+        "sha256": "12ece79409008aba28bde36a5c410c25f7d67d2d9f7973041ceb06eeefd3b293"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0029/report.json",
+        "sha256": "6677342826b346adeeb5a9e5f04f2fa489316c0ccfde671251d75abb41db4a80"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0029/font/ClearHandTC-ImagegenDictHan0029-Unreviewed.ttf",
+        "sha256": "415a2ceccc8b51aee83c05b81f39ab80cb1c9715fc9fb869dc1a94f04c3e5852"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0029/proof/small-sizes-black-on-white.png",
+          "sha256": "03f18fb57e435c5655ee01f59e95489fd1729e4d3d64cef7fdac541864970894"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0029/proof/small-sizes-white-on-black.png",
+          "sha256": "5265aa8687a00fea676fc9b66d03a6541c2ebd87b98aaec9a1d85fe205684ab0"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0029/proof/segmented-source-contact.png",
+          "sha256": "523c5370b2e342d284b7f3ea05a96a5ca6de9ba1cfc6b2d59b0f473d2bf51359"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0030",
+      "characters": "罌罣翬葭衒謅遯邛邠頜餔驂鶩鸛麤孃",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0030.source.json",
+        "sha256": "75d808e9e559a87731764c2c34c14c5350a4114af42cb1f9c2eb641097fc68c2"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0030.history.json",
+        "sha256": "41009825b0d17f4c703c4cbaa59139bfabf1aa5b72028d013cbb2704c34f772c"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0030.png",
+        "sha256": "5575f683ff46e431d5dede9f79081c239bb2fbf2cf6eb3188b3dc6a4732d0180"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0030/report.json",
+        "sha256": "b52cdc628d1ef75ae284aa31272dead24cdbcd252c740bb0be5054357d090bec"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0030/font/ClearHandTC-ImagegenDictHan0030-Unreviewed.ttf",
+        "sha256": "1c7e7f6c6805dd184470fda4cb724e328f62c88a708d95467a18653562a7144e"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0030/proof/small-sizes-black-on-white.png",
+          "sha256": "29935b7487910576679d0a66f5d0de69a52c8f5c3ea2a6255740a8b40e30b50f"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0030/proof/small-sizes-white-on-black.png",
+          "sha256": "56ce363a9cfccd1181fd81c8200ddaff59923f591b2c02f70413f5ebb94e364e"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0030/proof/segmented-source-contact.png",
+          "sha256": "9ab4e9a017d5fe0edc8bc988223bdc360bab6ad0b24290140b66fc36925f0d2a"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0031",
+      "characters": "擐旰晞枘涌琮盱窣竦綹繒腌苻葳蓊蚍",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0031.source.json",
+        "sha256": "a1ee14e2e773b3e99438dc0add6a563988d080b8e35da372a31b6129776afb7e"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0031.history.json",
+        "sha256": "592a9fcb9c85fa797a486a1d68dc18ffedd73b827aad6fd351f72f5b3c3439be"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0031.png",
+        "sha256": "88dc80aabda60c5ad2472a556fbc26e3436b8cdeeba567d70249724743484ab9"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0031/report.json",
+        "sha256": "cda507b96348962d7ba2510156a587ebb52ba0990b1e7086952708320a206a6f"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0031/font/ClearHandTC-ImagegenDictHan0031-Unreviewed.ttf",
+        "sha256": "8383f30ce2187c11cbd36f9bc43f3d3af4004b778ee098d67dc0b4c51d4e011f"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0031/proof/small-sizes-black-on-white.png",
+          "sha256": "30f2f860e5094a006cb65a050730b1a5475e79ddc254fef82a3b4ca0e45cc3e1"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0031/proof/small-sizes-white-on-black.png",
+          "sha256": "4e2cbb6b8c1c075a3cca5fcb3dbe3f78b9a6cfdd48be35e671f73eda132b7fda"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0031/proof/segmented-source-contact.png",
+          "sha256": "a2b2ba5f8b458e08f08efb60663a36f8f16a8be4a3859fd50c352d7a15965036"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0032",
+      "characters": "蜉螽蠲裰誚諶邳靚饈饕鯁嘏帙摛擯杪",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0032.source.json",
+        "sha256": "ab232701c3c79aa63297499cb6b6fb72da032c746a53eab710a0c8c1007194bd"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0032.history.json",
+        "sha256": "feea6d424aa7c5d399f6847661647cbace5e79f9313b056a367e37c1d8797a80"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0032.png",
+        "sha256": "0311cf16f89bd13faf09ab5a188649236e01aa038c0d7e896563706df1f72317"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0032/report.json",
+        "sha256": "4f62ae0b07bf2479ce62d5b0c84a7883a2190f9b130a53deea73a572a1e3dfe9"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0032/font/ClearHandTC-ImagegenDictHan0032-Unreviewed.ttf",
+        "sha256": "ffbf68df09fe6226e9e5656b22a51ddf42122f7a1b6505d1e4bbc2c7474f029b"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0032/proof/small-sizes-black-on-white.png",
+          "sha256": "6f9c8b0d0f6286e92981979996ef2718409b5b62b08e6908a34636ba70b7d0f6"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0032/proof/small-sizes-white-on-black.png",
+          "sha256": "33a7421b8427009a457b4e515d428ebe04712054e79408fb47312f0601c68e53"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0032/proof/segmented-source-contact.png",
+          "sha256": "a476841862ccbeb265152e15a2a69b82406a48e8abb8ab1030eec14c54bdb391"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0033",
+      "characters": "楂泵湜烷玕璇瓤疱禊穠篳紵絛苡莧蓐",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0033.source.json",
+        "sha256": "18aab545f0fb7499f8ec867a226af98b0ad69aded25e4584177baa9404ea8d96"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0033.history.json",
+        "sha256": "cdfc54978514275a13206f75278b32daa7c3dcdd4875ad24bd443ecdb99b30a5"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0033.png",
+        "sha256": "f3fda0c0b89697ac27a6e664e5b1e05c2f3340b43370bd9073d61cc18d0e4ac2"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0033/report.json",
+        "sha256": "8ea0dd4f9e6eff4768145534d0a65a17db67d7384d0396e3c941424457a402a1"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0033/font/ClearHandTC-ImagegenDictHan0033-Unreviewed.ttf",
+        "sha256": "d5dad68f6e5b519e2b9ef2d857b5d199ff350b8ff98767da46fe8bc7b8235c1e"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0033/proof/small-sizes-black-on-white.png",
+          "sha256": "e60e1368a948c1f6b78bb8e435930882c7472e521106c002fca6cb7cbeba87b4"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0033/proof/small-sizes-white-on-black.png",
+          "sha256": "ec393addef3ae115cb8485addc20696bb17da264fc160f4fff1001e1cd2bf7fa"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0033/proof/segmented-source-contact.png",
+          "sha256": "432a80b3ce078269528d7947a1cfc96aa7b34b56f765e9e11381f2d21302167c"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0034",
+      "characters": "藿蜷謖邙銲鎚鐐閽隳韞顗饔驄鬣倕剮",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0034.source.json",
+        "sha256": "0be87c5e5646b0809984a0e2e8294342192aad68ef098e3257df18100f57fcd0"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0034.history.json",
+        "sha256": "83a7e77f7f4eaaf08908d5d6a399dda0875dc45d85912680b8fe6dc1234f8a3c"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0034.png",
+        "sha256": "aa9c04827ed48912e2a6b595e04b99caf61a3fe009a9d8dd8b69f08325f0e3ce"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0034/report.json",
+        "sha256": "e6d3894c9513a527699fe47753b74b9874d2df206a464f112ab7dfca9c699644"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0034/font/ClearHandTC-ImagegenDictHan0034-Unreviewed.ttf",
+        "sha256": "1540fd08ed763339610444494bdae140184608805bc11c31d1ac96b0c774047d"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0034/proof/small-sizes-black-on-white.png",
+          "sha256": "bd2b750aba6ddb69ec2175af397415dd26bc306b5ae6aff4a7e49c479fd09e17"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0034/proof/small-sizes-white-on-black.png",
+          "sha256": "ce09350f190d8112f00d218d34509146812b3e577c2243724aae4556cf760e29"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0034/proof/segmented-source-contact.png",
+          "sha256": "179af13f3de94f396d3116949ee7d37c3d5824d1be3932c6cdbe7a039974e10f"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0035",
+      "characters": "厘娉嶢彘恂恓戧搐摳曩燾甍窅窨萁袤",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0035.source.json",
+        "sha256": "6aff22141681a23a59cb53c77eef36ab72e4bd589e175f964031e8096970694f"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0035.history.json",
+        "sha256": "1ef9db1fef2af8265cded27472a51bc01a654a6a5886aecf92e254ef2d3be261"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0035.png",
+        "sha256": "998b83a879d5e83c1e4a4cd388e25055c77f363b3e645b54dfd697b7dc720f72"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0035/report.json",
+        "sha256": "3eb14f46ecbcad00319be4de4326cfa4543553b6d9365fb1ce46f41a6a068614"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0035/font/ClearHandTC-ImagegenDictHan0035-Unreviewed.ttf",
+        "sha256": "764c2393975a1cee8a5d8909475c38922fee3eac04c4f09529da06566081b1fb"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0035/proof/small-sizes-black-on-white.png",
+          "sha256": "c5535a3b0578146762b8985823f1cd902cf593049148daadee2920a422e9c8f2"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0035/proof/small-sizes-white-on-black.png",
+          "sha256": "22f7090c9460e9a35d5903de614eb5b9f46a371ec55cfb7fc467237a65da1bcb"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0035/proof/segmented-source-contact.png",
+          "sha256": "d228d696d950a9adf6862d2be37951a77f91d3cff7b40e358670e64ba6f54c84"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0036",
+      "characters": "趲蹭鉧銑鴞佼侷俅僊儆刖嶂嶷廄彧懃",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0036.source.json",
+        "sha256": "9571960c97c3be0293a76ef106d100d2f72958f8e4d1cfe427d8cd21713ddf7c"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0036.history.json",
+        "sha256": "70d388f30e88f6a892a72981bd79e9e2ac483392cff7ddf62369c2133401eb30"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0036.png",
+        "sha256": "f9234f6183ed55b287f630068442150fb63f66128924d64400a59014f6254afb"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0036/report.json",
+        "sha256": "875a212be890808815e3d055eae734b4fac6d910245f128843dc79d4492a0d78"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0036/font/ClearHandTC-ImagegenDictHan0036-Unreviewed.ttf",
+        "sha256": "9953e0f5403fcd37640d111a3b633e841fb6b2fb16dbef7cece30bcfe8f7a94a"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0036/proof/small-sizes-black-on-white.png",
+          "sha256": "fdcb100b22fdd8075250243380ea7c8667cec3c340d81d57860998e5a158eb9b"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0036/proof/small-sizes-white-on-black.png",
+          "sha256": "792de4980b70895e5cfbf538f0fc5b72301e9b622528fc4120a4b659b210e6a3"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0036/proof/segmented-source-contact.png",
+          "sha256": "ddfa4c84738b7b4d66df64727f3337ef29e04b4c577fe02688a0a05bfa59874d"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0037",
+      "characters": "懋戥擷旃柘楙毘沔溲溴珞瑗碇笥箜篌",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0037.source.json",
+        "sha256": "41c48eba5070a780d0183118cd31a4a3bd57e826761c2fc6f30da61fbb1d4e7a"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0037.history.json",
+        "sha256": "de5afedf8d677a4ccd57bc1d1dfd83bdd297ace6f640b913ce4b9595edcabd21"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0037.png",
+        "sha256": "301b77c0661bbec9be55ef39d2fe90312322fcd8cb093db2ca0538f84e93df42"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0037/report.json",
+        "sha256": "46360238b4ef90728b3df371e2b288ee786d0e8c39d634075f37b380e5db680e"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0037/font/ClearHandTC-ImagegenDictHan0037-Unreviewed.ttf",
+        "sha256": "8599ba762a58045d69297547c37b0c65a7783d963b0fa58ffb64eaa97de34028"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0037/proof/small-sizes-black-on-white.png",
+          "sha256": "8a00d5090a1613ed9cf87b9653660a0e5a4fa2755716542f731d2496ecad0bb6"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0037/proof/small-sizes-white-on-black.png",
+          "sha256": "d6bba29f6cf8373216f2fd8673c1a01eb7ad654a4c2f37c9a65073fcd238c200"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0037/proof/segmented-source-contact.png",
+          "sha256": "c2814d3a180c618a43b2510d3817e901c73eafcd03e0fccadd1c51f93fe9e83b"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0038",
+      "characters": "簟罍聵膂詡謳蹧鈀錂錮隰驤髀鼉乜侔",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0038.source.json",
+        "sha256": "4209228a63d0dee98f2e801496ef0ebfa26f5410644e80d7664dd21ba4f7af7b"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0038.history.json",
+        "sha256": "e0699f23484cd02d5b34b7a0ed2aa01929ff0592b42c997578d5b40bbed5a50e"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0038.png",
+        "sha256": "dbd4153bf50688b450e40be0d549d6aac4ebbbb11651e27f914e62d396b31dc4"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0038/report.json",
+        "sha256": "1646dd3b12c1a02e956d8fd3df358de2dc5d2978912059d949767c01600e0d5f"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0038/font/ClearHandTC-ImagegenDictHan0038-Unreviewed.ttf",
+        "sha256": "fdecc997db3cb73940c76d1d39c5c2f16ca3e8eb86541b8c6fd9ee4417ee907b"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0038/proof/small-sizes-black-on-white.png",
+          "sha256": "1a8fac6396b80df04ee045e8cd405454a309b5f226c87b2af96de5a725f2549d"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0038/proof/small-sizes-white-on-black.png",
+          "sha256": "d59f9cc706f852db60ab34f918b0d36ad6b8e31c2fae1d6a252b8b87f81adf97"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0038/proof/segmented-source-contact.png",
+          "sha256": "078c8167ec773ee727342a3a4f7a021d0b3c848ae64b3612010b7cde729fbaea"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0039",
+      "characters": "剡圉坂怙掰擀槧橛洄淩煨磔筌糴絰纛",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0039.source.json",
+        "sha256": "0f79acbc0637a102cd5c6ce74ccb70644b7f0ba4c51c16cf84f3fed1b8a9b03a"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0039.history.json",
+        "sha256": "e111fb552d95bfa7f4d40e6576fe5615c837e00df4cf3ab5e5580355ca53720e"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0039.png",
+        "sha256": "4a541b66e15a7c174cda7096f5cfaef9083449f07456897f35cacbf4cf0108f5"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0039/report.json",
+        "sha256": "dd5c98283f4ac4662b1e172b9ae465715542896e4af6a54d4ea6a7008c226f9b"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0039/font/ClearHandTC-ImagegenDictHan0039-Unreviewed.ttf",
+        "sha256": "690f51a86bb5a3f7b1f72dfef25a0a1fccaee311ef8e32d92e5f855b0a8cb062"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0039/proof/small-sizes-black-on-white.png",
+          "sha256": "d8e20a06e52be6590aadcbc16e2b769c80a4b9811f93de7e450f31350e9cde18"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0039/proof/small-sizes-white-on-black.png",
+          "sha256": "5bc1be1f6ef63b22bebcc7edbfcb7ffa6a7e221297e9fb6b71623b81f5b35f57"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0039/proof/segmented-source-contact.png",
+          "sha256": "3e967c36e66b78592b94a5f15a62ae4625acb02b1eda9616cb6e015c5a9024ee"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0040",
+      "characters": "耄蘄訾諤轢醪鉉雎駸嗒嚲囷圻寔峒无",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0040.source.json",
+        "sha256": "df9ead557cdf8215fb29c469468379afeb3d651e95f7944e315b93ac0c124251"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0040.history.json",
+        "sha256": "833ac00ebce2a2a6d5cf1625b4e38d50c825379b11b3b6f0a36b2663831c5061"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0040.png",
+        "sha256": "58af4162195369df285837947f03e13c1e455870c2d882f48b751f139ffb4ced"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0040/report.json",
+        "sha256": "6e13b7b24f94f39939bd4c7b381549cb735d7315616907bb74cf933da3796885"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0040/font/ClearHandTC-ImagegenDictHan0040-Unreviewed.ttf",
+        "sha256": "c4718cbf2e2dc4f69b3a51f1222c4a4fe223390127ebd8de0f14e9b3ba974a5c"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0040/proof/small-sizes-black-on-white.png",
+          "sha256": "e66fe33ad45548a849af932ae2681c9cc88e7539a4a1dd549a91cb5fce1c9bcd"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0040/proof/small-sizes-white-on-black.png",
+          "sha256": "5e5c8caa41b3671710f243d4321d110cef894f27fe323207b172fdf9116f568b"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0040/proof/segmented-source-contact.png",
+          "sha256": "52e0a059dcc31a02d25e60e040a80977e3459c0ae6a509d05a7402061a52094b"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0041",
+      "characters": "櫳櫺淬潞烟牓痂皙禰禺紺腓葺蓴褡覿",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0041.source.json",
+        "sha256": "94ef0d722cd749ef929f2ec10ed348c4a8a638dadf0d687c33a15a8c6b7e84c5"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0041.history.json",
+        "sha256": "c09e0a1a7442642d4808ffe6c5c0d5f15f3165089b2147d5cb84776f6ececb97"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0041.png",
+        "sha256": "0778e25338fde3706ef3eb304450aa965eed9194b1cc92903efc34fe066c53e0"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0041/report.json",
+        "sha256": "27bb895f6fdf8623e5ad02941682d6148c2f92d993e73b4c201d0651cf8fe2af"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0041/font/ClearHandTC-ImagegenDictHan0041-Unreviewed.ttf",
+        "sha256": "738e098a195ff7bf9fd34a573c3e99115faf67047f4928df3ba0d23f6906efe9"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0041/proof/small-sizes-black-on-white.png",
+          "sha256": "69b2ac5785c47836ff220a76b7bf9846a46dad77cc0364c072896083df00c901"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0041/proof/small-sizes-white-on-black.png",
+          "sha256": "fd1de418f51eb3c5b251be19576ac82dbdb2bf941f562e95fa79b21e493bb272"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0041/proof/segmented-source-contact.png",
+          "sha256": "cc99f2a036cc3614fd656da387000907b6420c5073dc6015f2caaae60d8d539c"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0042",
+      "characters": "蹠逶酹銃閼阨颩飫騮鮒鷟乂傚嘓壚媧",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0042.source.json",
+        "sha256": "d0952f6ebe46fc5d533d0f9b87ab11d3aead9cffcfe11b97aa3c592c1d06027f"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0042.history.json",
+        "sha256": "81cf1cc69f62ae6a214c1ffdae17b4753d1fdae91c95546b29ee2fb668190b1a"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0042.png",
+        "sha256": "b6b0d4683a50b320dba802da2142a95b4f098b21eb309eb4365dad6bbb38a9f2"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0042/report.json",
+        "sha256": "4dcf232c5aa3a820a8fc15698ad4046d7c3b13e5fdcb57e6be142644f9375061"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0042/font/ClearHandTC-ImagegenDictHan0042-Unreviewed.ttf",
+        "sha256": "d4fcdfa24e1e4554804ec7f690ff6954760243eaf416237dc7b27f2ea5dd86aa"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0042/proof/small-sizes-black-on-white.png",
+          "sha256": "882928561504686d7e41ed7d8a41bacae756906e787f9557f623b27cb05c2b0f"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0042/proof/small-sizes-white-on-black.png",
+          "sha256": "c3a0dfc40188f20055d169afea831307f2ecbcc7e451e094f8a26e04e820171c"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0042/proof/segmented-source-contact.png",
+          "sha256": "0c17a806dc773b978c7b8fa6dd958cfd3fc317ce2e47962cc7ded51125d02ee6"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0043",
+      "characters": "悃扑扦槎汩汶湄瀲燋瓘疣痾矻祓秕箇",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0043.source.json",
+        "sha256": "8960b9b1152e04fff43bb54bf688588fb0c9a2a23fc76cc5077d6784759fd389"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0043.history.json",
+        "sha256": "a99568574ce329bc10b34eb391dd9327f7d82746e0c324ece612c5be5b53c6e6"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0043.png",
+        "sha256": "f59629f8be2c28d6433da5a1bf3a1f4b72b9e838b07b078e27fe933847e043cd"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0043/report.json",
+        "sha256": "df01f8fe81c12a8e1ab7a879174f684fc4546628de0efabd700ebb65baeaf506"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0043/font/ClearHandTC-ImagegenDictHan0043-Unreviewed.ttf",
+        "sha256": "37cb9a806c8e06b3bd7b0f031c10c52f886c3ba521e0cc4af834e4ff4f9cdfa4"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0043/proof/small-sizes-black-on-white.png",
+          "sha256": "4f6b5fc83dd7bcef4b47959846f983bce194eecd2528f7f3c95dea530ca69abb"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0043/proof/small-sizes-white-on-black.png",
+          "sha256": "438bf1d973f66d63d7d6a72e6825c2decec8e2665100f54568f87a56ceb2946f"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0043/proof/segmented-source-contact.png",
+          "sha256": "d5ab3bf58c6524ee3e377eeb7b17793a07416cff9d6abb9f79f9d3f2d65260bc"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0044",
+      "characters": "綦缾翃茯莆莩蕎蛸蜩螭袪褭詎貺輞鋏",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0044.source.json",
+        "sha256": "32daf6f19f82845bd7b923a6fdcf4e976ced76d7378119759aa1b7130098fdab"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0044.history.json",
+        "sha256": "8fd52048ad442dc773fe1937ad13e8cd431f4aae5cc8aee891fa7e815058058f"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0044.png",
+        "sha256": "87d05c539d4c7c3224da41d18b5772f5c10464a6fc3db45f2ade939469f81513"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0044/report.json",
+        "sha256": "e327213b9d4eaa0c1cff594237075b88daf46156744dc710ccc01915d2209497"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0044/font/ClearHandTC-ImagegenDictHan0044-Unreviewed.ttf",
+        "sha256": "69e2d5114fafac45727132160862042fe1b07aec2786d4c370cb16b90e764d7d"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0044/proof/small-sizes-black-on-white.png",
+          "sha256": "8b1fecf753285640eb1b57e54dff9651214082dad1b0b8070d5bf1e05509f71c"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0044/proof/small-sizes-white-on-black.png",
+          "sha256": "0dedd763c64ee2896c75c2825fd6a8733ab0b72bd3a1edc061657ebb5348c66b"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0044/proof/segmented-source-contact.png",
+          "sha256": "e193ae9cc35ec2e1fc7b19e357ad6f43768b15dd4256f0bf9bb01e4901682c32"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0045",
+      "characters": "鏇闍隗鵰唏噲嬈嶙恚掾搆搧攄昕晻栝",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0045.source.json",
+        "sha256": "0efb4e908c6a0d4f532517f6d03cd37a798912d6bea041d8781b674e9d6c470f"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0045.history.json",
+        "sha256": "b7ce6d4d1c491f4526a9008e490900f7adb6fb291ca2264a96a7b1086d41c175"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0045.png",
+        "sha256": "f561af7fa4389fa315a342e82c7adc4a9aeff591bf311accdfb3c7968c1144b8"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0045/report.json",
+        "sha256": "8759c2dc66ba686b7fb83e617892631db0c6a066fb54ad616bea41e73853ef9e"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0045/font/ClearHandTC-ImagegenDictHan0045-Unreviewed.ttf",
+        "sha256": "917ab18cc29561819af8cf110a86b882f75db9740e62da53d5adc029eb25e87a"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0045/proof/small-sizes-black-on-white.png",
+          "sha256": "26a826d07d9d79c34a26f868f475c137f89a1594623c3a476623cc1818d37759"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0045/proof/small-sizes-white-on-black.png",
+          "sha256": "bc4dcadf14b118213e5777afa211726fd224f931476d74e21c7d0cd4a00c4c0f"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0045/proof/segmented-source-contact.png",
+          "sha256": "5234cd9aff04051ca90ef1eefa379a80c66984195f745298169696443fc824fa"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0046",
+      "characters": "檉欹毳烝熠瑀睚禳窬笈縟縴舄荑螯觱",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0046.source.json",
+        "sha256": "a3287047f866f1762c858a839cc4b93fb03ce1419c2cef0d74ca13899cfe9785"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0046.history.json",
+        "sha256": "be28efbb4b7ef6ec1dfe14539779b72665b6366801ca1730507be2e57edceb17"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0046.png",
+        "sha256": "ad77f5397bc2957365eca3242d5b9603156e9b4f1d13ed8a8c2a58a1a3d2d37a"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0046/report.json",
+        "sha256": "bb8d51c5a465cd8122192f97b01715d35ab2e192ca27097ed2c25fdbf20714d8"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0046/font/ClearHandTC-ImagegenDictHan0046-Unreviewed.ttf",
+        "sha256": "7cbf68062bf97a790646826fa68b836f06d9e9bb2f4de64c6f646e5683015ca8"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0046/proof/small-sizes-black-on-white.png",
+          "sha256": "2b11c40296b1377973f97ddc39d94e5ba11e1349f3d339bfd74cee680c3f04ae"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0046/proof/small-sizes-white-on-black.png",
+          "sha256": "eede306c7513ea8ed3f79f272db89234b2a9e93d8c7834f9c45e13998e68cc29"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0046/proof/segmented-source-contact.png",
+          "sha256": "93f120de5ea85894cb319146e5d106d14d13f1bf7bd54bcf8ce684ffee584679"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0047",
+      "characters": "詈詒誆譖跗躕酯醅頫顴鯤鵷鷸黌黼侄",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0047.source.json",
+        "sha256": "4b8895f471142a963ee762115310cd2534ca5c57655ba495f2d528e85d89adf9"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0047.history.json",
+        "sha256": "7f2bc01060873dd2abb9800b2ec42af853582c96c4498b66717e52ef2f109f7b"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0047.png",
+        "sha256": "831fb78766cf6f7cabb6aa5b87683665acc8f09d9677cfbfab75e54fdd21f41f"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0047/report.json",
+        "sha256": "71dc09fb354863371929c526ce6f44841642a50bf532eb1bf46db5aa6ec3834c"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0047/font/ClearHandTC-ImagegenDictHan0047-Unreviewed.ttf",
+        "sha256": "ef8f498bd8c92bae62ee2ebabdb1015969d7d34d8998d93d28ce5e66d74e4fe8"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0047/proof/small-sizes-black-on-white.png",
+          "sha256": "d07e5c12dd109a691f88434b330ea48ee8ac4af8fd576fbe9640d47f233c8186"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0047/proof/small-sizes-white-on-black.png",
+          "sha256": "1781b9deb593b377b0db2fc01827a54a8db1ccbedb2c05fdca90ac01d6e07b51"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0047/proof/segmented-source-contact.png",
+          "sha256": "bcc13a4987e7093db4545fb3e4ff7a06fd1f58f383416a356fcd7ba9d1be1072"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0048",
+      "characters": "倜儸冏咍囫壼宓捍揜搊昱晾楸渰瀘燠",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0048.source.json",
+        "sha256": "fd94d64347aeb9a18ca05bfe4c29a236add737df4ff81cac6200a88f9442cf51"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0048.history.json",
+        "sha256": "77298ba5cab549e5b3bedad1c5ea9e8340155c8b53259a39a7254bae7ea99ce4"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0048.png",
+        "sha256": "d8d0ad822701bdc714819953cba7bf7a5941e4055199f6c4445644881c5b532a"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0048/report.json",
+        "sha256": "3dfe21bc9cfe8fe7f19950aae69c71d8cc5bf11587ec86d3a6f61432221dc343"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0048/font/ClearHandTC-ImagegenDictHan0048-Unreviewed.ttf",
+        "sha256": "d9bba6c39b2f7faf01fc14520217a2d5217768cb588f51e0dd66405f4436f091"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0048/proof/small-sizes-black-on-white.png",
+          "sha256": "aade7d846afdc90daff451f0c69afc3c14a758ec1dd0c4803c076fc4a9551d31"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0048/proof/small-sizes-white-on-black.png",
+          "sha256": "327feb80b71e96d66d8299d0c2fb7a57a79efc5b09fb4aa339b62cf2692caedc"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0048/proof/segmented-source-contact.png",
+          "sha256": "e2f9c39d0d3f132aad8bb45b4dba65d4d9e7ad1402ad11e2f0d78d3528545000"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0049",
+      "characters": "玦璠瓴癟砒磧礱祧糝艫荃蕓蝟襬賾跂",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0049.source.json",
+        "sha256": "37961049cc9e5496768e0e57c665d00a466ff5740beba208a33b9b205a4ddf68"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0049.history.json",
+        "sha256": "cfdcf3ee74dc5ebd145d28661ae864ee00a60e39cd16895cdbf18b8b132221e8"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0049.png",
+        "sha256": "4c8f9732b82991410b53900e4a9e2c724ecfcb80d943a1744dbc0d45c11d6649"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0049/report.json",
+        "sha256": "4cc76e5760ae142d1629fa1d40327cc9418168506852010ec00c2d835e29ccec"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0049/font/ClearHandTC-ImagegenDictHan0049-Unreviewed.ttf",
+        "sha256": "66fe44f028b46f5b03d7edfdf543e4d8617e4f529b74875239c70aa0b371dded"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0049/proof/small-sizes-black-on-white.png",
+          "sha256": "22f3599a0c40a0ab4e729f700b19a690fd5394859ee6c241a800ef9a2a8275e3"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0049/proof/small-sizes-white-on-black.png",
+          "sha256": "c4d3ebc3689840ab217e5a074f86439af6e44cc4b78109357ab4eb8391992f0f"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0049/proof/segmented-source-contact.png",
+          "sha256": "1a7710c3aa0eaec788ed1631af80e817ce1bfe90be66360fd07ec800d0920f68"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0050",
+      "characters": "跣輳顒鬮魑鸝偢傴儁喑嗄圮姝婕媵崤",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0050.source.json",
+        "sha256": "0ba767fcb70207bd3baf2155735ef233d93101b59c6d84eb744259c0ca1533fc"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0050.history.json",
+        "sha256": "8c8ee9670f9ab3672c0171f3be01352b19760c2de1b1eb866c0fc1319c2b8616"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0050.png",
+        "sha256": "fa2774f03822cf750d497798d71b2cc3ca4c22ca3250f9e09019200bbb894cc6"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0050/report.json",
+        "sha256": "6764713897c469fe37f915cf7449589c3375c8720c4f3f9249841029616d45d9"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0050/font/ClearHandTC-ImagegenDictHan0050-Unreviewed.ttf",
+        "sha256": "a649ed4f142c7ece5f6f715d4113f318754994f8b0ba5204bee57182343e36bd"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0050/proof/small-sizes-black-on-white.png",
+          "sha256": "3516abb7ba7850587a9b7a21bf245cc16dfa52d112bf599340242f89464319fd"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0050/proof/small-sizes-white-on-black.png",
+          "sha256": "018fa33d19b673ced64f552105b95bc0cc335056d228514738c669fab8ae4ab0"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0050/proof/segmented-source-contact.png",
+          "sha256": "80ba94c8fc5cbaa36d1d0237b3e2ca8439d484d88e86a0287c07af2e05da8fe7"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0051",
+      "characters": "嵎帨廡捅摽晡栳棼歃氅沆洧滁澇烴珓",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0051.source.json",
+        "sha256": "ed726826ceff7c8746d74fcfb81ba34a9c2e3f50309508bc6f9575461ff2b595"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0051.history.json",
+        "sha256": "6a7adcfcc9737166af883cb5b13752d5deede52dd9cd646e5035a2d10e3a767b"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0051.png",
+        "sha256": "e0ac0a40c64166ba3d465cf84d05143c346b8f80c9a1bb592f0eca33da314ddf"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0051/report.json",
+        "sha256": "c0138e5c42a347e32497f8b78b5caf9618ee00340c3d515a303ba744529dc709"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0051/font/ClearHandTC-ImagegenDictHan0051-Unreviewed.ttf",
+        "sha256": "01a98af99052a6a0d00c7596b995bbff899cb26ee2176b61ad7217a217201e39"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0051/proof/small-sizes-black-on-white.png",
+          "sha256": "4305030496da7cefe6817fc8dc47956341e892752441bd5ca9b39b1809db5087"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0051/proof/small-sizes-white-on-black.png",
+          "sha256": "3e5c37ac4acf45dc090f37f238ef67a23e35fc5d14fe96089d416a5a739c80f2"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0051/proof/segmented-source-contact.png",
+          "sha256": "52416c3d6a5cfa728f90267c1e35b62b4ae94a5fce6a5c0225a7a9258c43152c"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0052",
+      "characters": "痼睍瞼秸綆耨臠臢舳芊菫葆訇蹐躧逡",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0052.source.json",
+        "sha256": "45dd173210903765dbe6c3c70bdefb3a34ad989c5259880fae097c79bb5c3c4b"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0052.history.json",
+        "sha256": "5d8c8459581463553e2a6b6cf9481a6abd8f63bff9c3fa3be024c7d6069432c8"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0052.png",
+        "sha256": "db60898aa1b2b64689e050a8591e8c6ade0dbd6c8c9b8ea5c11f313b78c7b157"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0052/report.json",
+        "sha256": "34e68c282394fb066b31345f518dd53b814bf56e784709901e3aae512275cfb2"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0052/font/ClearHandTC-ImagegenDictHan0052-Unreviewed.ttf",
+        "sha256": "775ce0a23e1f80a4e943a159ab19331f942eae03432d4a79dd6fe78efecf80aa"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0052/proof/small-sizes-black-on-white.png",
+          "sha256": "719f80c4bc0f6aba220326c3af196ad724315795cf8ba828717eca9209272c00"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0052/proof/small-sizes-white-on-black.png",
+          "sha256": "0e7c61b76d146bb2fd8dd9b1692926335792aae17f6260e6851eb37b10c03de9"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0052/proof/segmented-source-contact.png",
+          "sha256": "f6335afbacfe704c3108f78ec19067a24adb647b7bf008f8750f5ceb8cb47fda"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0053",
+      "characters": "邶郿酲鉏鑷闞雒騭魍魎鯢齏价倬傜唼",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0053.source.json",
+        "sha256": "a45d9d19513a281103a64e48d8d8bbcd53cb4ad83d67063983160a3e0b07ad57"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0053.history.json",
+        "sha256": "ee4824bc409544c7194cf3971aaf0ca8bf7f5795dd4e679de7f1e087af49cebb"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0053.png",
+        "sha256": "5fdee38c8c063fd428722af2444455884a3244a2b18937655421fddd1846445d"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0053/report.json",
+        "sha256": "a55d69b804c4dc48d0a8b338cf12ebefb2b5b2fd278be726ff1cdba5d19c4f8f"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0053/font/ClearHandTC-ImagegenDictHan0053-Unreviewed.ttf",
+        "sha256": "cafa6a6b771daab619ff3388b067cd0f27b59cbe7f86b0d3bb56dbe08028e061"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0053/proof/small-sizes-black-on-white.png",
+          "sha256": "ce6f181d8b490c76d8af4ca19cc7378c4a64b9fb48a0f7f9d829820121a93dbf"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0053/proof/small-sizes-white-on-black.png",
+          "sha256": "913f0caced6e1d38a9a2788679c38a34c6f1df0da94c7074772abf1bcd5b95c4"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0053/proof/segmented-source-contact.png",
+          "sha256": "fd90ded42fc4c37ab2bafc7dbfbd269283d8ebcef50ebefe70f61534bdad9716"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0054",
+      "characters": "嗝圇奼嫠嬙嵯忡怫惸扞搴斕昃栲桷欷",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0054.source.json",
+        "sha256": "8369689dea6aa479e1e8f42298529510e0d582176ee4c994fc3f33413c2977af"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0054.history.json",
+        "sha256": "38ae59628b0513cbe67ed2c605c20c7c8397686cc5855e2a32bd9890be679724"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0054.png",
+        "sha256": "c5e3348acf17a94104f84a117ab52bd845fd29266224c39dfb95aa41178b3dd8"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0054/report.json",
+        "sha256": "de025626ad75a4a67f212a9f060bc6e21feb6c8fad1e8e57d57a78ff86c4cd4d"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0054/font/ClearHandTC-ImagegenDictHan0054-Unreviewed.ttf",
+        "sha256": "f5e387e4ad4de7d0aacb1659bc1f6caf89025ad7405cd27561d38f13584fd5bc"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0054/proof/small-sizes-black-on-white.png",
+          "sha256": "968f7a2af66e8d9a5d925dacc8f46be62fe00433ed0c1c07895ce9394ff793b6"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0054/proof/small-sizes-white-on-black.png",
+          "sha256": "4224e65cce21c821e3dc7eeba9c6a4c80dca734cdac3958d1591786c68abf1bd"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0054/proof/segmented-source-contact.png",
+          "sha256": "4ca6254f575deb44069f277b4371e275c184fccd0e1f30e2208c5fda3bc14603"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0055",
+      "characters": "渟湎滃濆焯燔獠琛琯璵畋瘻癇窿篥籜",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0055.source.json",
+        "sha256": "e80c4442ac1d6c7e529a97fc14f781c5094a27129676c9f418d1ed265151004d"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0055.history.json",
+        "sha256": "43b6a3fdae0fe4ba1d0db2defe59d320f4ed82afa51eb5f224fae415742cb17c"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0055.png",
+        "sha256": "463c133da84a7bf96441faab0014df240702bda3dfd0035d5c1c50a2a85d9d47"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0055/report.json",
+        "sha256": "3322dac189ecded23a6f02b29bd36071e8cd76d592655e2df0e173e55791b7f7"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0055/font/ClearHandTC-ImagegenDictHan0055-Unreviewed.ttf",
+        "sha256": "56e5dfaf3039d7320766f9a24356411bfe64ae98f1fb06aa34b067f63b4cada0"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0055/proof/small-sizes-black-on-white.png",
+          "sha256": "532c9569ed9e49c8cdb45b208baec5d647d9ac217d3dfe4e9376ecbc333f80c8"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0055/proof/small-sizes-white-on-black.png",
+          "sha256": "fc806e08852b9574baf101f3a38f0a2ec51fa6678873bd45cfdb05cca40b5ec7"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0055/proof/segmented-source-contact.png",
+          "sha256": "0341d602af6da1c4b746553abc7e4b87b7aecf7ad32a927ae91bd4a4548a3998"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0056",
+      "characters": "粼胝荳菑藎藷袷裀褙豳蹕迍逩郯醚醛",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0056.source.json",
+        "sha256": "9d8ad981ca9d4fa856cb208f84c01d5a157a0b3908c01d55e94c9359ff1a9b27"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0056.history.json",
+        "sha256": "b115b48f5ce0c675313131903aa313237f6e7095a9d5a83251b1264a64516cbc"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0056.png",
+        "sha256": "0034f29f94f08643450772404e29c45aa063bacff87eb80ee6f78b178d9fe48d"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0056/report.json",
+        "sha256": "be1768fe299a6836456f6cd3766a321873ef12d323d42b1143517ff8428e18e8"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0056/font/ClearHandTC-ImagegenDictHan0056-Unreviewed.ttf",
+        "sha256": "c31c888d1a59ab6225c032c5d8c97e11ba1c34bf9cbeb1740b869b6f578fa075"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0056/proof/small-sizes-black-on-white.png",
+          "sha256": "0e01af9d17b16c69c8d921cb4c9b2b893b9ab41ed44bc152d8019bfffa136001"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0056/proof/small-sizes-white-on-black.png",
+          "sha256": "36b87c035f332d75eb45d3cadc39838e50280391c97dc2014143d5cf16d83f44"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0056/proof/segmented-source-contact.png",
+          "sha256": "6d540cbc74a3226e2e96d0ce1bf848594ed7102eb387b4e885e7f728f6e1ad63"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0057",
+      "characters": "錙鑞餗餬餼饉髖髣魆鷙卬哆囓垤埒堙",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0057.source.json",
+        "sha256": "fb07715fcbb72d744e8f6ecf4681200eabb579e644fe7fa72afa0d1c67bc774f"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0057.history.json",
+        "sha256": "89602ce8ca3a6f32d40bdceb77ea3343ce94ecb8383656d03b31875d5570f351"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0057.png",
+        "sha256": "a0ba1f3c90c3e74f947b6aaab2a5878bb99c51a3aed25840295dace4db8fb308"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0057/report.json",
+        "sha256": "b304e8929f4137ef13705130328cc7a551d9756f06dac168f427fbe53165c1be"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0057/font/ClearHandTC-ImagegenDictHan0057-Unreviewed.ttf",
+        "sha256": "e8bf2ef30a6925a61a79f94514620c8b517f0628cc5a0ffa8c7e034a99efbe98"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0057/proof/small-sizes-black-on-white.png",
+          "sha256": "1e842af0b80a3c68f8ca81485c5eb9c9d3eb053dc1433f38babff3c372064936"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0057/proof/small-sizes-white-on-black.png",
+          "sha256": "8ca8baf37ae51ee00a1885329808a2c223da0a80d150acac88e8e151e479e2ad"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0057/proof/segmented-source-contact.png",
+          "sha256": "d11b8fd0ea2bdfc8b004040f1f28b52290d10c3a4d28d7ff95807bfe6db5adeb"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0058",
+      "characters": "堠墉壎尻峴悁拶掎揄斁枵柝櫱殭涔濰",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0058.source.json",
+        "sha256": "cabdfc3edda2147a861894be75762570a3188baf94b480243f945662d7e79cf2"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0058.history.json",
+        "sha256": "be28e1d9aa0d1b8a11314c843ff23e21d4afadebea6715e279ea88851d679faf"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0058.png",
+        "sha256": "897a7a5c4500294a2b7a3bdcf1c9894ba633b51e6963cdaf87838eb9ed59325a"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0058/report.json",
+        "sha256": "3814ae1a849636f38d8fccab3c735822335fff7a0853ad55b7e0fb59549b3cb8"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0058/font/ClearHandTC-ImagegenDictHan0058-Unreviewed.ttf",
+        "sha256": "d50f1b643c811ccee8b5309bb058f6a12088cfb5f1cb37c028e3671b5afccb2c"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0058/proof/small-sizes-black-on-white.png",
+          "sha256": "c7154290eeff7aea7f9ccc3724e3d1b81c9e5467d7e0eaa2f781b4f21bd6125e"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0058/proof/small-sizes-white-on-black.png",
+          "sha256": "7bb9532f7daa090b6082863c1055f8483a36744e39ea4403d7c397b3f9afd925"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0058/proof/segmented-source-contact.png",
+          "sha256": "1f7153794ee1b8597b2820a7e49cd06f089775d15791570541d1c66bf858c8f8"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0059",
+      "characters": "灝炤燁珽瑒疔痧盅眵睇砑箠紞纊罏翥",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0059.source.json",
+        "sha256": "c80365efdea6259f817a1e09a6ec104e8949c33f71be4a380174eea0a8407da1"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0059.history.json",
+        "sha256": "89303437d227b73f58a44dec2daa3b1366d33d01bb66001051875a523426135d"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0059.png",
+        "sha256": "2dc7ebd22518633df51680d6967b03dc69a0df0f9063acda1dd206ebc543052e"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0059/report.json",
+        "sha256": "1214651b0593164e94adcec4035778fae13ebcb555bca84c3264f9670c47a142"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0059/font/ClearHandTC-ImagegenDictHan0059-Unreviewed.ttf",
+        "sha256": "cfc86a9ce7677a2be8a22ef5fcd4751024cf3071f7a1d9ca134c853848cfcf84"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0059/proof/small-sizes-black-on-white.png",
+          "sha256": "bfc131af77db330fb67f2d2f842094cf4ef01ccb3bcc629077f1d430087107d7"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0059/proof/small-sizes-white-on-black.png",
+          "sha256": "9054a533e35ff1647a0a2282b45b9eca9dfec9c6d010d6677801f541959b23a5"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0059/proof/segmented-source-contact.png",
+          "sha256": "89b6d12e4d4e417c8b5f882f799eac12a0aa280e5a06d800458877e03b946204"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0060",
+      "characters": "芯萇蒔蜊蝎蠆貔輥邅銨鍔飣騃騶髡鶿",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0060.source.json",
+        "sha256": "f5356b6e8d9525fce963b4a7e3b81ad5ebead1dcc9d3c951be0afb8245f8085a"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0060.history.json",
+        "sha256": "6180371c4e963b1db0c94f84030a3654988da046c6909455724a17576fb2e481"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0060.png",
+        "sha256": "b43f81c0016d321df3c3c1d0262493b07669663145e186f724693395859afcb9"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0060/report.json",
+        "sha256": "2894b0e169c97905e6bce702e4a715866d2c34da3b706c53354c927789b0939f"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0060/font/ClearHandTC-ImagegenDictHan0060-Unreviewed.ttf",
+        "sha256": "5b179e4d0e87952d3416b3d3180cd143a579ee3216acde01538194143873af5e"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0060/proof/small-sizes-black-on-white.png",
+          "sha256": "2ecf7d1ace7230ca5e9610e64f61c3ef32f9928d5d6deca6a0352079aa608b2a"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0060/proof/small-sizes-white-on-black.png",
+          "sha256": "a6a7029680410ab11d70c25a9733f3dca11c1ed8ec6f9c96bd97f4a2d60cb117"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0060/proof/segmented-source-contact.png",
+          "sha256": "a35dd9921f10bb829e5c713d7fdcbc22344fb18ecc7a572d492d99dd5df876d6"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0061",
+      "characters": "鷃亳厓叡咷唄啐喁嗶噘嚌囔婭崒嶧巘",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0061.source.json",
+        "sha256": "2b2899b303c2ac2e5a7c09d45886a324ead9588754058b204882fafdfdee8798"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0061.history.json",
+        "sha256": "a0a8dca4e0dd0600611e198748d661047d08d89e36bc38c7bbcf957c9ba95bd2"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0061.png",
+        "sha256": "e11a161b3ff16b3c06557341247dcca3ed8d6862ce7787d637af7066899c824d"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0061/report.json",
+        "sha256": "1bc2ee6e0033e5f8785b1b983beeb4c594f17960e2dcc18ed649a362b2be0bcf"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0061/font/ClearHandTC-ImagegenDictHan0061-Unreviewed.ttf",
+        "sha256": "866278d2635e38951301342e8bba8cbbd0490b91cf4116b1b590f5779becf7e1"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0061/proof/small-sizes-black-on-white.png",
+          "sha256": "ef723827de8d24779e20ac205e43f2e51d3ba064320ebe009ba7147cebde1275"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0061/proof/small-sizes-white-on-black.png",
+          "sha256": "37c4011708c3fbf4d5484afaf0ee7d87b1255960ff915e9ab558861167bba1fb"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0061/proof/segmented-source-contact.png",
+          "sha256": "3739e8a4d128eef806125fcc01462388f9ed7bd64577adf5ca6528fce4829900"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0062",
+      "characters": "帔愬搨擗攮杈桄梏槭樛櫨沴洮洹涑淖",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0062.source.json",
+        "sha256": "57ffc5d8c093667bc8090f39ebe30d9cfbd76f1a41dc08a58aa4aa980da8f141"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0062.history.json",
+        "sha256": "2e8d339b5a3bd610c0d4190e9556fc0b4408b4da7fb4275fab48424be3482c1c"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0062.png",
+        "sha256": "73df4b46e6057e34f09810c408df489c8abf836a416ac06a49d22793f5456999"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0062/report.json",
+        "sha256": "a436e4a78a817322dedf3f2ff0ffff5b31412b7aa2bb321731f97eba730d6f19"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0062/font/ClearHandTC-ImagegenDictHan0062-Unreviewed.ttf",
+        "sha256": "95f1576c11281422ba017000b73f11e3835d9a6f785b40b589a19ec055c50374"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0062/proof/small-sizes-black-on-white.png",
+          "sha256": "2ec9b43b76cbdf397c16cbddfdee33a644247e163cf81ab5183576545092bc35"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0062/proof/small-sizes-white-on-black.png",
+          "sha256": "360ecb48fe782ae67000780c52250c3dac5d210241dcc61c40c69cc4001d5e28"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0062/proof/segmented-source-contact.png",
+          "sha256": "72c6a4b31fa328f4a7b1842fc040f2c221abed6d8b9f510b55a443fc82d0ea77"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0063",
+      "characters": "瀼煇璀町畹痠瘖瞋窳竑笵籽紘緗縕聃",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0063.source.json",
+        "sha256": "891b0d8cedf5710147ea3e13bf082745a247faad4d22442b1faae79b49d551c7"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0063.history.json",
+        "sha256": "2c92c24186640b00f08a9f463b7e8c4041bfc8198bb1551869d52fe888ce12e6"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0063.png",
+        "sha256": "d4b474e1700f28fe42984e18b187330ca78258a766dc5bf9084a85d4dc7be418"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0063/report.json",
+        "sha256": "76a004a8a6fdef9b2d0fa9c8e23905843fb21f4f98a4c46adfbc4a1e577d46cf"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0063/font/ClearHandTC-ImagegenDictHan0063-Unreviewed.ttf",
+        "sha256": "d7e1f96b8d31172ac6a07b47ef37bbb06f01629bfc70641eed23b7c96e443d29"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0063/proof/small-sizes-black-on-white.png",
+          "sha256": "194304e0e431231259274ccb497d54db4e3c07188868f4e93c0e81fbc4f65b63"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0063/proof/small-sizes-white-on-black.png",
+          "sha256": "65a2bc189803f5605e1d948b3c558d66d8b25b546002409c236e900c771720e2"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0063/proof/segmented-source-contact.png",
+          "sha256": "c20069c0f1c30bdaf4bfd0e64429adb08b452c29b394e4a026a7e1499afacb6b"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0064",
+      "characters": "腼苷茆荽葯蒺蔌蕡豸賸賻赬踔蹡躋躓",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0064.source.json",
+        "sha256": "1ca208d17421817064163dfd7ec8753c5a12483c1338f9a81b6f182ae2b77604"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0064.history.json",
+        "sha256": "dd354f2785f5441b4664251773dd5446554c0c4a7c567301375d5987334dd312"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0064.png",
+        "sha256": "f049d7039bd50bd8b9bfafddefda868bb19942668366183e134d7f12c6828340"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0064/report.json",
+        "sha256": "d52d3ff74d8a71285ebf4a573835b57eb32900eec5c6bdb40f8829a1271a3836"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0064/font/ClearHandTC-ImagegenDictHan0064-Unreviewed.ttf",
+        "sha256": "e1088a777bddc13d90801d97e1c0c7331a98f2a9d4e619162d06743b8fd6986f"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0064/proof/small-sizes-black-on-white.png",
+          "sha256": "9dfe8c3c889c9711b7afcb537a7b88a75819d5ec17cf9abd6c453a417a25d385"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0064/proof/small-sizes-white-on-black.png",
+          "sha256": "998f26bf82798e01a37554420ac393a35a3bf729234127093cb3e1458a8ff591"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0064/proof/segmented-source-contact.png",
+          "sha256": "e1b2fe4583b38f14725517da06269de46a12065ed0714801c192aa07149ebce6"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0065",
+      "characters": "轤遛郤鄠釅閶陬霰鞚頲颻饃驩髴鬯鯖",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0065.source.json",
+        "sha256": "a21703371285fe993c97babf80cb230fad870930988da9f7b124643981870b25"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0065.history.json",
+        "sha256": "8236fb9937fd8a098325be770c7fd165fbb7cf93cf607e87c59fe9e92d8b5fd2"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0065.png",
+        "sha256": "3c60d87b2dcc2a6a43c0458012ea61ad6f0e4ec9831fef03be08a95261a85324"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0065/report.json",
+        "sha256": "c985b412aabac35e75e576fb6d225f293e479ebc7d55d6a507414f5d4bde67ba"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0065/font/ClearHandTC-ImagegenDictHan0065-Unreviewed.ttf",
+        "sha256": "ed6d4ba8fc0ead5572078e18d5055ead3870c4094c61b7be6930a249cb83b9eb"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0065/proof/small-sizes-black-on-white.png",
+          "sha256": "df209cd607fd88590012c15126b2942c6bc5bffaef60d7bbd7b386cfc890d9ab"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0065/proof/small-sizes-white-on-black.png",
+          "sha256": "b7bea6bbefddde0d68c334f7b65d8c827b33c428dbe51c153d86cbe879f18ab5"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0065/proof/segmented-source-contact.png",
+          "sha256": "fbb4955095656aa0be9209cb7d05cefc5bd38edcfd32cebde4d601e217a3e8e5"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0066",
+      "characters": "鯡鸕黥齠喈嗩坌坳媟媯崟徉惙慥憒扆",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0066.source.json",
+        "sha256": "268f21f947a8140ef1221157b27cdec5f882aca06150a8afa81025982b585dd5"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0066.history.json",
+        "sha256": "f5befd169c8594415fe22721afb76b0f073c3f022776b6f854a7fb652515192a"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0066.png",
+        "sha256": "2142802a57e75d242cf544035e3f2d9930327120ddf69e6d6c1544dbe7bdeff3"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0066/report.json",
+        "sha256": "67045204c285e93c4d97b1b8a968c1744da6b9b28c687cb39894a43ce3dd0d57"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0066/font/ClearHandTC-ImagegenDictHan0066-Unreviewed.ttf",
+        "sha256": "aceb3d0008c40b3110496c30e68ed50fd18f4267c084fde35a30fb8188db0fcd"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0066/proof/small-sizes-black-on-white.png",
+          "sha256": "316ae223a9ca6c27a3cafcda8033760a664f7f06ded8a5dadc51caa22faa807d"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0066/proof/small-sizes-white-on-black.png",
+          "sha256": "469c4f2b4db5a21c63964b11597b186277e074fd9f52b6b51c2c5ad3ba322c83"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0066/proof/segmented-source-contact.png",
+          "sha256": "36b175183073f44b36d8f98f4caeae631e7e28581753be832f7ab46224c9bc2e"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0067",
+      "characters": "挲掊摜撝擫斌曛杠桎棨楦櫬沏泝瀁煒",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0067.source.json",
+        "sha256": "03f7ee759ca89bdb3c1226aae329d51ca8433a9efeaa2785c9de696261fd937f"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0067.history.json",
+        "sha256": "92a136960b8bc7cd334de1358bd225c14454993955da287575234b921d684209"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0067.png",
+        "sha256": "f0a7616bfb60bd965519d0f781587b9f50c957584f6430a8147b51dc8165f698"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0067/report.json",
+        "sha256": "ad0911eb4dbf38d526c78d3c1376408b8cd4277a8df70946f37ab8038521115e"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0067/font/ClearHandTC-ImagegenDictHan0067-Unreviewed.ttf",
+        "sha256": "a605a10a0d49bad9af53789fa8143728568f177b5941348839249a7369f053d9"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0067/proof/small-sizes-black-on-white.png",
+          "sha256": "29f0e0b9a636be2c998ef148ff6d496b1505a5e31884e73281810e6fd2ac2818"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0067/proof/small-sizes-white-on-black.png",
+          "sha256": "b94cce26989c03de240b10e6e5d36fb372487f69fee36eeb0cb21ea9db2dc838"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0067/proof/segmented-source-contact.png",
+          "sha256": "3cf79c248e684b3bb66fd22f7ca43733b3e35aba1f62a0515f767512530e1ac9"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0068",
+      "characters": "犍玎瑱畬睃篝膘蔞蕁蚜蛺蠖褌襞讌趫",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0068.source.json",
+        "sha256": "043ad1dd7ae9679909111a7894a0ea7f645058161859707982abb537007e075b"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0068.history.json",
+        "sha256": "e7e09305c495b22bf267071894e603ae7d6dbd51288fb4c6aaa2b0711b7a4a80"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0068.png",
+        "sha256": "70b19666fb732566e36529e74bbb00505a3330fc96e0254b2d9005e9ff85ce89"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0068/report.json",
+        "sha256": "d81ffdcbe9398944444538de27b8bdb25c1f8ab8d98521f5795336fd5514f73e"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0068/font/ClearHandTC-ImagegenDictHan0068-Unreviewed.ttf",
+        "sha256": "b1e6085f58e4ab9a66dd4eeba96456da905307dd1c3d85595cf1c8958f638f5f"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0068/proof/small-sizes-black-on-white.png",
+          "sha256": "11e63688aec08608364b0801020e742a6ec727008e9fe91169147ccc9fee09cc"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0068/proof/small-sizes-white-on-black.png",
+          "sha256": "c2bb9b3ed0e5ec35e34278d730747f77525f623f9f386075283df179c9c7eeaa"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0068/proof/segmented-source-contact.png",
+          "sha256": "073bea7b7b8ac9fddf6e1dbffd5ce51ec76de1fb8738020f16aa7ac239eec267"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0069",
+      "characters": "趼躞郴鄆醱醲鎞陔霢靉馘鶡黹丱佹俶",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0069.source.json",
+        "sha256": "750a0dd0ea9cda3a49d5ba254a70517ad7e3bed1add08c3ea94e32f906def509"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0069.history.json",
+        "sha256": "2544beed8b4b88b496044527925e2f4e2eec7d74d9c02e9cf51744c457f0633f"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0069.png",
+        "sha256": "0cfc66a4a6a2e162c63aafc45dcc98dc36472485c27ac2881cbd6dd4d2813e78"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0069/report.json",
+        "sha256": "3735e517675ddb590a55ca330a027fc33720ca4f41436743871b21339acb9c08"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0069/font/ClearHandTC-ImagegenDictHan0069-Unreviewed.ttf",
+        "sha256": "f0a44eedb26672123e9edf5690335a4601a9868203f62d7664bf87fad0a21c4a"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0069/proof/small-sizes-black-on-white.png",
+          "sha256": "168b1ed604287bc4001826eab49205296a0f9125d9367fea3c3d2ff0c138acf0"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0069/proof/small-sizes-white-on-black.png",
+          "sha256": "9d42e806e929d854066a43dda640d4d77089f1db192504d1cac559a3175418f9"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0069/proof/segmented-source-contact.png",
+          "sha256": "e39871eefe5b618820eab94a8d5b18cabd745209f843fcdcbad8504849d1da5e"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0070",
+      "characters": "偪儋儗儹嗹噍嚙埴堞宄岈岧嵒忭忸掿",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0070.source.json",
+        "sha256": "b8c5d77b7147ee3c244cfc6ae6a4257bfb478d21b953d94bf2e664e8abf082c0"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0070.history.json",
+        "sha256": "26060d409e6bf424cf44c5df7bcf109eacbc2dcd3027b91fe92be5c4a73e35ba"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0070.png",
+        "sha256": "b51fe0f005344107fa5b1e9f1cf57f2aa08f14de30db038cfc5d8a65b8104c66"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0070/report.json",
+        "sha256": "d692b447e1f2bc4d26ffa51fcfc0029aff4e79c4748a1fdc7dd92a26bfef3798"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0070/font/ClearHandTC-ImagegenDictHan0070-Unreviewed.ttf",
+        "sha256": "3af6fbf67baf6fe957fd5e45149bf921632a4d254b9f9c1c73d8ff58a62fc8f6"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0070/proof/small-sizes-black-on-white.png",
+          "sha256": "f36b80dec1ee919e5b6a44b7cd4c032de6daf34b9660179726a3d487dc7809d3"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0070/proof/small-sizes-white-on-black.png",
+          "sha256": "ec1f89eb6a4b4dd37fc95e6149ae05b14897b8a5763272442b65ea35f4dd71b7"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0070/proof/segmented-source-contact.png",
+          "sha256": "06c1acb5ce835b4f50f07d7832a660464156ca404b977714717acf8f316917d5"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0071",
+      "characters": "搢攲曨杲枰楝沬泐浥淝淼溽濊濩犴狉",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0071.source.json",
+        "sha256": "3bb06c7628dc24da96277b650a4c6b0c90f148ac8aae81962ab0b6cf5554781b"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0071.history.json",
+        "sha256": "fe37e644c6e0df6b5ab6b8fa622ba35acc36b3c7938383c86e343a9313d414a1"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0071.png",
+        "sha256": "b32d4e57c023ff87a147b74b3b2979c465f1cba3c53d56bf504dd94c82b25493"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0071/report.json",
+        "sha256": "ce924ae25ced8bd8eb62a54c93e062f351ff5a168f67cf2c00e86610dc6fd0ab"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0071/font/ClearHandTC-ImagegenDictHan0071-Unreviewed.ttf",
+        "sha256": "2a1880934df7beaa903ad03763bb1b58c0b110385ec2017dd13ffb24742e2023"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0071/proof/small-sizes-black-on-white.png",
+          "sha256": "a7fcbac9a4c31294b4596cc93144138691c17e58770fd55a21a63be95468fdad"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0071/proof/small-sizes-white-on-black.png",
+          "sha256": "4329c448f79a0eda1ac7da3c9f3483656ef8713a180f4383a6b365986fe05cd6"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0071/proof/segmented-source-contact.png",
+          "sha256": "c2f4c1235cde33ede136edb34b47b96273a69afdf371c82d724a5af590015387"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0072",
+      "characters": "猱琬畎瘝皤确稂粢縶纚羧胼腷艋莪蘼",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0072.source.json",
+        "sha256": "90264545e555f75091855f5074d970a0e1dc8afb3c99fda9eb653e0081f7c991"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0072.history.json",
+        "sha256": "4281f08326def43c582b6e16712a1a16eb2843ea2f22cdf268849bb179c72b59"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0072.png",
+        "sha256": "5a4f983270d74ab4584e43a4a00a98e1293b8ca57796a01cb75d12c6e1f08d35"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0072/report.json",
+        "sha256": "a3f52bff5a3a5eb46d2158e9a417815e6a132f48adfd75734966d1b64f455bca"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0072/font/ClearHandTC-ImagegenDictHan0072-Unreviewed.ttf",
+        "sha256": "e60931ab7177f688bfb5155dcfd40f7f8ab30fd9b99257877792137a3c96c878"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0072/proof/small-sizes-black-on-white.png",
+          "sha256": "b9e03046b20d8361cf44721e3f4f20cefa778ed781a306e2992536bce9a2778b"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0072/proof/small-sizes-white-on-black.png",
+          "sha256": "7d1792a158bcf0476365c2f1bd44a19fe25a88ebecf229e732d9070962df2ecd"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0072/proof/segmented-source-contact.png",
+          "sha256": "2b972738c01fbd33c4e695a36c482cd2e43f5c79f29725253e79155021d5026a"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0073",
+      "characters": "蜮蠨裒覯趓踽蹅郾鄘酮鉦銚錡鎘鏦鏨",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0073.source.json",
+        "sha256": "c92421def8acb2b4f4562c6e270de1f3a24e5ae2913e1cc00a923983fe1fcdaa"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0073.history.json",
+        "sha256": "44e54c298c724c394b9d4156d322d657ad0f9201059aabd3fa7c82e4e8b0d4aa"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0073.png",
+        "sha256": "2fa27c9d8e066ed3cd9f800de0351cee2ae38d97d63a470002fe2cfdfdac08ff"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0073/report.json",
+        "sha256": "688f2e48a51b7f4bd843f81e8984a95e7ce63fba083fa13fcd4b2886f429e1f6"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0073/font/ClearHandTC-ImagegenDictHan0073-Unreviewed.ttf",
+        "sha256": "6e8b973a5665fc16ad5c6a6b6aaff6250d37c2903ebfc08c712f0bfdf59b8f55"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0073/proof/small-sizes-black-on-white.png",
+          "sha256": "c9104140f4214b2864e3eefe32dd0c56619b7b2bd8a299d9573b2aec9e94d0b7"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0073/proof/small-sizes-white-on-black.png",
+          "sha256": "617dd0ea1194643a780d27d34639e8153d7cae28feb539821a33435cd76c1727"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0073/proof/segmented-source-contact.png",
+          "sha256": "8f082aaca37da333b8f9626ae1f9c0228e733c97f91644ea6a85b4918b084add"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0074",
+      "characters": "霈餖餳饝騅鬒鶼黄仵佤佶倅僝呦哧唚",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0074.source.json",
+        "sha256": "160f20022015457165fc4bd0d9bee2fbcb1dbd1a69509710660d72f8d2715dd9"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0074.history.json",
+        "sha256": "4d222cf0fff71e769ec1668d22cc58307c9199e6ef759241347da6ae35b571fd"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0074.png",
+        "sha256": "e02d97e16c1abd5f324908d002d7172f3ef1f681cfad5e2db27124e348a99d88"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0074/report.json",
+        "sha256": "179f5d8ce9733f331ba7b2971b159532cfab811702cc2a94ccde230ec8ccf143"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0074/font/ClearHandTC-ImagegenDictHan0074-Unreviewed.ttf",
+        "sha256": "1a5d9e1e7ea6ddab5ee37e5a3709da999e4bd77e0700fec37b1533116bfe43ab"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0074/proof/small-sizes-black-on-white.png",
+          "sha256": "8c82067e895d968f3e128da472b1c0ab85d65c29cdf0d1e9d27933a4d8c8129a"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0074/proof/small-sizes-white-on-black.png",
+          "sha256": "18a600d6952764b04a7386f407a33997d16c50bc3c3b04cd243fb24f34453d6d"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0074/proof/segmented-source-contact.png",
+          "sha256": "a7e0164fb7099baabf37432070c7654b191a7fb180ee7e378753c41a36a52698"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0075",
+      "characters": "啁喨嗛嘵嚳孥尨峋嶮巹徯惓惛愒懌戩",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0075.source.json",
+        "sha256": "6b438fdfbb7e76784d14ee483285ef4cb0c162bd8dc7ae461f84c0de3d7c9df2"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0075.history.json",
+        "sha256": "b2f1c8745096d0b957b895ef8374f95191614953b0dc448b5a4e3d8d22a8fa23"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0075.png",
+        "sha256": "94d8181aaedf12bfa7235259cda6ad8239c02b08169b5e18f956012ef3638e6d"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0075/report.json",
+        "sha256": "e5ed24f55430162a9842fbd7c8c23ad24b6615478354598538a43e361c24587a"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0075/font/ClearHandTC-ImagegenDictHan0075-Unreviewed.ttf",
+        "sha256": "8e8dcfdbf88027dd3cae4e47043d5c87eac8e500c78993735ded02623308a3de"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0075/proof/small-sizes-black-on-white.png",
+          "sha256": "f5993d45704c83982f6c07e3200f4cf7b60922a585779543870aefbe4129cdd6"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0075/proof/small-sizes-white-on-black.png",
+          "sha256": "b96987d258d29bab6b88291eb831cc2d7bc00db7b0692f345d03c5d0faf0cb87"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0075/proof/segmented-source-contact.png",
+          "sha256": "3a556dc86995e2c8624a9ef6db43520cbefecebfb374ef92be0c40267128327e"
+        }
+      }
+    },
+    {
+      "batch_id": "dict-han-0076",
+      "characters": "掗攞旯昶暾栱桁桉楯槤櫸殂洳溧滈澒",
+      "decision": {
+        "topology": "PASS",
+        "raster_quality": "PASS",
+        "vector_quality": "PASS",
+        "small_size_legibility": "PASS",
+        "spike_and_thorn_check": "PASS"
+      },
+      "descriptor": {
+        "path": "sources/imagegen/batches/dict-han-0076.source.json",
+        "sha256": "d96d88d7fd1f691775255569a028d2554a49c2f0ceaaa7a8231b0f58b20d5e4c"
+      },
+      "history": {
+        "path": "sources/imagegen/batches/dict-han-0076.history.json",
+        "sha256": "f836c4311ae7168566f7e2f99707eacbb0755680c9a36090f3cf9bf5decfb040"
+      },
+      "raster": {
+        "path": "sources/imagegen/raster/dict-han-0076.png",
+        "sha256": "8d86bc5da749492c55fba563af81e23c36b03c783d8b3bbd8066a76a0e22c60b"
+      },
+      "vector_report": {
+        "path": "build/imagegen/imagegen-dict-han-0076/report.json",
+        "sha256": "2f7a8daab28a08941ed577207b4565321f8e5f2b4384756a32e632a6c7c6544e"
+      },
+      "vector_ttf": {
+        "path": "build/imagegen/imagegen-dict-han-0076/font/ClearHandTC-ImagegenDictHan0076-Unreviewed.ttf",
+        "sha256": "15b55a83c6e0de38627d2da8716ac8fc78d4a5eb06fce9031400f42c47f587cc"
+      },
+      "proofs": {
+        "black_on_white": {
+          "path": "build/imagegen/imagegen-dict-han-0076/proof/small-sizes-black-on-white.png",
+          "sha256": "ab494d9f75c0a7d086ec45fba69e474da91b1a11f715d597384c53dd517a5e81"
+        },
+        "white_on_black": {
+          "path": "build/imagegen/imagegen-dict-han-0076/proof/small-sizes-white-on-black.png",
+          "sha256": "507864d6ca711ffcd7d7bfa26c77d2957d81a5a42dc81e8c62e95ebb74eaf641"
+        },
+        "segmented_source": {
+          "path": "build/imagegen/imagegen-dict-han-0076/proof/segmented-source-contact.png",
+          "sha256": "61fa117644aae601f14eb9ad2ed1455c130e89550219eaad99790e419979f4bf"
+        }
+      }
+    }
+  ]
+}

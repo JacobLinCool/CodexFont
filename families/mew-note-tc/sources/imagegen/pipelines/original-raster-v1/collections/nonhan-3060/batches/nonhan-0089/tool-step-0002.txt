@@ -1,0 +1,10 @@
+Correct the first reference image in place. It is a 4×4 glyph sheet. Keep the white background, every pale-gray grid line, all margins, and every cell not listed below unchanged.
+
+Redraw only these cells, using the fourth reference image as the exact identity and position copybook:
+
+- cell 4 (row 1, column 4): U+0293 LATIN SMALL LETTER EZH WITH CURL. It must be an ezh/3-like glyph with the additional lower curl shown in the copybook, not a plain 3 or plain ezh.
+- cell 11 (row 3, column 3): U+029A LATIN SMALL LETTER CLOSED OPEN E. Preserve the copybook's reversed closed-open-e orientation; do not mirror it into an ordinary epsilon.
+- cell 12 (row 3, column 4): U+029B LATIN LETTER SMALL CAPITAL G WITH HOOK. It must be a small-capital G with its upper-right hook, not an a, 2, or open loop.
+- cell 13 (row 4, column 1): U+029C LATIN LETTER SMALL CAPITAL H. It must be a small-capital H with two uprights and a crossbar, not lowercase h.
+
+Match the thin, careful Mew Note handwriting of the second and third references: rounded monoline pen strokes, calm proportions, smooth terminals, and no sharp spikes. Identity is mandatory; stylistic variation must not change components, orientation, hooks, strokes, or case. Return only the corrected 4×4 sheet.

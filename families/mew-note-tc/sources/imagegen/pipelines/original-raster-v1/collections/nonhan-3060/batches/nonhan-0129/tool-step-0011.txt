@@ -1,0 +1,15 @@
+Preserve the sixteen black glyphs exactly. Rebuild only the pale-gray grid.
+
+The current grid is geometrically wrong: its bottom row is compressed. Do not imitate or retain any current gray line. Erase every gray grid pixel first, then reconstruct the grid from the FOURTH attached image, the identity copybook, using its exact geometry: a perfect 4×4 array of sixteen equal square cells.
+
+The rebuilt grid must have exactly five evenly spaced vertical rules and exactly five evenly spaced horizontal rules. The four row heights must be visually identical, and the four column widths must be visually identical. Use single continuous neutral light-gray 2-pixel rules with square intersections and no decorations.
+
+Keep every black glyph in the same cell, in this exact row-major sequence:
+ⅰ ⅱ ⅲ ⅳ
+ⅴ ⅵ ⅶ ⅷ
+ⅸ ⅹ ⅺ ⅻ
+ⅼ ⅽ ⅾ ⅿ
+
+Do not redraw, restyle, move, crop, or add any black glyph. The final lowercase m must remain plain and end without a tail curl.
+
+Output only the clean white square 4×4 sheet. No doubled lines, ghosts, ticks, protrusions, extensions, shadows, outlines, labels, margins outside the outer border, extra rows, or extra glyphs.

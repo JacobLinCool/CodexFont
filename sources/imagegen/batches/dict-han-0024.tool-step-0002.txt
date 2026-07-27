@@ -1,0 +1,15 @@
+Use case: precise-object-edit
+Asset type: two-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the edit target. Image 2 is the authoritative identity copybook only; never trace its printed outlines. Change ONLY Cells 10 and 13. Preserve the other 14 glyphs, grid, canvas, spacing, and fine gel-pen style.
+
+- Cell 10 must be U+5E58 幘: 巾 on the left and the complete 責 on the right, with 龶 above 貝. The current 巾-plus-葉 form is wrong.
+- Cell 13 must be U+65B2 斲: the complete 𠁁 component on the left and 斤 on the right. The current 酉-plus-斤-like form is wrong. Use the thirteenth copybook cell to preserve the characteristic opposed boxed strokes of 𠁁; do not draw 酉.
+
+Required full row-major result:
+祛絜綃縐
+衽酢閎齁
+偈幘忐抃
+斲珥瘢眄
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

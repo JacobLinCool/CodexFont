@@ -1,0 +1,27 @@
+Recreate the complete 4×4 glyph sheet because Image 1 has the symbols in the wrong order. Use Image 4 as the binding row-major identity copybook and Images 2–3 only for the subtle handwritten black-ink stroke character.
+
+Required exact Unicode order:
+Row 1: ⎀ ⎁ ⎂ ⎃
+Row 2: ⎄ ⎅ ⎆ ⎇
+Row 3: ⎈ ⎉ ⎊ ⎋
+Row 4: ⎌ ⎍ ⎎ ⎏
+
+Match the identity copybook cell by cell:
+- 01 ⎀: lowercase-like “a” above a V-like mark.
+- 02 ⎁: “a”, then a short ellipsis-like row, then an underline.
+- 03 ⎂: two “a”-like forms, each with its own underline.
+- 04 ⎃: emphasized “a”-like form with short radiating marks.
+- 05 ⎄: composition/D-like technical symbol.
+- 06 ⎅: hollow white square.
+- 07 ⎆: enter/arrow-into-diamond technical symbol.
+- 08 ⎇: alternate-key technical symbol.
+- 09 ⎈: helm/wheel-like symbol.
+- 10 ⎉: outlined circle containing a V-like mark.
+- 11 ⎊: outlined circle containing a fully solid black downward triangle.
+- 12 ⎋: broken-circle/NW-arrow technical symbol.
+- 13 ⎌: undo-like curved arrow over small circles.
+- 14 ⎍: monostable technical symbol.
+- 15 ⎎: hysteresis technical symbol.
+- 16 ⎏: diamond hanging below a horizontal overbar.
+
+Use one centered glyph per cell on a pure white square canvas, equal 4×4 spacing and generous margins. Preserve exact row-major order. Black fills must be opaque. Do not add visible grid lines, labels, code points, headings, borders, texture, shadow, or extra marks.

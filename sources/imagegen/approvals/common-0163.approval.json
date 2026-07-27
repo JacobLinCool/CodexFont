@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0163",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2593,
+    "end_rank": 2608,
+    "characters": "嶽沐炊賄賺鞍冶妒嫂徹聳蕪醇撇旌旺"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0163.source.json",
+    "descriptor_sha256": "850f359171368289a175322002b73e9a5427c45e24f77c3932cf03539a1fde69",
+    "raster": "sources/imagegen/raster/common-0163.png",
+    "raster_sha256": "1993da36b52ea89bab7922f342b01484cd280a50c398b4608d607808557509c8"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0163-0166-audit.json",
+    "report_sha256": "99ffaea6409723d29e4745782d8e80d9e0d5093b38e281dfbbd5c6192a901191"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0163/report.json",
+    "report_sha256": "6506d23f1a33e908b0626286f604710447687ac709b3c93eabedd319ebab5e77",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0163.vector-review.json",
+    "record_sha256": "fd7c9353b4b269dbbc403ef4ae3852986c288b55ad3e48d2c338ebf2597ca041"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:54:25Z"
+  }
+}

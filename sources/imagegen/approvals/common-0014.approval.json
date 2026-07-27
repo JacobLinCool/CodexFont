@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0014",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 209,
+    "end_rank": 224,
+    "characters": "口關然機教月民至打又化張利沒入目"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0014.source.json",
+    "descriptor_sha256": "c4e360a7d91c233954bc27d2b37eaa7ba1ba93784fa2972394a19e2152f6b82f",
+    "raster": "sources/imagegen/raster/common-0014.png",
+    "raster_sha256": "230e44df2096baf12a9512b0bc6193fe0b6ef621b39ab95ea18ac20eaf570edd"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0011-0014-audit.json",
+    "report_sha256": "33e2eed60fd48399096041ca155437c91aaa2e33afd5be76ea6d1baed040ef45"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0014/report.json",
+    "report_sha256": "39953e47e65b04e149d38144c36ced9d8da1db4f153d7aacd9fdd59ba791b8fc",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0014.vector-review.json",
+    "record_sha256": "e24e56c8cfe9ea920bb85cf1ae14b04317b2e672ba3efdae17ec2a921e0bc07b"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:35:07Z"
+  }
+}

@@ -1,0 +1,16 @@
+Use case: precise-object-edit
+Asset type: corrected 4×4 raster master sheet for clear-hand-tc
+
+Input images:
+1. Image 1 is the previous generated sheet. Preserve it exactly except for Cells 04, 07, 12, and 15.
+2. Image 2 is the identity copybook. Use only the corresponding cells to verify topology; do not trace its printed outlines.
+
+Primary request: replace only these four cells with newly handwritten glyphs:
+- Cell 04 (row 1, column 4): U+765F `癟`, `疒` enclosing `自` above `侖`. The inner lower component must contain the roof and organized horizontal/vertical strokes of `侖`. Do not use `扁`; do not produce `瘺` or `遍`.
+- Cell 07 (row 2, column 3): U+7931 `礱`, the complete `龍` component above `石` in a vertical stack. Do not put `石` beside `麗`, `厲`, or `龍`.
+- Cell 12 (row 3, column 4): U+8553 `蕓`, `艹` above the complete Traditional component `雲`. `雲` must visibly include `雨` above `云`; do not omit the `雨` enclosure and inner rain marks.
+- Cell 15 (row 4, column 3): U+8CFE `賾`, the tall left component `𦣞` beside `責` on the right. `責` is `龶` above `貝`. Do not write `貝` beside `馬`, `罵`, or `罷`.
+
+Constraints: keep all other twelve cells unchanged, especially Cell 14 `襬`; preserve the white background and faint grid; match the existing fine black gel-pen weight and rounded handwritten terminals; center each replacement with open counters and no grid contact; draw new original glyphs without tracing.
+
+Avoid: changing any other cell, simplified forms, missing strokes, extra marks, printed type, spikes, thorns, clipping, signature, logo, or watermark.

@@ -1,0 +1,9 @@
+This is a precision correction to the attached 4×4 glyph sheet. Preserve every black glyph and every vertical rule exactly as they are.
+
+There is one obvious layout defect: the bottom row is visibly shorter than the other rows. Fix only that defect.
+
+Move the horizontal divider immediately above the bottom row substantially UP, from its current position near y=961 to y=932. This gives the bottom row the same height as the rows above it. Completely erase the old divider at y=961, including every pale remnant. Draw one replacement horizontal rule at y=932, continuous from the left outer border to the right outer border, matching the other neutral light-gray 2-pixel rules.
+
+Do not change the top border, bottom border, first two internal horizontal dividers, any of the five vertical rules, or any glyph. In particular, preserve all sixteen glyph identities and keep the final lowercase m plain with no tail curl.
+
+The result must still contain exactly five vertical grid rules and exactly five horizontal grid rules. No doubled line, ghost line, tick, protrusion, shadow, outline, extra row, extra glyph, or crop.

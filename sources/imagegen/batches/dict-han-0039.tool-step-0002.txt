@@ -1,0 +1,18 @@
+Use case: precise-object-edit
+Asset type: three-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cells 07, 14, and 15. Preserve all other 13 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 07 must be U+69E7 槧. The current left-right 木-plus-unrelated-component form is wrong. Build it vertically exactly as in the seventh copybook cell: a complete 斬 across the top, with 車 on the left and 斤 on the right, then a clearly separate 木 centered below. Do not place 木 as a left radical, and do not write 槫, 樠, 欄, or another tree-radical character.
+
+Cell 14 must be U+7CF4 糴. Preserve the 翟 on the right, with 羽 above 隹. Rebuild the complete 籴 on the left: 入 must appear distinctly above a complete 米. The current left side is only 米 and is missing 入. Do not write 耀, 糶, 糧, or another rice character.
+
+Cell 15 must be U+7D70 絰. Preserve 糸 on the left. Replace the incorrect 色-like right side with a complete 至 on the right: the top horizontal and 厶-like turn above a complete 土. Do not write 絕, 紿, 絡, or another silk-radical character.
+
+Required full row-major result:
+剡圉坂怙
+掰擀槧橛
+洄淩煨磔
+筌糴絰纛
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

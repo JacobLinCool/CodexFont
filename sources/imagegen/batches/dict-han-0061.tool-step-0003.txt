@@ -1,0 +1,17 @@
+Use case: precise-object-edit
+Asset type: third corrected 4×4 raster master sheet for clear-hand-tc
+
+Input images:
+1. Image 1 is the previous corrected sheet. Preserve it exactly except for Cells 09–13.
+2. Image 2 is the identity copybook. Use only Cells 09–13 to verify topology; do not trace its printed outlines.
+
+Primary request: replace exactly these five row-major cells:
+- Cell 09 = row 3, column 1: U+55F6 `嗶`, exactly `口` on the left plus complete Traditional `畢` on the right. Do not write `齊`.
+- Cell 10 = row 3, column 2: U+5658 `噘`, exactly `口` on the left plus complete `厥` on the right. Do not write `襄`.
+- Cell 11 = row 3, column 3: U+568C `嚌`, exactly `口` on the left plus complete Traditional `齊` on the right. The left radical must be `口`, never `山`.
+- Cell 12 = row 3, column 4: U+56D4 `囔`, exactly `口` on the left plus complete `囊` on the right. Retain the upper `一丨口冖` structure; do not shorten it to `襄`.
+- Cell 13 = row 4, column 1: U+5A6D `婭`, exactly `女` on the left plus complete Traditional `亞` on the right.
+
+Keep row 4 columns 2–4 as `崒`, `嶧`, `巘`. Keep all other cells unchanged. Preserve the white background and faint 4×4 grid; match the fine black gel-pen weight and rounded terminals.
+
+Avoid: positional shifts, changing any other cell, missing components, simplified forms, spikes, thorns, clipping, extra marks, signature, logo, or watermark.

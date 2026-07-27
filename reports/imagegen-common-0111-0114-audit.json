@@ -1,0 +1,3279 @@
+{
+  "schema_version": 1,
+  "audit_id": "imagegen-common-0111-0114",
+  "audited_at": "2026-07-26",
+  "auditor": "Codex independent raster QA",
+  "scope": {
+    "batch_ids": [
+      "common-0111",
+      "common-0112",
+      "common-0113",
+      "common-0114"
+    ],
+    "rank_range": [
+      1761,
+      1824
+    ],
+    "glyph_count": 64,
+    "repertoire": {
+      "path": "sources/imagegen/repertoires/common-3000.json",
+      "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+      "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd"
+    }
+  },
+  "authority": {
+    "provider": "Ministry of Digital Affairs, Taiwan, CNS11643 Chinese Standard Interchange Code Full Character Database",
+    "official_dataset_url": "https://data.gov.tw/dataset/5961",
+    "mapping_archive": {
+      "path": "tmp/cns-opendata/MapingTables.zip",
+      "sha256": "f59dacc4dbdef334d7a887c3da671af02778e2c80adb2a7fd1053f64dbf9e659",
+      "member": "Unicode/CNS2UNICODE_Unicode BMP.txt",
+      "member_timestamp": "2026-05-05"
+    },
+    "properties_archive": {
+      "path": "tmp/cns-opendata/Properties.zip",
+      "sha256": "50cad66f3fe6f3a4b6f4a7bf0431e1bfb8dabc3d8c7be4d61e1617b15a0d7a7b",
+      "members": [
+        "CNS_stroke.txt",
+        "CNS_strokes_sequence.txt"
+      ],
+      "member_timestamp": "2026-05-05"
+    },
+    "visual_copybook": {
+      "path": "sources/upstream/TW-Kai-98_1.ttf",
+      "sha256": "c206333edcc3c8c86ee547da4c78ad1c8f7ec2670a2b550a768532258f75806a",
+      "usage": "independently rasterized topology comparison only; no outline, coordinate, or trace enters the image-generated glyph"
+    },
+    "stroke_sequence_digit_legend": {
+      "1": "horizontal",
+      "2": "vertical",
+      "3": "left-falling",
+      "4": "dot or right-falling",
+      "5": "turn or hook family"
+    }
+  },
+  "policy": {
+    "pass_definition": "Exact requested scalar and Taiwan Traditional topology agree with current CNS mapping/stroke structure; the glyph remains directly recognizable at native, 128, 64, and 32 px; ink clears the grid; no stray thorn, wrong hook, missing or extra semantic stroke.",
+    "reject_definition": "Any uncertainty, simplified/incompatible variant, missing/extra semantic component, topology-changing join, wrong hook, reviewed-size unreadability, grid contact, stray ink, or thorn is REJECT.",
+    "raster_limit": "A final raster establishes visible topology but cannot prove the temporal act of writing each stroke.",
+    "vectorization_limit": "PASS permits controlled tracing of isolated authored dark ink only; grid lines, background variation, antialias halos, and CNS outlines are forbidden geometry.",
+    "descriptor_mutation": "This raster audit does not approve or modify source descriptors."
+  },
+  "method": {
+    "views": [
+      "native 1254 x 1254 sheet",
+      "raw native cell crop",
+      "128 px complete isolated cell",
+      "64 px complete isolated cell",
+      "32 px complete isolated cell",
+      "generated cell beside independently rasterized CNS TW-Kai",
+      "22 requested high-risk glyphs enlarged beside CNS topology"
+    ],
+    "grid_detection": "Exactly five long light-gray line groups per axis were detected by projection. No equal-division or guessed-grid fallback was accepted. Clearance is the minimum distance from L<100 ink to a cell boundary.",
+    "stray_component_detection": "L<100 pixels in each raw cell were grouped by 8-connectivity. No component below 10 px exists. The only components below 100 px are visually located intended short dots in 耀翟羽 and 叢丵.",
+    "artifact_review": [
+      "exact repertoire scalar and order",
+      "current CNS code, stroke count, and stroke-sequence structure",
+      "Taiwan Traditional topology and simplified substitution",
+      "missing/extra semantic strokes and wrong turns/hooks",
+      "open counters and component separation",
+      "grid contact and stray dark components",
+      "sharp miter, thorn-like protrusion, and false connecting bridge"
+    ],
+    "background_note": "The near-white L>=245 standard deviation ranges from 1.18 to 1.35; background normalization remains mandatory before tracing."
+  },
+  "summary": {
+    "total": 64,
+    "pass": 64,
+    "reject": 0,
+    "approved_for_controlled_vectorization": 64,
+    "rejected_for_vectorization": 0,
+    "wrong_or_out_of_order_cells": 0,
+    "simplified_or_incompatible_variants": 0,
+    "missing_or_extra_semantic_strokes": 0,
+    "wrong_hook_or_turn_findings": 0,
+    "grid_contacts": 0,
+    "stray_dark_component_findings": 0,
+    "thorn_or_spur_findings": 0,
+    "minimum_batch_clearances_px": [
+      49,
+      35,
+      34,
+      35
+    ],
+    "minimum_dark_component_areas_px": [
+      85,
+      103,
+      96,
+      110
+    ],
+    "legal_small_components": [
+      {
+        "character": "耀",
+        "rank": 1770,
+        "codepoint": "U+8000",
+        "areas_px": [
+          85
+        ],
+        "finding": "visible intended short dot stroke in 翟羽; not stray debris"
+      },
+      {
+        "character": "叢",
+        "rank": 1803,
+        "codepoint": "U+53E2",
+        "areas_px": [
+          96
+        ],
+        "finding": "visible intended short dot stroke in 丵; not stray debris"
+      }
+    ],
+    "priority_cells_reviewed": 22,
+    "priority_cells_rejected": 0,
+    "failed_cells": [],
+    "single_glyph_regeneration_prompts": [],
+    "source_metadata_mutated": false
+  },
+  "batches": [
+    {
+      "batch_id": "common-0111",
+      "start_rank": 1761,
+      "end_rank": 1776,
+      "characters": "拖陪卜堪港牢覽午曝耀茂軸飽否朵爐",
+      "raster": "sources/imagegen/raster/common-0111.png",
+      "sha256": "2386d672aaa3338db06323262fe3c5658bdb4649f1483f97fc72563a540c07fc",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        625,
+        923,
+        1221
+      ],
+      "grid_line_centres_y": [
+        25,
+        325,
+        622,
+        918,
+        1217
+      ],
+      "minimum_dark_ink_grid_clearance_px": 49,
+      "background_light_pixel_standard_deviation": 1.176511,
+      "smallest_dark_component_area_px": 85,
+      "source_descriptor": {
+        "path": "sources/imagegen/batches/common-0111.source.json",
+        "sha256": "c9362e3e3a39a463c4e986c42523ab9d8725e31ffac25cba51fb8f2c123348cd",
+        "state": "generated-unreviewed",
+        "review": {
+          "topology": "pending",
+          "raster_quality": "pending",
+          "vector_quality": "pending"
+        }
+      },
+      "pass": 16,
+      "reject": 0
+    },
+    {
+      "batch_id": "common-0112",
+      "start_rank": 1777,
+      "end_rank": 1792,
+      "characters": "寵尤捨概搬獵苗鉤喚畜媽稹稀競佐勃",
+      "raster": "sources/imagegen/raster/common-0112.png",
+      "sha256": "d9a569337ba43b0eafd1c2d4b64acb265029102a1d5898eccd0dbed301b72b75",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        626,
+        924,
+        1221
+      ],
+      "grid_line_centres_y": [
+        25,
+        325,
+        622,
+        918,
+        1217
+      ],
+      "minimum_dark_ink_grid_clearance_px": 35,
+      "background_light_pixel_standard_deviation": 1.350428,
+      "smallest_dark_component_area_px": 103,
+      "source_descriptor": {
+        "path": "sources/imagegen/batches/common-0112.source.json",
+        "sha256": "ce3f52aa4eabe7be64e7213ffd078a83b71c49c1f056dabcc2180068a9c55a61",
+        "state": "generated-unreviewed",
+        "review": {
+          "topology": "pending",
+          "raster_quality": "pending",
+          "vector_quality": "pending"
+        }
+      },
+      "pass": 16,
+      "reject": 0
+    },
+    {
+      "batch_id": "common-0113",
+      "start_rank": 1793,
+      "end_rank": 1808,
+      "characters": "丞履雌豬肚虧刷卡慧鍋叢憶瘦磁俠蔽",
+      "raster": "sources/imagegen/raster/common-0113.png",
+      "sha256": "da8190640357115a75e16259175108c3516d2b793a14ea6fb82fb89474ea93ef",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        625,
+        923,
+        1221
+      ],
+      "grid_line_centres_y": [
+        25,
+        325,
+        622,
+        918,
+        1217
+      ],
+      "minimum_dark_ink_grid_clearance_px": 34,
+      "background_light_pixel_standard_deviation": 1.279564,
+      "smallest_dark_component_area_px": 96,
+      "source_descriptor": {
+        "path": "sources/imagegen/batches/common-0113.source.json",
+        "sha256": "3d73d70ba701ad82ca86eb29f9adcdf626932b4ad828ee6cb01e2c59f05d88a8",
+        "state": "generated-unreviewed",
+        "review": {
+          "topology": "pending",
+          "raster_quality": "pending",
+          "vector_quality": "pending"
+        }
+      },
+      "pass": 16,
+      "reject": 0
+    },
+    {
+      "batch_id": "common-0114",
+      "start_rank": 1809,
+      "end_rank": 1824,
+      "characters": "痕晨燭妾砂棋稍讚辰丟廉攀籠穴葛蓬",
+      "raster": "sources/imagegen/raster/common-0114.png",
+      "sha256": "11c597751c24dc5961d2f46f76d1ffc29a2d7cfa15160dc1df6c6866cf2dc0eb",
+      "width_px": 1254,
+      "height_px": 1254,
+      "mode": "RGB",
+      "grid_line_centres_x": [
+        29,
+        327,
+        625,
+        924,
+        1221
+      ],
+      "grid_line_centres_y": [
+        25,
+        325,
+        622,
+        918,
+        1217
+      ],
+      "minimum_dark_ink_grid_clearance_px": 35,
+      "background_light_pixel_standard_deviation": 1.252004,
+      "smallest_dark_component_area_px": 110,
+      "source_descriptor": {
+        "path": "sources/imagegen/batches/common-0114.source.json",
+        "sha256": "daaad4e87eb425e89090ff19cfbab1a32c5906b2d52a7a86f7e28f98b779664f",
+        "state": "generated-unreviewed",
+        "review": {
+          "topology": "pending",
+          "raster_quality": "pending",
+          "vector_quality": "pending"
+        }
+      },
+      "pass": 16,
+      "reject": 0
+    }
+  ],
+  "proofs": [
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/common-0111-cns-reference-proof.png",
+      "sha256": "09434aaaee17936bd6fabe9f5997999a6ca411575b2fb19973860f03e7c1ee5d",
+      "purpose": "all 16 generated cells beside independently rasterized CNS copybook glyphs",
+      "width_px": 1200,
+      "height_px": 2640,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/common-0111-native-cell-proof.png",
+      "sha256": "5c94e77de9c90a4dd21931f13352c597b675108b357728a8f450868cfc731436",
+      "purpose": "all 16 unnormalized native source-cell crops",
+      "width_px": 1280,
+      "height_px": 1360,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/common-0111-size-proof.png",
+      "sha256": "e8eb73c4470918a705d33f718419954933f5c9c5d04b1d1b7ac68ef264b06c95",
+      "purpose": "all 16 complete cells reviewed at 128, 64, and 32 px",
+      "width_px": 1800,
+      "height_px": 820,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/common-0112-cns-reference-proof.png",
+      "sha256": "2fa93c1f57491e7f1960a595e744610532e847c68253513a4a35a1a9623f5623",
+      "purpose": "all 16 generated cells beside independently rasterized CNS copybook glyphs",
+      "width_px": 1200,
+      "height_px": 2640,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/common-0112-native-cell-proof.png",
+      "sha256": "992a160d63a497a08f25a3bd09e2dd2a5ed081076b5682ce89c27a436ab870fd",
+      "purpose": "all 16 unnormalized native source-cell crops",
+      "width_px": 1280,
+      "height_px": 1360,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/common-0112-size-proof.png",
+      "sha256": "809cca9d8fc459e412beebee850417f6a4f478430cbc500cdf03192e537817dc",
+      "purpose": "all 16 complete cells reviewed at 128, 64, and 32 px",
+      "width_px": 1800,
+      "height_px": 820,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/common-0113-cns-reference-proof.png",
+      "sha256": "5b006301dd5a3335e50e7e8638d9d60ee6a5e2430ac8ae462b5639c52c306de2",
+      "purpose": "all 16 generated cells beside independently rasterized CNS copybook glyphs",
+      "width_px": 1200,
+      "height_px": 2640,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/common-0113-native-cell-proof.png",
+      "sha256": "37dcaff892754d50ab16bcde9b762813519eda575316efeb29bb992884054097",
+      "purpose": "all 16 unnormalized native source-cell crops",
+      "width_px": 1280,
+      "height_px": 1360,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/common-0113-size-proof.png",
+      "sha256": "20e27ebf494ab7a942d462e4b55e5be8e57f4a5250e07fc402db57aeab3edc7f",
+      "purpose": "all 16 complete cells reviewed at 128, 64, and 32 px",
+      "width_px": 1800,
+      "height_px": 820,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/common-0114-cns-reference-proof.png",
+      "sha256": "8891f4f5880fe529d7ff7bcaf97ddaf533ed31b7079c42982385f8a5a143c529",
+      "purpose": "all 16 generated cells beside independently rasterized CNS copybook glyphs",
+      "width_px": 1200,
+      "height_px": 2640,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/common-0114-native-cell-proof.png",
+      "sha256": "368870f2e5aee4c75522ecdef5548afa1c0a0092a33c2aa7208cda107cb9da19",
+      "purpose": "all 16 unnormalized native source-cell crops",
+      "width_px": 1280,
+      "height_px": 1360,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/common-0114-size-proof.png",
+      "sha256": "48d3e28070beab6cc2fc6e7a6e16a1c2741687efe604c1978de35729c24c8f8e",
+      "purpose": "all 16 complete cells reviewed at 128, 64, and 32 px",
+      "width_px": 1800,
+      "height_px": 820,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/priority-22-cns-reference-proof.png",
+      "sha256": "a8fdd2c9cc0cacc5ef628435d360c41813623b33d8c26bc53c6546a925c8bdb1",
+      "purpose": "22 requested high-risk glyphs enlarged beside CNS topology, code, stroke count, and sequence",
+      "width_px": 1520,
+      "height_px": 3630,
+      "mode": "RGB"
+    },
+    {
+      "path": "reports/proofs/imagegen-common-0111-0114/metrics.json",
+      "sha256": "5f3e05f501870ba2942f0cf1f27528538777579e4ad76f75713778330793154f",
+      "purpose": "machine-readable grid, component, CNS, source-box, and proof measurements"
+    }
+  ],
+  "glyphs": [
+    {
+      "batch_id": "common-0111",
+      "index": 1,
+      "rank": 1761,
+      "row": 1,
+      "column": 1,
+      "character": "拖",
+      "codepoint": "U+62D6",
+      "cns_code": "1-4D6E",
+      "cns_strokes": 8,
+      "cns_stroke_sequence": "15131525",
+      "minimum_grid_clearance_px": 53,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1953125,
+        0.2265625,
+        0.82421875,
+        0.76757812
+      ],
+      "source_box": [
+        29,
+        25,
+        327,
+        325
+      ],
+      "dark_component_count_8conn": 4,
+      "smallest_dark_component_area_px": 377,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰扌㐌；扌與㐌的撇橫、也形折鉤完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰扌㐌；扌與㐌的撇橫、也形折鉤完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 2,
+      "rank": 1762,
+      "row": 1,
+      "column": 2,
+      "character": "陪",
+      "codepoint": "U+966A",
+      "cns_code": "1-5D71",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "55241431251",
+      "minimum_grid_clearance_px": 58,
+      "dark_component_count": 7,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.23242188,
+        0.20898438,
+        0.80664062,
+        0.77929688
+      ],
+      "source_box": [
+        327,
+        25,
+        625,
+        325
+      ],
+      "dark_component_count_8conn": 7,
+      "smallest_dark_component_area_px": 162,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰阝咅；左阝與立、口內白完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰阝咅；左阝與立、口內白完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 3,
+      "rank": 1763,
+      "row": 1,
+      "column": 3,
+      "character": "卜",
+      "codepoint": "U+535C",
+      "cns_code": "1-4433",
+      "cns_strokes": 2,
+      "cns_stroke_sequence": "24",
+      "minimum_grid_clearance_px": 63,
+      "dark_component_count": 1,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.42578125,
+        0.20898438,
+        0.66210938,
+        0.78320312
+      ],
+      "source_box": [
+        625,
+        25,
+        923,
+        325
+      ],
+      "dark_component_count_8conn": 1,
+      "smallest_dark_component_area_px": 1620,
+      "dark_component_areas_under_100_px": [],
+      "topology": "直豎與右點兩筆分明",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：直豎與右點兩筆分明",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 4,
+      "rank": 1764,
+      "row": 1,
+      "column": 4,
+      "character": "堪",
+      "codepoint": "U+582A",
+      "cns_code": "1-5E5A",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "121122111355",
+      "minimum_grid_clearance_px": 58,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.19140625,
+        0.22265625,
+        0.75976562,
+        0.79296875
+      ],
+      "source_box": [
+        923,
+        25,
+        1221,
+        325
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 235,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰土甚；土與甚的其形多橫、下匹形彎鉤完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰土甚；土與甚的其形多橫、下匹形彎鉤完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 5,
+      "rank": 1765,
+      "row": 2,
+      "column": 1,
+      "character": "港",
+      "codepoint": "U+6E2F",
+      "cns_code": "1-602B",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "444122134515",
+      "minimum_grid_clearance_px": 55,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.20507812,
+        0.22070312,
+        0.81640625,
+        0.78320312
+      ],
+      "source_box": [
+        29,
+        325,
+        327,
+        622
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 168,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰氵巷；三點水、共形上部與下巳折鉤完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰氵巷；三點水、共形上部與下巳折鉤完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 6,
+      "rank": 1766,
+      "row": 2,
+      "column": 2,
+      "character": "牢",
+      "codepoint": "U+7262",
+      "cns_code": "1-4B26",
+      "cns_strokes": 7,
+      "cns_stroke_sequence": "4453112",
+      "minimum_grid_clearance_px": 52,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.25976562,
+        0.171875,
+        0.7265625,
+        0.80078125
+      ],
+      "source_box": [
+        327,
+        325,
+        625,
+        622
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 192,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱宀牛；宀與牛的撇橫、雙橫穿豎完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱宀牛；宀與牛的撇橫、雙橫穿豎完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 7,
+      "rank": 1767,
+      "row": 2,
+      "column": 3,
+      "character": "覽",
+      "codepoint": "U+89BD",
+      "cns_code": "1-7B2A",
+      "cns_strokes": 21,
+      "cns_stroke_sequence": "125125311252212511135",
+      "minimum_grid_clearance_px": 55,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.24023438,
+        0.18164062,
+        0.77734375,
+        0.81054688
+      ],
+      "source_box": [
+        625,
+        325,
+        923,
+        622
+      ],
+      "dark_component_count_8conn": 6,
+      "smallest_dark_component_area_px": 205,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱監見；監的臣框、右上分支、皿與下見框、儿完整；非览",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱監見；監的臣框、右上分支、皿與下見框、儿完整；非览",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 8,
+      "rank": 1768,
+      "row": 2,
+      "column": 4,
+      "character": "午",
+      "codepoint": "U+5348",
+      "cns_code": "1-4529",
+      "cns_strokes": 4,
+      "cns_stroke_sequence": "3112",
+      "minimum_grid_clearance_px": 57,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.23828125,
+        0.19140625,
+        0.74023438,
+        0.76953125
+      ],
+      "source_box": [
+        923,
+        325,
+        1221,
+        622
+      ],
+      "dark_component_count_8conn": 2,
+      "smallest_dark_component_area_px": 903,
+      "dark_component_areas_under_100_px": [],
+      "topology": "撇橫、長橫與中央穿豎完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：撇橫、長橫與中央穿豎完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 9,
+      "rank": 1769,
+      "row": 3,
+      "column": 1,
+      "character": "曝",
+      "codepoint": "U+66DD",
+      "cns_code": "1-783B",
+      "cns_strokes": 19,
+      "cns_stroke_sequence": "2511251112213454434",
+      "minimum_grid_clearance_px": 52,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.23632812,
+        0.203125,
+        0.828125,
+        0.79492188
+      ],
+      "source_box": [
+        29,
+        622,
+        327,
+        918
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 180,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰日暴；左日與暴的日、共、下氺各層完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰日暴；左日與暴的日、共、下氺各層完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 10,
+      "rank": 1770,
+      "row": 3,
+      "column": 2,
+      "character": "耀",
+      "codepoint": "U+8000",
+      "cns_code": "1-7A2E",
+      "cns_strokes": 20,
+      "cns_stroke_sequence": "24313554454432411121",
+      "minimum_grid_clearance_px": 58,
+      "dark_component_count": 10,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.21679688,
+        0.19335938,
+        0.78515625,
+        0.78125
+      ],
+      "source_box": [
+        327,
+        622,
+        625,
+        918
+      ],
+      "dark_component_count_8conn": 10,
+      "smallest_dark_component_area_px": 85,
+      "dark_component_areas_under_100_px": [
+        85
+      ],
+      "topology": "⿰光翟；光的點撇、兀與翟的雙羽、隹多橫完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰光翟；光的點撇、兀與翟的雙羽、隹多橫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 11,
+      "rank": 1771,
+      "row": 3,
+      "column": 3,
+      "character": "茂",
+      "codepoint": "U+8302",
+      "cns_code": "1-533D",
+      "cns_strokes": 9,
+      "cns_stroke_sequence": "211213543",
+      "minimum_grid_clearance_px": 60,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.26171875,
+        0.19921875,
+        0.76757812,
+        0.79882812
+      ],
+      "source_box": [
+        625,
+        622,
+        923,
+        918
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 174,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱艹戊；艹與戊的橫撇、斜鉤、撇點完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱艹戊；艹與戊的橫撇、斜鉤、撇點完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 12,
+      "rank": 1772,
+      "row": 3,
+      "column": 4,
+      "character": "軸",
+      "codepoint": "U+8EF8",
+      "cns_code": "1-6249",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "125111225121",
+      "minimum_grid_clearance_px": 58,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.19140625,
+        0.2109375,
+        0.78320312,
+        0.76757812
+      ],
+      "source_box": [
+        923,
+        622,
+        1221,
+        918
+      ],
+      "dark_component_count_8conn": 2,
+      "smallest_dark_component_area_px": 2712,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰車由；繁體車框、多橫穿豎與由框完整；非轴",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰車由；繁體車框、多橫穿豎與由框完整；非轴",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 13,
+      "rank": 1773,
+      "row": 4,
+      "column": 1,
+      "character": "飽",
+      "codepoint": "U+98FD",
+      "cns_code": "1-6767",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "3415115435515",
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.16210938,
+        0.25585938,
+        0.79296875,
+        0.796875
+      ],
+      "source_box": [
+        29,
+        918,
+        327,
+        1217
+      ],
+      "dark_component_count_8conn": 6,
+      "smallest_dark_component_area_px": 125,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰飠包；繁體飠與包的勹、巳框鉤完整；非饱",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰飠包；繁體飠與包的勹、巳框鉤完整；非饱",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 14,
+      "rank": 1774,
+      "row": 4,
+      "column": 2,
+      "character": "否",
+      "codepoint": "U+5426",
+      "cns_code": "1-4941",
+      "cns_strokes": 7,
+      "cns_stroke_sequence": "1324251",
+      "minimum_grid_clearance_px": 72,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.26367188,
+        0.24804688,
+        0.75195312,
+        0.76367188
+      ],
+      "source_box": [
+        327,
+        918,
+        625,
+        1217
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 372,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱不口；不的橫撇豎點與下口完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱不口；不的橫撇豎點與下口完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 15,
+      "rank": 1775,
+      "row": 4,
+      "column": 3,
+      "character": "朵",
+      "codepoint": "U+6735",
+      "cns_code": "1-4838",
+      "cns_strokes": 6,
+      "cns_stroke_sequence": "351234",
+      "minimum_grid_clearance_px": 65,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.23828125,
+        0.21484375,
+        0.74414062,
+        0.77539062
+      ],
+      "source_box": [
+        625,
+        918,
+        923,
+        1217
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 397,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱几木；几形與下木四向分支完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱几木；几形與下木四向分支完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0111",
+      "index": 16,
+      "rank": 1776,
+      "row": 4,
+      "column": 4,
+      "character": "爐",
+      "codepoint": "U+7210",
+      "cns_code": "1-7977",
+      "cns_strokes": 20,
+      "cns_stroke_sequence": "43342153152512125221",
+      "minimum_grid_clearance_px": 56,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.18945312,
+        0.23046875,
+        0.78125,
+        0.81445312
+      ],
+      "source_box": [
+        923,
+        918,
+        1221,
+        1217
+      ],
+      "dark_component_count_8conn": 6,
+      "smallest_dark_component_area_px": 171,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰火盧；火與盧的虍、田四格、皿三格完整；非炉",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰火盧；火與盧的虍、田四格、皿三格完整；非炉",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 1,
+      "rank": 1777,
+      "row": 1,
+      "column": 1,
+      "character": "寵",
+      "codepoint": "U+5BF5",
+      "cns_code": "1-7831",
+      "cns_strokes": 19,
+      "cns_stroke_sequence": "4454143135441515111",
+      "minimum_grid_clearance_px": 50,
+      "dark_component_count": 7,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.20898438,
+        0.1953125,
+        0.81054688,
+        0.83398438
+      ],
+      "source_box": [
+        29,
+        25,
+        327,
+        325
+      ],
+      "dark_component_count_8conn": 7,
+      "smallest_dark_component_area_px": 213,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱宀龍；宀下完整龍的立月形、多折、多橫與尾鉤；非宠",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱宀龍；宀下完整龍的立月形、多折、多橫與尾鉤；非宠",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 2,
+      "rank": 1778,
+      "row": 1,
+      "column": 2,
+      "character": "尤",
+      "codepoint": "U+5C24",
+      "cns_code": "1-4538",
+      "cns_strokes": 4,
+      "cns_stroke_sequence": "1354",
+      "minimum_grid_clearance_px": 58,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.2265625,
+        0.24609375,
+        0.80859375,
+        0.78125
+      ],
+      "source_box": [
+        327,
+        25,
+        626,
+        325
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 212,
+      "dark_component_areas_under_100_px": [],
+      "topology": "橫、撇、豎彎鉤與右上點完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：橫、撇、豎彎鉤與右上點完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 3,
+      "rank": 1779,
+      "row": 1,
+      "column": 3,
+      "character": "捨",
+      "codepoint": "U+6368",
+      "cns_code": "1-5A6F",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "15134112251",
+      "minimum_grid_clearance_px": 35,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.18359375,
+        0.19921875,
+        0.88476562,
+        0.77929688
+      ],
+      "source_box": [
+        626,
+        25,
+        924,
+        325
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 1522,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰扌舍；扌與舍的人形頂、干、口完整，未遺漏扌",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰扌舍；扌與舍的人形頂、干、口完整，未遺漏扌",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 4,
+      "rank": 1780,
+      "row": 1,
+      "column": 4,
+      "character": "概",
+      "codepoint": "U+6982",
+      "cns_code": "1-644D",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "1234511541535",
+      "minimum_grid_clearance_px": 40,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.16210938,
+        0.23828125,
+        0.86914062,
+        0.74023438
+      ],
+      "source_box": [
+        924,
+        25,
+        1221,
+        325
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 320,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰木既；木、皀形與右旡的撇折彎鉤完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰木既；木、皀形與右旡的撇折彎鉤完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 5,
+      "rank": 1781,
+      "row": 2,
+      "column": 1,
+      "character": "搬",
+      "codepoint": "U+642C",
+      "cns_code": "1-6430",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "1513354413554",
+      "minimum_grid_clearance_px": 50,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.17578125,
+        0.22460938,
+        0.83398438,
+        0.7734375
+      ],
+      "source_box": [
+        29,
+        325,
+        327,
+        622
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 218,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰扌般；扌、舟框點橫與右殳完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰扌般；扌、舟框點橫與右殳完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 6,
+      "rank": 1782,
+      "row": 2,
+      "column": 2,
+      "character": "獵",
+      "codepoint": "U+7375",
+      "cns_code": "1-7665",
+      "cns_strokes": 18,
+      "cns_stroke_sequence": "353555253415115115",
+      "minimum_grid_clearance_px": 47,
+      "dark_component_count": 8,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.203125,
+        0.18359375,
+        0.84375,
+        0.81640625
+      ],
+      "source_box": [
+        327,
+        325,
+        626,
+        622
+      ],
+      "dark_component_count_8conn": 8,
+      "smallest_dark_component_area_px": 373,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰犭巤；犭與巤的巛、框內分畫、下方雙折尾鉤完整；非猎",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰犭巤；犭與巤的巛、框內分畫、下方雙折尾鉤完整；非猎",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 7,
+      "rank": 1783,
+      "row": 2,
+      "column": 3,
+      "character": "苗",
+      "codepoint": "U+82D7",
+      "cns_code": "1-5340",
+      "cns_strokes": 9,
+      "cns_stroke_sequence": "211225121",
+      "minimum_grid_clearance_px": 61,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.234375,
+        0.2109375,
+        0.69921875,
+        0.796875
+      ],
+      "source_box": [
+        626,
+        325,
+        924,
+        622
+      ],
+      "dark_component_count_8conn": 2,
+      "smallest_dark_component_area_px": 1754,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱艹田；艹與田框四格完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱艹田；艹與田框四格完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 8,
+      "rank": 1784,
+      "row": 2,
+      "column": 4,
+      "character": "鉤",
+      "codepoint": "U+9264",
+      "cns_code": "1-6747",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "3411243135251",
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1640625,
+        0.19335938,
+        0.75976562,
+        0.77734375
+      ],
+      "source_box": [
+        924,
+        325,
+        1221,
+        622
+      ],
+      "dark_component_count_8conn": 6,
+      "smallest_dark_component_area_px": 124,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰釒句；繁體釒多橫與句的勹、口完整；非钩",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰釒句；繁體釒多橫與句的勹、口完整；非钩",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 9,
+      "rank": 1785,
+      "row": 3,
+      "column": 1,
+      "character": "喚",
+      "codepoint": "U+559A",
+      "cns_code": "1-5E50",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "251352534134",
+      "minimum_grid_clearance_px": 56,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.18359375,
+        0.1953125,
+        0.77734375,
+        0.77539062
+      ],
+      "source_box": [
+        29,
+        622,
+        327,
+        918
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 264,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰口奐；左口與奐的刀形頂、內人、下大完整；非唤",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰口奐；左口與奐的刀形頂、內人、下大完整；非唤",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 10,
+      "rank": 1786,
+      "row": 3,
+      "column": 2,
+      "character": "畜",
+      "codepoint": "U+755C",
+      "cns_code": "1-5665",
+      "cns_strokes": 10,
+      "cns_stroke_sequence": "4155425121",
+      "minimum_grid_clearance_px": 59,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.22265625,
+        0.19726562,
+        0.7421875,
+        0.79492188
+      ],
+      "source_box": [
+        327,
+        622,
+        626,
+        918
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 202,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱玄田；玄的點橫雙折與下田四格完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱玄田；玄的點橫雙折與下田四格完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 11,
+      "rank": 1787,
+      "row": 3,
+      "column": 3,
+      "character": "媽",
+      "codepoint": "U+5ABD",
+      "cns_code": "1-6364",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "5312111254444",
+      "minimum_grid_clearance_px": 40,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1328125,
+        0.20117188,
+        0.78320312,
+        0.75390625
+      ],
+      "source_box": [
+        626,
+        622,
+        924,
+        918
+      ],
+      "dark_component_count_8conn": 6,
+      "smallest_dark_component_area_px": 103,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰女馬；女與完整繁體馬的多橫、折鉤、灬四點；非妈",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰女馬；女與完整繁體馬的多橫、折鉤、灬四點；非妈",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 12,
+      "rank": 1788,
+      "row": 3,
+      "column": 4,
+      "character": "稹",
+      "codepoint": "U+7A39",
+      "cns_code": "2-525A",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "312341225111134",
+      "minimum_grid_clearance_px": 52,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.17382812,
+        0.19726562,
+        0.81640625,
+        0.8203125
+      ],
+      "source_box": [
+        924,
+        622,
+        1221,
+        918
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 265,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰禾真；禾與真的十、目三格、下八完整；exact U+7A39",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰禾真；禾與真的十、目三格、下八完整；exact U+7A39",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 13,
+      "rank": 1789,
+      "row": 4,
+      "column": 1,
+      "character": "稀",
+      "codepoint": "U+7A00",
+      "cns_code": "1-6125",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "312343413252",
+      "minimum_grid_clearance_px": 54,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.17773438,
+        0.19140625,
+        0.77929688,
+        0.81835938
+      ],
+      "source_box": [
+        29,
+        918,
+        327,
+        1217
+      ],
+      "dark_component_count_8conn": 4,
+      "smallest_dark_component_area_px": 344,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰禾希；禾與希的乂、一、巾框穿豎完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰禾希；禾與希的乂、一、巾框穿豎完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 14,
+      "rank": 1790,
+      "row": 4,
+      "column": 2,
+      "character": "競",
+      "codepoint": "U+7AF6",
+      "cns_code": "1-7A23",
+      "cns_strokes": 20,
+      "cns_stroke_sequence": "41431251354143125135",
+      "minimum_grid_clearance_px": 51,
+      "dark_component_count": 9,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1875,
+        0.25390625,
+        0.81835938,
+        0.83203125
+      ],
+      "source_box": [
+        327,
+        918,
+        626,
+        1217
+      ],
+      "dark_component_count_8conn": 9,
+      "smallest_dark_component_area_px": 140,
+      "dark_component_areas_under_100_px": [],
+      "topology": "左右兩組立、兄並列，雙口、雙儿與末鉤完整；非竞",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：左右兩組立、兄並列，雙口、雙儿與末鉤完整；非竞",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 15,
+      "rank": 1791,
+      "row": 4,
+      "column": 3,
+      "character": "佐",
+      "codepoint": "U+4F50",
+      "cns_code": "1-4876",
+      "cns_strokes": 7,
+      "cns_stroke_sequence": "3213121",
+      "minimum_grid_clearance_px": 60,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.20117188,
+        0.26171875,
+        0.78710938,
+        0.7890625
+      ],
+      "source_box": [
+        626,
+        918,
+        924,
+        1217
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 1271,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰亻左；亻與左的橫撇、工完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰亻左；亻與左的橫撇、工完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0112",
+      "index": 16,
+      "rank": 1792,
+      "row": 4,
+      "column": 4,
+      "character": "勃",
+      "codepoint": "U+52C3",
+      "cns_code": "1-502F",
+      "cns_strokes": 9,
+      "cns_stroke_sequence": "124555153",
+      "minimum_grid_clearance_px": 50,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.2109375,
+        0.22851562,
+        0.7890625,
+        0.8359375
+      ],
+      "source_box": [
+        924,
+        918,
+        1221,
+        1217
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 1584,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰孛力；十冖、子與右力折鉤撇完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰孛力；十冖、子與右力折鉤撇完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 1,
+      "rank": 1793,
+      "row": 1,
+      "column": 1,
+      "character": "丞",
+      "codepoint": "U+4E1E",
+      "cns_code": "1-4722",
+      "cns_strokes": 6,
+      "cns_stroke_sequence": "555341",
+      "minimum_grid_clearance_px": 57,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.2421875,
+        0.20898438,
+        0.8125,
+        0.77734375
+      ],
+      "source_box": [
+        29,
+        25,
+        327,
+        325
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 772,
+      "dark_component_areas_under_100_px": [],
+      "topology": "中央折鉤水勢、左右分支與獨立底橫完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：中央折鉤水勢、左右分支與獨立底橫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 2,
+      "rank": 1794,
+      "row": 1,
+      "column": 2,
+      "character": "履",
+      "codepoint": "U+5C65",
+      "cns_code": "1-6C53",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "513332312511354",
+      "minimum_grid_clearance_px": 57,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1953125,
+        0.1953125,
+        0.80859375,
+        0.81054688
+      ],
+      "source_box": [
+        327,
+        25,
+        625,
+        325
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 311,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿸尸復；尸內彳、复的日框與夂交叉完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿸尸復；尸內彳、复的日框與夂交叉完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 3,
+      "rank": 1795,
+      "row": 1,
+      "column": 3,
+      "character": "雌",
+      "codepoint": "U+96CC",
+      "cns_code": "1-6B64",
+      "cns_strokes": 14,
+      "cns_stroke_sequence": "21211532411121",
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.16796875,
+        0.19140625,
+        0.83789062,
+        0.80273438
+      ],
+      "source_box": [
+        625,
+        25,
+        923,
+        325
+      ],
+      "dark_component_count_8conn": 4,
+      "smallest_dark_component_area_px": 144,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰此隹；此的止匕與隹的亻勢、多橫穿豎完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰此隹；此的止匕與隹的亻勢、多橫穿豎完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 4,
+      "rank": 1796,
+      "row": 1,
+      "column": 4,
+      "character": "豬",
+      "codepoint": "U+8C6C",
+      "cns_code": "1-6F29",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "135333412132511",
+      "minimum_grid_clearance_px": 52,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.203125,
+        0.21484375,
+        0.82617188,
+        0.79882812
+      ],
+      "source_box": [
+        923,
+        25,
+        1221,
+        325
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 338,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰豕者；豕的多撇鉤捺與者的耂、日框完整；非猪",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰豕者；豕的多撇鉤捺與者的耂、日框完整；非猪",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 5,
+      "rank": 1797,
+      "row": 2,
+      "column": 1,
+      "character": "肚",
+      "codepoint": "U+809A",
+      "cns_code": "1-4B3E",
+      "cns_strokes": 7,
+      "cns_stroke_sequence": "3544121",
+      "minimum_grid_clearance_px": 54,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1875,
+        0.23242188,
+        0.8203125,
+        0.79101562
+      ],
+      "source_box": [
+        29,
+        325,
+        327,
+        622
+      ],
+      "dark_component_count_8conn": 2,
+      "smallest_dark_component_area_px": 1981,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰月土；月雙內橫與土的雙橫穿豎完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰月土；月雙內橫與土的雙橫穿豎完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 6,
+      "rank": 1798,
+      "row": 2,
+      "column": 2,
+      "character": "虧",
+      "codepoint": "U+8667",
+      "cns_code": "1-7536",
+      "cns_strokes": 17,
+      "cns_stroke_sequence": "21531532411121115",
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1640625,
+        0.19140625,
+        0.81445312,
+        0.83789062
+      ],
+      "source_box": [
+        327,
+        325,
+        625,
+        622
+      ],
+      "dark_component_count_8conn": 4,
+      "smallest_dark_component_area_px": 296,
+      "dark_component_areas_under_100_px": [],
+      "topology": "虍下隹與右亏的雙橫折鉤完整；完整繁體虧，非亏",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：虍下隹與右亏的雙橫折鉤完整；完整繁體虧，非亏",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 7,
+      "rank": 1799,
+      "row": 2,
+      "column": 3,
+      "character": "刷",
+      "codepoint": "U+5237",
+      "cns_code": "1-4C2D",
+      "cns_strokes": 8,
+      "cns_stroke_sequence": "51325225",
+      "minimum_grid_clearance_px": 44,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.14648438,
+        0.20703125,
+        0.73828125,
+        0.80664062
+      ],
+      "source_box": [
+        625,
+        325,
+        923,
+        622
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 359,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰⿸尸巾刂；尸、巾框穿豎與右刂完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰⿸尸巾刂；尸、巾框穿豎與右刂完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 8,
+      "rank": 1800,
+      "row": 2,
+      "column": 4,
+      "character": "卡",
+      "codepoint": "U+5361",
+      "cns_code": "1-4626",
+      "cns_strokes": 5,
+      "cns_stroke_sequence": "21124",
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 3,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.21289062,
+        0.18359375,
+        0.75976562,
+        0.8359375
+      ],
+      "source_box": [
+        923,
+        325,
+        1221,
+        622
+      ],
+      "dark_component_count_8conn": 3,
+      "smallest_dark_component_area_px": 258,
+      "dark_component_areas_under_100_px": [],
+      "topology": "上形與下卜共用中央豎，橫與右點完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：上形與下卜共用中央豎，橫與右點完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 9,
+      "rank": 1801,
+      "row": 3,
+      "column": 1,
+      "character": "慧",
+      "codepoint": "U+6167",
+      "cns_code": "1-6C64",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "111211125114544",
+      "minimum_grid_clearance_px": 41,
+      "dark_component_count": 7,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.21484375,
+        0.1953125,
+        0.74609375,
+        0.86328125
+      ],
+      "source_box": [
+        29,
+        622,
+        327,
+        918
+      ],
+      "dark_component_count_8conn": 7,
+      "smallest_dark_component_area_px": 183,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱彗心；雙丰、中央彐與下心鉤三點完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱彗心；雙丰、中央彐與下心鉤三點完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 10,
+      "rank": 1802,
+      "row": 3,
+      "column": 2,
+      "character": "鍋",
+      "codepoint": "U+934B",
+      "cns_code": "1-7572",
+      "cns_strokes": 17,
+      "cns_stroke_sequence": "34112431251225251",
+      "minimum_grid_clearance_px": 48,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.16015625,
+        0.21289062,
+        0.8359375,
+        0.79492188
+      ],
+      "source_box": [
+        327,
+        622,
+        625,
+        918
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 126,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰釒咼；繁體釒與咼的多層框、口內白完整；非锅",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰釒咼；繁體釒與咼的多層框、口內白完整；非锅",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 11,
+      "rank": 1803,
+      "row": 3,
+      "column": 3,
+      "character": "叢",
+      "codepoint": "U+53E2",
+      "cns_code": "1-763B",
+      "cns_strokes": 18,
+      "cns_stroke_sequence": "224314311212211154",
+      "minimum_grid_clearance_px": 44,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.203125,
+        0.17773438,
+        0.77929688,
+        0.85546875
+      ],
+      "source_box": [
+        625,
+        622,
+        923,
+        918
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 96,
+      "dark_component_areas_under_100_px": [
+        96
+      ],
+      "topology": "⿱丵取；丵的點撇、多橫穿豎與取的耳框、又完整；非丛",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱丵取；丵的點撇、多橫穿豎與取的耳框、又完整；非丛",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 12,
+      "rank": 1804,
+      "row": 3,
+      "column": 4,
+      "character": "憶",
+      "codepoint": "U+61B6",
+      "cns_code": "1-7059",
+      "cns_strokes": 16,
+      "cns_stroke_sequence": "4244143125114544",
+      "minimum_grid_clearance_px": 46,
+      "dark_component_count": 13,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.18554688,
+        0.1953125,
+        0.80664062,
+        0.84570312
+      ],
+      "source_box": [
+        923,
+        622,
+        1221,
+        918
+      ],
+      "dark_component_count_8conn": 13,
+      "smallest_dark_component_area_px": 137,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰忄意；忄與意的立、日、心完整；非忆",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰忄意；忄與意的立、日、心完整；非忆",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 13,
+      "rank": 1805,
+      "row": 4,
+      "column": 1,
+      "character": "瘦",
+      "codepoint": "U+7626",
+      "cns_code": "1-6D70",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "413443211511254",
+      "minimum_grid_clearance_px": 34,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.16992188,
+        0.2109375,
+        0.7734375,
+        0.88867188
+      ],
+      "source_box": [
+        29,
+        918,
+        327,
+        1217
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 162,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿸疒叟；疒內叟的臼、穿豎與下又完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿸疒叟；疒內叟的臼、穿豎與下又完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 14,
+      "rank": 1806,
+      "row": 4,
+      "column": 2,
+      "character": "磁",
+      "codepoint": "U+78C1",
+      "cns_code": "1-6976",
+      "cns_strokes": 14,
+      "cns_stroke_sequence": "13251431554554",
+      "minimum_grid_clearance_px": 43,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.14257812,
+        0.27148438,
+        0.79101562,
+        0.8125
+      ],
+      "source_box": [
+        327,
+        918,
+        625,
+        1217
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 177,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰石茲；石與茲的丷、一、兩組幺完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰石茲；石與茲的丷、一、兩組幺完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 15,
+      "rank": 1807,
+      "row": 4,
+      "column": 3,
+      "character": "俠",
+      "codepoint": "U+4FE0",
+      "cns_code": "1-4F6E",
+      "cns_strokes": 9,
+      "cns_stroke_sequence": "321343434",
+      "minimum_grid_clearance_px": 44,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.14453125,
+        0.23828125,
+        0.8203125,
+        0.85351562
+      ],
+      "source_box": [
+        625,
+        918,
+        923,
+        1217
+      ],
+      "dark_component_count_8conn": 4,
+      "smallest_dark_component_area_px": 462,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰亻夾；亻與夾的大形、兩個內人完整；非侠",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰亻夾；亻與夾的大形、兩個內人完整；非侠",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0113",
+      "index": 16,
+      "rank": 1808,
+      "row": 4,
+      "column": 4,
+      "character": "蔽",
+      "codepoint": "U+853D",
+      "cns_code": "1-6E53",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "211243252343134",
+      "minimum_grid_clearance_px": 34,
+      "dark_component_count": 9,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.2265625,
+        0.22851562,
+        0.82617188,
+        0.88867188
+      ],
+      "source_box": [
+        923,
+        918,
+        1221,
+        1217
+      ],
+      "dark_component_count_8conn": 9,
+      "smallest_dark_component_area_px": 133,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱艹敝；艹下敝的左框、點撇穿豎與右攵完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱艹敝；艹下敝的左框、點撇穿豎與右攵完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 1,
+      "rank": 1809,
+      "row": 1,
+      "column": 1,
+      "character": "痕",
+      "codepoint": "U+75D5",
+      "cns_code": "1-5C2F",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "41344511534",
+      "minimum_grid_clearance_px": 51,
+      "dark_component_count": 7,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1953125,
+        0.16796875,
+        0.8203125,
+        0.80859375
+      ],
+      "source_box": [
+        29,
+        25,
+        327,
+        325
+      ],
+      "dark_component_count_8conn": 7,
+      "smallest_dark_component_area_px": 154,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿸疒艮；疒與艮的彐形、豎提、撇捺完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿸疒艮；疒與艮的彐形、豎提、撇捺完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 2,
+      "rank": 1810,
+      "row": 1,
+      "column": 2,
+      "character": "晨",
+      "codepoint": "U+6668",
+      "cns_code": "1-5B27",
+      "cns_strokes": 11,
+      "cns_stroke_sequence": "25111311534",
+      "minimum_grid_clearance_px": 48,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.234375,
+        0.15820312,
+        0.8125,
+        0.8046875
+      ],
+      "source_box": [
+        327,
+        25,
+        625,
+        325
+      ],
+      "dark_component_count_8conn": 6,
+      "smallest_dark_component_area_px": 286,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱日辰；日框內橫與辰的厂、多橫、豎提撇捺完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱日辰；日框內橫與辰的厂、多橫、豎提撇捺完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 3,
+      "rank": 1811,
+      "row": 1,
+      "column": 3,
+      "character": "燭",
+      "codepoint": "U+71ED",
+      "cns_code": "1-7436",
+      "cns_strokes": 17,
+      "cns_stroke_sequence": "43342522135251214",
+      "minimum_grid_clearance_px": 48,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.19726562,
+        0.15820312,
+        0.76367188,
+        0.75585938
+      ],
+      "source_box": [
+        625,
+        25,
+        924,
+        325
+      ],
+      "dark_component_count_8conn": 4,
+      "smallest_dark_component_area_px": 221,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰火蜀；火與蜀的罒、勹、虫框穿豎末點完整；非烛",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰火蜀；火與蜀的罒、勹、虫框穿豎末點完整；非烛",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 4,
+      "rank": 1812,
+      "row": 1,
+      "column": 4,
+      "character": "妾",
+      "codepoint": "U+59BE",
+      "cns_code": "1-4C65",
+      "cns_strokes": 8,
+      "cns_stroke_sequence": "41431531",
+      "minimum_grid_clearance_px": 48,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1875,
+        0.15820312,
+        0.8046875,
+        0.78320312
+      ],
+      "source_box": [
+        924,
+        25,
+        1221,
+        325
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 190,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱立女；立的點橫點撇底橫與女交叉完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱立女；立的點橫點撇底橫與女交叉完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 5,
+      "rank": 1813,
+      "row": 2,
+      "column": 1,
+      "character": "砂",
+      "codepoint": "U+7802",
+      "cns_code": "1-5265",
+      "cns_strokes": 9,
+      "cns_stroke_sequence": "132515343",
+      "minimum_grid_clearance_px": 40,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1328125,
+        0.15820312,
+        0.81835938,
+        0.76953125
+      ],
+      "source_box": [
+        29,
+        325,
+        327,
+        622
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 231,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰石少；石與少的中央豎、左右點撇、下撇完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰石少；石與少的中央豎、左右點撇、下撇完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 6,
+      "rank": 1814,
+      "row": 2,
+      "column": 2,
+      "character": "棋",
+      "codepoint": "U+68CB",
+      "cns_code": "1-5F76",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "123412211134",
+      "minimum_grid_clearance_px": 54,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.17773438,
+        0.19726562,
+        0.796875,
+        0.78515625
+      ],
+      "source_box": [
+        327,
+        325,
+        625,
+        622
+      ],
+      "dark_component_count_8conn": 4,
+      "smallest_dark_component_area_px": 292,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰木其；木與其框、多橫雙豎、下八完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰木其；木與其框、多橫雙豎、下八完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 7,
+      "rank": 1815,
+      "row": 2,
+      "column": 3,
+      "character": "稍",
+      "codepoint": "U+7A0D",
+      "cns_code": "1-6121",
+      "cns_strokes": 12,
+      "cns_stroke_sequence": "312342433544",
+      "minimum_grid_clearance_px": 51,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.17578125,
+        0.16992188,
+        0.7421875,
+        0.78515625
+      ],
+      "source_box": [
+        625,
+        325,
+        924,
+        622
+      ],
+      "dark_component_count_8conn": 6,
+      "smallest_dark_component_area_px": 189,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰禾肖；禾與肖的⺌、月框雙內橫完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰禾肖；禾與肖的⺌、月框雙內橫完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 8,
+      "rank": 1816,
+      "row": 2,
+      "column": 4,
+      "character": "讚",
+      "codepoint": "U+8B9A",
+      "cns_code": "1-7D34",
+      "cns_strokes": 26,
+      "cns_stroke_sequence": "41112513121353121352511134",
+      "minimum_grid_clearance_px": 45,
+      "dark_component_count": 9,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1484375,
+        0.16015625,
+        0.8125,
+        0.8125
+      ],
+      "source_box": [
+        924,
+        325,
+        1221,
+        622
+      ],
+      "dark_component_count_8conn": 9,
+      "smallest_dark_component_area_px": 201,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿰言贊；七筆言、雙先與繁體貝框、下八完整；非赞",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿰言贊；七筆言、雙先與繁體貝框、下八完整；非赞",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 9,
+      "rank": 1817,
+      "row": 3,
+      "column": 1,
+      "character": "辰",
+      "codepoint": "U+8FB0",
+      "cns_code": "1-4B51",
+      "cns_strokes": 7,
+      "cns_stroke_sequence": "1311534",
+      "minimum_grid_clearance_px": 54,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.17773438,
+        0.18164062,
+        0.79101562,
+        0.74609375
+      ],
+      "source_box": [
+        29,
+        622,
+        327,
+        918
+      ],
+      "dark_component_count_8conn": 4,
+      "smallest_dark_component_area_px": 348,
+      "dark_component_areas_under_100_px": [],
+      "topology": "厂、多層橫、豎提、撇捺完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：厂、多層橫、豎提、撇捺完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 10,
+      "rank": 1818,
+      "row": 3,
+      "column": 2,
+      "character": "丟",
+      "codepoint": "U+4E1F",
+      "cns_code": "1-4723",
+      "cns_strokes": 6,
+      "cns_stroke_sequence": "112154",
+      "minimum_grid_clearance_px": 55,
+      "dark_component_count": 2,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.18359375,
+        0.18945312,
+        0.76367188,
+        0.7265625
+      ],
+      "source_box": [
+        327,
+        622,
+        625,
+        918
+      ],
+      "dark_component_count_8conn": 2,
+      "smallest_dark_component_area_px": 365,
+      "dark_component_areas_under_100_px": [],
+      "topology": "王形三橫穿豎與下厶折點完整；exact U+4E1F",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：王形三橫穿豎與下厶折點完整；exact U+4E1F",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 11,
+      "rank": 1819,
+      "row": 3,
+      "column": 3,
+      "character": "廉",
+      "codepoint": "U+5EC9",
+      "cns_code": "1-636D",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "4134315112234",
+      "minimum_grid_clearance_px": 45,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1953125,
+        0.15039062,
+        0.76367188,
+        0.82617188
+      ],
+      "source_box": [
+        625,
+        622,
+        924,
+        918
+      ],
+      "dark_component_count_8conn": 6,
+      "smallest_dark_component_area_px": 116,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿸广兼；广內兼的點撇、多橫豎與下撇捺完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿸广兼；广內兼的點撇、多橫豎與下撇捺完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 12,
+      "rank": 1820,
+      "row": 3,
+      "column": 4,
+      "character": "攀",
+      "codepoint": "U+6500",
+      "cns_code": "1-7838",
+      "cns_strokes": 19,
+      "cns_stroke_sequence": "3434123412341343115",
+      "minimum_grid_clearance_px": 35,
+      "dark_component_count": 6,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.21289062,
+        0.11523438,
+        0.828125,
+        0.83789062
+      ],
+      "source_box": [
+        924,
+        622,
+        1221,
+        918
+      ],
+      "dark_component_count_8conn": 6,
+      "smallest_dark_component_area_px": 368,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱樊手；雙木、中央爻、大與下手鉤完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱樊手；雙木、中央爻、大與下手鉤完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 13,
+      "rank": 1821,
+      "row": 4,
+      "column": 1,
+      "character": "籠",
+      "codepoint": "U+7C60",
+      "cns_code": "1-7B6C",
+      "cns_strokes": 22,
+      "cns_stroke_sequence": "3143144143135441515111",
+      "minimum_grid_clearance_px": 45,
+      "dark_component_count": 9,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.16992188,
+        0.1796875,
+        0.77929688,
+        0.85351562
+      ],
+      "source_box": [
+        29,
+        918,
+        327,
+        1217
+      ],
+      "dark_component_count_8conn": 9,
+      "smallest_dark_component_area_px": 110,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱竹龍；竹頭六筆與完整龍的立月形、多折、多橫、尾鉤；非笼",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱竹龍；竹頭六筆與完整龍的立月形、多折、多橫、尾鉤；非笼",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 14,
+      "rank": 1822,
+      "row": 4,
+      "column": 2,
+      "character": "穴",
+      "codepoint": "U+7A74",
+      "cns_code": "1-467E",
+      "cns_strokes": 5,
+      "cns_stroke_sequence": "44534",
+      "minimum_grid_clearance_px": 57,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.24609375,
+        0.2265625,
+        0.8125,
+        0.74609375
+      ],
+      "source_box": [
+        327,
+        918,
+        625,
+        1217
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 240,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱宀八；宀與下撇捺分離完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱宀八；宀與下撇捺分離完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 15,
+      "rank": 1823,
+      "row": 4,
+      "column": 3,
+      "character": "葛",
+      "codepoint": "U+845B",
+      "cns_code": "1-6636",
+      "cns_strokes": 13,
+      "cns_stroke_sequence": "2112251135345",
+      "minimum_grid_clearance_px": 46,
+      "dark_component_count": 4,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.25195312,
+        0.15625,
+        0.70703125,
+        0.84960938
+      ],
+      "source_box": [
+        625,
+        918,
+        924,
+        1217
+      ],
+      "dark_component_count_8conn": 4,
+      "smallest_dark_component_area_px": 604,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱艹曷；艹與曷的日框、勹、內人、下鉤完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱艹曷；艹與曷的日框、勹、內人、下鉤完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    },
+    {
+      "batch_id": "common-0114",
+      "index": 16,
+      "rank": 1824,
+      "row": 4,
+      "column": 4,
+      "character": "蓬",
+      "codepoint": "U+84EC",
+      "cns_code": "1-6E5D",
+      "cns_strokes": 15,
+      "cns_stroke_sequence": "211235411124554",
+      "minimum_grid_clearance_px": 49,
+      "dark_component_count": 5,
+      "tiny_dark_component_areas_px": [],
+      "source_ink_bbox": [
+        0.1953125,
+        0.18945312,
+        0.81054688,
+        0.83789062
+      ],
+      "source_box": [
+        924,
+        918,
+        1221,
+        1217
+      ],
+      "dark_component_count_8conn": 5,
+      "smallest_dark_component_area_px": 167,
+      "dark_component_areas_under_100_px": [],
+      "topology": "⿱艹逢；艹、夂、丰三橫穿豎與臺灣辶底捺完整",
+      "decision": "PASS",
+      "readability": {
+        "native": "PASS",
+        "128px": "PASS",
+        "64px": "PASS",
+        "32px": "PASS"
+      },
+      "issues": [],
+      "regeneration_prompt": null,
+      "post_trace_checks": [
+        "保持原 raster 的可見關係：⿱艹逢；艹、夂、丰三橫穿豎與臺灣辶底捺完整",
+        "不得把自然收鋒拉成無語義尖刺，亦不得吞掉合法短點或內白"
+      ]
+    }
+  ],
+  "priority_raster_review": [
+    "U+89BD",
+    "U+66DD",
+    "U+8000",
+    "U+7210",
+    "U+5BF5",
+    "U+7375",
+    "U+7A39",
+    "U+7AF6",
+    "U+96CC",
+    "U+8C6C",
+    "U+8667",
+    "U+6167",
+    "U+934B",
+    "U+53E2",
+    "U+61B6",
+    "U+853D",
+    "U+71ED",
+    "U+8B9A",
+    "U+5EC9",
+    "U+6500",
+    "U+7C60",
+    "U+84EC"
+  ],
+  "priority_post_trace_review": [
+    "U+89BD",
+    "U+66DD",
+    "U+8000",
+    "U+7210",
+    "U+5BF5",
+    "U+7375",
+    "U+7A39",
+    "U+7AF6",
+    "U+96CC",
+    "U+8C6C",
+    "U+8667",
+    "U+6167",
+    "U+934B",
+    "U+53E2",
+    "U+61B6",
+    "U+853D",
+    "U+71ED",
+    "U+8B9A",
+    "U+5EC9",
+    "U+6500",
+    "U+7C60",
+    "U+84EC"
+  ]
+}

@@ -1,0 +1,20 @@
+Redraw the entire 4×4 sheet as the exact U+2520–U+252F box-drawing set. Preserve all junction directions. LIGHT strokes are thin; HEAVY strokes are 2.5–3 times thicker. Apply weight independently to each directional arm:
+
+- c1 ┠: up HEAVY, down HEAVY, right LIGHT.
+- c2 ┡: up HEAVY, down LIGHT, right HEAVY.
+- c3 ┢: up LIGHT, down HEAVY, right HEAVY.
+- c4 ┣: up HEAVY, down HEAVY, right HEAVY.
+- c5 ┤: up LIGHT, down LIGHT, left LIGHT.
+- c6 ┥: up LIGHT, down LIGHT, left HEAVY.
+- c7 ┦: up HEAVY, down LIGHT, left LIGHT.
+- c8 ┧: up LIGHT, down HEAVY, left LIGHT.
+- c9 ┨: up HEAVY, down HEAVY, left LIGHT.
+- c10 ┩: up HEAVY, down LIGHT, left HEAVY.
+- c11 ┪: up LIGHT, down HEAVY, left HEAVY.
+- c12 ┫: up HEAVY, down HEAVY, left HEAVY.
+- c13 ┬: left LIGHT, right LIGHT, down LIGHT.
+- c14 ┭: left HEAVY, right LIGHT, down LIGHT.
+- c15 ┮: left LIGHT, right HEAVY, down LIGHT.
+- c16 ┯: left HEAVY, right HEAVY, down LIGHT.
+
+Follow the fourth-reference copybook literally. Return only the corrected sheet.

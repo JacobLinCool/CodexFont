@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0113",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1793,
+    "end_rank": 1808,
+    "characters": "丞履雌豬肚虧刷卡慧鍋叢憶瘦磁俠蔽"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0113.source.json",
+    "descriptor_sha256": "3d73d70ba701ad82ca86eb29f9adcdf626932b4ad828ee6cb01e2c59f05d88a8",
+    "raster": "sources/imagegen/raster/common-0113.png",
+    "raster_sha256": "da8190640357115a75e16259175108c3516d2b793a14ea6fb82fb89474ea93ef"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0111-0114-audit.json",
+    "report_sha256": "a0eef0a92e1361906d3c9d29de62e0d06af08bcda2d31e94885ddc254d0fe215"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0113/report.json",
+    "report_sha256": "79af3846c1bbedfcc9937dfb43b0f7bd5defc3175d76db9fa682ba4cfa66ff9c",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0113.vector-review.json",
+    "record_sha256": "a9486ee3f66c9900eb092fe7aac210d381eb638ac72ab78d0c9591382199c9d9"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:48:26Z"
+  }
+}

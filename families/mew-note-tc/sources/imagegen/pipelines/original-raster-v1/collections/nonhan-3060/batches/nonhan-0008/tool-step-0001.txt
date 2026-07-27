@@ -1,0 +1,31 @@
+Use case: logo-brand
+Asset type: original typeface source glyph sheet
+Primary request: create one new Mew Note TC sheet for nonhan-3060/nonhan-0008.
+Input images: Images 1 and 2 are the approved Mew Note TC Han and non-Han style pilots (style rhythm only); Image 3 is an identity-only copybook (code point identity only).
+Scene/backdrop: pure white square background with exactly five horizontal and five vertical thin neutral-gray rules forming a 4 by 4 grid, including all four outer border rules. No other background marks.
+Style/medium: original upright rounded gel-pen handwriting, black ink, low contrast, soft human terminals, consistent with Images 1 and 2 without copying any raster or outline.
+Composition/framing: one centered glyph per cell, row-major, generous padding, no contact with grid rules.
+Exact row-major rows (verbatim):
+ㄅㄆㄇㄈ
+ㄉㄊㄋㄌ
+ㄍㄎㄏㄐ
+ㄑㄒㄓㄔ
+Exact cells (verbatim):
+Cell 01: U+3105 ㄅ — soft-terminal
+Cell 02: U+3106 ㄆ — tail-terminal
+Cell 03: U+3107 ㄇ — soft-terminal
+Cell 04: U+3108 ㄈ — soft-terminal
+Cell 05: U+3109 ㄉ — soft-terminal
+Cell 06: U+310A ㄊ — tail-terminal
+Cell 07: U+310B ㄋ — soft-terminal
+Cell 08: U+310C ㄌ — soft-terminal
+Cell 09: U+310D ㄍ — soft-terminal
+Cell 10: U+310E ㄎ — tail-terminal
+Cell 11: U+310F ㄏ — soft-terminal
+Cell 12: U+3110 ㄐ — soft-terminal
+Cell 13: U+3111 ㄑ — soft-terminal
+Cell 14: U+3112 ㄒ — tail-terminal
+Cell 15: U+3113 ㄓ — soft-terminal
+Cell 16: U+3114 ㄔ — soft-terminal
+Tail-terminal cells only: 2, 6, 10, 14. In each listed cell, use at most one restrained curl continuing an existing final stroke in the same connected contour. All other cells must have no cat tail.
+Constraints: preserve every Traditional Chinese character exactly; do not simplify, substitute, translate, normalize, label, number, caption, shade, or decorate. No detached ears, hats, faces, whiskers, paws, silhouettes, floating marks, spikes, sharp thorns, self-intersections, shadows, paper texture, signatures, or watermarks. The identity copybook must never be traced, transformed, pasted, or reused as an outline. Render only the 16 requested glyphs and the neutral-gray grid.

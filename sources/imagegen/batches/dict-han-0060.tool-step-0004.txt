@@ -1,0 +1,14 @@
+Use case: precise-object-edit
+Asset type: one-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY the BOTTOM-LEFT square: Row 4, Column 1, Cell 13, directly below 邅. Preserve all other 15 cells pixel-for-pixel in identity and placement, especially Row 3 Column 4 飣 and the bottom-right Cell 16 鶿.
+
+The bottom-left Cell 13 must be U+9A03 騃. Its current right side is a wrong 婁-like component with rectangular boxes. Preserve 馬 on the left, but erase only the right component. On the right, handwrite 矣: a small two-stroke 厶 at the top, then a complete 矢 below it with the short slant, horizontal crossbar, central descending stroke, and two lower outward sweeps. Do not draw any box, 田, 女, or 婁 shape on the right. Do not write 騾, 騶, 騁, or another horse character.
+
+Required full row-major result:
+芯萇蒔蜊
+蝎蠆貔輥
+邅銨鍔飣
+騃騶髡鶿
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

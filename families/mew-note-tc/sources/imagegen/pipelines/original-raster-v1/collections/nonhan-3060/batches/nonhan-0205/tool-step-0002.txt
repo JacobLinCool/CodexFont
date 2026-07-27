@@ -1,0 +1,10 @@
+Preserve the five existing glyphs in row-major cells 1–5 exactly and keep cells 6–16 completely blank. Repair only the sheet grid so deterministic detection succeeds.
+
+- Keep a square white canvas.
+- Draw exactly five continuous pale-gray vertical rules at the left edge, 25%, 50%, 75%, and right edge.
+- Draw exactly five continuous pale-gray horizontal rules at the top edge, 25%, 50%, 75%, and bottom edge.
+- All sixteen cells must be equal in size.
+- Every rule must be uninterrupted, consistently visible, and about 2–3 pixels wide.
+- Add no other guides, glyphs, labels, marks, or decorations.
+
+Return only the corrected complete 4×4 sheet.

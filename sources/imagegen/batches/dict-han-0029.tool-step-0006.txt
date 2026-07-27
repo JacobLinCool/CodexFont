@@ -1,0 +1,28 @@
+Create a new high-resolution 4×4 raster master sheet for the original Clear Hand TC Traditional Chinese handwriting font.
+
+Use Image 1 only as a handwriting style reference: fine black gel-pen weight, rounded terminals, natural slight right slant, pure-white background, generous spacing, and faint straight 4×4 grid. Do not copy its characters.
+
+Use Image 2 only as a Unicode identity copybook. Redraw every glyph independently from a blank canvas; do not trace or import its printed outlines.
+
+Draw exactly these sixteen characters, one per cell, in this exact row-major order:
+
+嬖廕怛扃
+挹揎搠暝
+槅炷猊猢
+猻甑緲縵
+
+Exact identities:
+Cell 01 U+5B16 嬖; Cell 02 U+5ED5 廕; Cell 03 U+601B 怛; Cell 04 U+6243 扃;
+Cell 05 U+6339 挹; Cell 06 U+63CE 揎; Cell 07 U+6420 搠; Cell 08 U+669D 暝;
+Cell 09 U+69C5 槅; Cell 10 U+70B7 炷; Cell 11 U+730A 猊; Cell 12 U+7322 猢;
+Cell 13 U+733B 猻; Cell 14 U+7511 甑; Cell 15 U+7DF2 緲; Cell 16 U+7E35 縵.
+
+Topology checks that must remain visible:
+- 揎 = 扌 + 宣, with 宀 / 日 / 一 all present.
+- 搠 = 扌 + 朔, with 屰 and 月 both present.
+- 緲 = 糸 + 眇. Its 目 must be a closed box with exactly two separate interior horizontal strokes, followed by 少; never write 紗 or 日+少.
+- 縵 = 糸 + 曼, with separate closed 日, closed 罒, and 又; never use a 雨-like component.
+
+Square canvas, five faint neutral-gray rules in each direction, four equal rows and columns, one centered black glyph per cell, ample padding, and no ink touching separators.
+
+No labels, cell numbers, captions, signatures, logos, watermarks, duplicate or omitted glyphs, simplified variants, missing strokes, typeset outlines, brush blobs, texture, shadows, sharp miter spikes, thorn-like protrusions, detached marks, tangles, clipping, or connected cells.

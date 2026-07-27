@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0154",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2449,
+    "end_rank": 2464,
+    "characters": "札筵籃翔勛妨艾剖劈庵狡兀歹丸俸叛"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0154.source.json",
+    "descriptor_sha256": "1d8bdf4288a124b942aec59c3cbadab5c94294d25274099ae672da1791ef195d",
+    "raster": "sources/imagegen/raster/common-0154.png",
+    "raster_sha256": "f48e5db098d3b1d8b45c37e10cddda148c58a0dfe32a97e8e66afbbc6b6903fb"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0151-0154-audit.json",
+    "report_sha256": "f78c9de0ca22495e59427ac2a2cb732f1ba8558d7843e5c7529a734f023dcd8e"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0154/report.json",
+    "report_sha256": "643cf9014d86655ba28b3c1ebbed587ca5594ad48b127204d5d236b9d7eb33a7",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0154.vector-review.json",
+    "record_sha256": "f00b4ee6c230112791f95ec330062023d181a2917d33857c5140907ca449b7f2"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:53:39Z"
+  }
+}

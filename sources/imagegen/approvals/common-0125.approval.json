@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0125",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1985,
+    "end_rank": 2000,
+    "characters": "貢奧屍截敦魔倉傅誓蹈遵鍾桓碳寇兔"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0125.source.json",
+    "descriptor_sha256": "260dfaa5bb74fb87b0f3152c369539924eafcd67f777a58199aa35114daff6d8",
+    "raster": "sources/imagegen/raster/common-0125.png",
+    "raster_sha256": "af9798ba9e3ae5072d8ac99fc3af97cc56a6d08fe3f2f334fef20da72b1dcba8"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0123-0126-audit.json",
+    "report_sha256": "94c9dc936ce96b4fda797514a36a541df50977605d2766fe718a0a223fdb4e58"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0125/report.json",
+    "report_sha256": "149c767cc6ad7fcfc51baf632dbb6e4f9fe33a0b5887002887b002f6183d5497",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0125.vector-review.json",
+    "record_sha256": "ebeeaa6eb62d5cf2beabe16bb1502c8e59da5e96d26de735317868d1e9c12173"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:49:40Z"
+  }
+}

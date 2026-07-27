@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0132",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2097,
+    "end_rank": 2112,
+    "characters": "撐蠻鋸咬碗鮑仿崩拋疼耗贊陀倍尿欣"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0132.source.json",
+    "descriptor_sha256": "d341ba510ce8ee0ac1789e97e61a6714164c1cf1c8abf46f2a04e50f4e42d1dd",
+    "raster": "sources/imagegen/raster/common-0132.png",
+    "raster_sha256": "990e2f8a2fe527f8484f4bea253a1b89081e262af7fe4fb6946ebe17517abb81"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0131-0134-audit.json",
+    "report_sha256": "39ddafbe298d39ab05895b25a58365bb6b9ab15d557a232ebc2dcc46c7718c2d"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0132/report.json",
+    "report_sha256": "1147b5aa9479cd050a5e827fb87d1997c2031f438f1fd8bfe8a6287f43a6cce5",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0132.vector-review.json",
+    "record_sha256": "64b94fd583519d54cd17609718954e097c510a2a6b14d97bea4337fa04727d67"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T02:04:32Z"
+  }
+}

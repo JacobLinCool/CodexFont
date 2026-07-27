@@ -1,0 +1,7 @@
+Repair only the 4×4 grid of the first reference image.
+
+Preserve all 16 glyphs exactly as they are now, including every corrected identity, hook, stroke, terminal, scale, and position. Do not redraw, reinterpret, move, add, remove, or swap any glyph.
+
+Draw a complete neutral pale-gray grid on the white sheet: exactly five continuous vertical rules and exactly five continuous horizontal rules, including all four outer borders. Every rule must run uninterrupted from border to border, be straight, medium-light gray, neutral in color, and about 2 pixels wide. Use four equal columns and four equal rows. Remove any duplicate, broken, faint, missing, or stray grid segment.
+
+Return only the same corrected glyph sheet with the repaired grid.

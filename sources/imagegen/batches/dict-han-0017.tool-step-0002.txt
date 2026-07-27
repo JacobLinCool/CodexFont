@@ -1,0 +1,19 @@
+Use case: precise-object-edit
+Asset type: correction of two cells in an original 4×4 font-source raster sheet
+
+Input images:
+1. Image 1 is the edit target. Keep its canvas, grid, spacing, ink weight, and every unlisted cell pixel-for-pixel unchanged.
+2. Image 2 is IDENTITY REFERENCE ONLY for topology. Never trace its printed outlines.
+3. Image 3 is STYLE ONLY. Preserve its fine black gel-pen line and rounded terminals; never copy its outlines.
+
+Change only Cell 03 and Cell 16:
+- Cell 03 must be U+8E05 踅: 折 above 足, exactly the complete Traditional topology shown in Image 2. The current 跟-like left-right form is wrong. Handwrite a new 踅 from scratch, centered in Cell 03.
+- Cell 16 must be U+84FD 蓽: 艹 above the complete 畢 component, exactly the Traditional topology shown in Image 2. The current 薛-like form is wrong. Handwrite a new 蓽 from scratch, centered in Cell 16.
+
+Required full row-major result:
+翊衿踅輅
+幄撅椹槿
+猗稗篦腴
+芾茜蓍蓽
+
+Preserve all other 14 glyphs exactly. Keep all ink away from grid rules. No extra strokes, labels, printed type, simplified variants, sharp spikes, stray hooks, texture, shadows, signature, logo, or watermark.

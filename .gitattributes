@@ -1,0 +1,13 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# These immutable prompt sources retain their byte-identical approved form.
+families/mew-note-tc/prompt-template.md whitespace=-blank-at-eof
+families/mew-note-tc/sources/**/prompt.md whitespace=-blank-at-eof
+
+# The generated handwriting rasters are the only large, irreplaceable originals.
+sources/imagegen/raster/*.png filter=lfs diff=lfs merge=lfs -text
+families/*/sources/imagegen/raster/*.png filter=lfs diff=lfs merge=lfs -text
+families/*/sources/imagegen/pipelines/**/raster.png filter=lfs diff=lfs merge=lfs -text
+families/*/sources/imagegen/pipelines/**/*-raw-candidate.png filter=lfs diff=lfs merge=lfs -text
+families/*/pilots/*-raster.png filter=lfs diff=lfs merge=lfs -text

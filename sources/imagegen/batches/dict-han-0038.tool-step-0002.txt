@@ -1,0 +1,18 @@
+Use case: precise-object-edit
+Asset type: three-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cells 03, 04, and 14. Preserve all other 13 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 03 must be U+8075 聵. Preserve 耳 on the left. Replace the incorrect 恩-like right side with a complete 貴 on the right: its distinct upper 中-derived construction and a complete 貝 below. Do not write 聰, 聽, 聖, or another ear-radical character.
+
+Cell 04 must be U+8182 膂. Replace the current unrelated left-right 月 form. Construct the character vertically exactly as in the fourth copybook cell: a complete 旅 across the upper portion, with 方 at its upper-left and the full right-hand component, then a clearly separate 月 centered below. Do not place 月 as a left radical, and do not write 膈, 胳, 腔, or another flesh-radical character.
+
+Cell 14 must be U+9F09 鼉. The current top resembles 者/吉 and is wrong. Rebuild the complete stacked topology shown in the fourteenth copybook cell: two separate 口 boxes side by side at the top; a complete 田-like four-chamber block directly below them; then the full 黽-derived lower construction with its paired chambers and long curved bottom hook. Keep each chamber visibly open. Do not write 鼇, 龜, 黿, or another turtle-like character.
+
+Required full row-major result:
+簟罍聵膂
+詡謳蹧鈀
+錂錮隰驤
+髀鼉乜侔
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

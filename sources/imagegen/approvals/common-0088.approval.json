@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0088",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1393,
+    "end_rank": 1408,
+    "characters": "銘佳侵妝祀弦荊褐趣臥漁罰舟詠促託"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0088.source.json",
+    "descriptor_sha256": "5034052b9d26b59d915be46548a35ce8d7e9c0ad53fd827d934cdff8e81018a2",
+    "raster": "sources/imagegen/raster/common-0088.png",
+    "raster_sha256": "413c9c122ffab694df5b53532e9d246f5a4b55fed10852c27314585a398a97ef"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0087-0090-audit.json",
+    "report_sha256": "2a4f1868343dcf168a93cd3c8a2ea03f5fc17e01d89696119ecafe15765f6f01"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0088/report.json",
+    "report_sha256": "1d2b6ce493f98f8905439cbb86e558c294c18380cbb718b73b95b2089c130113",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0088.vector-review.json",
+    "record_sha256": "033c3705836465a5c9d35bb6b469bcc398ecff9070045b6c2f79089d4b8d8071"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:44:03Z"
+  }
+}

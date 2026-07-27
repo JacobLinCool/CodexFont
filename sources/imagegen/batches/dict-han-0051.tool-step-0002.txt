@@ -1,0 +1,14 @@
+Use case: precise-object-edit
+Asset type: one-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cell 12. Preserve all other 15 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 12 must be U+6D27 洧. The current glyph omits the three-dot water radical and reads as 有. Preserve the handwritten 有 component on the right, but reduce and shift it right enough to add a complete, clearly separated 氵 on the left: three distinct descending water dots/strokes. Do not write 有, 油, 洗, or another water-radical character.
+
+Required full row-major result:
+嵎帨廡捅
+摽晡栳棼
+歃氅沆洧
+滁澇烴珓
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

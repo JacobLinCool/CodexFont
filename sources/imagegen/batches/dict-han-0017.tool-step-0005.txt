@@ -1,0 +1,18 @@
+Use case: precise-object-edit
+Asset type: single-cell compositional handwriting correction
+
+Image 1 is the edit target. Image 2 is the authoritative identity copybook only. Change ONLY Cell 03; preserve every other cell, especially Cell 16, and preserve the grid and canvas.
+
+Do not ask your text renderer to typeset the rare character. Instead, visibly hand-draw these two familiar component groups inside Cell 03:
+1. draw a small complete handwritten 折 across the UPPER HALF;
+2. draw a small complete handwritten 足 across the LOWER HALF, centered directly under 折.
+
+Together those stacked components form U+8E05 踅. The result must read as a single compact TOP-OVER-BOTTOM glyph. There must be no 足 radical on the left side and no large right-side phonetic. Follow the third copybook cell for component placement only, without tracing its printed outline.
+
+Required full row-major result:
+翊衿踅輅
+幄撅椹槿
+猗稗篦腴
+芾茜蓍蓽
+
+Use original fine black gel-pen strokes with rounded terminals and open counters. Keep ink clear of the rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

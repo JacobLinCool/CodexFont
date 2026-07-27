@@ -1,0 +1,19 @@
+Use case: font-source raster sheet
+Asset type: high-resolution 4×4 raster master sheet for an original Traditional Chinese handwriting font in the clear-hand-tc family
+
+Input images:
+1. Image 1 is STYLE ONLY. Match its fine black gel-pen weight, rounded terminals, natural right slant, optical scale, pure-white background, and faint 4×4 grid. Do not copy its characters or outlines.
+2. Image 2 is IDENTITY REFERENCE ONLY. Use it to disambiguate the exact Unicode character assigned to each cell. Do not trace, reproduce, or import its printed outlines or gray grid geometry.
+
+Primary request: handwrite exactly 16 new isolated glyphs in this strict row-major order:
+搢攲曨杲 / 枰楝沬泐 / 浥淝淼溽 / 濊濩犴狉
+
+Exact cells:
+01 U+6422 `搢`; 02 U+6532 `攲`; 03 U+66E8 `曨`; 04 U+6772 `杲`;
+05 U+67B0 `枰`; 06 U+695D `楝`; 07 U+6CAC `沬`; 08 U+6CD0 `泐`;
+09 U+6D65 `浥`; 10 U+6DDD `淝`; 11 U+6DFC `淼`; 12 U+6EBD `溽`;
+13 U+6FCA `濊`; 14 U+6FE9 `濩`; 15 U+72B4 `犴`; 16 U+72C9 `狉`.
+
+Constraints: preserve every requested Unicode identity and Taiwan Traditional topology; one centered black glyph per cell; complete strokes; open counters; no grid contact. All sixteen cells are occupied.
+
+Avoid: simplified or mistaken variants, missing components, duplicates, omissions, extra text, printed type, brush blobs, sharp miter spikes, thorn-like protrusions, accidental hooks, tangled cursive, clipping, signature, logo, or watermark.

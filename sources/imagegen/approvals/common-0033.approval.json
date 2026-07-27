@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0033",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 513,
+    "end_rank": 528,
+    "characters": "吃視提改興且弟苦密幾臣球某宮備害"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0033.source.json",
+    "descriptor_sha256": "9398eed5dac084f95185fd3d9a5940dd1900dbfcc0419adaf1cdaaacf6902e0e",
+    "raster": "sources/imagegen/raster/common-0033.png",
+    "raster_sha256": "d66aa345712736c6ceff32751ae8d316c13dff936ee11fb0642c190a835bd2dc"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0031-0034-audit.json",
+    "report_sha256": "8a79578c7887a88728abea74bb2fe2a2e2dd01f414a3d5c31c67b78af7e8c3b0"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0033/report.json",
+    "report_sha256": "f7c501c947e22c097c6412abbc4bbcf483e40b2c22b568b86a4b305e6a3b8946",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0033.vector-review.json",
+    "record_sha256": "8b720f639ba7263f5dbb98bb61c2d3f9b1d8c6fa55c11754969f82b2c8905a4d"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:37:06Z"
+  }
+}

@@ -1,0 +1,13 @@
+Preserve all sixteen black glyphs and all five existing vertical grid rules in Image 1 exactly. Their shapes, dots, positions, spacing, and row 4 column 4 `ⅿ` are correct. Do not redraw or move them.
+
+Repair only the five horizontal gray rules. The current bottom row is too short. Erase the horizontal rules and draw exactly five continuous, uniform, single neutral-gray rules centred at:
+
+- y = 17
+- y = 322
+- y = 627
+- y = 932
+- y = 1237
+
+Every adjacent pair is exactly 305 pixels apart, producing four equal-height rows. Each rule must run continuously from the existing left outer vertical rule to the existing right outer vertical rule and stop there. Use the same 2-pixel neutral light-gray weight as the vertical rules.
+
+Do not add extensions, corner ticks, crosses, doubled edges, outlines, shadows, gaps, extra rules, extra rows, labels, or other marks. Keep the original 1254×1254 pure-white canvas. Return only the unchanged sixteen glyphs and the corrected exact 4×4 grid.

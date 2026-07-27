@@ -1,0 +1,8 @@
+Correct only cells 9, 10, 12, and 13 of the first reference image. Preserve every pixel of cells 1–8, 11, 14–16, especially the now-correct upper piece in cell 8 and lower piece in cell 14, plus the full grid.
+
+- cell 9 ⎨ (row 3, column 1): replace the current upper-hook piece with a FULL-HEIGHT vertical stem and one small cusp pointing RIGHT exactly at mid-height. The stem continues straight both above and below the cusp.
+- cell 10 ⎩ (row 3, column 2): replace the current middle-cusp piece with a vertical stem occupying the UPPER part of the cell, bending RIGHT only at its BOTTOM endpoint. No centre cusp.
+- cell 12 ⎫ (row 3, column 4): replace the current middle-cusp piece with a vertical stem occupying the LOWER part of the cell, bending LEFT only at its TOP endpoint. No centre cusp.
+- cell 13 ⎬ (row 4, column 1): replace the current lower-hook piece with a FULL-HEIGHT vertical stem and one small cusp pointing LEFT exactly at mid-height. The stem continues straight both above and below the cusp.
+
+Do not move these requested shapes into neighboring cells. Return only the corrected 4×4 sheet.

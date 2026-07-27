@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0039",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 609,
+    "end_rank": 624,
+    "characters": "排給較顏柳孫息獨快景傷源格據算典"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0039.source.json",
+    "descriptor_sha256": "4e3893704d34d54119c97f410ac3346bea255fc229a61398df2e12016132526b",
+    "raster": "sources/imagegen/raster/common-0039.png",
+    "raster_sha256": "91a37185a333f1e9665c3d4667af80476476fbea2178852c0d28567163557d4a"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0039-0042-audit.json",
+    "report_sha256": "49dc53a99dd9b3672757b410e0465f368ff0ab3ba8afddc2c8fe1b600df113c7"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0039/report.json",
+    "report_sha256": "8617680f00c13717b662365c40e3d278b7f6a87b7f1d90d08d912a364955b7f9",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0039.vector-review.json",
+    "record_sha256": "9e54eac8918107c4ea2fce9305b16a0a62e89687bb943ecb8fd30573c25a10a8"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:37:26Z"
+  }
+}

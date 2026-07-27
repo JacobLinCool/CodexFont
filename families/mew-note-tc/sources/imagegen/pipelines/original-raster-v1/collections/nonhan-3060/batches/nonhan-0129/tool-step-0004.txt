@@ -1,0 +1,10 @@
+Preserve all sixteen lowercase Roman numeral glyphs, their positions, and their shapes exactly. Repair only the grid.
+
+Replace the current thick/outlined grid rules with exactly five SINGLE solid neutral-gray vertical rules and five SINGLE solid neutral-gray horizontal rules at the canvas edges and quarter divisions. Each rule must:
+
+- be one continuous 2–3 pixel-wide gray stroke;
+- have no white center, doubled edge, outline, shadow, glow, or parallel companion;
+- run uninterrupted from one canvas edge to the opposite edge;
+- form four equal rows and four equal columns.
+
+Do not redraw, move, add, or remove any glyph. Return only the corrected complete 4×4 sheet.

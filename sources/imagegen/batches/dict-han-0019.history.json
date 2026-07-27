@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-generation-history",
+  "batch_id": "dict-han-0019",
+  "generator": "built-in-image_gen",
+  "collection": {
+    "path": "../collections/clear-hand-tc-dictionary-salience-1216.json",
+    "sha256": "5623b1f977d1412b233a34c255627749ffed71f86182125ea91d7d1f1fb869c2",
+    "collection_id": "clear-hand-tc-dictionary-salience-extension-1216-v1",
+    "family_id": "clear-hand-tc"
+  },
+  "intended_materialization": {
+    "draft": {
+      "path": "dict-han-0019.draft.json",
+      "sha256": "859a06a35f94b137f10db9c91a8d7d2c46c85acd29e38bef9703da24e93153da"
+    },
+    "prompt": {
+      "path": "../prompts/dict-han-0019.md",
+      "sha256": "d6b2c4cd4afeaacc2e5bc2326245a72acfa7dd14defefa379e6e809b61fe9cb7"
+    }
+  },
+  "steps": [
+    {
+      "sequence": 1,
+      "operation": "generate",
+      "disposition": "rejected",
+      "call_id": "call_BJrmPgx7Xx2NemzN6aejpCfo",
+      "prompt": {
+        "path": "dict-han-0019.tool-step-0001.txt",
+        "sha256": "3e730f67ee7a6cb897bd8e7eb04810d3408e9e23abff692bd354a4ef9572db06"
+      },
+      "input_images": [
+        {
+          "role": "style-reference",
+          "retention": "retained-reference",
+          "path": "../raster/common-0001.png",
+          "sha256": "2a4058fdb4e35ce2789f9ae73535542f78f4e94516ad4b9929986a93e36d3d81"
+        },
+        {
+          "role": "identity-copybook",
+          "retention": "retained-reference",
+          "path": "../copybooks/dict-han-0019.png",
+          "sha256": "5ac9b59ff21308cde2690e8e9006997f1377f25ebb031316460064986027f795"
+        }
+      ],
+      "parent_output_sha256": null,
+      "output": {
+        "retention": "hash-only-rejected",
+        "path": null,
+        "sha256": "8fba968540c805bf4d9d022a24fc44adfa381bea6254f0754e61b4fd0d989329"
+      }
+    },
+    {
+      "sequence": 2,
+      "operation": "correction",
+      "disposition": "accepted",
+      "call_id": "call_uqSyLHlMjzAl0dt4LClx5gqy",
+      "prompt": {
+        "path": "dict-han-0019.tool-step-0002.txt",
+        "sha256": "32cbfff4026b8c82ff0d3a4cea33c3abf1ee932ac88602f6ad74bf2c192dd255"
+      },
+      "input_images": [
+        {
+          "role": "parent-output",
+          "retention": "hash-only-rejected",
+          "path": null,
+          "sha256": "8fba968540c805bf4d9d022a24fc44adfa381bea6254f0754e61b4fd0d989329"
+        },
+        {
+          "role": "identity-copybook",
+          "retention": "retained-reference",
+          "path": "../copybooks/dict-han-0019.png",
+          "sha256": "5ac9b59ff21308cde2690e8e9006997f1377f25ebb031316460064986027f795"
+        }
+      ],
+      "parent_output_sha256": "8fba968540c805bf4d9d022a24fc44adfa381bea6254f0754e61b4fd0d989329",
+      "output": {
+        "retention": "retained-final",
+        "path": "../raster/dict-han-0019.png",
+        "sha256": "473e1055e4fa693d527c20a275c50cddaca0fd61bfe1f3a3253a038b44d91f3e"
+      }
+    }
+  ],
+  "canonical_output": {
+    "accepted_step": 2,
+    "path": "../raster/dict-han-0019.png",
+    "sha256": "473e1055e4fa693d527c20a275c50cddaca0fd61bfe1f3a3253a038b44d91f3e"
+  }
+}

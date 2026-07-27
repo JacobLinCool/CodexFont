@@ -1,0 +1,16 @@
+Use case: precise-object-edit
+Asset type: second corrected 4×4 raster master sheet for clear-hand-tc
+
+Input images:
+1. Image 1 is the previous corrected sheet. Preserve it exactly except for Cells 10, 13, 14, and 16.
+2. Image 2 is the identity copybook. Use only the named cells to verify topology; do not trace its printed outlines.
+
+Primary request: replace only these four cells with newly handwritten glyphs:
+- Cell 10: U+5B84 `宄`, exactly `宀` above `九`. Do not write `元`.
+- Cell 13: U+5D52 `嵒`, exactly three `口` arranged as `品` above `山`. Do not write `岩`.
+- Cell 14: U+5FED `忭`, exactly `忄` on the left plus `卞` on the right. Do not write `亢`.
+- Cell 16: U+63BF `掿`, exactly `扌` on the left plus `若` on the right, with `艹` above `右`. Do not write `需`.
+
+Constraints: keep all other twelve cells unchanged in content, position, style, and grid; preserve the white background and faint grid; match the fine black gel-pen weight and rounded terminals; center each replacement with open counters and no grid contact.
+
+Avoid: changing any other cell, missing components, simplified forms, spikes, thorns, clipping, extra marks, signature, logo, or watermark.

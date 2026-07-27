@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0004",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 49,
+    "end_rank": 64,
+    "characters": "文西小後五詩水家方下種自如心分天"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0004.source.json",
+    "descriptor_sha256": "c5a71b8437b133ac47e551671ee94414d289f91b7f0f5c8a1537a4b8d49fa91d",
+    "raster": "sources/imagegen/raster/common-0004.png",
+    "raster_sha256": "19cc75f131f522fb0d1047bc093a1ebc5f64df1b182a641b1cbefe30e07190af"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0004-0006-audit.json",
+    "report_sha256": "9ddf6f234235987e5f7a0d4bcc40b52cd2a98fc95bba08467fc352d931e241f3"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0004/report.json",
+    "report_sha256": "807b6c13ebe1aa37af0e176d0626f5ce34e74ca78ddf96138bc85845f4b887d2",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0004.vector-review.json",
+    "record_sha256": "fee6359b20a0c862d6f290880f7beda039493351eecdb4ba1dfbe6969b854f69"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:32:41Z"
+  }
+}

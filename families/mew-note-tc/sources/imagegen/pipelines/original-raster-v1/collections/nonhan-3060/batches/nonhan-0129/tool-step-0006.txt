@@ -1,0 +1,14 @@
+Keep a 1254×1254 square canvas. Preserve the sixteen glyph identities and their simple handwritten shapes, but rebuild the entire 4×4 layout to these explicit pixel coordinates:
+
+- vertical grid centers: x = 12, 320, 628, 936, 1242;
+- horizontal grid centers: y = 12, 320, 628, 936, 1242.
+
+Draw one continuous solid neutral-gray 2–3 pixel line at each coordinate. Center the four glyph rows near y = 166, 474, 782, and 1090, and center the four columns near x = 166, 474, 782, and 1090.
+
+Exact glyph rows remain:
+`ⅰ ⅱ ⅲ ⅳ`
+`ⅴ ⅵ ⅶ ⅷ`
+`ⅸ ⅹ ⅺ ⅻ`
+`ⅼ ⅽ ⅾ ⅿ`
+
+The final `ⅿ` has no curled terminal. No extra rows, labels, samples, shadows, doubled rules, or decorations. Return only the corrected complete sheet.

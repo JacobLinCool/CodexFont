@@ -1,0 +1,15 @@
+Use case: precise-object-edit
+Asset type: two-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the edit target. Image 2 is the authoritative identity copybook only; never trace its printed outlines. Change ONLY Cells 04 and 07. Preserve the other 14 glyphs, grid, canvas, spacing, and fine gel-pen style.
+
+- Cell 04 must be U+8090 肐: 月 on the left and 乞 on the right. The current 月-plus-力 character is 肋 and is wrong. Handwrite a new 肐 with the complete 乞 component.
+- Cell 07 must be U+8E09 踉: 足 on the left and 良 on the right. The current 足-plus-艮 character is 跟 and is wrong. Handwrite a new 踉 with the dot at the top of the complete 良 component.
+
+Required full row-major result:
+溟籀緋肐
+裾讜踉踊
+蹀頦僂愍
+捺漭璨癰
+
+Keep all ink clear of the grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

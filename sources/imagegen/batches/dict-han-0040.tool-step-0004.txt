@@ -1,0 +1,27 @@
+Use case: precise-object-edit
+Asset type: third single-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cell 11. Preserve all other 15 glyphs, especially the now-correct 駸 in Cell 09 and 蘄 in Cell 02, plus the grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 11 must be U+56B2 嚲. The previous correction accidentally replaced it with an unrelated two-mouth-and-又 form. Erase Cell 11 completely and redraw it from blank white space as a left-right character.
+
+On the LEFT, draw one complete 享:
+- 亠 at the top;
+- one closed 口 in the middle;
+- one complete 子 at the bottom.
+
+On the RIGHT, draw one complete 單:
+- two separate closed 口 boxes side by side at the top;
+- one 田-like four-chamber body below them;
+- one central vertical passing through the lower body;
+- one low horizontal.
+
+There must be no 又 at the bottom, no shared pair of mouths across both components, and no 嘩-like or 獸-like construction.
+
+Required full row-major result:
+耄蘄訾諤
+轢醪鉉雎
+駸嗒嚲囷
+圻寔峒无
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

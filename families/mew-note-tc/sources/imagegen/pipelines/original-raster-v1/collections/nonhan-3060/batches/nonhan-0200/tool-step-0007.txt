@@ -1,0 +1,8 @@
+Preserve every glyph except c13 and c14. Use c12 (row 3, column 4) as the direction template: c13 and c14 must be BOTTOM-RIGHT corners pointing in exactly the same left/right direction as c12. Their vertical stems must sit on the RIGHT side and their bottom horizontal strokes must extend LEFT.
+
+- Redraw c13 with the same direction as c12, but use DOUBLE vertical strokes and a SINGLE bottom horizontal stroke.
+- Redraw c14 with the same direction as c12, but use DOUBLE vertical strokes and DOUBLE bottom horizontal strokes.
+
+Do not use the direction of c9, c10, or c11; those are bottom-left corners and are wrong for c13/c14.
+
+Also restore an exact detectable 4×4 grid: five continuous pale-gray vertical rules and five continuous pale-gray horizontal rules at the canvas edges and quarter divisions. Every grid rule must be uninterrupted and clearly visible, about 2–3 pixels wide. Keep one glyph per cell and return only the complete corrected sheet.

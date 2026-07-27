@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-generation-history",
+  "batch_id": "dict-han-0003",
+  "generator": "built-in-image_gen",
+  "collection": {
+    "path": "../collections/clear-hand-tc-dictionary-salience-1216.json",
+    "sha256": "5623b1f977d1412b233a34c255627749ffed71f86182125ea91d7d1f1fb869c2",
+    "collection_id": "clear-hand-tc-dictionary-salience-extension-1216-v1",
+    "family_id": "clear-hand-tc"
+  },
+  "intended_materialization": {
+    "draft": {
+      "path": "dict-han-0003.draft.json",
+      "sha256": "c92b943003faf33a5a67aee8b5ac75a609e454e6fec9db6b56d61845ceca40b9"
+    },
+    "prompt": {
+      "path": "../prompts/dict-han-0003.md",
+      "sha256": "a37e412febfffe9c2c219c17be7991d6aacb1d4d800509169720c1ae9aff1182"
+    }
+  },
+  "steps": [
+    {
+      "sequence": 1,
+      "operation": "generate",
+      "disposition": "accepted",
+      "call_id": "exec-ec58718a-944b-4e08-973d-2f5f0b006f75",
+      "prompt": {
+        "path": "dict-han-0003.tool-step-0001.txt",
+        "sha256": "d2d64f775a1a40e5c71485c804e60bede86bbbe61309ecddcf9756ddb6688dfe"
+      },
+      "input_images": [
+        {
+          "role": "style-reference",
+          "retention": "retained-reference",
+          "path": "../raster/common-0001.png",
+          "sha256": "2a4058fdb4e35ce2789f9ae73535542f78f4e94516ad4b9929986a93e36d3d81"
+        },
+        {
+          "role": "identity-copybook",
+          "retention": "retained-reference",
+          "path": "../copybooks/dict-han-0003.png",
+          "sha256": "1040da58c0d2cb5df61c4ce6fbf5c0e1a7137f25734c2fdb432bb5a740979c26"
+        }
+      ],
+      "parent_output_sha256": null,
+      "output": {
+        "retention": "retained-final",
+        "path": "../raster/dict-han-0003.png",
+        "sha256": "3e9d43a0fac75830f59717b644e16a27c1d85a85ca53bd55973a040ec4c0b374"
+      }
+    }
+  ],
+  "canonical_output": {
+    "accepted_step": 1,
+    "path": "../raster/dict-han-0003.png",
+    "sha256": "3e9d43a0fac75830f59717b644e16a27c1d85a85ca53bd55973a040ec4c0b374"
+  }
+}

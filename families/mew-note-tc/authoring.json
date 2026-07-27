@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "record_type": "codexfont-family-authoring-contract",
+  "family_id": "mew-note-tc",
+  "pipeline_id": "original-raster-v1",
+  "collection_contract": {
+    "path": "families/mew-note-tc/collections.json",
+    "sha256": "75e4ca4bc269e272739635afea6be8ecda6020e4d1f09be1d39d9e70d01d741f"
+  },
+  "motif_contract": {
+    "path": "families/mew-note-tc/motif-contract.json",
+    "sha256": "c19a5d00844c7460168a4a77481c370f625ce22a35bf6d624aaafaf87f0bab7e"
+  },
+  "pilot_provenance": {
+    "path": "families/mew-note-tc/pilots/provenance-v2.json",
+    "sha256": "8b773decfde5e38912c2a724ced29e2e0b98e1a62b583b33da982268759e07b0"
+  },
+  "pilot_review": {
+    "path": "families/mew-note-tc/pilots/review-v2.json",
+    "sha256": "ad960f480e327ee29e8b52018626ad8d922865074869664c2dde9cfc6d24f5ea"
+  },
+  "materializer": {
+    "path": "scripts/mew_note_bulk_pipeline.py",
+    "sha256": "f8edd5e77a913db3e2c415c37744a4caddb4c3ca65fa4929027154a2bea5f5af"
+  },
+  "context_loader": {
+    "path": "scripts/font_family_context.py",
+    "sha256": "23091a5625682bf86af73bb348bc2ef9b67cfbbba7d5cfddd83398a555a46f8a"
+  },
+  "identity_reference_renderer": {
+    "path": "scripts/identity_reference_catalog.py",
+    "sha256": "694ca8fd4d25b36ad4d04fde107356c8d582b10457d39c742d820be958ea9a3a"
+  },
+  "prompt_template": {
+    "path": "families/mew-note-tc/prompt-template.md",
+    "sha256": "9b71f8c0caa67ca286f28bc1e3d19f382f0ac336f7764477ed118a678f686ae0"
+  },
+  "style_references": [
+    {
+      "id": "mew-note-han-style-pilot-v2",
+      "path": "families/mew-note-tc/pilots/mew-note-han-v2-raster.png",
+      "sha256": "b6ae4ac12a769e979b86df7af1a3d7f4a824ea79ba67bf7b43802c3fc49eff82",
+      "role": "style-only-no-raster-or-outline-reuse",
+      "collections": [
+        "han-6060",
+        "nonhan-3060"
+      ]
+    },
+    {
+      "id": "mew-note-nonhan-style-pilot",
+      "path": "families/mew-note-tc/pilots/mew-note-nonhan-raster.png",
+      "sha256": "eb755d5fb065798812ddc15619025ab79b290d06fc89626ba845b6580e882f41",
+      "role": "style-only-no-raster-or-outline-reuse",
+      "collections": [
+        "nonhan-3060",
+        "vertical-93"
+      ]
+    }
+  ],
+  "grid": {
+    "rows": 4,
+    "columns": 4,
+    "capacity": 16,
+    "order": "row-major",
+    "copybook_role": "identity-reference-only-no-outline-import"
+  },
+  "copybook_policy": {
+    "required_for_every_visible_batch": true,
+    "role": "identity-reference-only-no-outline-import",
+    "external_reference_faces_must_be_explicitly_hash_pinned": true,
+    "font_binaries_committed": false,
+    "fallback_face_allowed": false,
+    "missing_identity_allowed": false,
+    "copybook_raster_may_become_glyph_source": false
+  },
+  "motif_assignment": {
+    "algorithm": "For Han and eligible letter-script glyphs only, walk the frozen authoring sequence and assign tail-terminal when eligible_rank modulo 4 equals 2; assign soft-terminal to the remaining eligible glyphs and neutral-safety to technical or semantic-empty glyphs.",
+    "tail_period": 4,
+    "tail_phase": 2,
+    "eligible_nonhan_groups": [
+      "Latin letters",
+      "Bopomofo",
+      "Greek letters",
+      "IPA letters",
+      "Hiragana",
+      "Katakana"
+    ],
+    "neutral_safety_groups": [
+      "semantic-empty",
+      "combining-marks",
+      "box-drawing",
+      "block-elements",
+      "mathematical-and-technical-symbols",
+      "identity-sensitive-punctuation",
+      "vertical-alternates"
+    ],
+    "minimum_readable_text_ratio": 0.15,
+    "maximum_repertoire_ratio": 0.35,
+    "maximum_consecutive_tail_glyphs": 2,
+    "maximum_tail_terminals_per_glyph": 1,
+    "detached_contours_allowed": false,
+    "spikes_allowed": false
+  },
+  "path_contract": {
+    "batch_root": "{source_root}/pipelines/{pipeline_id}/collections/{collection_id}/batches/{batch_id}",
+    "prompt": "{batch_root}/prompt.md",
+    "identity_copybook": "{batch_root}/identity-copybook.png",
+    "draft": "{batch_root}/draft.json",
+    "raster": "{batch_root}/raster.png",
+    "build": "{build_root}/pipelines/{pipeline_id}/collections/{collection_id}/batches/{batch_id}",
+    "cache": "{cache_root}/pipelines/{pipeline_id}/collections/{collection_id}/batches/{batch_id}",
+    "release": "{release_root}/pipelines/{pipeline_id}/collections/{collection_id}/batches/{batch_id}"
+  },
+  "source_boundary": {
+    "clear_hand_identity_data_allowed": true,
+    "clear_hand_raster_allowed": false,
+    "clear_hand_outline_allowed": false,
+    "clear_hand_review_allowed": false,
+    "clear_hand_approval_allowed": false,
+    "reference_outline_import_allowed": false,
+    "generated_raster_is_never_self_approved": true
+  },
+  "stop_conditions": [
+    "Stop if the family, pipeline, authoring, collection, repertoire, motif, prompt, pilot provenance, or pilot review hash changes.",
+    "Stop if a visible batch lacks its own family-local prompt, identity copybook, draft, raster, reviewer record, or approval.",
+    "Stop if any output path escapes the family, pipeline, and collection namespace.",
+    "Stop if a batch uses a detached cat contour, an unassigned tail, a spike, or any Clear Hand glyph artifact.",
+    "Stop if the 6,060 Han, 3,060 non-Han, 93 Hiragana, 96 Katakana, 17 semantic-empty scalars, or 93 vertical alternates are incomplete."
+  ]
+}

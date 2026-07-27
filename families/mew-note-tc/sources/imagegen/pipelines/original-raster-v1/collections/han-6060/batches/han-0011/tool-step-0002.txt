@@ -1,0 +1,14 @@
+Use case: logo-brand
+Asset type: correction of one original typeface source glyph sheet
+Primary request: correct the existing Mew Note TC han-6060/han-0011 sheet while preserving its layout, style, and every unaffected glyph.
+Input images: Image 1 is the generated sheet to correct; Image 2 is the approved Mew Note TC v2 style pilot (style rhythm only); Image 3 is the identity-only copybook (code point identity only).
+Required corrections:
+1. Cell 03 (row 1, column 3, U+99AC 馬): preserve the Traditional 馬 identity and redraw its lower fire component as four clearly countable, separated handwritten dots/strokes. Do not simplify it to 马.
+2. Cell 10 (row 3, column 2, U+8EAB 身): preserve the exact 身 topology and extend its existing final lower-right stroke into one small restrained connected curl. The curl must remain inside Cell 10 and be part of the same continuous stroke.
+Preservation: Keep the exact 4 by 4 order, all other glyph identities and topology, black gel-pen rhythm and weight, pure-white background, and exactly five horizontal plus five vertical thin neutral-gray grid rules. Preserve the assigned connected tails in Cell 02 聲, Cell 06 起, and Cell 14 及. Preserve every unassigned cell without a cat motif.
+Exact row-major rows (verbatim):
+使聲馬理
+會起力樣
+內身此林
+世及性正
+Constraints: do not simplify, substitute, translate, normalize, label, number, caption, shade, or decorate. No detached ears, hats, faces, whiskers, paws, silhouettes, floating marks, extra tails, spikes, sharp thorns, self-intersections, shadows, paper texture, signatures, or watermarks. Do not trace, paste, transform, or reuse the copybook as an outline. Render only the corrected 16-glyph sheet and neutral-gray grid.

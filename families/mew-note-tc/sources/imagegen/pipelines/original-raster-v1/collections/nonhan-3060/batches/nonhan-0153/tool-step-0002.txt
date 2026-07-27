@@ -1,0 +1,27 @@
+Recreate every glyph in Image 1 while preserving its exact pure-white 1600×1600 canvas, thin regular 4×4 segmentation grid, margins, centering, and scale. Image 4 is the binding row-major identity copybook; Images 2–3 guide only the subtle handwritten black-ink character. Cells 03–16 are membership relations, not ellipses. Reproduce the exact component structure from Image 4.
+
+Required exact Unicode order:
+Row 1: ⋰ ⋱ ⋲ ⋳
+Row 2: ⋴ ⋵ ⋶ ⋷
+Row 3: ⋸ ⋹ ⋺ ⋻
+Row 4: ⋼ ⋽ ⋾ ⋿
+
+Match Image 4 cell by cell:
+- 01 ⋰ UP RIGHT DIAGONAL ELLIPSIS: exactly three solid dots rising from lower-left to upper-right.
+- 02 ⋱ DOWN RIGHT DIAGONAL ELLIPSIS: exactly three solid dots falling from upper-left to lower-right.
+- 03 ⋲ ELEMENT OF WITH LONG HORIZONTAL STROKE: a large left-opening rounded membership C with top and bottom horizontal terminals and one long middle horizontal stroke projecting left of the curve.
+- 04 ⋳ ELEMENT OF WITH VERTICAL BAR AT END OF HORIZONTAL STROKE: a large left-opening membership C with its middle stroke ending in a short vertical bar at the right.
+- 05 ⋴ SMALL ELEMENT OF WITH VERTICAL BAR AT END OF HORIZONTAL STROKE: a smaller compact version of cell 04.
+- 06 ⋵ ELEMENT OF WITH DOT ABOVE: a large left-opening membership C with its normal middle stroke and one solid dot centered above.
+- 07 ⋶ ELEMENT OF WITH OVERBAR: a large left-opening membership C with a separate horizontal overbar.
+- 08 ⋷ SMALL ELEMENT OF WITH OVERBAR: a compact smaller left-opening membership C with a separate short overbar.
+- 09 ⋸ ELEMENT OF WITH UNDERBAR: a large left-opening membership C with a separate horizontal underline.
+- 10 ⋹ ELEMENT OF WITH TWO HORIZONTAL STROKES: a large left-opening membership C with two internal horizontal strokes, exactly as Image 4.
+- 11 ⋺ CONTAINS WITH LONG HORIZONTAL STROKE: horizontal mirror of cell 03, a large right-opening rounded membership form whose middle stroke projects right.
+- 12 ⋻ CONTAINS WITH VERTICAL BAR AT END OF HORIZONTAL STROKE: horizontal mirror of cell 04.
+- 13 ⋼ SMALL CONTAINS WITH VERTICAL BAR AT END OF HORIZONTAL STROKE: compact horizontal mirror of cell 05.
+- 14 ⋽ CONTAINS WITH OVERBAR: large right-opening rounded membership form with a separate horizontal overbar.
+- 15 ⋾ SMALL CONTAINS WITH OVERBAR: compact smaller version of cell 14 with a separate short overbar.
+- 16 ⋿ Z NOTATION BAG MEMBERSHIP: a large square three-sided form, open on the right, with long top, middle, and bottom horizontal strokes joined by one left vertical stroke; exactly the angular shape in Image 4.
+
+Keep cells 03–15 smooth, clean, and free of curls or spirals. Preserve all five vertical and all five horizontal grid rules. No substitutions, duplicate symbols, labels, code points, headings, texture, shadow, or extra marks.

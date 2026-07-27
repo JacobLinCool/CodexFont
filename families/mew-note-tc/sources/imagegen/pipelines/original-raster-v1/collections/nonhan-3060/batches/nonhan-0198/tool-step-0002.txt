@@ -1,0 +1,20 @@
+Redraw the entire 4×4 sheet as the exact U+2530–U+253F box-drawing set. Preserve the junction directions. LIGHT is thin; HEAVY is 2.5–3 times thicker. Apply weight independently:
+
+- c1 ┰: left LIGHT, right LIGHT, down HEAVY.
+- c2 ┱: left HEAVY, right LIGHT, down HEAVY.
+- c3 ┲: left LIGHT, right HEAVY, down HEAVY.
+- c4 ┳: left HEAVY, right HEAVY, down HEAVY.
+- c5 ┴: left LIGHT, right LIGHT, up LIGHT.
+- c6 ┵: left HEAVY, right LIGHT, up LIGHT.
+- c7 ┶: left LIGHT, right HEAVY, up LIGHT.
+- c8 ┷: left HEAVY, right HEAVY, up LIGHT.
+- c9 ┸: left LIGHT, right LIGHT, up HEAVY.
+- c10 ┹: left HEAVY, right LIGHT, up HEAVY.
+- c11 ┺: left LIGHT, right HEAVY, up HEAVY.
+- c12 ┻: left HEAVY, right HEAVY, up HEAVY.
+- c13 ┼: all four arms LIGHT.
+- c14 ┽: left HEAVY; right, up, down LIGHT.
+- c15 ┾: right HEAVY; left, up, down LIGHT.
+- c16 ┿: left and right HEAVY; up and down LIGHT.
+
+Remove the current stray tail in c16. Follow the fourth-reference copybook exactly and return only the corrected sheet.

@@ -1,0 +1,15 @@
+Use case: precise-object-edit
+Asset type: two-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the edit target. Image 2 is the authoritative identity copybook only; never trace its printed outlines. Change ONLY Cells 05 and 06. Preserve the other 14 glyphs, grid, canvas, spacing, and fine gel-pen style.
+
+- Cell 05 must be U+9D07 鴇. The current 古-plus-鳥 form is 鴣 and is wrong. Handwrite 鴇 with the complete 𠤏 component (匕 combined with 十) on the left and 鳥 on the right. Do not include 口.
+- Cell 06 must be U+9F10 鼐. Handwrite a compact 乃 above a complete 鼎, as shown by the sixth copybook cell. The current form omits the distinct 乃 above 鼎.
+
+Required full row-major result:
+筮紬軫迓
+鴇鼐囿嬛
+徠斝棱櫟
+滎熒羆蘅
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "record_type": "mew-note-tc-style-pilot-provenance",
+  "family_id": "mew-note-tc",
+  "pilot_state": "pilot-source-frozen-review-pending",
+  "scope": {
+    "purpose": "Freeze the accepted cat-tail style direction before full technical review",
+    "style_gate_only": true,
+    "encoded_coverage_credit": 0,
+    "release_approval": false,
+    "bulk_authoring_allowed": false
+  },
+  "prompt_policy": {
+    "original_prompt_status": "original_prompt_unavailable",
+    "reason": "The original image-generation prompt is not present in the accessible call artifact or repository records",
+    "reproduction_prompt_is_original": false,
+    "reproduction_prompt_role": "A contract-derived prompt for recreating the accepted visual direction; it must never be represented as the historical prompt"
+  },
+  "pilots": [
+    {
+      "id": "mew-note-han-style-pilot",
+      "generator": {
+        "name": "built-in-image_gen",
+        "call_id": "call_teu5UsMfvk3Mh2rqBGq6NSka",
+        "thread_artifact_id": "019f627c-e7f7-7b73-a42b-922f2f520a2a",
+        "original_prompt_status": "original_prompt_unavailable",
+        "reproduction_prompt": "Create a high-resolution square raster master sheet for the original Mew Note TC handwriting family. Draw exactly sixteen isolated glyphs in a strict 4 by 4 grid, in this exact row-major order: 永 貓 手 寫 / 龍 鬱 國 愛 / A a G g / 0 8 あ ア. Use clean black rounded monoline gel-pen writing on a pure white background with faint thin neutral-gray grid rules and generous cell padding. Keep every glyph immediately legible and preserve Taiwan Traditional Chinese, Latin, numeral, hiragana, and katakana identity. The feline feature is a small restrained cat-tail curl attached directly to an identity-safe existing final stroke; use no more than one tail terminal per glyph and never add a separate contour. This is a motif stress pilot, not a target for tail frequency in normal text. Avoid detached cat hats, ears, paws, faces, whiskers, extra marks, missing or substituted strokes, brush texture, shadows, labels, touching grid lines, sharp thorns, self-intersections, or decoration that changes character topology."
+      },
+      "grid": {
+        "rows": 4,
+        "columns": 4,
+        "cell_order": [
+          "永",
+          "貓",
+          "手",
+          "寫",
+          "龍",
+          "鬱",
+          "國",
+          "愛",
+          "A",
+          "a",
+          "G",
+          "g",
+          "0",
+          "8",
+          "あ",
+          "ア"
+        ]
+      },
+      "artifacts": {
+        "raster": {
+          "path": "families/mew-note-tc/pilots/mew-note-han-raster.png",
+          "sha256": "9cce5322a07df04f6e4c0e90e4f98fac020d18fb6994dc5be28e38c8c73182e4",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGB",
+          "local_path_at_ingest": "/Users/jacoblincool/.codex/generated_images/019f627c-e7f7-7b73-a42b-922f2f520a2a/call_teu5UsMfvk3Mh2rqBGq6NSka.png"
+        },
+        "identity_copybook": {
+          "path": "families/mew-note-tc/pilots/mew-note-han-copybook.png",
+          "sha256": "0fa1995e5555fe70c878a70379250935565a943de41696a0e8555e85436bd4ba",
+          "width": 1600,
+          "height": 1600,
+          "mode": "L",
+          "local_path_at_ingest": "build/pilots/mew-note-han-copybook.png",
+          "role": "identity-reference-only-no-outline-import",
+          "generator_record_status": "unavailable"
+        }
+      },
+      "manual_decision": {
+        "style_direction": "ACCEPTED",
+        "accepted_on": "2026-07-29",
+        "exact_timestamp_status": "unavailable",
+        "technical_review_state": "pending",
+        "release_admission_state": "not-admitted"
+      }
+    },
+    {
+      "id": "mew-note-nonhan-style-pilot",
+      "generator": {
+        "name": "built-in-image_gen",
+        "call_id": "call_cERLz0MZYKcyzTt5Fty6hX50",
+        "thread_artifact_id": "019f627c-e7f7-7b73-a42b-922f2f520a2a",
+        "original_prompt_status": "original_prompt_unavailable",
+        "reproduction_prompt": "Create a high-resolution square raster master sheet for the original Mew Note TC handwriting family. Draw exactly sixteen isolated glyphs in a strict 4 by 4 grid, in this exact row-major order: I l 1 | / O o 0 Q / c e r v / ㄅ ㄆ ° ?. Use clean black rounded monoline gel-pen writing on a pure white background with faint thin neutral-gray grid rules and generous cell padding. Preserve every code point exactly, with especially strong distinction among I, lowercase l, digit 1, vertical bar, uppercase O, lowercase o, digit 0, and Q. Use a restrained tail-like final stroke only where it remains attached directly to the existing terminal and cannot alter identity; otherwise use a soft terminal or neutral-safety form. Never add a detached contour. Avoid cat hats, ears, paws, faces, whiskers, extra marks, substitutions, brush texture, shadows, labels, touching grid lines, sharp thorns, self-intersections, or decoration that makes punctuation, Bopomofo, symbols, or confusable Latin forms ambiguous."
+      },
+      "grid": {
+        "rows": 4,
+        "columns": 4,
+        "cell_order": [
+          "I",
+          "l",
+          "1",
+          "|",
+          "O",
+          "o",
+          "0",
+          "Q",
+          "c",
+          "e",
+          "r",
+          "v",
+          "ㄅ",
+          "ㄆ",
+          "°",
+          "?"
+        ]
+      },
+      "artifacts": {
+        "raster": {
+          "path": "families/mew-note-tc/pilots/mew-note-nonhan-raster.png",
+          "sha256": "eb755d5fb065798812ddc15619025ab79b290d06fc89626ba845b6580e882f41",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGB",
+          "local_path_at_ingest": "/Users/jacoblincool/.codex/generated_images/019f627c-e7f7-7b73-a42b-922f2f520a2a/call_cERLz0MZYKcyzTt5Fty6hX50.png"
+        },
+        "identity_copybook": {
+          "path": "families/mew-note-tc/pilots/mew-note-nonhan-copybook.png",
+          "sha256": "e845e50c5b6cbb6a02e585e243b53a1c69363354dcb60748f67d8208d7edb510",
+          "width": 1600,
+          "height": 1600,
+          "mode": "L",
+          "local_path_at_ingest": "build/pilots/mew-note-nonhan-copybook.png",
+          "role": "identity-reference-only-no-outline-import",
+          "generator_record_status": "unavailable"
+        }
+      },
+      "manual_decision": {
+        "style_direction": "ACCEPTED",
+        "accepted_on": "2026-07-29",
+        "exact_timestamp_status": "unavailable",
+        "technical_review_state": "pending",
+        "release_admission_state": "not-admitted"
+      }
+    }
+  ],
+  "stop_conditions": [
+    "Do not claim that a reproduction prompt is the unavailable original prompt",
+    "Do not count either pilot toward cmap coverage or release approval",
+    "Do not replace a frozen raster or copybook without creating a new provenance record and hash chain",
+    "Do not scale the family until technical identity, geometry, small-size, and motif review passes"
+  ]
+}

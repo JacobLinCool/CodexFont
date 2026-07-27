@@ -1,0 +1,14 @@
+Use case: precise-object-edit
+Asset type: single-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cell 09. Preserve all other 15 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 09 must be U+96B3 隳. The current lower component looks like 土 and is wrong. Preserve the 阝 and 隋-derived upper construction, then replace only the incorrect bottom with a complete handwritten 心: left dot, central hooked stroke, and the remaining two dots, clearly separate from the upper construction. Use the ninth copybook cell for Unicode topology only. Do not write 隋, 墮, 隨, or a form ending in 土.
+
+Required full row-major result:
+藿蜷謖邙
+銲鎚鐐閽
+隳韞顗饔
+驄鬣倕剮
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

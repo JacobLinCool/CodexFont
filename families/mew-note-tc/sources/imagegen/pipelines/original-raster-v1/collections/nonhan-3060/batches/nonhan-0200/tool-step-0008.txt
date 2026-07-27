@@ -1,0 +1,6 @@
+Erase and replace only c13 and c14. Preserve all other glyphs and the complete 4×4 grid exactly.
+
+- For c13: use c4 as the shape template. Rotate c4's black glyph exactly 180 degrees and place the rotated result, centered, in c13. This creates the required bottom-right corner with DOUBLE vertical strokes on the right and a SINGLE horizontal stroke extending left.
+- For c14: use c5 as the shape template. Rotate c5's black glyph exactly 180 degrees and place the rotated result, centered, in c14. This creates the required bottom-right corner with DOUBLE vertical strokes on the right and DOUBLE horizontal strokes extending left.
+
+Do not copy the existing c13/c14 shapes. Do not mirror only left-to-right; perform a 180-degree rotation of c4 into c13 and c5 into c14. Keep exactly one glyph per cell. Return only the complete corrected sheet.

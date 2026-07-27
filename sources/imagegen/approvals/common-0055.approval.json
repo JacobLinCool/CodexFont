@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0055",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 865,
+    "end_rank": 880,
+    "characters": "園尋雪脫怕緊遺隊配附招沙聖鳳略賈"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0055.source.json",
+    "descriptor_sha256": "54959874b3ae3162d7abeec0fd057efba449d87a07a4bbd6a9c7e7440c998710",
+    "raster": "sources/imagegen/raster/common-0055.png",
+    "raster_sha256": "752ed9513abec1270d2586ec483354cd1672cee2503812a31d0f8d94ce633a4b"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0055-0058-audit.json",
+    "report_sha256": "eb4348713214a5fee9663078d8671898d5fb5bad667caf63cff19f228c9ab55b"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0055/report.json",
+    "report_sha256": "3bd6609c76b21674f7727f13d1a206cf75f8869af66b7dc2443a116b6e7761ee",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0055.vector-review.json",
+    "record_sha256": "8e00b733e19a5b6d6f84131d226c14d518ab5c2ce8189de8082abf1379a5079a"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:39:23Z"
+  }
+}

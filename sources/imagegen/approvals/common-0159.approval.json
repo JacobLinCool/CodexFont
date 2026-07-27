@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0159",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2529,
+    "end_rank": 2544,
+    "characters": "縛繳螢龐棚硯髓俯嚼杭淳疫蛾蠅麟余"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0159.source.json",
+    "descriptor_sha256": "f27ee4e3cb098201808c6df80402c9348a19fbf75f70fe83c2f1b2766e7be84e",
+    "raster": "sources/imagegen/raster/common-0159.png",
+    "raster_sha256": "279f4f749c120bac630ff2a1fd37071a0b41cb55d0537a6e6c6de8efb1226d30"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0159-0162-audit.json",
+    "report_sha256": "cf117bd189e555140ee48d477d1d56e081174ef63de68c467a6ec95acb51d5bc"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0159/report.json",
+    "report_sha256": "df898b69e57d94b0809152db0529fe3cd4cead4bc776c8ec7d1ab5673a5be66a",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0159.vector-review.json",
+    "record_sha256": "7c2e54685bec8871ee15d17085ab4c9f84c77f9a3c0b797b5ee12c74099c4e3a"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:54:01Z"
+  }
+}

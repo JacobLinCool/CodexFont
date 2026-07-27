@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-nonhan-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "nonhan-0025",
+  "batch_kind": "raster-outline",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/nonhan-3060.json",
+    "sha256": "42791eeb3981f04895529ad7770b00a86a815f9c4dffa16369df9f7ec1892ce4",
+    "repertoire_id": "clear-hand-tc-nonhan-3060-v1",
+    "batch_id": "nonhan-0025",
+    "start_authoring_rank": 353,
+    "end_authoring_rank": 353,
+    "glyph_codepoints": [
+      "U+00FF"
+    ]
+  },
+  "source": {
+    "descriptor": {
+      "path": "sources/imagegen/batches/nonhan-0025.source.json",
+      "sha256": "91caadc60e33cc75e03597fa2a9a9730af7b385d9b60138ef83c26519ad412d0"
+    },
+    "raster": {
+      "path": "sources/imagegen/raster/nonhan-0025.png",
+      "sha256": "07289247c76b8e40374ebdf4be84d9caf9e22eb328364926c6db858cc7fbec85"
+    },
+    "copybook": {
+      "path": "sources/imagegen/copybooks/nonhan-0025.png",
+      "sha256": "9b957e75f2090d9afb214480c019d34e74d08f211c1d56f283ee014b003f38c7"
+    },
+    "prompt": {
+      "path": "sources/imagegen/prompts/nonhan-0025.md",
+      "sha256": "0c24268002ad894a1a66c96a82806d3bb42391d857fc93c66f8db6e4d7ecb4da"
+    },
+    "style_reference": {
+      "path": "sources/imagegen/raster/common-0001.png",
+      "sha256": "2a4058fdb4e35ce2789f9ae73535542f78f4e94516ad4b9929986a93e36d3d81"
+    }
+  },
+  "vector_build": {
+    "report": {
+      "path": "build/imagegen/imagegen-nonhan-0025/report.json",
+      "sha256": "fd302d74e910cf834e8292cef8b412646106f97cc03d9267b3b3162f9ef7b40b"
+    },
+    "pipeline": "imagegen-raster-potrace-quadratic-nonhan-v3",
+    "artifacts_sha256": {
+      "font/ClearHandTC-NonHan0025-Unreviewed.otf": "1e777a75f1ceb167ec30cd9828405b2fa8e30d9f6addc6505c40901266a0647a",
+      "font/ClearHandTC-NonHan0025-Unreviewed.ttf": "1e777a75f1ceb167ec30cd9828405b2fa8e30d9f6addc6505c40901266a0647a",
+      "glyph-report/u00ff.json": "05b26e147e60dbba7bcc7ac58b83e03ec34ceba8ecaed59c24cf1264041526c0",
+      "png/u00ff-source.png": "a36c272e5d3fb58fe0373cb2dba03baf897703a5a9354f17a78b9e14a8f0db10",
+      "proof/black-on-white-12px.png": "b213c4b1861212d4960ebc038d981d2187f07d2159ab5b737b05a2dd9116610c",
+      "proof/black-on-white-16px.png": "e895cc48c1cac8be6e080c3ab3b7c19506c4a9f0f8366a5d80ed2a7330bc6aae",
+      "proof/black-on-white-20px.png": "95801295178c069b649cbd2c94407adea25957479319d862cd86d0224005c781",
+      "proof/black-on-white-32px.png": "c49047d21ebdc2dc61aa6f54df987bd7b527e0611d2ef408eaa27961d3a40e32",
+      "proof/black-on-white-56px.png": "cafbbb74330c93ba4622dcb4d5a113f4a7d1fc47edb2e461c25ddf8914579b28",
+      "proof/edge-connect.png": "d47220607644268af2e872ef5930c7cafd32c2a448ef37a38d1b8ebd2fda4f40",
+      "proof/segmented-source-contact.png": "eb0a2fde6f4e49d82814612274ddba2247332e7b990e5441b5b47500c960173c",
+      "proof/white-on-black-12px.png": "499980c85dcec004b57a29efb7f88d63c1c7423b0c119369b082cb24069bbb75",
+      "proof/white-on-black-16px.png": "565352e334c529e4ce6759ed214abed435654c17207d7999584b78dc8170cbc7",
+      "proof/white-on-black-20px.png": "e2cf82704ab57572af3424f81d3af3579b422d3306e9bba12dfd059a2e67248b",
+      "proof/white-on-black-32px.png": "070b3c4cb21d25d4d13d9323da68bc3dabe6da54c09894ddffef298b465ecf4d",
+      "proof/white-on-black-56px.png": "26228819d4a896cc8c1da8a18a526cac656bdd04093e02f5142716cb70554cdf",
+      "svg/u00ff.svg": "b127879e604183810b21708fd45028c87efefe818a1d1b3e84886770910e7da2"
+    }
+  },
+  "visual_review": {
+    "path": "sources/imagegen/vector-reviews/nonhan-0025.vector-review.json",
+    "sha256": "21239b6d3c6795112f398227904bcaa92207f324fc3b79e6f4a7a1467f3a88d8"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex Primary Release Approver",
+    "approved_at": "2026-07-26T12:33:28Z",
+    "attestation": "I_AUTHORIZE_THIS_HASH_PINNED_NONHAN_BATCH_FOR_THE_RELEASE_FONT"
+  }
+}

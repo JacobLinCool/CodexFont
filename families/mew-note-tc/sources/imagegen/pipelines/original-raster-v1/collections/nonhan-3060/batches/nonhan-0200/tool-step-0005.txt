@@ -1,0 +1,8 @@
+Edit only row-4 cells c13 and c14. Preserve all other cells exactly.
+
+The current c13 and c14 are mirrored and must be replaced:
+
+- c13 ╜: place the two parallel vertical strokes on the RIGHT side of the cell, running upward from the bottom corner. Draw one single horizontal stroke from that right-side corner toward the LEFT. In local cell coordinates, the vertical double is near x=70%, and the bottom single runs from x=30% to x=70%. Nothing extends right of the vertical double.
+- c14 ╝: place the two parallel vertical strokes on the RIGHT side of the cell, running upward from the bottom corner. Draw two parallel horizontal strokes from that right-side corner toward the LEFT. In local cell coordinates, the vertical double is near x=70%, and the bottom double runs from x=30% to x=70%. Nothing extends right of the vertical double.
+
+These are BOTTOM-RIGHT corners, visually like a right-hand closing corner, not bottom-left opening corners. Match c13 and c14 in the fourth-reference identity copybook. Keep the exact 4×4 grid and exactly one glyph per cell. Return only the corrected complete sheet.

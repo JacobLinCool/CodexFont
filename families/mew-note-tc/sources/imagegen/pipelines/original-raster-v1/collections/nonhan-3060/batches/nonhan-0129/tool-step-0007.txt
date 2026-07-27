@@ -1,0 +1,13 @@
+Preserve all sixteen black lowercase Roman-numeral glyphs in Image 1 exactly, including their shapes, dots, positions, scale, spacing, and the plain uncurled final terminal of row 4 column 4 `ⅿ`. Do not redraw, move, add, or remove any black glyph stroke.
+
+Erase only the current gray grid and rebuild one precise 4×4 grid on the same 1254×1254 pure-white canvas:
+
+- exactly five vertical rules centred at x = 14, 320, 626, 932, 1238;
+- exactly five horizontal rules centred at y = 14, 320, 626, 932, 1238;
+- every rule is one continuous, uniform, neutral light-gray 2-pixel stroke;
+- every vertical rule runs only from the top border to the bottom border;
+- every horizontal rule runs only from the left border to the right border.
+
+All four cell intervals must be equal. At every intersection, join the two rules cleanly without extending either rule past the outer border. Do not add corner ticks, crosses, protruding ends, doubled edges, outlines, shadows, gaps, parallel companions, extra rows, labels, or any other mark.
+
+The final output contains only the unchanged sixteen black glyphs, pure white background, and exactly five detectable rules on each axis. Images 2 and 3 are style-only; Image 4 is identity-only.

@@ -1,0 +1,12 @@
+Preserve all sixteen glyphs and their positions exactly. Do not redraw, move, mirror, add, or remove any glyph.
+
+Repair only the sheet grid so deterministic grid detection succeeds:
+
+- Keep a square 2048×2048 white canvas.
+- Draw exactly five continuous pale-gray vertical rules at the left edge, 25%, 50%, 75%, and right edge.
+- Draw exactly five continuous pale-gray horizontal rules at the top edge, 25%, 50%, 75%, and bottom edge.
+- Every rule must run uninterrupted from one canvas edge to the opposite edge.
+- Use a consistent thin but clearly visible light-gray line, approximately 2–3 pixels wide.
+- Do not add any other horizontal or vertical guide.
+
+The result must remain a 4×4 sheet with one existing glyph per cell. Return only the corrected complete sheet.

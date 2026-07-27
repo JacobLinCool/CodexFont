@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "batch_id": "imagegen-common-0178",
+  "state": "generated-unreviewed",
+  "generator": "built-in-image_gen",
+  "generator_call": "imagegen-edit-call_ylrkR0Aw9PGEJfna6wwfUWoU",
+  "correction_provenance": {
+    "character": "獃",
+    "codepoint": "U+7343",
+    "cell": 14,
+    "reason": "The original generated cell depicted 猴 instead of the frozen repertoire character 獃.",
+    "required_topology": "⿰豈犬",
+    "generated_sheet": "../corrections/common-0178-u7343-generated-sheet.png",
+    "generated_sheet_sha256": "c19490903aa2b65c56b11c945ef1a518c3c52cbcd52247dd5a4720fedc8536be",
+    "rejected_sheet": "../rejected/common-0178-wrong-hou.png",
+    "rejected_sheet_sha256": "0205428db7d68c8173d046dfba83836dc462c9904b2dc2825f30c9e7e99fa353",
+    "replacement_box": [
+      329,
+      920,
+      625,
+      1216
+    ],
+    "outside_replacement_box_changed_pixels": 0
+  },
+  "raster": "../raster/common-0178.png",
+  "raster_sha256": "bea59b15fe413e6dfd5b4549f0293db01181c7875e4334eb4ec0cef975421ccf",
+  "prompt": "../prompts/common-grid-anchor-v1.md",
+  "prompt_variables": {
+    "character_count": 16,
+    "characters": "紳菲葫葵虔謬儘飼鳩僱厥堡撤獃糕絹",
+    "rows": [
+      "紳菲葫葵",
+      "虔謬儘飼",
+      "鳩僱厥堡",
+      "撤獃糕絹"
+    ]
+  },
+  "style_reference": {
+    "role": "style-only",
+    "raster": "../raster/common-0001.png",
+    "raster_sha256": "2a4058fdb4e35ce2789f9ae73535542f78f4e94516ad4b9929986a93e36d3d81"
+  },
+  "repertoire": {
+    "path": "../repertoires/common-3000.json",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2833,
+    "end_rank": 2848
+  },
+  "grid": {
+    "rows": 4,
+    "columns": 4,
+    "characters": [
+      "紳",
+      "菲",
+      "葫",
+      "葵",
+      "虔",
+      "謬",
+      "儘",
+      "飼",
+      "鳩",
+      "僱",
+      "厥",
+      "堡",
+      "撤",
+      "獃",
+      "糕",
+      "絹"
+    ],
+    "empty_grid_cells": 0
+  },
+  "review": {
+    "topology": "pending",
+    "raster_quality": "pending",
+    "vector_quality": "pending"
+  }
+}

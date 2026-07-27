@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0063",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 993,
+    "end_rank": 1008,
+    "characters": "吏莊灰蒙查吹率粗既模寺智續軟亭裂"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0063.source.json",
+    "descriptor_sha256": "201f55979398332521ea1a00b57db1f410589474f81b62957b211d53ad057f46",
+    "raster": "sources/imagegen/raster/common-0063.png",
+    "raster_sha256": "11c45ca605030813aa18f16621b505f3ff373e022e42b3a09f99ab9eff1c5257"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0063-0066-audit.json",
+    "report_sha256": "479cbdb1e658015f769967c9ca01f96670888b11bee8352175e43e0afba095f6"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0063/report.json",
+    "report_sha256": "a83cba26b65d43326b24ef997b7f02c8c0da862d64936f2558e71cc6d030611b",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0063.vector-review.json",
+    "record_sha256": "ad3e8ecb8bd2051535d44f8d2a42c931d5bc510d6f4139a1002420fac9251252"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:40:19Z"
+  }
+}

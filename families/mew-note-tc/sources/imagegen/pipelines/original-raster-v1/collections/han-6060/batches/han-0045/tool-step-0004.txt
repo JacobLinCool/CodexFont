@@ -1,0 +1,12 @@
+Use case: logo-brand
+Asset type: correction of one original typeface source glyph sheet
+Primary request: correct only Cell 06 of the current Mew Note TC han-6060/han-0045 sheet; the two previous corrections opened the outer 囗 and are rejected.
+Input images: Image 1 is the current sheet to correct; Image 2 is the approved Mew Note TC v2 style pilot (style rhythm only); Image 3 is the identity-only copybook (code point identity only).
+Required correction: In Cell 06 only (row 2, column 2, U+56FA 固), preserve the exact Traditional Chinese 固 identity. Restore the outer 囗 as one plainly closed rounded enclosure with its bottom horizontal visibly joined to the right vertical and no white gap. Do not put the cat tail on the outer enclosure. Instead, extend the existing lower-right stroke of the inner 口 within 古 into one small restrained connected curl, keeping that inner 口 readable and attached to the same continuous stroke. The curl must stay inside the closed outer 囗, avoid every other stroke, and form no spike or self-intersection.
+Preservation: Keep the exact 4 by 4 character order and preserve every other glyph pixel-for-pixel in identity, topology, placement, scale, gel-pen rhythm, and motif assignment. Preserve the assigned connected tails in Cell 02 久, Cell 10 左, and Cell 14 福. Preserve every unassigned cell without a cat motif. Keep the pure-white background and exactly five horizontal plus five vertical thin neutral-gray grid rules.
+Exact row-major rows (verbatim):
+遇久蟲絲
+社固虎呈
+完左敬復
+材福板末
+Constraints: no simplification, substitution, labels, decoration, detached motifs, extra tails, spikes, sharp thorns, self-intersections, shadows, texture, signatures, or watermarks. Do not trace, paste, transform, or reuse the copybook as an outline. Render only the corrected sheet and neutral-gray grid.

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0138",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 2193,
+    "end_rank": 2208,
+    "characters": "泌菊袍鉛斤灑猴鑑婿株滯耶聘串咸澈"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0138.source.json",
+    "descriptor_sha256": "4416ba01f2c20970a6362c29664ceb191cb5c0155c870c8f39e3de9124d4796f",
+    "raster": "sources/imagegen/raster/common-0138.png",
+    "raster_sha256": "e2787668ae1b175e165b42303230d42da4bf79eef8810cd3ddb22e3c485b1dee"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0135-0138-audit.json",
+    "report_sha256": "970dbe3d3240154c09e245833672f14c29d95937f7b6a17a89f7d933910e648e"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0138/report.json",
+    "report_sha256": "abdf72ff83b9a95be110a79c203cc64acd008707240acf8e0918b8129b2f6c2c",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0138.vector-review.json",
+    "record_sha256": "15b48e863234f79681c2c901554a8b3c19e0df57e3d5b9fcc5c7f0f5a53441d4"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T02:04:32Z"
+  }
+}

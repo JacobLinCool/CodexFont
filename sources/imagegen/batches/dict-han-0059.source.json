@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-han-delta-source",
+  "vector_pipeline": "imagegen-raster-potrace-quadratic-v2",
+  "batch_id": "imagegen-dict-han-0059",
+  "state": "generated-unreviewed",
+  "generator": "built-in-image_gen",
+  "generation_history": {
+    "path": "dict-han-0059.history.json",
+    "sha256": "89303437d227b73f58a44dec2daa3b1366d33d01bb66001051875a523426135d",
+    "step_count": 2,
+    "accepted_call_id": "exec-9b26411f-c2ef-4e12-b817-1594e6b7f208"
+  },
+  "collection": {
+    "path": "../collections/clear-hand-tc-dictionary-salience-1216.json",
+    "sha256": "5623b1f977d1412b233a34c255627749ffed71f86182125ea91d7d1f1fb869c2",
+    "collection_id": "clear-hand-tc-dictionary-salience-extension-1216-v1",
+    "family_id": "clear-hand-tc"
+  },
+  "raster": "../raster/dict-han-0059.png",
+  "raster_sha256": "2dc7ebd22518633df51680d6967b03dc69a0df0f9063acda1dd206ebc543052e",
+  "prompt": {
+    "path": "dict-han-0059.tool-step-0001.txt",
+    "sha256": "d67cbc2aa68d0244fd0672031f5217e6fec7b70e160f1f86aa4d2047743ad978"
+  },
+  "intended_materialized_prompt": {
+    "path": "../prompts/dict-han-0059.md",
+    "sha256": "6fa153c8cd29019a746fc565977ea0b58bbd724a470208b822dcae4047be0670"
+  },
+  "prompt_template": {
+    "path": "../prompts/han-delta-grid-with-copybook-v1.md",
+    "sha256": "38f8705ecdc33271d861db54ce7bb6b397ada40253052d74a916b0e1f89a3e0c"
+  },
+  "style_reference": {
+    "role": "style-only-no-outline-import",
+    "raster": "../raster/common-0001.png",
+    "raster_sha256": "2a4058fdb4e35ce2789f9ae73535542f78f4e94516ad4b9929986a93e36d3d81"
+  },
+  "identity_copybook": {
+    "role": "identity-reference-only-no-outline-import",
+    "raster": "../copybooks/dict-han-0059.png",
+    "raster_sha256": "8d50321aa7d49bbf3149ea63fd3d4b27cd772730ead1e5ef07a0d820767f481b",
+    "provenance": {
+      "source_name": "neutral local-font Han identity copybook",
+      "source_url": null,
+      "license": "identity-reference-only; source licenses are recorded per cell",
+      "external_font_binary_committed": false,
+      "materialization_draft": {
+        "path": "dict-han-0059.draft.json",
+        "sha256": "32f590477d2cfe83150c3d8559a949e06bf07cc18a4aabc0f8002b86a134f195"
+      }
+    }
+  },
+  "repertoire": {
+    "path": "../repertoires/dictionary-salience-extension-1216.json",
+    "sha256": "8462d9669e6d7320f77c285a444e388da0f3e0d23ae408c7212c4302bdaed840",
+    "repertoire_id": "clear-hand-tc-dictionary-salience-extension-1216-v1",
+    "sequence_sha256": "3b28f33b80e7675ccdba24d0e678b30581f4eb55fd7418ab1447f10a889267d7",
+    "start_rank": 929,
+    "end_rank": 944
+  },
+  "grid": {
+    "rows": 4,
+    "columns": 4,
+    "characters": [
+      "灝",
+      "炤",
+      "燁",
+      "珽",
+      "瑒",
+      "疔",
+      "痧",
+      "盅",
+      "眵",
+      "睇",
+      "砑",
+      "箠",
+      "紞",
+      "纊",
+      "罏",
+      "翥"
+    ],
+    "empty_grid_cells": 0
+  },
+  "review": {
+    "topology": "pending",
+    "raster_quality": "pending",
+    "vector_quality": "pending"
+  }
+}

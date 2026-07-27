@@ -1,0 +1,27 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.playwright-cli/
+# Identity-reference fonts stay local; commit only their rendered copybooks
+# and provenance metadata.
+sources/upstream/
+build/work/
+build/cache/
+cache/families/
+build/site/
+build/pilots/
+build/families/
+build/imagegen/imagegen-*/font/
+build/imagegen/imagegen-*/glyph-report/
+build/imagegen/imagegen-*/png/
+build/imagegen/imagegen-*/svg/
+build/imagegen/imagegen-*/proof/
+build/imagegen/imagegen-*/report.json
+build/review/
+build/imagegen/release-9120/
+build/imagegen/common-*-small-sizes-*.png
+!build/imagegen/imagegen-nonhan-0206/font/
+!build/imagegen/imagegen-nonhan-0206/font/ClearHandTC-NonHan0206-Semantic.ttf
+specimens/rendered/

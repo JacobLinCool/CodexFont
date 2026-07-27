@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0097",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1537,
+    "end_rank": 1552,
+    "characters": "瑞撥療穩緩悶穀伸脣慎矣纏倚寡泰獄"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0097.source.json",
+    "descriptor_sha256": "a0548779915c8d4c52e3de72fc791c2ff8d6c3e308a1a5027b04b503a10338bb",
+    "raster": "sources/imagegen/raster/common-0097.png",
+    "raster_sha256": "f357ca1265bee038fa4ac23218dfd439ddd0e8036b3231b6967b59fb3a8a92b9"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0095-0098-audit.json",
+    "report_sha256": "5f7ae10dc75877a3711261c1d8b529482ac784a6e07eee15aa852eb53ab90e76"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0097/report.json",
+    "report_sha256": "6cd97aaf0372ced4d0de7b2782353739ffba44c81feca210c3d881dbcebeee37",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0097.vector-review.json",
+    "record_sha256": "2202e62123d5b975d01af2aaeafedf191d3db0cb9f8067a98099fd45aa999eb7"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:46:50Z"
+  }
+}

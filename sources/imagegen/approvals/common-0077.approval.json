@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0077",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1217,
+    "end_rank": 1232,
+    "characters": "肯蕩版曉荒奔拔丈卒箭階宴劍尖累詳"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0077.source.json",
+    "descriptor_sha256": "881f34be56215d942c4b938dd6d220c3fb067b65c487fb50121e1b79b1714895",
+    "raster": "sources/imagegen/raster/common-0077.png",
+    "raster_sha256": "9945a0b5d2d82a6651b56dd07e9ff8f61a6bd300a30093abbed1d60df67f0bd5"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0075-0078-audit.json",
+    "report_sha256": "de8c684e2e1e32347475cef51ecd2082d870b75f26cecedb901efe07b5f8cb85"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0077/report.json",
+    "report_sha256": "74c9668239395a816ecbd644687cd53858b6163ee12258399dd80035fc2c1cc3",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0077.vector-review.json",
+    "record_sha256": "e152c71e76118c44895151b3e124bc5cdca2b093968a5ddf5f3f2bd3cfa73877"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:42:35Z"
+  }
+}

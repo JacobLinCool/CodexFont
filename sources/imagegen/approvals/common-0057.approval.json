@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0057",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 897,
+    "end_rank": 912,
+    "characters": "陶島況麻謀蓋伯眉降育載彈阿沉伏乘"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0057.source.json",
+    "descriptor_sha256": "ab0e80ff7cda4a4ad7a903292ad06e0f1a23637a85ebe2362a5f990c3bb5f714",
+    "raster": "sources/imagegen/raster/common-0057.png",
+    "raster_sha256": "097bb60931404e5b3429fba5822f2e0a6f7448646ccec449fe3c189ca78a3935"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0055-0058-audit.json",
+    "report_sha256": "eb4348713214a5fee9663078d8671898d5fb5bad667caf63cff19f228c9ab55b"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0057/report.json",
+    "report_sha256": "8e300baccbddad3b47f13faf8109c284fddbea1d3e156584b5f1000b36a5b4d5",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0057.vector-review.json",
+    "record_sha256": "11a98f53492d103ec23f2def0e4d8c9c2c2bb04513da42c16e9fcd459b62584e"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:39:53Z"
+  }
+}

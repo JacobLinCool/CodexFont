@@ -1,0 +1,14 @@
+Use case: precise-object-edit
+Asset type: one-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cell 13. Preserve all other 15 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 13 must be U+6AF1 櫱. Replace the current incorrect left-right tree character with the correct stacked construction shown by the identity copybook. Handwrite a compact but complete 辥 across the upper portion, including its distinct left cluster and 辛 on the right; place one complete, wide 木 centered beneath it. The glyph must read as 辥 above 木, not 木 as a left radical. Do not write 蘗, 薛, 檗, or another tree character.
+
+Required full row-major result:
+堠墉壎尻
+峴悁拶掎
+揄斁枵柝
+櫱殭涔濰
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

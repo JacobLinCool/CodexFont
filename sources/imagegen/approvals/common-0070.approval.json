@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0070",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1105,
+    "end_rank": 1120,
+    "characters": "浪採康罷廷脈鳴豆申牌剛永禁猶床池"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0070.source.json",
+    "descriptor_sha256": "b27bf8e2bcb6ebbbf596be97e9e120a7f228f4b7c6631d9a6d3dac9da13b9329",
+    "raster": "sources/imagegen/raster/common-0070.png",
+    "raster_sha256": "7becd4e53aa9ab491dab768ae22d0e73dc50f90f14bdc2bded56f94607105a1f"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0067-0070-audit.json",
+    "report_sha256": "c0cbb9eb193aab5ce39aa5ea2d3c7a4d079749d7d795a2a16c9e17403e457892"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0070/report.json",
+    "report_sha256": "90cdb42a44e618557b94eacf3fe56002d0bd41c35c5f278da52392028335a26d",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0070.vector-review.json",
+    "record_sha256": "7906749ca5e9a55d9bc74338c2f2546b98880a88884325f8e4b0eecb934fa855"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:41:27Z"
+  }
+}

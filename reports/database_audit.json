@@ -1,0 +1,80 @@
+{
+  "database": "data/dict_lookup.sqlite",
+  "encoding": "UTF-8",
+  "sqlite_version": "3.50.4",
+  "python_unicode_version": "14.0.0",
+  "metadata": {
+    "built_from": "dict_revised_2015_20260325.xlsx",
+    "entries": "161197",
+    "max_key_len": "14",
+    "polyphone_keys": "3337",
+    "rows_read": "163924",
+    "source": "教育部重編國語辭典修訂本 2015"
+  },
+  "schema": [
+    {
+      "name": "entries",
+      "row_count": 161197,
+      "columns": [
+        {
+          "name": "key",
+          "type": "TEXT",
+          "not_null": true,
+          "default": null,
+          "primary_key_position": 1
+        },
+        {
+          "name": "readings",
+          "type": "TEXT",
+          "not_null": false,
+          "default": null,
+          "primary_key_position": 0
+        }
+      ],
+      "sql": "CREATE TABLE entries(key TEXT PRIMARY KEY, readings TEXT) WITHOUT ROWID"
+    },
+    {
+      "name": "meta",
+      "row_count": 6,
+      "columns": [
+        {
+          "name": "k",
+          "type": "TEXT",
+          "not_null": false,
+          "default": null,
+          "primary_key_position": 1
+        },
+        {
+          "name": "v",
+          "type": "TEXT",
+          "not_null": false,
+          "default": null,
+          "primary_key_position": 0
+        }
+      ],
+      "sql": "CREATE TABLE meta(k TEXT PRIMARY KEY, v TEXT)"
+    }
+  ],
+  "scanned_logical_fields": {
+    "entries.key": 161197,
+    "entries.readings[].examples[]": 18530,
+    "entries.readings[].gloss": 164860,
+    "entries.readings[].pinyin": 163383,
+    "entries.readings[].pinyin_num[]": 431532,
+    "entries.readings[].variant": 943,
+    "entries.readings[].zhuyin": 163383
+  },
+  "json_error_count": 0,
+  "json_errors": [],
+  "dictionary_text_occurrences": 11499007,
+  "dictionary_text_unique_codepoints": 12307,
+  "excluded_format_or_control_codepoints": [
+    {
+      "character": "﻿",
+      "codepoint": "U+FEFF",
+      "name": "ZERO WIDTH NO-BREAK SPACE",
+      "category": "Cf",
+      "occurrence_count": 1103
+    }
+  ]
+}

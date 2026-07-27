@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "record_type": "mew-note-tc-release-deviation",
+  "decision": "APPROVED",
+  "family_id": "mew-note-tc",
+  "pipeline_id": "original-raster-v1",
+  "release": "0.1 Preview",
+  "frozen_authoring_contracts": {
+    "family_contract": {
+      "path": "families/mew-note-tc/family.json",
+      "sha256": "5d9799a4a8c33632d0285c2639e127e2b6a1080da03c652c99ebc760ab1a599f"
+    },
+    "collection_contract": {
+      "path": "families/mew-note-tc/collections.json",
+      "sha256": "75e4ca4bc269e272739635afea6be8ecda6020e4d1f09be1d39d9e70d01d741f"
+    },
+    "authoring_contract": {
+      "path": "families/mew-note-tc/authoring.json",
+      "sha256": "2fcf4549ecf28086cf09c7a1f934b5944643608506e0610f05d1db4ce6f61c7a"
+    },
+    "batch_plan": {
+      "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/batch-plan.json",
+      "sha256": "b68ccd3162b30f9288dafde56fbcaa96921222fb39a9876897a523dec3301232"
+    }
+  },
+  "predecessor_approval_snapshot": {
+    "path": "families/mew-note-tc/approvals/history/61cf38ff06a3adeb050fdf75ab98c9c52984eeb68f61c97d8d8f0fc6467af819.approval.json",
+    "sha256": "61cf38ff06a3adeb050fdf75ab98c9c52984eeb68f61c97d8d8f0fc6467af819"
+  },
+  "canonical_approval_overwrite": {
+    "path": "families/mew-note-tc/approvals/original-raster-v1-preview.approval.json",
+    "required_predecessor_sha256": "61cf38ff06a3adeb050fdf75ab98c9c52984eeb68f61c97d8d8f0fc6467af819",
+    "permission": "replace-only-this-exact-predecessor-with-a-new-validated-approval"
+  },
+  "release_counts": {
+    "planned_encoded_count": 9120,
+    "admitted_encoded_count": 9088,
+    "withheld_encoded_count": 32,
+    "planned_visible_batch_count": 590,
+    "admitted_visible_batch_count": 588,
+    "withheld_visible_batch_count": 2
+  },
+  "withheld_batches": [
+    {
+      "collection_id": "han-6060",
+      "batch_id": "han-0304",
+      "batch_contract_sha256": "ee0c3af0f65866394ad0297ddebce62108bc1d62cde59c96d174d969a1874d96",
+      "missing_identity_codepoint": "U+25CD1",
+      "codepoints": [
+        "U+6BEC",
+        "U+25CD1",
+        "U+5B62",
+        "U+8B14",
+        "U+6746",
+        "U+6609",
+        "U+8AD5",
+        "U+768B",
+        "U+8E30",
+        "U+52AD",
+        "U+8ADB",
+        "U+8B8E",
+        "U+6713",
+        "U+7BB8",
+        "U+8E47",
+        "U+887E"
+      ],
+      "character_count": 16,
+      "reason": "missing-exact-cmap-in-frozen-identity-reference-catalog",
+      "policy": "withhold-the-atomic-16-glyph-batch"
+    },
+    {
+      "collection_id": "han-6060",
+      "batch_id": "han-0319",
+      "batch_contract_sha256": "561d542e3b2b92d3c6662eb9c6bdaf5baf2c1aed3173fd40899c6450b6fab13b",
+      "missing_identity_codepoint": "U+3473",
+      "codepoints": [
+        "U+9D08",
+        "U+3473",
+        "U+4EB9",
+        "U+54FD",
+        "U+5F0B",
+        "U+6C4E",
+        "U+6F09",
+        "U+6FA0",
+        "U+6FEE",
+        "U+7162",
+        "U+737C",
+        "U+747E",
+        "U+7FCA",
+        "U+887F",
+        "U+8E05",
+        "U+8F05"
+      ],
+      "character_count": 16,
+      "reason": "missing-exact-cmap-in-frozen-identity-reference-catalog",
+      "policy": "withhold-the-atomic-16-glyph-batch"
+    }
+  ],
+  "waiver": {
+    "waived_stop_condition": {
+      "contract": {
+        "path": "families/mew-note-tc/family.json",
+        "sha256": "5d9799a4a8c33632d0285c2639e127e2b6a1080da03c652c99ebc760ab1a599f"
+      },
+      "json_pointer": "/stop_conditions/5",
+      "text": "Do not publish coverage unless the compiled cmap contains exactly the declared 9120-codepoint partition"
+    },
+    "scope": {
+      "release": "0.1 Preview",
+      "applies_only_to": "exact-9120-compiled-cmap-stop-condition",
+      "permission": "publish-the-approved-9088-codepoint-cmap",
+      "planned_encoded_count": 9120,
+      "admitted_encoded_count": 9088,
+      "withheld_encoded_count": 32,
+      "all_other_contract_conditions": "remain-enforced",
+      "future_releases": "not-authorized"
+    }
+  },
+  "authorization": {
+    "authorized_by": "Codex release reviewer",
+    "authorized_at": "2026-07-29T13:22:35Z",
+    "confirmation": "I_AUTHORIZE_ONLY_THE_MEW_NOTE_0_1_PREVIEW_9120_TO_9088_RELEASE_DEVIATION"
+  }
+}

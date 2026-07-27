@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "record_type": "mew-note-tc-batch-draft",
+  "family_id": "mew-note-tc",
+  "pipeline_id": "original-raster-v1",
+  "collection_id": "nonhan-3060",
+  "batch_id": "nonhan-0170",
+  "family_context": {
+    "schema_version": 1,
+    "record_type": "codexfont-family-evidence-binding",
+    "family_id": "mew-note-tc",
+    "family_contract": {
+      "path": "families/mew-note-tc/family.json",
+      "sha256": "5d9799a4a8c33632d0285c2639e127e2b6a1080da03c652c99ebc760ab1a599f"
+    },
+    "pipeline_id": "original-raster-v1",
+    "pipeline_contract": {
+      "path": "families/mew-note-tc/pipeline.json",
+      "sha256": "84c1f9cd5e7908c020198d737da182b98b1f701021f7edb10d717902c3bf24ed"
+    },
+    "collection_id": "nonhan-3060",
+    "collection_contract": {
+      "path": "families/mew-note-tc/collections.json",
+      "sha256": "75e4ca4bc269e272739635afea6be8ecda6020e4d1f09be1d39d9e70d01d741f"
+    },
+    "collection_record_sha256": "476957d833b232065d2ee46fe4840ae25fbe0da4d60c21603c9ef295b74de91e",
+    "authoring_contract": {
+      "path": "families/mew-note-tc/authoring.json",
+      "sha256": "2fcf4549ecf28086cf09c7a1f934b5944643608506e0610f05d1db4ce6f61c7a"
+    },
+    "binding_sha256": "7b8a71bcba9bea594f3748a6c5b025873372e3210b88d665529d2ca3b456a43c"
+  },
+  "batch_evidence_contract": {
+    "path": "families/mew-note-tc/batch-evidence-contract.json",
+    "sha256": "f04428e4c6a815867afa4dec15d84d0e8f99c3d6e93776ff35d19b4c34512b65"
+  },
+  "batch_plan": {
+    "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/batch-plan.json",
+    "sha256": "b68ccd3162b30f9288dafde56fbcaa96921222fb39a9876897a523dec3301232"
+  },
+  "batch_contract_sha256": "4f26800cbd6a583db43166f96c42c5a5a5702d0ab32f2b0a6b663b69c0a36330",
+  "entries": [
+    {
+      "cell": 1,
+      "character": "✓",
+      "codepoint": "U+2713",
+      "source_rank": 2506,
+      "motif_class": "neutral-safety"
+    },
+    {
+      "cell": 2,
+      "character": "✔",
+      "codepoint": "U+2714",
+      "source_rank": 2507,
+      "motif_class": "neutral-safety"
+    },
+    {
+      "cell": 3,
+      "character": "✕",
+      "codepoint": "U+2715",
+      "source_rank": 2508,
+      "motif_class": "neutral-safety"
+    },
+    {
+      "cell": 4,
+      "character": "✖",
+      "codepoint": "U+2716",
+      "source_rank": 2509,
+      "motif_class": "neutral-safety"
+    }
+  ],
+  "tail_terminal_cells": [],
+  "intended_prompt": {
+    "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0170/prompt.md",
+    "sha256": "45a3b4279789b8c17dc0352f7016fca8a7a9d8391d9ded6a0a4a91b7ea7b7ffa"
+  },
+  "actual_initial_tool_prompt": {
+    "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0170/tool-step-0001.txt",
+    "sha256": "2ab425047c010ef362178cdac3017ea45a5c17010cca5d4c2a7d9faca2ffea6e"
+  },
+  "identity_copybook": {
+    "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0170/identity-copybook.png",
+    "sha256": "d77347f6364ff4761b1332690f6b783f7bcdb2c3b07f35fb67ef7c243cfb6478",
+    "width": 1600,
+    "height": 1600,
+    "mode": "L",
+    "role": "identity-reference-only-no-outline-import",
+    "glyphs": [
+      {
+        "cell": 1,
+        "character": "✓",
+        "codepoint": "U+2713",
+        "role": "identity-reference-only-no-outline-import",
+        "external_font": {
+          "path": "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+          "sha256": "876af2cd4854644e7f3e7feb2f688997fdb3343c6df6693611209c9dfb47ccec",
+          "face_index": 0,
+          "postscript_name": "ArialUnicodeMS",
+          "glyph_name": "uni2713",
+          "binary_committed": false,
+          "validation": [
+            "exact-cmap-hit",
+            "non-notdef-glyph-name",
+            "non-empty-distinct-outline",
+            "non-empty-pillow-raster"
+          ]
+        }
+      },
+      {
+        "cell": 2,
+        "character": "✔",
+        "codepoint": "U+2714",
+        "role": "identity-reference-only-no-outline-import",
+        "external_font": {
+          "path": "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+          "sha256": "876af2cd4854644e7f3e7feb2f688997fdb3343c6df6693611209c9dfb47ccec",
+          "face_index": 0,
+          "postscript_name": "ArialUnicodeMS",
+          "glyph_name": "uni2714",
+          "binary_committed": false,
+          "validation": [
+            "exact-cmap-hit",
+            "non-notdef-glyph-name",
+            "non-empty-distinct-outline",
+            "non-empty-pillow-raster"
+          ]
+        }
+      },
+      {
+        "cell": 3,
+        "character": "✕",
+        "codepoint": "U+2715",
+        "role": "identity-reference-only-no-outline-import",
+        "external_font": {
+          "path": "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+          "sha256": "876af2cd4854644e7f3e7feb2f688997fdb3343c6df6693611209c9dfb47ccec",
+          "face_index": 0,
+          "postscript_name": "ArialUnicodeMS",
+          "glyph_name": "uni2715",
+          "binary_committed": false,
+          "validation": [
+            "exact-cmap-hit",
+            "non-notdef-glyph-name",
+            "non-empty-distinct-outline",
+            "non-empty-pillow-raster"
+          ]
+        }
+      },
+      {
+        "cell": 4,
+        "character": "✖",
+        "codepoint": "U+2716",
+        "role": "identity-reference-only-no-outline-import",
+        "external_font": {
+          "path": "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+          "sha256": "876af2cd4854644e7f3e7feb2f688997fdb3343c6df6693611209c9dfb47ccec",
+          "face_index": 0,
+          "postscript_name": "ArialUnicodeMS",
+          "glyph_name": "uni2716",
+          "binary_committed": false,
+          "validation": [
+            "exact-cmap-hit",
+            "non-notdef-glyph-name",
+            "non-empty-distinct-outline",
+            "non-empty-pillow-raster"
+          ]
+        }
+      }
+    ],
+    "configured_external_font_count": 6
+  },
+  "style_references": [
+    {
+      "id": "mew-note-han-style-pilot-v2",
+      "path": "families/mew-note-tc/pilots/mew-note-han-v2-raster.png",
+      "sha256": "b6ae4ac12a769e979b86df7af1a3d7f4a824ea79ba67bf7b43802c3fc49eff82",
+      "role": "style-only-no-raster-or-outline-reuse"
+    },
+    {
+      "id": "mew-note-nonhan-style-pilot",
+      "path": "families/mew-note-tc/pilots/mew-note-nonhan-raster.png",
+      "sha256": "eb755d5fb065798812ddc15619025ab79b290d06fc89626ba845b6580e882f41",
+      "role": "style-only-no-raster-or-outline-reuse"
+    }
+  ],
+  "planned_raster": {
+    "path": "families/mew-note-tc/sources/imagegen/pipelines/original-raster-v1/collections/nonhan-3060/batches/nonhan-0170/raster.png",
+    "state": "not-generated"
+  },
+  "state": "materialized-awaiting-generation",
+  "draft_sha256": "4514b95bfd677e166375fee88a59c1cf7a7ef8a3800e654dc6b3f22f5eee4c10"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-nonhan-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "nonhan-0206",
+  "batch_kind": "semantic-empty",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/nonhan-3060.json",
+    "sha256": "42791eeb3981f04895529ad7770b00a86a815f9c4dffa16369df9f7ec1892ce4",
+    "repertoire_id": "clear-hand-tc-nonhan-3060-v1",
+    "batch_id": "nonhan-0206",
+    "start_authoring_rank": 3044,
+    "end_authoring_rank": 3060,
+    "glyph_codepoints": [
+      "U+0020",
+      "U+00A0",
+      "U+034F",
+      "U+2000",
+      "U+2001",
+      "U+2002",
+      "U+2003",
+      "U+2004",
+      "U+2005",
+      "U+2006",
+      "U+2007",
+      "U+2008",
+      "U+2009",
+      "U+200A",
+      "U+202F",
+      "U+205F",
+      "U+3000"
+    ]
+  },
+  "semantic_evidence": {
+    "manifest": {
+      "path": "sources/imagegen/semantic/nonhan-0206.semantic.json",
+      "sha256": "f8a300c8da7069009c67e124e2736d87830661d2d852f5a403947aa8506891b1"
+    },
+    "font": {
+      "path": "build/imagegen/imagegen-nonhan-0206/font/ClearHandTC-NonHan0206-Semantic.ttf",
+      "sha256": "07eebdcb6fb4d82286bc203f708ed786f67890efa911e1d5c610f34d1397cd5a"
+    },
+    "blank_render_proof": {
+      "path": "build/imagegen/imagegen-nonhan-0206/proof/blank-render.png",
+      "sha256": "779511bb4265f93077b667dbe9b9842393d4a315299b448658fc6988aba2ee72"
+    }
+  },
+  "visual_review": {
+    "path": "sources/imagegen/vector-reviews/nonhan-0206.vector-review.json",
+    "sha256": "22fb6bae7626345ef228b6a02ecf84944374df19a2224c3cc1bf41732ca78ec9"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex Primary Release Approver",
+    "approved_at": "2026-07-26T13:13:49Z",
+    "attestation": "I_AUTHORIZE_THIS_HASH_PINNED_NONHAN_BATCH_FOR_THE_RELEASE_FONT"
+  }
+}

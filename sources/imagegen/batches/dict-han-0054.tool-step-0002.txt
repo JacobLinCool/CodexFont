@@ -1,0 +1,16 @@
+Use case: precise-object-edit
+Asset type: two-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cells 02 and 04. Preserve all other 14 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 02 must be U+5707 圇. Preserve a single enclosing 囗. Replace the current 員-like interior with a complete 侖: 人 roof and short horizontal above the 冊-like lower structure. Do not write 圓, 囷, 園, or another enclosure character.
+
+Cell 04 must be U+5AE0 嫠. Replace the current unrelated left-right woman character with the correct stacked/sheltered construction shown by the identity copybook: a compact 未-and-攵 upper complex, then the descending 厂 shelter, with a complete 女 inside the lower shelter. Do not write 嬙, 嫩, 嬴, or another woman-radical character.
+
+Required full row-major result:
+嗝圇奼嫠
+嬙嵯忡怫
+惸扞搴斕
+昃栲桷欷
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

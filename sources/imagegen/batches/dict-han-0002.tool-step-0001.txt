@@ -1,0 +1,39 @@
+Use case: font-source raster sheet
+Asset type: high-resolution 4×4 raster master sheet for an original Traditional Chinese handwriting font in the Clear Hand TC family
+
+Input images:
+1. Image 1 is STYLE ONLY. Match its fine black gel-pen weight, rounded terminals, natural right slant, optical scale, pure-white background, and faint 4×4 grid. Do not copy its characters or outlines.
+2. Image 2 is IDENTITY REFERENCE ONLY. It gives the exact Unicode identity in each corresponding cell. Redraw every glyph from a blank canvas. Do not trace, reproduce, or import its printed outlines or grid geometry.
+
+Draw exactly sixteen new isolated Traditional Chinese glyphs in a strict four-by-four grid in this exact row-major order:
+朓箸蹇衾 / 鹵綬曜聒 / 鉅掇亢崗 / 擢暱嗔蓼.
+
+Exact cells:
+- Cell 01: U+6713 朓
+- Cell 02: U+7BB8 箸
+- Cell 03: U+8E47 蹇
+- Cell 04: U+887E 衾
+- Cell 05: U+9E75 鹵
+- Cell 06: U+7DAC 綬
+- Cell 07: U+66DC 曜
+- Cell 08: U+8052 聒
+- Cell 09: U+9245 鉅
+- Cell 10: U+6387 掇
+- Cell 11: U+4EA2 亢
+- Cell 12: U+5D17 崗
+- Cell 13: U+64E2 擢
+- Cell 14: U+66B1 暱
+- Cell 15: U+55D4 嗔
+- Cell 16: U+84FC 蓼
+
+Verbatim rows:
+朓箸蹇衾
+鹵綬曜聒
+鉅掇亢崗
+擢暱嗔蓼
+
+Composition: square high-resolution image; five faint thin neutral-gray straight grid rules in each direction; four equal rows and columns; pure white background; generous padding; exactly one centered black glyph in every cell; all black ink well away from separators.
+
+Preserve every exact Unicode identity and Taiwan Traditional character topology. Use complete standard strokes and open counters. Output each target exactly once in only its assigned cell. The identity copybook is evidence, never an outline source.
+
+Do not include labels, Unicode names, cell numbers, captions, signatures, logos, watermarks, extra text, simplified variants, duplicate or omitted characters, wrong or missing strokes, typeset outlines, brush blobs, texture, shadows, sharp miter spikes, thorn-like protrusions, accidental hooks, tangled cursive, clipping, or connected cells.

@@ -1,0 +1,14 @@
+Use case: precise-object-edit
+Asset type: one-cell identity correction in an original 4×4 font-source raster
+
+Image 1 is the handwriting style reference only. Image 2 is the authoritative identity copybook only; never trace its printed outline. Image 3 is the edit target. Change ONLY Cell 15. Preserve all other 15 glyphs, grid, canvas, spacing, and fine rounded gel-pen style.
+
+Cell 15 must be U+7F4F 罏. Replace the current incorrect centered/stacked character with the correct left-right construction. Handwrite a complete compact 缶 on the left. Handwrite a complete 盧 on the right, with 虍 above 田 and 皿; keep the internal compartments distinct. Do not write 羅, 盧 without 缶, 罅, or another jar character.
+
+Required full row-major result:
+灝炤燁珽
+瑒疔痧盅
+眵睇砑箠
+紞纊罏翥
+
+Keep all ink clear of grid rules. No other edits, labels, substitutions, extra text, printed type, spikes, stray hooks, texture, shadows, signature, logo, or watermark.

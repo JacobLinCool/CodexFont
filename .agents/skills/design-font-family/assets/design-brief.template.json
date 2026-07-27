@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "project_id": "replace-with-hyphen-case-id",
+  "family": {
+    "name": "Replace With Family Name",
+    "style": "Regular",
+    "version": "1.000"
+  },
+  "intent": {
+    "use_cases": [
+      "Describe where the font will be used"
+    ],
+    "audiences": [
+      "Describe the intended readers"
+    ],
+    "personality": [
+      "clear",
+      "purposeful"
+    ],
+    "non_goals": [
+      "Describe what the design must not become"
+    ],
+    "example_text": [
+      "Add representative text in every supported script"
+    ]
+  },
+  "design_contract": {
+    "authoring_mode": "original-raster-first",
+    "stroke_model": "Describe medium, weight, contrast, joins, and terminals",
+    "spacing_model": "proportional",
+    "units_per_em": 1000,
+    "directions": [
+      "horizontal"
+    ],
+    "required_features": [
+      "kern",
+      "mark",
+      "mkmk"
+    ]
+  },
+  "repertoire": {
+    "unicode_version": "Declare a pinned Unicode version",
+    "normalization": "none",
+    "sources": [
+      {
+        "id": "core",
+        "authority": "Describe the repertoire authority",
+        "ordered_codepoints_path": "inventories/core.txt"
+      }
+    ],
+    "semantic_empty_policy": "Declare allowed contourless encoded scalars",
+    "unencoded_alternates": []
+  },
+  "references": [
+    {
+      "description": "Describe an identity or style reference",
+      "role": "identity-reference-only-no-outline-import",
+      "license": "Record the reference license",
+      "outline_import_allowed": false
+    }
+  ],
+  "licensing": {
+    "source_license": "OFL-1.1",
+    "release_license": "OFL-1.1"
+  },
+  "acceptance": {
+    "proof_sizes_px": [
+      12,
+      16,
+      20,
+      32,
+      56
+    ],
+    "proof_polarities": [
+      "black-on-white",
+      "white-on-black"
+    ],
+    "geometry": {
+      "max_micro_edge_count": 0,
+      "max_acute_micro_turn_count": 0
+    },
+    "independent_review_required": true,
+    "hash_pinned_approval_required": true,
+    "reproducible_build_count": 2,
+    "release_formats": [
+      "ttf",
+      "otf",
+      "woff",
+      "woff2"
+    ],
+    "browser_qa_required": true
+  }
+}

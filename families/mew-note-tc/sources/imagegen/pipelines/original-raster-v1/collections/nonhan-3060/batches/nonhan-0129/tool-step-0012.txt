@@ -1,0 +1,19 @@
+This attached 4×4 glyph sheet is nearly correct. Preserve all sixteen black glyphs and all five vertical rules exactly.
+
+Make the four row heights precisely equal by adjusting only the three internal horizontal rules:
+
+- move the first internal horizontal rule 2 pixels DOWN, from about y=318 to y=320;
+- move the second internal horizontal rule 5 pixels UP, from about y=632 to y=627;
+- move the third internal horizontal rule 9 pixels UP, from about y=942 to y=933.
+
+Keep the top horizontal border at about y=13 and bottom border at about y=1240. The five final horizontal rule centres should therefore be about 13, 320, 627, 933, 1240, producing four equal row heights of approximately 307 pixels.
+
+Erase each old internal rule completely before drawing its replacement. Use continuous single neutral light-gray 2-pixel strokes matching the existing grid, from the left outer border to the right outer border.
+
+Do not redraw, move, or restyle any glyph. Preserve the exact row-major sequence:
+ⅰ ⅱ ⅲ ⅳ
+ⅴ ⅵ ⅶ ⅷ
+ⅸ ⅹ ⅺ ⅻ
+ⅼ ⅽ ⅾ ⅿ
+
+Keep the final lowercase m plain with no tail curl. Exactly five horizontal and five vertical rules. No ghost, doubled line, tick, protrusion, extension, shadow, outline, extra row, extra glyph, margin, or crop.

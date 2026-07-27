@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0119",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 1889,
+    "end_rank": 1904,
+    "characters": "泡迅撒溝璃俊匠戚扣聰誘坦填虞姊搜"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0119.source.json",
+    "descriptor_sha256": "b5e7570546b75cfa0c6f5351f5dcd3ac9f4282f1ea4ddc5e192ee65fd677346e",
+    "raster": "sources/imagegen/raster/common-0119.png",
+    "raster_sha256": "9e65e9d3abb4c96f2552b56718d251c8666e45bb3811b8aa98be915a9dbea3e2"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0119-0122-audit.json",
+    "report_sha256": "771c06ddf4a44ab65cb5395d3aeadc2ed3f429d377ce984eef41de8507054235"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0119/report.json",
+    "report_sha256": "0489734225356b64ca871cf0b3f02541fedfe38065f89d8ff83560716093b13d",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0119.vector-review.json",
+    "record_sha256": "d4d7ca62d87f65aabcfd2e8009a7478253196fddc5318586f1614988a3da1686"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:48:53Z"
+  }
+}

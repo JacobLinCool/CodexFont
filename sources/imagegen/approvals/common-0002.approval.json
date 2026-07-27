@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_type": "imagegen-batch-approval",
+  "approval_state": "approved",
+  "batch_id": "common-0002",
+  "repertoire": {
+    "path": "sources/imagegen/repertoires/common-3000.json",
+    "sha256": "c9f965516bed2821cf137480bddf23acd043a339165571cf9b3e87bbf5ffc66a",
+    "repertoire_id": "tw-moe-dictionary-salience-han-3000-v1",
+    "sequence_sha256": "4f701cbd115f8525e2f3a417b9e330cd7bd5f74a6de81eb48092f90af9fed4cd",
+    "start_rank": 17,
+    "end_rank": 32,
+    "characters": "大中稱國用時上在生或而形於物事唐"
+  },
+  "source": {
+    "descriptor": "sources/imagegen/batches/common-0002.source.json",
+    "descriptor_sha256": "a18d6ca38b86446e3eae929f5498c0a77ae3603f4ce555606ce7fa4fdf21920e",
+    "raster": "sources/imagegen/raster/common-0002.png",
+    "raster_sha256": "7bc26fbf0dee8b3aa8d5a823482aeeee94004fbe589d6a9152bc3f18969e8acc"
+  },
+  "raster_audit": {
+    "report": "reports/imagegen-common-0001-0003-audit.json",
+    "report_sha256": "0d7a9a3b0cd975d196e35a99cba4cd1816c8b460fccbbcc9db7efa253c2179db"
+  },
+  "vector_build": {
+    "report": "build/imagegen/imagegen-common-0002/report.json",
+    "report_sha256": "c093b12a52a7d79d45c26d00821cf11b5f4f4685b1ac7af969f53824890032b9",
+    "pipeline": "imagegen-raster-potrace-quadratic-v2"
+  },
+  "vector_visual_review": {
+    "record": "sources/imagegen/vector-reviews/common-0002.vector-review.json",
+    "record_sha256": "e6b29f61dc45df0055809020fdcd13531f8908381fe6d94382e5f20548c1c249"
+  },
+  "authorization": {
+    "decision": "APPROVED",
+    "approver": "Codex root release agent",
+    "approved_at": "2026-07-26T01:32:41Z"
+  }
+}
